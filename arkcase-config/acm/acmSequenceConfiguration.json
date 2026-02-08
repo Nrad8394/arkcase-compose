@@ -1,0 +1,74 @@
+[
+   {
+      "sequenceName":"caseNumberSequence",
+      "sequenceEnabled":"false",
+      "sequenceDescription":"Sequence for case number generation (ex. 20181201_101)",
+      "sequenceParts": [
+         {
+            "sequencePartName":"Date1",
+            "sequencePartType":"DATE",
+            "sequenceDateFormat":"yyyyMMdd"
+         },
+         {
+            "sequencePartName":"Text1",
+            "sequencePartType":"ARBITRARY_TEXT",
+            "sequenceArbitraryText":"_"
+         },
+         {
+            "sequencePartName":"Autoincrement1",
+            "sequencePartType":"AUTOINCREMENT",
+            "sequenceStartNumber":"100",
+            "sequenceIncrementSize":"1",
+            "sequenceFillBlanks":"true"
+         }
+      ]
+   },
+   {
+      "sequenceName":"complaintNumberSequence",
+      "sequenceEnabled":"false",
+      "sequenceDescription":"Sequence for complaint number generation (ex. 20181201_101)",
+      "sequenceParts": [
+         {
+            "sequencePartName":"Date1",
+            "sequencePartType":"DATE",
+            "sequenceDateFormat":"yyyyMMdd"
+         },
+         {
+            "sequencePartName":"Text1",
+            "sequencePartType":"ARBITRARY_TEXT",
+            "sequenceArbitraryText":"_"
+         },
+         {
+            "sequencePartName":"Autoincrement1",
+            "sequencePartType":"AUTOINCREMENT",
+            "sequenceStartNumber":"100",
+            "sequenceIncrementSize":"1",
+            "sequenceFillBlanks":"true"
+         }
+      ]
+   },
+   {
+      "sequenceName":"consultationNumberSequence",
+      "sequenceEnabled":"false",
+      "sequenceDescription":"Sequence for consultation number generation (ex. 20181201_101)",
+      "sequenceParts": [
+         {
+            "sequencePartName":"Date1",
+            "sequencePartType":"DATE",
+            "sequenceDateFormat":"yyyyMMdd"
+         },
+         {
+            "sequencePartName":"Text1",
+            "sequencePartType":"ARBITRARY_TEXT",
+            "sequenceArbitraryText":"_"
+         },
+         {
+            "sequencePartName":"Autoincrement1",
+            "sequencePartType":"AUTOINCREMENT",
+            "sequenceStartNumber":"100",
+            "sequenceIncrementSize":"1",
+            "sequenceFillBlanks":"true"
+         }
+      ]
+   }
+]

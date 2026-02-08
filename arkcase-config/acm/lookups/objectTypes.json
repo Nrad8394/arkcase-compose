@@ -1,0 +1,188 @@
+[
+    {
+        "type": "COMPLAINT",
+        "key": "COMPLAINT",
+        "description": "Complaint",
+        "iconName": "i i-notice",
+        "state": "complaints.main",
+        "url": "#!/complaints/:id/main"
+    },
+    {
+        "type": "CASE_FILE",
+        "key": "CASE_FILE",
+        "description": "Case File",
+        "iconName": "i i-folder",
+        "state": "cases.main",
+        "url": "#!/cases/:id/main"
+    },
+    {
+        "type": "CONSULTATION",
+        "key": "CONSULTATION",
+        "description": "Consultation",
+        "iconName": "i i-folder",
+        "state": "consultations.main",
+        "url": "#!/consultations/:id/main"
+    },
+    {
+        "type": "TASK",
+        "key": "TASK",
+        "description": "Task",
+        "iconName": "i i-checkmark",
+        "state": "tasks.main",
+        "url": "#!/tasks/TASK/:id/main"
+    },
+    {
+        "type": "TASK",
+        "key": "ADHOC",
+        "description": "ADHOC Task",
+        "iconName": "i i-checkmark",
+        "state": "tasks.main",
+        "url": "#!/tasks/ADHOC/:id/main"
+    },
+    {
+        "type": "DOC_REPO",
+        "key": "DOC_REPO",
+        "description": "Document Repository",
+        "iconName": "i i-folder",
+        "state": "document-repository.main",
+        "url": "#!/document-repository/:id/main"
+    },
+    {
+        "type": "DOC_REPO",
+        "key": "MY_DOC_REPO",
+        "description": "My Documents",
+        "iconName": "i i-folder",
+        "state": "my-documents.main",
+        "url": "#!/my-documents/:id/main"
+    },
+    {
+        "type": "DOCUMENT",
+        "key": "DOCUMENT",
+        "description": "Document",
+        "iconName": "",
+        "url": "#!/documents/:id/main",
+        "target": "_blank"
+    },
+    {
+        "type": "FILE",
+        "key": "FILE",
+        "description": "File",
+        "iconName": "",
+        "url": "api/latest/plugin/ecm/download?ecmFileId=:id",
+        "viewerUrl": "#!/viewer/:id/:containerId/:containerType/:name/:selectedIds",
+        "target": "_blank"
+    },
+	{
+        "type": "TRANSCRIBE_ITEM",
+        "key": "TRANSCRIBE_ITEM",
+        "description": "TRANSCRIBE_ITEM",
+        "iconName": "",
+        "url": "",
+        "viewerUrl": "#!/viewer/:id/:containerId/:containerType/:name/:selectedIds/:seconds",
+        "target": "_blank"
+    },
+	{
+        "type": "TRANSCRIBE",
+        "key": "TRANSCRIBE",
+        "description": "TRANSCRIBE",
+        "iconName": "",
+        "url": "",
+        "viewerUrl": "#!/viewer/:id/:containerId/:containerType/:name/:selectedIds",
+        "target": "_blank"
+    },
+    {
+        "type": "PERSON",
+        "key": "PERSON",
+        "description": "Person",
+        "iconName": "i i-checkmark",
+        "state": "people.main",
+        "url": "#!/people/:id/main"
+    },
+    {
+        "type": "PERSON-ASSOCIATION",
+        "key": "PERSON-ASSOCIATION",
+        "description": "Person Association",
+        "iconName": "",
+        "state": "",
+        "url": "",
+        "target": "_blank"
+    },
+    {
+        "type": "CONTACT-METHOD",
+        "key": "CONTACT-METHOD",
+        "description": "Contact Method",
+        "iconName": "",
+        "state": "",
+        "url": "",
+        "target": "_blank"
+    },
+    {
+        "type": "LOCATION",
+        "key": "LOCATION",
+        "description": "Location",
+        "iconName": "",
+        "state": "",
+        "url": "",
+        "target": "_blank"
+    },
+    {
+        "type": "ORGANIZATION",
+        "key": "ORGANIZATION",
+        "description": "Organization",
+        "iconName": "i i-checkmark",
+        "state": "organizations.main",
+        "url": "#!/organizations/:id/main"
+    },
+    {
+        "type": "GROUP",
+        "key": "GROUP",
+        "description": "Group",
+        "iconName": "",
+        "state": "",
+        "url": "",
+        "target": "_blank"
+    },
+    {
+        "type": "USER",
+        "key": "USER",
+        "description": "User",
+        "iconName": "",
+        "state": "",
+        "url": "",
+        "target": "_blank"
+    },
+    {
+        "type": "NOTIFICATION",
+        "key": "NOTIFICATION",
+        "description": "Notification",
+        "iconName": "i i-chat3",
+        "state": "",
+        "url": "",
+        "target": "_blank"
+    },
+    {
+        "type": "SUBSCRIPTION_EVENT",
+        "key": "SUBSCRIPTION_EVENT",
+        "description": "Subscription Event",
+        "iconName": "i i-alarm",
+        "state": "",
+        "url": "",
+        "target": "_blank"
+    },
+    {
+        "type": "TIMESHEET",
+        "key": "TIMESHEET",
+        "description": "Timesheet",
+        "iconName": "i i-alarm",
+        "state": "time-tracking.main",
+        "url": "#!/time-tracking/:id/main"
+    },
+    {
+        "type": "COSTSHEET",
+        "key": "COSTSHEET",
+        "description": "Costsheet",
+        "iconName": "fa fa-money",
+        "state": "cost-tracking.main",
+        "url": "#!/cost-tracking/:id/main"
+    }
+]

@@ -1,0 +1,422 @@
+consultations:
+  title: Consultations
+  progressNoConsultation: '[ No consultation data ]'
+  progressLoading: 'Loading consultation '
+  progressError: Failed to load consultation
+consultations.menus:
+  leftnav.item: Consultation
+  topbar.item: Consultation
+consultations.error:
+  invalidData: ""
+consultations.comp.main:
+  title: Overview
+consultations.comp.info:
+  title: Info
+  consultationId: 'Consultation id:'
+  consultationNumber: 'Consultation Number:'
+  courtRoomName: 'Court Room Name:'
+  type.label: Type
+  created.label: Created Date
+  priority.label: Priority
+  assignee.label: Assigned To
+  assignee.none: None
+  owningGroup.label: Owning Group
+  dueDate.label: Due Date
+  alertMessage: 'Due date must be after the create date '
+  priorities:
+    low: Low
+    medium: Medium
+    high: High
+    expedite: Expedite
+    unknown: Unknown
+  consultationTypes:
+    agricultural: Agricultural
+    arson: Arson
+    backgroundInvestigation: Background Investigation
+    benefitsAppeal: Benefits Appeal
+    businessDispute: Better Business Dispute
+    clinicalFraud: Clinical Investigator Fraud
+    congressional: Congressional Response
+    disabilityWaiver: Disability Waiver Request
+    domesticDispute: Domestic Dispute
+    drugTrafficking: Drug Trafficking
+    educationWaiver: Education Waiver Request
+    eeoHarassment: EEO/Harassment
+    embezzlement: Embezzlement
+    extortion: Extortion
+    fraud: Fraud
+    generatedFromEmail: Generated from Email
+    government: Government
+    investorComplaint: Investor Complaint
+    laborRacketeering: Labor Racketeering
+    local: Local
+    murder: Murder
+    newDrugFraud: New Drug Application Fraud
+    payoff: Payoff
+    pensionWaiver: Pension Waiver Request
+    pollution: Pollution
+    productTampering: Product Tampering
+    assetTheftMisuse: Theft or misuse of asset
+  receivedDate.label: Received Date and Time
+  status.label: Status
+  modifier: Last Modified By
+  componentAgency: Requesting Agency
+  modified: Last Modified Date and Time
+consultations.comp.actions:
+  title: Actions
+  restrict: Restrict?
+  new.button: New
+  edit.button: Edit
+  status.button: Change Consultation Status
+  reinvestigate.button: Reinvestigate
+  subscribe.button: Subscribe
+  unsubscribe.button: Unsubscribe
+  claim.button: Claim
+  unclaim.button: Unclaim
+  buckslip.add.cancel: Cancel
+  buckslip.add.confirm: Confirm
+  buckslip.add.title: New Buck Slip
+  sendEmail.button: Send Email
+consultations.comp.details:
+  title: Full Consultation Details
+  informSaved: Consultation details saved
+  consultationSummary:
+    title: Consultation Summary
+    informSaved: Consultation Summary saved
+  table.columns:
+    title: Full Consultation Details
+    modified: Date Last Modified
+    modifier: User Last Modified
+consultations.comp.documents:
+  title: Documents
+  sendEmail: Send Email
+  filterInputPlaceholder: Filter
+  searchInputPlaceholder: Search
+  menu:
+    forms:
+      info: Information
+      rptInvestigation: Report of Investigation
+      ecomm: Electronic Communication
+    correspondences:
+      correspondenceInvitation: Correspondence - Invitation
+      approvalLetter: Approval Letter
+      medicalRelease: Medical Release
+      generalRelease: General Release
+      clearanceGranted: Clearance Granted
+      clearanceDenied: Clearance Denied
+      noticeInvestigation: Notice of Investigation
+      witnessInterview: Witness Interview Request
+      witnessInterview2: Witness Interview Request-2.0
+  newTask: New Task
+consultations.comp.people:
+  title: People
+  table.columns:
+    entity: Entity
+    type: Role
+    firstName: FirstName
+    lastName: LastName
+    organization: Organization
+    phone: Phone
+    location: Location
+  type.label: Consultation Person Type  
+consultations.comp.organizations:
+  title: Organizations
+  table.columns:
+    name: Organization Name
+    associationType: Role
+    type: Organization Type
+    identification: ID
+    value: Organization
+    contact: Primary Contact
+    phone: Phone
+    location: Location
+  type.label: Consultation Organization Type  
+consultations.comp.participants:
+  title: Participants
+  table.columns:
+    type: Type
+    name: Name
+  dialogUserPicker:
+    header: Choose User
+    table.columns:
+      name: Name
+      type: Type
+      title: Title
+      id: Username
+  dialogGroupPicker:
+    header: Choose Group
+    table.columns:
+      name: Name
+consultations.comp.notes:
+  title: Notes
+  table.columns:
+    note: Note
+    created: Created
+    creator: Author
+consultations.comp.tasks:
+  title: Tasks
+  table.columns:
+    title: Title
+    assignee: Assignee
+    created: Created
+    priority: Priority
+    due: Due
+    status: Status
+  table.overdue.tooltip: Task is Overdue
+  table.deadline.tooltip: Deadline is Approaching
+consultations.comp.references:
+  title: References
+  table.columns:
+    targetName: Number
+    targetTitle: Title
+    targetType: Type
+    assignee: Assignee
+    modified: Modified
+    status: Status
+consultations.comp.history:
+  title: History
+  table.columns:
+    eventType: Event Name
+    eventDate: Date
+    userId: User
+consultations.comp.time:
+  title: Time
+  table.columns:
+    name: Form Name
+    user: User
+    tally: Total Hours
+    cost: Total Cost
+    modified: Modified Date
+    status: Status
+  formNamePrefix: Timesheet
+consultations.comp.cost:
+  title: Cost
+  table.columns:
+    name: Form Name
+    user: User
+    tally: Total Cost
+    modified: Modified Date
+    status: Status
+  formNamePrefix: Costsheet
+consultations.comp.tags:
+  title: Tags
+  table.columns:
+    tag: Tag
+    created: Created
+    createdBy: Created By
+  modal:
+    title: Tag
+    search: Search for Tag
+    buttons:
+      cancel: Cancel
+      ok: Add Tag
+  message:
+    tagExists: Tag with that name or description or text already exists
+    tagAssociated: already associated
+    delete:
+      success: Tag deleted successfully
+      error: Error deleting tag
+consultations.comp.calendar:
+  title: Calendar
+  message: Calendar Integration Configuration Not Enabled
+consultations.comp.referenceSearchGrid:
+  title: Reference Search
+consultations.comp.addreference:
+  title: Add Reference
+  cancelButton: Cancel
+  confirmButton: Add
+  search:
+    placeholder: Search for case file, complaint, consultation, task, document, file
+    btn: Search
+  grid:
+    columns:
+      id: Id
+      name: Name
+      type: Type
+      title: Title
+      parent: Parent
+      assignee: Assignee
+      modified: Modified
+consultations.comp.assigneePickerModal:
+  title: Change Assignee
+  assigneeNamelabel: Assignee Name
+  btnCancelText: Cancel
+  btnSaveText: Save
+  searchAssigneeHeader: Search Assignee
+consultations.comp.groupPickerModal:
+  title: Change Group
+  groupNamelabel: Group Name
+  btnCancelText: Cancel
+  btnSaveText: Save
+  searchGroupHeader: Search Group
+consultations.comp.change.status:
+  title: Change Consultation Status
+  description.label: Description
+  information:
+    title: Change Consultation Status Information
+    date: Change Date
+    consultation.number: Consultation Number
+    status:
+      title: Status
+      current: Current Status
+      resolution:
+        title: Consultation Resolution
+        denied: Denied
+        full: Full
+        partial: Partial
+  approver:
+    placeholder: Select Approver
+    label: Approver
+    addAnother: Add another
+    remove: Remove Approver
+    pickerModal.header: User/Group Search
+    owningGroup: Owning Group
+  button:
+    cancel: Cancel
+    save: Save
+consultations.comp.suggestedConsultations:
+  title: Suggested consultations
+  table.columns:
+    number: Number
+    title: Title
+    referenceType: Reference Type
+    modified: Modified
+    status: Status
+consultations.userOrGroupSearch:
+  id: userSearch
+  title: User/Group Search
+  search:
+    btn: Search
+    placeholder: Search for the user or group.
+  cancelButton: Cancel
+  confirmButton: Confirm
+  assigneeGridColumns:
+    name: Name
+    type: Type
+    title: Title
+    username: Username
+consultations.dialogObjectPicker:
+  header: Search for document
+  table.columns:
+    name: Name
+    type: Type
+    title: Title
+    id: ID
+consultations.tree:
+  nodeTypes:
+    details.label: Details
+    people.label: People
+    organizations.label: Organizations
+    documents.label: Documents
+    participants.label: Participants
+    notes.label: Notes
+    tasks.label: Tasks
+    references.label: References
+    history.label: History
+    time.label: Time
+    cost.label: Cost
+    tags.label: Tags
+    calendar.label: Calendar
+    suggestedConsultations.label: Suggested consultations
+  filters:
+    opened: All Open consultations
+    iHaveCreated: All I've Created
+    iAmAssigned: All I'm Assigned
+    iAmFollowing: All I'm Following
+    closed: All Closed
+    noFilter: (No Filter)
+  sorters:
+    dateAsc: Sort Created Date Asc
+    dateDesc: Sort Created Date Desc
+    idAsc: Sort Consultation ID Asc
+    idDesc: Sort Consultation ID Desc
+    dueDateAsc: Sort Due Date Asc
+    dueDateDesc: Sort Due Date Desc
+    nameAsc: Sort By Consultation Name Asc
+    noSort: (No Sort)
+consultations.newConsultation:
+  consultationTitle: New Consultation
+  receivedDate.label: Received Date
+  section1: 'Section1: Consultation Contact Information'
+  addNewPerson: New Person
+  useExistingPerson: Existing Person
+  searchPerson: Search Person
+  prefix:
+    label: Prefix
+    validation.error: Please select Prefix
+  firstName:
+    label: First Name
+    placeholder: Enter First Name
+    validation.error: Please Enter First Name
+  middleName:
+    label: Middle Name
+    placeholder: Enter Middle Name
+  lastName:
+    label: Last Name
+    placeholder: Enter Last Name
+    validation.error: Please Enter Last Name
+  position:
+    label: Person Organization Position
+    placeholder: Enter Position
+  phone:
+    label: Phone
+    placeholder: Enter Phone Number(xxx-xxx-xxxx)
+    validation.errorInvalid: 'The Phone Number you entered is invalid. Should be in this format: xxx-xxx-xxxx'
+  organization:
+    label: Organization
+    placeholder: Enter Organization
+  email:
+    label: Email
+    placeholder: Enter Email
+    validation.error: Please enter Email
+    validation.errorInvalid: 'Please enter Email The Email you entered is invalid. Should be in this format: xxxx@xxxx.xxx'
+  confirmationEmail:
+    label: Confirm Email
+    placeholder: Confirm Email
+    validation.error: Email and Confirm Email do not match Please confirm the Email
+    validation.errorInvalid: Please confirm the Email
+  country:
+    label: Country
+    validation.error: Please select Country
+  address.type:
+    label: Address Type
+    validation.error: Please select Address Type
+  address:
+    label: Address 1
+    placeholder: Enter Address Line 1
+    validation.error: Please enter Address 1
+  address2:
+    label: Address 2
+    placeholder: Enter Address Line 2
+  city: 
+    label: City
+    placeholder: Enter City
+    validation.error: Please enter City
+  state:
+    label: State
+    placeholder: Enter State
+    validation.error: Please enter State
+  zip:
+    label: Zip/Postal
+    placeholder: Enter Zip/Postal
+    validation.error: Please enter Zip/Postal
+  section2: 'Section 2: Consultation Information'
+  externalAgency:
+    label: Requesting Agency External ID
+    placeholder: Enter Requesting Agency External ID
+    validation.error: Please Enter Requesting Agency External ID
+  title:
+    label: Title
+    placeholder: Enter Title
+    validation.error: Please Enter Title
+  subject:
+    label: Description
+    placeholder: Enter Description
+    validation.error: Please Enter Description
+  dueDate.label: Due Date
+  addFile.label: Requesting Agency Provide Documents
+  chooseFiles: Choose Files
+  duplicateFilesName.error: The same document was upload more than once, please upload different documents
+  cancelButton: Cancel
+  saveButton: Save Consultation
+  remove: Remove

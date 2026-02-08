@@ -1,0 +1,98 @@
+{
+	"jobs": [
+		{
+			"name": "deleteExpiredUrlsJob",
+			"class": "com.armedia.acm.services.protecturl.service.ProtectUrlJobDescriptor",
+			"cronExpression": "0 0 4 1/1 * ? *"
+		},
+
+		{
+            "name": "subscriptionEventBatchInsertJob",
+			"class": "com.armedia.acm.services.subscription.service.SubscriptionEventJobDescriptor",
+			"repeatIntervalInSeconds": 180
+		},
+
+		{
+			"name": "purgeAuditJob",
+			"class": "com.armedia.acm.audit.service.PurgeAuditJobDescriptor",
+			"repeatIntervalInSeconds": 3600
+		},
+
+		{
+			"name": "cleanHistoryJob",
+			"class": "com.armedia.acm.plugins.admin.service.CleanHistoryJobDescriptor",
+			"cronExpression": "0 0 0/6 1/1 * ? *" 
+		},
+
+		{
+			"name": "phoneHomeStateOfArkCaseJob",
+			"class": "com.armedia.acm.plugins.phonehome.service.PhoneHomeJobDescriptor",
+			"cronExpression": "0 5 0 1/1 * ? *"
+		},
+
+		{
+			"name": "purgeCalendarJob",
+			"class": "com.armedia.acm.calendar.service.PurgeCalendarJobDescriptor",
+			"repeatIntervalInSeconds": 120
+		},
+
+		{
+			"name": "releaseExpiredLocksJob",
+			"class": "com.armedia.acm.service.objectlock.service.ReleaseExpiredLocksJobDescriptor",
+			"repeatIntervalInSeconds": 15
+		},
+		{
+			"name": "transcribeQueueJob",
+			"class": "com.armedia.acm.services.transcribe.job.TranscribeQueueJobDescriptor",
+			"repeatIntervalInSeconds": 60
+		},
+
+		{
+			"name": "ocrQueueJob",
+			"class": "com.armedia.acm.services.ocr.job.OCRQueueJobDescriptor",
+			"repeatIntervalInSeconds": 30
+		},
+
+		{
+			"name": "alfrescoSyncScheduledJob",
+			"class": "com.armedia.acm.plugins.ecm.service.sync.impl.AlfrescoSyncScheduledBean",
+			"repeatIntervalInSeconds": 15
+		},
+
+		{
+			"name": "dataAccessPolicyUpdateJob",
+			"class": "com.armedia.acm.services.dataaccess.service.AcmDataAccessPolicyUpdateJobDescriptor",
+			"repeatIntervalInSeconds": 3600
+		},
+
+		{
+			"name": "upcomingTaskAssigneesNotifierJob",
+			"class": "com.armedia.acm.plugins.task.service.UpcomingTaskNotifierJobDescription",
+			"cronExpression": "0 0 0 1/1 * ? *"
+		},
+
+		{
+			"name": "overdueTaskAssigneesNotifierJob",
+			"class": "com.armedia.acm.plugins.task.service.OverdueTaskNotifierJobDescriptor",
+			"cronExpression": "0 0 0 1/1 * ? *"
+		},
+
+		{
+			"name": "jpaBatchUpdateJob",
+			"class" : "com.armedia.acm.services.search.service.AcmJpaBatchUpdateJobDescriptor",
+			"repeatIntervalInSeconds": 3600
+		},
+
+		{
+			"name": "sendNotificationsJob",
+			"class": "com.armedia.acm.services.notification.service.NotificationJobDescriptor",
+			"repeatIntervalInSeconds": 60
+		},
+
+		{
+			"name": "deleteExpiredFilesJobs",
+			"class": "com.armedia.acm.plugins.ecm.service.RemoveExpiredFilesJobDescriptor",
+			"cronExpression": "0 5 0 1/1 * ? *"
+		}
+	]
+}

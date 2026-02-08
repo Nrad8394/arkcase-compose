@@ -1,0 +1,34 @@
+[Unit]
+Description=ArkCase Application Stack
+Documentation=https://github.com/ArkCase/arkcase-ce
+Requires=podman.service
+After=podman.service network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+WorkingDirectory=/opt/arkcase
+ExecStartPre=/usr/bin/sleep 10
+ExecStart=/usr/bin/podman-compose up -d
+ExecStop=/usr/bin/podman-compose down
+ExecReload=/usr/bin/podman-compose restart
+TimeoutStartSec=600
+TimeoutStopSec=120
+
+# Restart policy
+Restart=on-failure
+RestartSec=30
+
+# Security settings
+ProtectSystem=strict
+ProtectHome=yes
+ReadWritePaths=/opt/arkcase
+NoNewPrivileges=yes
+
+# Resource limits
+MemoryMax=24G
+CPUQuota=800%
+
+[Install]
+WantedBy=multi-user.target

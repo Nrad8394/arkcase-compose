@@ -1,0 +1,337 @@
+tasks:
+  title: مهام
+  progressNoTask: '[ لا توجد بيانات مهمة ]'
+  progressLoading: ' تحميل المهمة'
+  progressError: فشل تحميل المهمة
+tasks.menus:
+  leftnav.item: مهام
+  topbar.item: مهمة
+tasks.comp.main:
+  title: نظرة عامة
+tasks.comp.info:
+  title: معلومات
+  taskId: 'معرف المهمة:'
+  percentage.label: '٪ الانتهاء'
+  assignee.label: المحال إليه
+  priority.label: أفضلية
+  startDate.label: تاريخ البدء
+  dueDate.label: تاريخ الاستحقاق
+  state.label: حالة
+  overdue.tooltip: المهمة متأخرة
+  deadline.tooltip: الموعد النهائي يقترب
+  owningGroup.label: امتلاك المجموعة
+  alertMessage: ' يجب أن يكون تاريخ الاستحقاق بعد تاريخ البدء'
+tasks.comp.parentinfo:
+  title: معلومات الوالدين
+  taskId: 'معرف المهمة:'
+  case:
+    subjectType.label: نوع الموضوع
+    incidentDate.label: تاريخ الحادث
+    priority.label: أفضلية
+    assignee.label: مخصص ل
+    owningGroup.label: امتلاك المجموعة
+  complaint:
+    subjectType.label: نوع الموضوع
+    incidentDate.label: تاريخ الحادث
+    priority.label: أفضلية
+    assignee.label: مخصص ل
+    owningGroup.label: امتلاك المجموعة
+  costsheet:
+    approver.label: موافق
+  timesheet:
+    approver.label: موافق
+  _xxx_courtRoomName: 'اسم قاعة المحكمة:'
+tasks.comp.actions:
+  title: أجراءات
+  diagram.button: مخطط العملية
+  eSignature.button: إشارة
+  subscribe.button: الإشتراك
+  unsubscribe.button: إلغاء الاشتراك
+  reject.button: رفض
+  delete.button: حذف
+  complete.button: اكتمال
+  approve.button: الموافقة على الوثيقة
+  rework.button: إرسال لإعادة العمل
+  claim.button: يطالب
+  unclaim.button: غير مزعوم
+  error.outcomeFieldMissing: لا يمكن إتمام المهمة بسبب فقدان القيمة المطلوبة
+  modal:
+    errorHeaderText: خطأ
+    btnOk.text: OK
+    btnClose.text: قريب
+tasks.comp.details:
+  title: تفاصيل المهمة
+  informSaved: تم حفظ تفاصيل المهمة
+  table.columns:
+    details: تفاصيل
+    modified: تاريخ التعديل الأخير
+    modifier: آخر تعديل للمستخدم
+tasks.comp.reworkdetails:
+  title: تفاصيل إعادة العمل
+  informSaved: تم حفظ تفاصيل إعادة العمل
+  table.columns:
+    title: تفاصيل إعادة العمل
+    modified: تاريخ التعديل الأخير
+    modifier: آخر تعديل للمستخدم
+tasks.comp.parentdocs:
+  title: المستندات الأم
+  noParentDataMessage: لا توجد مستندات أصل للمهمة المستقلة
+  sendEmail: ارسل بريد الكتروني
+  filterInputPlaceholder: منقي
+  searchInputPlaceholder: بحث
+  folderName: إسم الملف
+tasks.comp.attachments:
+  title: المرفقات
+  sendEmail: ارسل بريد الكتروني
+  filterInputPlaceholder: منقي
+  searchInputPlaceholder: بحث
+tasks.comp.notes:
+  title: ملاحظات
+  table.columns:
+    note: ملحوظة
+    created: خلقت
+    creator: مؤلف
+tasks.comp.references:
+  title: المراجع
+  table.columns:
+    targetName: رقم
+    targetTitle: عنوان
+    targetType: نوع
+    assignee: المحال إليه
+    modified: تم التعديل
+    status: الحالة
+tasks.comp.rejcomments:
+  title: رفض التعليقات
+  table.columns:
+    note: تعليق
+    created: خلقت
+    creator: مؤلف
+tasks.comp.workflow:
+  title: سير العمل
+  table.columns:
+    participant: مشارك
+    role: وظيفة
+    status: الحالة
+    startDateTime: بداية
+    endDateTime: النهاية
+tasks.comp.diagram:
+  title: مخطط العملية
+  error.loading: لا يمكن تحميل الرسم التخطيطي
+tasks.comp.signatures:
+  title: التوقيعات الإلكترونية
+  table.columns:
+    signedDate: تاريخ
+    signedBy: تم التوقيع من
+tasks.comp.documentsunderreview:
+  title: المستندات قيد المراجعة
+  table.columns:
+    fileId: هوية شخصية
+    fileName: عنوان
+    created: خلقت
+    creator: مؤلف
+    status: الحالة
+  searchInputPlaceholder: بحث
+  sendEmail: ارسل بريد الكتروني
+  noDocsMessage: لا توجد وثائق للمراجعة
+  filterInputPlaceholder: منقي
+tasks.comp.history:
+  title: التاريخ
+  table.columns:
+    eventType: اسم الحدث
+    eventDate: تاريخ
+    userId: المستعمل
+tasks.comp.tags:
+  title: بطاقة شعار
+  table.columns:
+    tag: بطاقة شعار
+    created: خلقت
+    createdBy: انشأ من قبل
+  modal:
+    title: بطاقة شعار
+    search: ابحث عن الوسم
+    buttons:
+      cancel: إلغاء
+      ok: إضافة علامة
+  message:
+    tagExists: توجد بالفعل علامة بهذا الاسم أو الوصف أو النص
+    tagAssociated: مرتبط بالفعل
+    delete:
+      success: تم حذف العلامة بنجاح
+      error: خطأ في حذف العلامة
+tasks.newTask:
+  title: مهمة جديدة
+  assignee.button: اختر المتنازَل له
+  assignee.label: يسند إلى
+  assignee.placeholder: 'الرجاء اختيار المحال إليه'
+  assigneeOrGroup.placeholder: ' الرجاء اختيار المحال أو المجموعة'
+  candidateGroups.label: امتلاك المجموعة
+  priority.placeholder: حدد الأولوية
+  priority.label: أفضلية
+  status.placeholder: حدد الحالة
+  status.label: الحالة
+  associateNumber.label: مرتبط بالشكوى أو القضية
+  associateNumber.placeholder: 'رقم الشكوى أو القضية'
+  associateType.label: نوع الوالدين
+  subject.label: موضوع
+  taskStartDate.label: تاريخ البدء
+  dueDate.label: تاريخ الاستحقاق
+  datepicker.close: منجز
+  percentComplete.label: '٪ اكتمال'
+  notes.label: ملاحظات
+  saveButton: حفظ المهمة
+  cancelButton: إلغاء
+  overdue.tooltip: المهمة متأخرة
+  deadline.tooltip: الموعد النهائي يقترب
+  groupToggle.label: مهمة المجموعة؟
+  group.placeholder: يرجى تحديد مجموعة.
+  documentsToReview.label: وثائق للمراجعة
+  documentsToReview.uploadDocuments: تحميل المستندات
+  businessProcessTypes.label: نوع العملية التجارية
+  noSelectedReviewDocsErrorMsg: يرجى تحديد وثيقة واحدة على الأقل لاستخدام نوع عملية الأعمال المختارة.
+  noSelectedReviewDocsWorkflowErrorMsg: يرجى تحديد عملية عمل لتحميل الملفات إلى مهمة.
+  noSelectedDocsErrorMsg: الرجاء تحديد مستند واحد على الأقل لاستخدام نوع عملية الأعمال المحدد.
+  noSelectedWorkflowErrorMsg: يرجى تحديد سير عمل لإنشاء مهمة.
+tasks.userOrGroupSearch:
+  id: بحث المستخدم
+  title: بحث المستخدم / المجموعة
+  search:
+    btn: بحث
+    placeholder: ابحث عن المستخدم أو المجموعة لتعيينها لهذه المهمة.
+  pickUserLabel: اختر المستخدم المرتبط
+  pickGroupLabel: اختر مجموعة أسوشيتد
+  cancelButton: إلغاء
+  confirmButton: تؤكد
+  assigneeGridColumns:
+    name: اسم
+    type: نوع
+    title: عنوان
+    username: اسم المستخدم
+tasks.owningGroupSearch:
+  id: امتلاك بحث المجموعة
+  title: البحث عن مجموعة (مجموعات) هذا المستخدم
+  search:
+    btn: بحث
+    placeholder: ابحث عن المجموعة (المجموعات) التي ينتمي إليها هذا المستخدم.
+  cancelButton: إلغاء
+  confirmButton: تؤكد
+  assigneeGridColumns:
+    name: اسم
+    type: نوع
+    title: عنوان
+    username: اسم المستخدم
+tasks.objectSearch:
+  id: البحث عن شيء
+  title: البحث عن الكائنات
+  search:
+    btn: بحث
+    placeholder: ابحث عن الحالة أو الشكوى لهذه المهمة.
+  cancelButton: إلغاء
+  confirmButton: تؤكد
+  objectGridColumns:
+    name: رقم
+    type: نوع
+    title: عنوان
+    username: المحال إليه
+tasks.referenceSearchGrid:
+  title: بحث مرجعي
+tasks.comp.addreference:
+  title: يضيف مرجعا
+  cancelButton: إلغاء
+  confirmButton: أضف
+  search:
+    placeholder: ابحث عن الحالة أو الشكوى أو الملف أو المهمة
+    btn: بحث
+  grid:
+    columns:
+      id: هوية شخصية
+      name: اسم
+      type: نوع
+      title: عنوان
+      parent: الأبوين
+      assignee: المحال إليه
+      modified: تم التعديل
+tasks.comp.participants:
+  title: المشاركين
+  table.columns:
+    type: نوع
+    name: اسم
+  dialogUserPicker:
+    header: اختر المستخدم
+    table.columns:
+      name: اسم
+      type: نوع
+      title: عنوان
+      id: اسم المستخدم
+  dialogGroupPicker:
+    header: اختر مجموعة
+    table.columns:
+      name: اسم
+tasks.comp.assigneePickerModal:
+  title: تغيير المحال إليه
+  assigneeNamelabel: اسم المحال إليه
+  btnCancelText: إلغاء
+  btnSaveText: حفظ
+  searchAssigneeHeader: ابحث عن المحال إليه
+tasks.comp.groupPickerModal:
+  title: تغيير المجموعة
+  groupNamelabel: أسم المجموعة
+  btnCancelText: إلغاء
+  btnSaveText: حفظ
+  searchGroupHeader: مجموعة البحث
+tasks.comp.approvalRouting:
+  title: الموافقون في المستقبل
+  addNewTooltip: إضافة جهة اعتماد جديدة
+  noBuckslipMessage: لايوجد بيانات
+  button:
+    save.tooltip: حفظ التغييرات
+  table.columns:
+    fullName: الاسم الكامل
+tasks.comp.pastApprovals:
+  title: الموافقون السابقون
+  noBuckslipMessage: لايوجد بيانات
+  table.columns:
+    approvalDate: تاريخ الموافقة
+    approverId: موافق
+    approverFullName: الاسم الكامل
+    approverDecision: قرار الموافقة
+tasks.tree:
+  nodeTypes:
+    details.label: تفاصيل
+    reworkDetails.label: تفاصيل إعادة العمل
+    docReview.label: المستندات قيد المراجعة
+    parentDoc.label: المستندات الأم
+    attachments.label: المرفقات
+    references.label: المراجع
+    notes.label: ملاحظات
+    workflow.label: نظرة عامة على سير العمل
+    history.label: التاريخ
+    eSignatures.label: التوقيعات الإلكترونية
+    tags.label: العلامات
+    reject.label: رفض التعليقات
+  filters:
+    myTasks: المهام بالنسبة لي
+    opened: جميع المهام المفتوحة
+    completed: جميع المهام المكتملة
+    dueToday: جميع المهام المستحقة اليوم
+    myDueToday: جميع المهام المستحقة لي اليوم
+    overdue: جميع المهام المتأخرة
+    myOverdue: جميع المهام المتأخرة بالنسبة لي
+    noFilter: (بدون فلتر)
+  sorters:
+    createdDateAsc: فرز تاريخ تصاعدي
+    createdDateDesc: فرز تاريخ الإنشاء تنازليًا
+    dueDateAsc: فرز تاريخ الاستحقاق تصاعدياً
+    dueDateDesc: فرز تاريخ الاستحقاق تنازليًا
+    nameAsc: فرز اسم المهمة تصاعديًا
+    nameDesc: فرز اسم المهمة تنازليًا
+    noSort: (بدون فرز)
+tasks.signature:
+  dialog:
+    title: مهمة تسجيل
+    body: 'تسجيل الدخول بكلمة المرور الخاصة بك:'
+    btn.cancel: إلغاء
+    btn.sign: إشارة
+tasks.userSearch:
+  cancelButton: إلغاء
+  confirmButton: تؤكد
+tasks.coordination.pickAssignee.placeholder: الرجاء اختيار المتنازل عنه

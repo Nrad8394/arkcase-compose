@@ -1,0 +1,458 @@
+cases:
+  title: الحالات
+  progressNoCase: '[ لا توجد بيانات ملف القضية ]'
+  progressLoading: ' ملف القضية جار التحميل '
+  progressError: فشل تحميل ملف الحالة
+cases.menus:
+  leftnav.item: ملفات القضية
+  topbar.item: حالة
+cases.error:
+  invalidData: ""
+cases.comp.main:
+  title: نظرة عامة
+cases.comp.info:
+  title: معلومات
+  caseId: 'ID القضية:'
+  caseNumber: 'رقم القضية:'
+  courtRoomName: 'اسم قاعة المحكمة:'
+  type.label: نوع
+  created.label: تاريخ الإنشاء
+  priority.label: أفضلية
+  assignee.label: مخصص ل
+  owningGroup.label: امتلاك المجموعة
+  dueDate.label: تاريخ الاستحقاق
+  alertMessage: ' يجب أن يكون تاريخ الاستحقاق بعد تاريخ الإنشاء'
+  priorities:
+    low%: منخفض
+    medium%: متوسط
+    high%: عالي
+    expedite%: تعجيل
+    unknown%: مجهول
+  caseTypes:
+    agricultural%: زراعي
+    arson%: حريق متعمد
+    backgroundInvestigation%: خلفية التحقيق
+    benefitsAppeal%: استئناف المنافع
+    businessDispute%: نزاع تجاري أفضل
+    clinicalFraud%: احتيال الباحث السريري
+    congressional%: رد الكونغرس
+    disabilityWaiver%: طلب التنازل عن الإعاقة
+    domesticDispute%: شجار عائلي
+    drugTrafficking%: تهريب المخدرات
+    educationWaiver%: طلب تنازل عن التعليم
+    eeoHarassment%: EEO/مضايقة
+    embezzlement%: الاختلاس
+    extortion%: الابتزاز
+    fraud%: تزوير
+    generatedFromEmail%: تم إنشاؤها من البريد الإلكتروني
+    government%: حكومة
+    investorComplaint%: شكوى المستثمر
+    laborRacketeering%: عمل المضرب
+    local%: محلي
+    murder%: قتل
+    newDrugFraud%: الاحتيال الجديد في تطبيق الدواء
+    payoff%: سدد دينك
+    pensionWaiver%: طلب التنازل عن المعاش
+    pollution%: التلوث
+    productTampering%: المنتج العبث
+    assetTheftMisuse%: سرقة الأصول أو إساءة استخدامها
+cases.comp.actions:
+  title: أجراءات
+  restrict: بتقييد؟
+  new.button: جديد
+  edit.button: تعديل
+  status.button: تغيير حالة الحالة
+  reinvestigate.button: أعد التحقيق
+  subscribe.button: الإشتراك
+  unsubscribe.button: إلغاء الاشتراك
+  merge.button: دمج
+  claim.button: يطالب
+  unclaim.button: غير مزعوم
+  split.button: انشق، مزق
+  buckslip.add.cancel: إلغاء
+  buckslip.add.confirm: تؤكد
+  buckslip.add.title: جديد باك زلة
+cases.comp.details:
+  title: تفاصيل الحالة الكاملة
+  informSaved: تم حفظ تفاصيل الحالة
+  caseSummary:
+    title: ملخص القضية
+    informSaved: تم حفظ ملخص الحالة
+  table.columns:
+    title: تفاصيل الحالة الكاملة
+    modified: تاريخ التعديل الأخير
+    modifier: آخر تعديل للمستخدم
+cases.comp.documents:
+  title: مستندات
+  sendEmail: ارسل بريد الكتروني
+  filterInputPlaceholder: منقي
+  searchInputPlaceholder: بحث
+  menu:
+    forms:
+      info%: معلومات
+      rptInvestigation%: تقرير التحقيق
+      ecomm%: الاتصالات الإلكترونية
+    correspondences:
+      correspondenceInvitation%: المراسلات - دعوة
+      approvalLetter%: خطاب الموافقة
+      medicalRelease%: بيان طبي
+      generalRelease%: الإفراج العام
+      clearanceGranted%: منح التخليص
+      clearanceDenied%: تم رفض التخليص
+      noticeInvestigation%: إشعار التحقيق
+      witnessInterview%: طلب مقابلة الشاهد
+      witnessInterview2%: طلب مقابلة الشاهد -2
+  newTask: مهمة جديدة
+cases.comp.people:
+  title: اشخاص
+  table.columns:
+    entity: شخصية
+    type: وظيفة
+    firstName: الاسم الاول
+    lastName: اسم العائلة
+    organization: منظمة
+    phone: هاتف
+    location: موقعك
+cases.comp.organizations:
+  title: المنظمات
+  table.columns:
+    name: اسم المنظمة
+    associationType: وظيفة
+    type: نوع المنظمة
+    identification: هوية شخصية
+    value: منظمة
+    contact: اتصال رئيسي
+    phone: هاتف
+    location: موقعك
+cases.comp.participants:
+  title: المشاركين
+  table.columns:
+    type: نوع
+    name: اسم
+  dialogUserPicker:
+    header: اختر المستخدم
+    table.columns:
+      name: اسم
+      type: نوع
+      title: عنوان
+      id: اسم المستخدم
+  dialogGroupPicker:
+    header: اختر مجموعة
+    table.columns:
+      name: اسم
+cases.comp.notes:
+  title: ملاحظات
+  table.columns:
+    note: نوتة
+    created: خلقت
+    creator: مؤلف
+cases.comp.tasks:
+  title: مهام
+  table.columns:
+    title: عنوان
+    assignee: المحال إليه
+    created: خلقت
+    priority: أفضلية
+    due: بسبب
+    status: الحالة
+  table.overdue.tooltip: المهمة متأخرة
+  table.deadline.tooltip: الموعد النهائي يقترب
+cases.comp.references:
+  title: المراجع
+  table.columns:
+    targetName: رقم
+    targetTitle: عنوان
+    targetType: نوع
+    assignee: المحال إليه
+    modified: تم التعديل
+    status: الحالة
+cases.comp.history:
+  title: التاريخ
+  table.columns:
+    eventType: اسم الحدث
+    eventDate: تاريخ
+    userId: المستعمل
+cases.comp.time:
+  title: زمن
+  table.columns:
+    name: اسم النموذج
+    user: المستعمل
+    tally: مجموع الساعات
+    cost: التكلفة الإجمالية
+    modified: تاريخ معدل
+    status: الحالة
+  formNamePrefix: ورقة التوقيت
+cases.comp.cost:
+  title: كلفة
+  table.columns:
+    name: اسم النموذج
+    user: المستعمل
+    tally: التكلفة الإجمالية
+    modified: تعديل التاريخ
+    status: الحالة
+  formNamePrefix: ورقة التكلفة
+cases.comp.tags:
+  title: شقة قرطاس
+  table.columns:
+    tag: شقة قرطاس
+    created: خلقت
+    createdBy: انشأ من قبل
+  modal:
+    title: شقة قرطاس
+    search: ابحث عن الوسم
+    buttons:
+      cancel: إلغاء
+      ok: إضافة علامة
+  message:
+    tagExists: توجد بالفعل علامة بهذا الاسم أو الوصف أو النصv
+    tagAssociated: مرتبط بالفعل
+    delete:
+      success: تم حذف العلامة بنجاح
+      error: خطأ في حذف العلامة
+cases.comp.calendar:
+  title: التقويم
+  message: لم يتم تمكين تكوين تكامل التقويم
+cases.comp.merge:
+  title: دمج
+  cancel.btn: إلغاء
+  merge.btn: دمج
+  search.placeholder: ابحث عن ملف القضية.
+  search.btn: بحث
+  table.columns:
+    incident: نوع
+    name: اسم
+    assignee: المحال إليه
+    title: عنوان
+    parent: الأبوين
+    modified: تم التعديل
+  objectPicker:
+    title: ابحث عن كائن
+    table.columns:
+      name: اسم
+      type: نوع
+      title: عنوان
+      id: هوية شخصية
+      username: اسم المستخدم
+cases.comp.referenceSearchGrid:
+  title: بحث مرجعي
+cases.comp.split:
+  title: انشق، مزق
+  cancel: إلغاء
+  split: انشق، مزق
+cases.comp.addreference:
+  title: يضيف مرجعا
+  cancelButton: إلغاء
+  confirmButton: أضف
+  search:
+    placeholder: ابحث عن الحالة أو الشكوى أو الملف أو المهمة
+    btn: بحث
+  grid:
+    columns:
+      id: هوية شخصية
+      name: اسم
+      type: نوع
+      title: عنوان
+      parent: الأبوين
+      assignee: المحال إليه
+      modified: تم التعديل
+cases.comp.assigneePickerModal:
+  title: تغيير المحال إليه
+  assigneeNamelabel: اسم المحال إليه
+  btnCancelText: إلغاء
+  btnSaveText: حفظ
+  searchAssigneeHeader: ابحث عن المتنازل عنه
+cases.comp.groupPickerModal:
+  title: تغيير المجموعة
+  groupNamelabel: أسم المجموعة
+  btnCancelText: إلغاء
+  btnSaveText: حفظ
+  searchGroupHeader: مجموعة البحث
+cases.comp.approvalRouting:
+  title: الموافقون
+  addNewTooltip: إضافة جهات اعتماد جديدة
+  noBuckslipMessage: لايوجد بيانات
+  processInitialize.successfull: تمت تهيئة العملية
+  processInitialize.fail: العملية غير مهيأة
+  processWithdraw.successfull: تم سحب العملية
+  processWithdraw.fail: العملية لم تسحب
+  businessProcessUpdate.successfull: تم تحديث توجيه الموافقة
+  businessProcessUpdate.fail: لم يتم تحديث توجيه الموافقة
+  button:
+    save.tooltip: حفظ التغييرات
+    initiate: الشروع في
+    withdraw: انسحب
+    initiate.tooltip: بدء المهمة
+    withdraw.tooltip: سحب المهمة
+  checkbox:
+    nonConcurEndsApprovalCycle: عدم التوافق يوافق على دورة الموافقة
+  table.columns:
+    assignee: المحال إليه
+    owningGroup: امتلاك المجموعة
+    subject: موضوع
+    details: تفاصيل
+    dueDate: تاريخ الاستحقاق
+    status: الحالة
+    addedBy: أضيف بواسطة
+  assigne.none: لا يوجد
+  assignee.label: المحال إليه
+  owningGroup.label: امتلاك المجموعة
+  priority.label: أفضلية
+  startDate.label: تاريخ البدء
+  dueDate.label: تاريخ الاستحقاق
+  state.label: حالة
+  future.task.modal:
+    title: مهمة مستقبلية جديدة
+    assignee: المحال إليه
+    owningGroup: امتلاك المجموعة
+    subject.label: موضوع
+    subject.placeholder: أدخل موضوع الحالة المستقبلية
+    details.label: تفاصيل
+    cancel.button: إلغاء
+    save.button: حفظ
+cases.comp.pastApprovals:
+  title: الموافقون السابقون
+  noBuckslipMessage: لايوجد بيانات
+  table.columns:
+    approvalDate: تاريخ الموافقة
+    approverId: موافق
+    approverFullName: موافق
+    approverDecision: قرار الموافقة
+cases.comp.billing:
+  title: الفواتير
+  table.columns:
+    item: 'بند #'
+    description: وصف
+    amount: كمية
+    type: نوع
+    object: موضوع
+    total: 'مجموع:'
+    buttons:
+      listInvoices: إدراج الفواتير
+      emailInvoice: فاتورة البريد الإلكتروني
+      generateInvoice: إنشاء فاتورة
+  modal:
+    title: إضافة عنصر إعداد الفواتير
+    cancel.btn: إلغاء
+    save.btn: حفظ
+    billingItems.title: بنود إعداد الفواتير لـ
+  invoice:
+    title: فواتير
+    table.columns:
+      invoiceNumber: رقم الفاتورة
+      status: الحالة
+      creator: المنشئ
+      created: خلقت
+      view: رأي
+  amount.title: الرجاء إدخال مبلغ الفاتورة
+  description.title: الرجاء إدخال وصف الفواتير
+cases.comp.change.status:
+  title: تغيير حالة الحالة
+  description.label: وصف
+  information:
+    title: تغيير معلومات حالة القضية
+    date: تغيير التاريخ
+    case.number: رقم القضية
+    status:
+      title: الحالة
+      current: الحالة الحالية
+      resolution:
+        title: حل القضية
+        denied: رفض
+        full: ممتلئ
+        partial: جزئي
+  approver:
+    placeholder: حدد موافق
+    label: موافق
+    addAnother: أضف آخر
+    remove: إزالة موافق
+    pickerModal.header: بحث المستخدم / المجموعة
+    owningGroup: امتلاك المجموعة
+  button:
+    cancel: إلغاء
+    save: حفظ
+cases.comp.newCase:
+  title: ملف حالة جديد
+  editCase.title: تحرير ملف القضية
+  caseTitle: عنوان القضية
+  caseTitle.placeholder: أدخل عنوان ملف القضية
+  caseType: نوع القضية
+  initiator: البادئ
+  initiator.placeholder: حدد البادئ
+  description: وصف
+  people:
+    title: اشخاص
+    selectPerson.placeholder: ابحث عن شخص موجود
+    personType: نوع الشخص
+  participants:
+    title: المشاركين
+    owningGroup: امتلاك المجموعة
+    owningGroup.info: لا يمكن اختيار مجموعة الامتلاك إلا من خلال حقل المالك
+    selectParticipant.placeholder: حدد مشارك
+    participantType: نوع المشارك
+  cancelButton: إلغاء
+  saveButton: حفظ ملف القضية
+  updateButton: تحديث ملف القضية
+  removeButton: إزالة
+  addButton: أضف آخر
+cases.comp.suggestedCases:
+  title: الحالات المقترحة
+  table.columns:
+    number: رقم
+    title: عنوان
+    referenceType: نوع مرجع
+    modified: تم التعديل
+    status: الحالة
+cases.userOrGroupSearch:
+  id: بحث المستخدم
+  title: بحث المستخدم / المجموعة
+  search:
+    btn: بحث
+    placeholder: ابحث عن المستخدم أو المجموعة.
+  cancelButton: إلغاء
+  confirmButton: تؤكد
+  assigneeGridColumns:
+    name: اسم
+    type: نوع
+    title: عنوان
+    username: اسم المستخدم
+cases.dialogObjectPicker:
+  header: ابحث عن مستند
+  table.columns:
+    name: اسم
+    type: نوع
+    title: عنوان
+    id: هوية شخصية
+cases.tree:
+  nodeTypes:
+    details.label: تفاصيل
+    people.label: اشخاص
+    organizations.label: المنظمات
+    documents.label: مستندات
+    participants.label: المشاركين
+    notes.label: ملاحظات
+    tasks.label: مهام
+    references.label: المراجع
+    history.label: التاريخ
+    time.label: زمن
+    cost.label: كلفة
+    tags.label: العلامات
+    calendar.label: التقويم
+    approvalRouting.label: توجيه الموافقة
+    billing.label: الفواتير
+    suggestedCases.label: الحالات المقترحة
+  filters:
+    opened: جميع الحالات المفتوحة
+    iHaveCreated: كل ما قمت بإنشائه
+    iAmAssigned: حيث تم تكليفي
+    iAmFollowing: كل ما أتبعه
+    closed: الكل مغلق
+    noFilter: (بدون فلتر)
+  sorters:
+    dateAsc: فرز تاريخ الإنشاء تصاعدياً
+    dateDesc: فرز تاريخ الإنشاء تنازليًا
+    idAsc: فرز معرف الحالة تصاعدياً
+    idDesc: معرف حالة فرز تنازلي
+    dueDateAsc: فرز تاريخ الاستحقاق تصاعدياً
+    dueDateDesc: فرز تاريخ الاستحقاق تنازليًا
+    nameAsc: فرز حسب اسم الحالة تصاعدي
+    noSort: (بدون فرز)

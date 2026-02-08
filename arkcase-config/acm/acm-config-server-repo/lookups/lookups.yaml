@@ -1,0 +1,2733 @@
+lookupsConfiguration:
+  inverseValuesLookup:
+    organizationRelationTypes:
+      entries:
+        partner:
+          inverseValue: core.lookups.organizationRelationTypes.partner
+          inverseKey: partner
+          value: core.lookups.organizationRelationTypes.partner
+          readonly: true
+          order: 1
+        subCompany: 
+          inverseValue: core.lookups.organizationRelationTypes.parentCompany
+          inverseKey: parentCompany
+          value: core.lookups.organizationRelationTypes.subCompany
+          readonly: true
+          order: 2
+        parentCompany:  
+          inverseValue: core.lookups.organizationRelationTypes.subCompany
+          inverseKey: subCompany
+          value: core.lookups.organizationRelationTypes.parentCompany
+          readonly: true
+          order: 3
+      readonly: true
+    personOrganizationRelationTypes:
+      entries:
+        owner:
+          inverseValue: core.lookups.personOrganizationRelationTypes.owned
+          inverseKey: owned
+          value: core.lookups.personOrganizationRelationTypes.owner
+          order: 1
+        employee:
+          inverseValue: core.lookups.personOrganizationRelationTypes.employer
+          inverseKey: employer
+          value: core.lookups.personOrganizationRelationTypes.employee
+          order: 2
+        partner:
+          inverseValue: core.lookups.personOrganizationRelationTypes.partner
+          inverseKey: partner
+          value: core.lookups.personOrganizationRelationTypes.partner
+          order: 3
+        director-president-ceo:
+          inverseValue: core.lookups.personOrganizationRelationTypes.director-president-ceo
+          inverseKey: director-president-ceo
+          value: core.lookups.personOrganizationRelationTypes.director-president-ceo
+          order: 4
+        manager:
+          inverseValue: core.lookups.personOrganizationRelationTypes.manager
+          inverseKey: manager
+          value: core.lookups.personOrganizationRelationTypes.manager
+          order: 5
+        general-counsel:
+          inverseValue: core.lookups.personOrganizationRelationTypes.general-counsel
+          inverseKey: general-counsel
+          value: core.lookups.personOrganizationRelationTypes.general-counsel
+          order: 6
+        executive:
+          inverseValue: core.lookups.personOrganizationRelationTypes.executive
+          inverseKey: executive
+          value: core.lookups.personOrganizationRelationTypes.executive
+          order: 7
+        unknown:
+          inverseValue: core.lookups.personOrganizationRelationTypes.unknown
+          inverseKey: unknown
+          value: core.lookups.personOrganizationRelationTypes.unknown
+          order: 8
+    personRelationTypes:
+      entries:
+        sibling:
+          inverseValue: core.lookups.personRelationTypes.sibling
+          inverseKey: sibling
+          value: core.lookups.personRelationTypes.sibling
+          order: 1
+        children:
+          inverseValue: core.lookups.personRelationTypes.parent
+          inverseKey: parent
+          value: core.lookups.personRelationTypes.children
+          order: 2
+        parent:
+          inverseValue: core.lookups.personRelationTypes.children
+          inverseKey: children
+          value: core.lookups.personRelationTypes.parent
+          order: 3 
+  nestedLookup:
+    contactMethodTypes:
+      entries:
+        phone:
+          subLookup:
+            Home: 
+              value: core.lookups.common.home    
+            Work: 
+              value: core.lookups.contactMethodTypes.work
+            Mobile: 
+              value: core.lookups.contactMethodTypes.mobile 
+          value: core.lookups.contactMethodTypes.phone
+          readonly: true
+          order: 1
+        fax:
+          subLookup:
+            Fax: 
+              value: core.lookups.contactMethodTypes.fax     
+          value: core.lookups.contactMethodTypes.fax  
+          readonly: true
+          order: 2
+        email:
+          subLookup: 
+            Personal: 
+              value: core.lookups.contactMethodTypes.personal    
+            Business: 
+               value: core.lookups.contactMethodTypes.business
+          value: core.lookups.contactMethodTypes.email
+          readonly: true
+          order: 3
+        url:
+          subLookup:
+            WebSite: 
+              value: core.lookups.contactMethodTypes.website    
+            Facebook: 
+              value: core.lookups.contactMethodTypes.facebook
+            LinkedIn: 
+              value: core.lookups.contactMethodTypes.linkedIn
+            Twitter: 
+              value: core.lookups.contactMethodTypes.twitter
+            Other:
+              value: core.lookups.common.other      
+          value: core.lookups.contactMethodTypes.url
+          readonly: true 
+          order: 4
+      readonly: false
+  standardLookup:
+    cmisVersioningState:
+      entries:
+        NONE: 
+          value: core.lookups.cmisVersioningState.none
+          readonly: true
+          order: 1
+        MINOR:
+          value: core.lookups.cmisVersioningState.minor
+          readonly: true
+          order: 2
+        MAJOR: 
+          value: core.lookups.cmisVersioningState.major
+          readonly: true
+          order: 3
+      readonly: true
+    caseFilePersonInitiatorTypes:
+      entries:
+        Initiator:
+          value: core.lookups.complaintPersonTypes.initiator
+          primary: true
+          readonly: true
+          order: 1
+      readonly: true
+    consultationPersonInitiatorTypes:
+      entries:
+        Initiator:
+          value: core.lookups.consultationPersonInitiatorTypes.initiator
+          primary: true
+          readonly: true
+          order: 1
+      readonly: true 
+    complaintPersonInitiatorTypes:
+      entries:
+        Initiator:
+          value: core.lookups.complaintPersonTypes.initiator
+          primary: true
+          readonly: true
+          order: 1
+      readonly: true 
+    changeCaseStatuses:
+      entries:
+        ACTIVE: 
+          value: core.lookups.changeCase.statuses.active
+          order: 1
+        INACTIVE:
+           value: core.lookups.changeCase.statuses.inactive
+           order: 2
+        CLOSED:
+          value: core.lookups.changeCase.statuses.closed
+          order: 3
+        DELETED:
+          value: core.lookups.changeCase.statuses.deleted
+          order: 4
+      readonly: true
+    changeConsultationStatuses:
+      entries:
+        ACTIVE: 
+          value: core.lookups.changeConsultation.statuses.active
+          order: 1
+        INACTIVE:
+           value: core.lookups.changeConsultation.statuses.inactive
+           order: 2
+        CLOSED:
+          value: core.lookups.changeConsultation.statuses.closed
+          order: 3
+        DELETED:
+          value: core.lookups.changeConsultation.statuses.deleted
+          order: 4
+      readonly: true  
+    costsheetStatuses:
+      entries:
+        DRAFT: 
+          value: "core.lookups.costsheet.statuses.draft"
+          order: 1
+        IN_APPROVAL:
+           value: "core.lookups.costsheet.statuses.inapproval"
+           order: 2
+        APPROVED:
+          value: "core.lookups.costsheet.statuses.approved"
+          order: 3
+        FINAL:
+          value: "core.lookups.costsheet.statuses.final"
+          order: 4
+      readonly: true
+    timesheetStatuses:
+      entries:
+        DRAFT: 
+          value: "core.lookups.timesheet.statuses.draft"
+          order: 1
+        IN_APPROVAL:
+          value: "core.lookups.timesheet.statuses.inapproval"
+          order: 2
+        APPROVED: 
+          value: "core.lookups.timesheet.statuses.approved"
+          order: 3
+        FINAL:
+          value: "core.lookups.timesheet.statuses.final"
+          order: 4
+      readonly: true
+    costsheetTitles:
+      entries:
+        Taxi: 
+          value: "core.lookups.costsheet.titles.taxi"
+          order: 1
+        Hotel:
+          value: "core.lookups.costsheet.titles.hotel"
+          order: 2
+        Overtime: 
+          value: "core.lookups.costsheet.titles.overtime"
+          order: 3
+        Food:
+          value: "core.lookups.costsheet.titles.food"
+          order: 4
+        Postage:
+          value: "core.lookups.costsheet.titles.postage"
+          primary: true
+          order: 5
+      readonly: true
+    documentPersonTypes:
+      entries:
+        Defendant: 
+          value: "core.lookups.documentPersonTypes.defendent"
+          order: 1
+        Witness:
+          value: "core.lookups.documentPersonTypes.witness"
+          order: 2
+        WAS Officer: 
+          value: "core.lookups.documentPersonTypes.was-officer"
+          order: 3
+        Victim:
+          value: "core.lookups.documentPersonTypes.victim"
+          order: 4
+        Defense Counsel:
+          value: "core.lookups.documentPersonTypes.defense-counsel"
+          order: 5
+        Forensic Scientist:
+          value: "core.lookups.documentPersonTypes.forensic-scientist"
+          order: 6
+      readonly: true
+    complaintPersonTypes:
+      entries:
+        Complaintant: 
+          value: "core.lookups.complaintPersonTypes.complaintant"
+          order: 1
+        Subject:
+          value: "core.lookups.complaintPersonTypes.subject"
+          order: 2
+        Witness: 
+          value: "core.lookups.complaintPersonTypes.witness"
+          order: 3
+        Wrongdoer:
+          value: "core.lookups.complaintPersonTypes.wrongdoer"
+          order: 4
+        External Referal:
+          value: "core.lookups.complaintPersonTypes.externalReferal"
+          order: 5
+        Other:
+          value: "core.lookups.common.other"
+          order: 6
+      readonly: true 
+    deviceTypes:
+      entries:
+        Home Phone: 
+          value: "core.lookups.deviceTypes.homePhone"
+          order: 1
+        Work Phone:
+          value: "core.lookups.deviceTypes.workPhone"
+          order: 2
+        mobile: 
+          value: "core.lookups.deviceTypes.mobile"
+          order: 3
+        Email:
+          value: "core.lookups.deviceTypes.email"
+          order: 4
+        Facebook:
+          value: "core.lookups.deviceTypes.facebook"
+          order: 5
+      readonly: true 
+    locationTypes:
+      entries:
+        Business: 
+          value: "core.lookups.addressTypes.business"
+          order: 1
+        Home:
+          value: "core.lookups.common.home"
+          order: 2
+      readonly: true
+    priorities:
+      entries:
+        Low: 
+          value: "core.lookups.priorities.low"
+          readonly: true
+          order: 1
+        Medium:
+          value: "core.lookups.priorities.medium"
+          readonly: true
+          order: 2
+        High: 
+          value: "core.lookups.priorities.high"
+          readonly: true
+          order: 3
+        Expedite:
+          value: "core.lookups.priorities.expedite"
+          readonly: true
+          order: 4
+      readonly: true
+    frequencies:
+      entries:
+        Once: 
+          value: "core.lookups.frequencies.once"
+          order: 1
+        Ongoing:
+          value: "core.lookups.frequencies.ongoing"
+          order: 2
+        Intermittent:
+          value: "core.lookups.frequencies.intermittent"
+          order: 3
+      readonly: true
+    dispositions:
+      entries:
+        add_existing_case: 
+          value: "core.lookups.dispositions.add_existing_case"
+          readonly: true
+          order: 1
+        open_investigation:
+          value: "core.lookups.dispositions.open_investigation"
+          readonly: true
+          order: 2
+        no_action:
+          value: "core.lookups.dispositions.no_action"
+          order: 3
+        refer_external:
+          value: "core.lookups.dispositions.refer_external"  
+          order: 4
+      readonly: true
+    resolutions:
+      entries:
+        DENIED: 
+          value: "core.lookups.resolutions.denied"
+          order: 1
+        FULL:
+          value: "core.lookups.resolutions.full"
+          order: 2
+        PARTIAL:
+          value: "core.lookups.resolutions.partial"
+          order: 3
+      readonly: true
+    complaintTypes:
+      entries:
+        Agricultural: 
+          value: "core.lookups.categories.agricultural"
+          order: 1
+        Arson:
+          value: "core.lookups.categories.arson"
+          order: 2
+        Background Investigation:
+          value: "core.lookups.categories.backgroundInvestigation"
+          order: 3
+        Benefits Appeal: 
+          value: "core.lookups.categories.benefits-appeal"
+          order: 4
+        Better Business Dispute:
+          value: "core.lookups.categories.better-business-dispute"
+          order: 5
+        Clinical Investigator Fraud:
+          value: "core.lookups.categories.clinical-investigator-fraud"
+          order: 6
+        Congressional Response: 
+          value: "core.lookups.categories.congressionalResponse"
+          order: 7
+        Disability Waiver Request:
+          value: "core.lookups.categories.disability-waiver-request"
+          order: 8
+        Domestic Dispute:
+          value: "core.lookups.categories.domesticDispute"
+          order: 9
+        Drug Trafficking: 
+          value: "core.lookups.categories.drugTrafficking"
+          order: 10
+        Education Waiver Request:
+          value: "core.lookups.categories.education-waiver-request"
+          order: 11
+        EEO/Harassment:
+          value: "core.lookups.categories.eeo-harassment"
+          order: 12
+        Embezzlement: 
+          value: "core.lookups.categories.embezzlement"
+          order: 13
+        Extortion:
+          value: "core.lookups.categories.extortion"
+          order: 14
+        Fraud:
+          value: "core.lookups.categories.fraud"
+          order: 15
+        Generated From Email: 
+          value: "core.lookups.categories.generatedFromEmail"
+          order: 16
+        Government:
+          value: "core.lookups.categories.government"
+          order: 17
+        Investor Complaint:
+          value: "core.lookups.categories.investorComplaint"
+          order: 18
+        Labor Racketeering: 
+          value: "core.lookups.categories.laborRacketeering"
+          order: 19
+        Local:
+          value: "core.lookups.categories.local"
+          order: 20
+        Murder:
+          value: "core.lookups.categories.murder"
+          order: 21
+        New Drug Application Fraud: 
+          value: "core.lookups.categories.new-drug-application-fraud"
+          order: 22
+        Payoff:
+          value: "core.lookups.categories.payoff"
+          order: 23
+        Pension Waiver Request:
+          value: "core.lookups.categories.pension-waiver-request"
+          order: 24
+        Pollution: 
+          value: "core.lookups.categories.pollution"
+          order: 25
+        Product Tampering:
+          value: "core.lookups.categories.productTampering"
+          order: 26
+        Theft Or Misuse Of Asset:
+          value: "core.lookups.categories.theft-or-misuse-of-asset"
+          order: 27
+      readonly: true
+    complaintParticipantTypes:
+      entries:
+        assignee: 
+          value: "core.lookups.personOrganizationRelationTypes.owner"
+          readonly: true
+          order: 1
+        follower:
+          value: "core.lookups.entitiesParticipantTypes.follower"
+          readonly: true
+          order: 2
+      readonly: true
+    complaintStatuses:
+      entries:
+        DRAFT: 
+          value: "core.lookups.complaint.statuses.draft"
+          order: 1
+        INAPPROVAL:
+          value: "core.lookups.complaint.statuses.inapproval"
+          order: 2
+        CLOSED: 
+          value: "core.lookups.complaint.statuses.closed"
+          order: 3
+        DELETED:
+          value: "core.lookups.complaint.statuses.deleted"
+          order: 4
+      readonly: true
+    caseFileParticipantTypes:
+      entries:
+        assignee:
+          value: "core.lookups.personOrganizationRelationTypes.owner"
+          readonly: true
+          order: 1
+        coOwner:
+          value: "core.lookups.entitiesParticipantTypes.co-owner"
+          readonly: true
+          order: 2
+        supervisor: 
+          value: "core.lookups.entitiesParticipantTypes.supervisor"
+          readonly: true
+          order: 3
+        approver:
+          value: "core.lookups.entitiesParticipantTypes.approver"
+          readonly: true
+          order: 4
+        collaborator: 
+          value: "core.lookups.common.collaborator"
+          readonly: true
+          order: 5
+        follower:
+          value: "core.lookups.entitiesParticipantTypes.follower"
+          readonly: true
+          order: 6
+        reader: 
+          value: "core.lookups.common.reader"
+          readonly: true
+          order: 7
+        No Access:
+          value: "core.lookups.common.no-access"
+          readonly: true
+          order: 8
+      readonly: true
+    projectParticipantTypes:
+      entries:
+        assignee: 
+          value: "core.lookups.personOrganizationRelationTypes.owner"
+          readonly: true
+          order: 1
+        follower:
+          value: "core.lookups.entitiesParticipantTypes.follower"
+          readonly: true
+          order: 2
+      readonly: true     
+    caseFileTypes:
+      entries:
+        Agricultural: 
+          value: "core.lookups.categories.agricultural"
+          order: 1
+        Arson:
+          value: "core.lookups.categories.arson"
+          order: 2
+        Background Investigation: 
+          value: "core.lookups.categories.backgroundInvestigation"
+          order: 3
+        Benefits Appeal:
+          value: "core.lookups.categories.benefits-appeal"
+          order: 4
+        Better Business Dispute: 
+          value: "core.lookups.categories.better-business-dispute"
+          order: 5
+        Clinical Investigator Fraud:
+          value: "core.lookups.categories.clinical-investigator-fraud"
+          order: 6
+        Congressional Response: 
+          value: "core.lookups.categories.congressionalResponse"
+          order: 7
+        Disability WaiverRequest:
+          value: "core.lookups.categories.disability-waiver-request"
+          order: 8
+        Domestic Dispute: 
+          value: "core.lookups.categories.domesticDispute"
+          order: 9
+        Drug Trafficking:
+          value: "core.lookups.categories.drugTrafficking"
+          order: 10
+        Education Waiver Request: 
+          value: "core.lookups.categories.education-waiver-request"
+          order: 11
+        EEO/Harassment:
+          value: "core.lookups.categories.eeo-harassment"
+          order: 12
+        Embezzlement: 
+          value: "core.lookups.categories.embezzlement"
+          order: 13
+        Extortion:
+          value: "core.lookups.categories.extortion"
+          order: 14
+        Fraud: 
+          value: "core.lookups.categories.fraud"
+          order: 15
+        Generated From Email:
+          value: "core.lookups.categories.generatedFromEmail"
+          order: 16
+        Government: 
+          value: "core.lookups.categories.government"
+          order: 17
+        Investor Complaint:
+          value: "core.lookups.categories.investorComplaint"
+          order: 18
+        Labor Racketeering: 
+          value: "core.lookups.categories.laborRacketeering"
+          order: 19
+        Local:
+          value: "core.lookups.categories.local"
+          order: 20
+        Murder: 
+          value: "core.lookups.categories.murder"
+          order: 21
+        New Drug Application Fraud:
+          value: "core.lookups.categories.new-drug-application-fraud"
+          order: 22
+        Payoff: 
+          value: "core.lookups.categories.payoff"
+          order: 23
+        Pension Waiver Request:
+          value: "core.lookups.categories.pension-waiver-request"
+          order: 24
+        Pollution: 
+          value: "core.lookups.categories.pollution"
+          order: 25
+        Product Tampering:
+          value: "core.lookups.categories.productTampering"
+          order: 26
+        Theft Or Misuse Of Asset: 
+          value: "core.lookups.categories.theft-or-misuse-of-asset"
+          order: 27
+      readonly: true
+    timesheetTypes:
+      entries:
+        CASE_FILE:
+          value: "core.lookups.timesheet.types.case_file"
+          primary: true
+          order: 1
+        CONSULTATION:
+          value: "core.lookups.timesheet.types.consultation"
+          primary: false
+          order: 2
+        COMPLAINT:
+          value: "core.lookups.timesheet.types.complaint"
+          primary: false
+          order: 3
+        OTHER:
+          value: "core.lookups.common.other"
+          primary: false
+          order: 4
+    timesheetChargeRoles:
+      entries:
+        INVESTIGATOR:
+          value: "core.lookups.timesheet.chargeCodes.investigator"
+          order: 1
+        ANALYST: 
+          value: "core.lookups.timesheet.chargeCodes.analyst"
+          order: 2
+      readonly: true
+    costsheetTypes:
+      entries:
+        CASE_FILE:
+          value: "core.lookups.timesheet.types.case_file"
+          order: 1
+        CONSULTATION: 
+          value: "core.lookups.timesheet.types.consultation"
+          order: 2
+        COMPLAINT:
+          value: "core.lookups.timesheet.types.complaint"
+          order: 3
+    caseFilePersonTypes:
+      entries:
+        Complaintant:
+          value: "core.lookups.complaintPersonTypes.complaintant"
+          order: 1
+        Subject: 
+          value: "core.lookups.complaintPersonTypes.subject"
+          order: 2
+        Witness:
+          value: "core.lookups.complaintPersonTypes.witness"
+          order: 3
+        Wrongdoer:
+          value: "core.lookups.complaintPersonTypes.wrongdoer"
+          order: 4
+        Other: 
+          value: "core.lookups.common.other"
+          order: 5
+        Defendant:
+          value: "core.lookups.caseFilePersonTypes.defendant"
+          order: 6
+        WAS Officer:
+          value: "core.lookups.caseFilePersonTypes.was-officer"
+          order: 7
+        Victim: 
+          value: "core.lookups.caseFilePersonTypes.victim"
+          order: 8
+        Defense Counsel:
+          value: "core.lookups.caseFilePersonTypes.defenseCounsel"
+          order: 9
+        Forensic Scientist:
+          value: "core.lookups.caseFilePersonTypes.forensicScientist"
+          order: 10
+        Unknown: 
+          value: "core.lookups.caseFilePersonTypes.unknown" 
+          order: 11  
+      readonly: true
+    consultationPersonTypes:
+      entries:
+        Complaintant:
+          value: "core.lookups.consultationPersonTypes.complaintant"
+          order: 1
+        Subject: 
+          value: "core.lookups.consultationPersonTypes.subject"
+          order: 2
+        Witness:
+          value: "core.lookups.consultationPersonTypes.witness"
+          order: 3
+        Wrongdoer:
+          value: "core.lookups.consultationPersonTypes.wrongdoer"
+          order: 4
+        Other: 
+          value: "core.lookups.common.other"
+          order: 5
+        Defendant:
+          value: "core.lookups.consultationPersonTypes.defendant"
+          order: 6
+        WAS Officer:
+          value: "core.lookups.consultationPersonTypes.was-officer"
+          order: 7
+        Victim: 
+          value: "core.lookups.consultationPersonTypes.victim"
+          order: 8
+        Defense Counsel:
+          value: "core.lookups.consultationPersonTypes.defenseCounsel"
+          order: 9
+        Forensic Scientist:
+          value: "core.lookups.consultationPersonTypes.forensicScientist"
+          order: 10
+        Unknown: 
+          value: "core.lookups.consultationPersonTypes.unknown"  
+          order: 11
+      readonly: true    
+    plainTargets:
+      entries:
+        CASE_FILE:
+          value: "core.lookups.common.case"
+          order: 1
+        COMPLAINT:
+          value: "core.lookups.timesheet.types.complaint"
+          order: 2
+        TASK: 
+          value: "core.lookups.timesheet.types.task"
+          order: 3
+      readonly: true    
+    correspondenceObjectTypes:
+      entries:
+        CASE_FILE:
+          value: "core.lookups.correspondence.casefile"
+          order: 1
+        COMPLAINT:
+          value: "core.lookups.correspondence.complaint"
+          order: 2
+        TASK:
+          value: "core.lookups.correspondence.task"
+          order: 3
+      readonly: true
+    emailTemplatesObjectTypes:
+      entries:
+        ALL:
+          value: "core.lookups.auditReportNames.all"
+          order: 1
+        CASE_FILE:
+          value: "core.lookups.emailTemplates.objectTypes.casefile"
+          order: 2
+        COMPLAINT:
+          value: "core.lookups.emailTemplates.objectTypes.complaint"
+          order: 3
+        CONSULTATION:
+          value: "core.lookups.emailTemplates.objectTypes.consultation"
+          order: 4
+        FILE:
+          value: "core.lookups.emailTemplates.objectTypes.file"
+          order: 5
+        TASK:
+          value: "core.lookups.emailTemplates.objectTypes.task"
+          order: 6
+    emailTemplatesParentTypes:
+      entries:
+        ALL:
+          value: "core.lookups.auditReportNames.all"
+          order: 1
+        CASE_FILE:
+          value: "core.lookups.emailTemplates.objectTypes.casefile"
+          order: 2
+        COMPLAINT:
+          value: "core.lookups.emailTemplates.objectTypes.complaint"
+          order: 3
+        CONSULTATION:
+          value: "core.lookups.emailTemplates.objectTypes.consultation"
+          order: 4
+        FILE:
+          value: "core.lookups.emailTemplates.objectTypes.file"
+          order: 5
+        TASK:
+          value: "core.lookups.emailTemplates.objectTypes.task"
+          order: 6          
+    changeCaseStatusResolutions:
+      entries:
+        DENIED:
+          value: "core.lookups.changeCase.resolutions.denied"
+          order: 1
+        FULL:
+          value: "core.lookups.changeCase.resolutions.full"
+          order: 2
+        PARTIAL:
+          value: "core.lookups.changeCase.resolutions.partial" 
+          order: 3 
+      readonly: true
+    addressTypes:
+      entries:
+        Business:
+          value: "core.lookups.addressTypes.business"
+          order: 1
+        Home:
+          value: "core.lookups.common.home"
+          order: 2
+      readonly: true
+    aliasTypes:
+      entries:
+        FKA:
+          value: "core.lookups.aliasTypes.fka"
+          order: 1
+        Married:
+          value: "core.lookups.aliasTypes.married"
+          order: 2
+      readonly: true 
+    dbasTypes:
+      entries:
+        DBA:
+          value: "core.lookups.dbasTypes.dba"
+          order: 1
+      readonly: true
+    fileTypes:
+      entries:
+        ev:
+          value: "core.lookups.fileTypes.ev"
+          order: 1
+        gr:
+          value: "core.lookups.fileTypes.gr"
+          order: 2
+        mr:
+          value: "core.lookups.fileTypes.mr"
+          order: 3
+        noi:
+          value: "core.lookups.fileTypes.noi"
+          order: 4  
+        sig:
+          value: "core.lookups.fileTypes.sig"
+          order: 5
+        wir:
+          value: "core.lookups.fileTypes.wir"
+          order: 6
+        draw:
+          value: "core.lookups.fileTypes.draw"
+          order: 7
+        email:
+          value: "core.lookups.fileTypes.email"
+          order: 8
+        other:
+          value: "core.lookups.fileTypes.other"
+          order: 9
+      readonly: true
+    identificationTypes:
+      entries:
+        ssn:
+          value: "core.lookups.identificationTypes.ssn"
+          order: 1
+        driverLicense:
+          value: "core.lookups.identificationTypes.driverLicense"
+          order: 2
+        passport:
+          value: "core.lookups.identificationTypes.passport"
+          order: 3
+        birthCertificate:
+          value: "core.lookups.identificationTypes.birthCertificate"  
+          order: 4    
+      readonly: true
+    timeZones:
+      entries:
+        New York: 
+          value: "core.lookups.timeZones.New_York"  
+          order: 1
+        Anguilla:
+          value: "core.lookups.timeZones.Anguilla"  
+          order: 2  
+        Anchorage:
+          value: "core.lookups.timeZones.Anchorage"  
+          order: 3
+        Antigua:
+          value: "core.lookups.timeZones.Antigua"  
+          order: 4
+        Adak:
+          value: "core.lookups.timeZones.Adak"  
+          order: 5  
+        Araguaina:
+          value: "core.lookups.timeZones.Araguaina"  
+          order: 6 
+        Cambridge Bay:
+          value: "core.lookups.timeZones.Cambridge_Bay"  
+          order: 7
+        Chicago:
+          value: "core.lookups.timeZones.Chicago"  
+          order: 8
+        Denver:
+          value: "core.lookups.timeZones.Denver"  
+          order: 9
+        Dawson:
+          value: "core.lookups.timeZones.Dawson"  
+          order: 10
+        Dawson Creek:
+          value: "core.lookups.timeZones.Dawson_Creek"  
+          order: 11
+        Detroit:
+          value: "core.lookups.timeZones.Detroit"  
+          order: 12
+        Edmonton:
+          value: "core.lookups.timeZones.Edmonton"  
+          order: 13  
+        Fort Wayne:
+          value: "core.lookups.timeZones.Fort_Wayne"  
+          order: 14  
+        Glace Bay:
+          value: "core.lookups.timeZones.Glace_Bay"  
+          order: 15  
+        Godthab:
+          value: "core.lookups.timeZones.Godthab"  
+          order: 16   
+        Goose Bay:
+          value: "core.lookups.timeZones.Goose_Bay"  
+          order: 17  
+        Grenada:
+          value: "core.lookups.timeZones.Grenada"  
+          order: 18  
+        Indianapolis:
+          value: "core.lookups.timeZones.Indianapolis"  
+          order: 19
+        Monticello:
+          value: "core.lookups.timeZones.Monticello"  
+          order: 20
+        Los Angeles:
+          value: "core.lookups.timeZones.Los_Angeles"  
+          order: 21
+        Marigot:
+          value: "core.lookups.timeZones.Marigot"  
+          order: 22  
+        Mexico City:
+          value: "core.lookups.timeZones.Mexico_City"  
+          order: 23
+        Monterrey:
+          value: "core.lookups.timeZones.Monterrey"  
+          order: 24  
+        Montreal:
+          value: "core.lookups.timeZones.Montreal"  
+          order: 25
+        Nassau:
+          value: "core.lookups.timeZones.Nassau"  
+          order: 26  
+        Nome:
+          value: "core.lookups.timeZones.Nome"  
+          order: 27 
+        Center:
+          value: "core.lookups.timeZones.Center"  
+          order: 28
+        New Salem:
+          value: "core.lookups.timeZones.New_Salem"  
+          order: 29
+        Phoenix:
+          value: "core.lookups.timeZones.Phoenix"  
+          order: 30
+        Thunder Bay:
+          value: "core.lookups.timeZones.Thunder_Bay"  
+          order: 31
+        Toronto:
+          value: "core.lookups.timeZones.Toronto"  
+          order: 32
+        Vancouver:
+          value: "core.lookups.timeZones.Vancouver"  
+          order: 33        
+        Winnipeg:
+          value: "core.lookups.timeZones.Winnipeg"  
+          order: 34 
+    countries:
+      entries:
+        AF:
+          value: "core.lookups.countries.AF" 
+          order: 1
+        AX:
+          value: "core.lookups.countries.AX" 
+          order: 2
+        AL:
+          value: "core.lookups.countries.AL" 
+          order: 3
+        DZ:
+          value: "core.lookups.countries.DZ" 
+          order: 4
+        AS:
+          value: "core.lookups.countries.AS" 
+          order: 5
+        AD:
+          value: "core.lookups.countries.AD" 
+          order: 6
+        AO:
+          value: "core.lookups.countries.AO" 
+          order: 7
+        AI:
+          value: "core.lookups.countries.AI"
+          order: 8 
+        AQ:
+          value: "core.lookups.countries.AQ" 
+          order: 9
+        AG:
+          value: "core.lookups.countries.AG" 
+          order: 10
+        AR:
+          value: "core.lookups.countries.AR" 
+          order: 11
+        AM:
+          value: "core.lookups.countries.AM" 
+          order: 12
+        AW:
+          value: "core.lookups.countries.AW" 
+          order: 13
+        AU:
+          value: "core.lookups.countries.AU" 
+          order: 14
+        AT:
+          value: "core.lookups.countries.AT" 
+          order: 15
+        AZ:
+          value: "core.lookups.countries.AZ" 
+          order: 16
+        BS:
+          value: "core.lookups.countries.BS" 
+          order: 17
+        BH:
+          value: "core.lookups.countries.BH" 
+          order: 18
+        BD:
+          value: "core.lookups.countries.BD" 
+          order: 19
+        BB:
+          value: "core.lookups.countries.BB" 
+          order: 20
+        BY:
+          value: "core.lookups.countries.BY" 
+          order: 21
+        BE:
+          value: "core.lookups.countries.BE"
+          order: 22
+        BZ:
+          value: "core.lookups.countries.BZ" 
+          order: 23
+        BJ:
+          value: "core.lookups.countries.BJ" 
+          order: 24
+        BM:
+          value: "core.lookups.countries.BM" 
+          order: 25
+        BT:
+          value: "core.lookups.countries.BT" 
+          order: 26
+        BO:
+          value: "core.lookups.countries.BO" 
+          order: 27
+        BA:
+          value: "core.lookups.countries.BA" 
+          order: 28
+        BW:
+          value: "core.lookups.countries.BW" 
+          order: 29
+        BV:
+          value: "core.lookups.countries.BV" 
+          order: 30
+        BR:
+          value: "core.lookups.countries.BR" 
+          order: 31
+        IO:
+          value: "core.lookups.countries.IO" 
+          order: 32
+        BN:
+          value: "core.lookups.countries.BN"
+          order: 33
+        BG:
+          value: "core.lookups.countries.BG" 
+          order: 34
+        BF:
+          value: "core.lookups.countries.BF" 
+          order: 35
+        BI:
+          value: "core.lookups.countries.BI" 
+          order: 36
+        KH:
+          value: "core.lookups.countries.KH"  
+          order: 37
+        CM:
+          value: "core.lookups.countries.CM" 
+          order: 38
+        CA:
+          value: "core.lookups.countries.CA" 
+          order: 39
+        CV:
+          value: "core.lookups.countries.CV" 
+          order: 40
+        KY:
+          value: "core.lookups.countries.KY" 
+          order: 41
+        CF:
+          value: "core.lookups.countries.CF" 
+          order: 42
+        TD:
+          value: "core.lookups.countries.TD" 
+          order: 43
+        CL:
+          value: "core.lookups.countries.CL"
+          order: 44
+        CN:
+          value: "core.lookups.countries.CN" 
+          order: 45
+        CX:
+          value: "core.lookups.countries.CX" 
+          order: 46
+        CC:
+          value: "core.lookups.countries.CC" 
+          order: 47
+        CO:
+          value: "core.lookups.countries.CO" 
+          order: 48
+        KM:
+          value: "core.lookups.countries.KM" 
+          order: 49
+        CG:
+          value: "core.lookups.countries.CG" 
+          order: 50
+        CD:
+          value: "core.lookups.countries.CD" 
+          order: 51
+        CK:
+          value: "core.lookups.countries.CK" 
+          order: 52
+        CR:
+          value: "core.lookups.countries.CR" 
+          order: 53
+        CI:
+          value: "core.lookups.countries.CI" 
+          order: 54
+        HR:
+          value: "core.lookups.countries.HR"
+          order: 55
+        CU:
+          value: "core.lookups.countries.CU" 
+          order: 56
+        CW:
+          value: "core.lookups.countries.CW" 
+          order: 57
+        CY:
+          value: "core.lookups.countries.CY"
+          order: 58 
+        CZ:
+          value: "core.lookups.countries.CZ" 
+          order: 59
+        DK:
+          value: "core.lookups.countries.DK" 
+          order: 60
+        DJ:
+          value: "core.lookups.countries.DJ" 
+          order: 61
+        DM:
+          value: "core.lookups.countries.DM" 
+          order: 62
+        DO:
+          value: "core.lookups.countries.DO" 
+          order: 63
+        EC:
+          value: "core.lookups.countries.EC" 
+          order: 64
+        EG:
+          value: "core.lookups.countries.EG" 
+          order: 65
+        SV:
+          value: "core.lookups.countries.SV"
+          order: 66
+        GQ:
+          value: "core.lookups.countries.GQ" 
+          order: 67
+        ER:
+          value: "core.lookups.countries.ER" 
+          order: 68
+        EE:
+          value: "core.lookups.countries.EE" 
+          order: 69
+        ET:
+          value: "core.lookups.countries.ET" 
+          order: 70
+        FK:
+          value: "core.lookups.countries.FK" 
+          order: 71
+        FO:
+          value: "core.lookups.countries.FO" 
+          order: 72
+        FJ:
+          value: "core.lookups.countries.FJ"
+          order: 73
+        FI:
+          value: "core.lookups.countries.FI" 
+          order: 74
+        FR:
+          value: "core.lookups.countries.FR" 
+          order: 75
+        GF:
+          value: "core.lookups.countries.GF" 
+          order: 76
+        PF:
+          value: "core.lookups.countries.PF" 
+          order: 77
+        TF:
+          value: "core.lookups.countries.TF" 
+          order: 78
+        GA:
+          value: "core.lookups.countries.GA" 
+          order: 79
+        GM:
+          value: "core.lookups.countries.GM"
+          order: 80
+        GE:
+          value: "core.lookups.countries.GE" 
+          order: 81
+        DE:
+          value: "core.lookups.countries.DE" 
+          order: 82
+        GH:
+          value: "core.lookups.countries.GH" 
+          order: 83
+        GI:
+          value: "core.lookups.countries.GI" 
+          order: 84
+        GR:
+          value: "core.lookups.countries.GR" 
+          order: 85
+        GL:
+          value: "core.lookups.countries.GL" 
+          order: 86
+        GD:
+          value: "core.lookups.countries.GD"
+          order: 87
+        GP:
+          value: "core.lookups.countries.GP" 
+          order: 88
+        GU:
+          value: "core.lookups.countries.GU" 
+          order: 89
+        GT:
+          value: "core.lookups.countries.GT"
+          order: 90 
+        GG:
+          value: "core.lookups.countries.GG" 
+          order: 91
+        GN:
+          value: "core.lookups.countries.GN" 
+          order: 92
+        GW:
+          value: "core.lookups.countries.GW" 
+          order: 93
+        GY:
+          value: "core.lookups.countries.GY"
+          order: 94
+        HT:
+          value: "core.lookups.countries.HT" 
+          order: 95
+        HM:
+          value: "core.lookups.countries.HM" 
+          order: 96
+        VA:
+          value: "core.lookups.countries.VA" 
+          order: 97
+        HN:
+          value: "core.lookups.countries.HN" 
+          order: 98
+        HK:
+          value: "core.lookups.countries.HK" 
+          order: 99
+        HU:
+          value: "core.lookups.countries.HU" 
+          order: 100
+        IS:
+          value: "core.lookups.countries.IS"
+          order: 101
+        IN:
+          value: "core.lookups.countries.IN" 
+          order: 102
+        ID:
+          value: "core.lookups.countries.ID" 
+          order: 103
+        IR:
+          value: "core.lookups.countries.IR" 
+          order: 104
+        IQ:
+          value: "core.lookups.countries.IQ" 
+          order: 105
+        IE:
+          value: "core.lookups.countries.IE" 
+          order: 106
+        IM:
+          value: "core.lookups.countries.IM"
+          order: 107
+        IL:
+          value: "core.lookups.countries.IL"
+          order: 108
+        IT:
+          value: "core.lookups.countries.IT" 
+          order: 109
+        JM:
+          value: "core.lookups.countries.JM" 
+          order: 110
+        JP:
+          value: "core.lookups.countries.JP" 
+          order: 111
+        JE:
+          value: "core.lookups.countries.JE" 
+          order: 112
+        JO:
+          value: "core.lookups.countries.JO" 
+          order: 113
+        KZ:
+          value: "core.lookups.countries.KZ" 
+          order: 114
+        KE:
+          value: "core.lookups.countries.KE"
+          order: 115
+        KI:
+          value: "core.lookups.countries.KI" 
+          order: 116
+        KP:
+          value: "core.lookups.countries.KP" 
+          order: 117
+        KR:
+          value: "core.lookups.countries.KR" 
+          order: 118
+        KW:
+          value: "core.lookups.countries.KW" 
+          order: 119
+        KG:
+          value: "core.lookups.countries.KG" 
+          order: 120
+        LA:
+          value: "core.lookups.countries.LA" 
+          order: 121
+        LV:
+          value: "core.lookups.countries.LV"
+          order: 122
+        LB:
+          value: "core.lookups.countries.LB" 
+          order: 123
+        LS:
+          value: "core.lookups.countries.LS" 
+          order: 124
+        LR:
+          value: "core.lookups.countries.LR" 
+          order: 125
+        LY:
+          value: "core.lookups.countries.LY" 
+          order: 126
+        LI:
+          value: "core.lookups.countries.LI" 
+          order: 127
+        LT:
+          value: "core.lookups.countries.LT" 
+          order: 128
+        LU:
+          value: "core.lookups.countries.LU"
+          order: 129
+        MO:
+          value: "core.lookups.countries.MO" 
+          order: 130
+        MK:
+          value: "core.lookups.countries.MK" 
+          order: 131
+        MG:
+          value: "core.lookups.countries.MG" 
+          order: 132
+        MW:
+          value: "core.lookups.countries.MW"
+          order:  133
+        MY:
+          value: "core.lookups.countries.MY" 
+          order: 134
+        MV:
+          value: "core.lookups.countries.MV" 
+          order: 135
+        ML:
+          value: "core.lookups.countries.ML"
+          order: 136
+        MT:
+          value: "core.lookups.countries.MT"
+          order: 137
+        MH:
+          value: "core.lookups.countries.MH" 
+          order: 138
+        MQ:
+          value: "core.lookups.countries.MQ" 
+          order: 139
+        MR:
+          value: "core.lookups.countries.MR" 
+          order: 140
+        MU:
+          value: "core.lookups.countries.MU" 
+          order: 141
+        YT:
+          value: "core.lookups.countries.YT" 
+          order: 142
+        MX:
+          value: "core.lookups.countries.MX" 
+          order: 143
+        FM:
+          value: "core.lookups.countries.FM"
+          order: 144
+        MD:
+          value: "core.lookups.countries.MD" 
+          order: 145
+        MC:
+          value: "core.lookups.countries.MC" 
+          order: 146
+        MN:
+          value: "core.lookups.countries.MN" 
+          order: 147
+        ME:
+          value: "core.lookups.countries.ME" 
+          order: 148
+        MS:
+          value: "core.lookups.countries.MS" 
+          order: 149
+        MA:
+          value: "core.lookups.countries.MA"
+          order: 150
+        MZ:
+          value: "core.lookups.countries.MZ"
+          order: 151
+        MM:
+          value: "core.lookups.countries.MM" 
+          order: 152
+        NA:
+          value: "core.lookups.countries.NA" 
+          order: 153
+        NR:
+          value: "core.lookups.countries.NR" 
+          order: 154
+        NP:
+          value: "core.lookups.countries.NP" 
+          order: 155
+        NL:
+          value: "core.lookups.countries.NL" 
+          order: 156
+        AN:
+          value: "core.lookups.countries.AN" 
+          order: 157
+        NC:
+          value: "core.lookups.countries.NC"
+          order: 158
+        NZ:
+          value: "core.lookups.countries.NZ" 
+          order: 159
+        NI:
+          value: "core.lookups.countries.NI" 
+          order: 160
+        NE:
+          value: "core.lookups.countries.NE" 
+          order: 161
+        NG:
+          value: "core.lookups.countries.NG" 
+          order: 162
+        NU:
+          value: "core.lookups.countries.NU" 
+          order: 163
+        NF:
+          value: "core.lookups.countries.NF" 
+          order: 164
+        MP:
+          value: "core.lookups.countries.MP"
+          order: 165
+        NOO:
+          value: "core.lookups.countries.NO" 
+          order: 166
+        OM:
+          value: "core.lookups.countries.OM" 
+          order: 167
+        PK:
+          value: "core.lookups.countries.PK" 
+          order: 168
+        PW:
+          value: "core.lookups.countries.PW" 
+          order: 169
+        PS:
+          value: "core.lookups.countries.PS" 
+          order: 170
+        PA:
+          value: "core.lookups.countries.PA" 
+          order: 171
+        PG:
+          value: "core.lookups.countries.PG"
+          order: 172
+        PY:
+          value: "core.lookups.countries.PY" 
+          order: 173
+        PE:
+          value: "core.lookups.countries.PE" 
+          order: 174
+        PH:
+          value: "core.lookups.countries.PH" 
+          order: 175
+        PN:
+          value: "core.lookups.countries.PN" 
+          order: 176
+        PL:
+          value: "core.lookups.countries.PL" 
+          order: 177
+        PT:
+          value: "core.lookups.countries.PT" 
+          order: 178
+        PR:
+          value: "core.lookups.countries.PR"
+          order: 179
+        QA:
+          value: "core.lookups.countries.QA" 
+          order: 180
+        RE:
+          value: "core.lookups.countries.RE" 
+          order: 181
+        RO:
+          value: "core.lookups.countries.RO" 
+          order: 182
+        RU:
+          value: "core.lookups.countries.RU" 
+          order: 183
+        RW:
+          value: "core.lookups.countries.RW" 
+          order: 184
+        SH:
+          value: "core.lookups.countries.SH" 
+          order: 185
+        KN:
+          value: "core.lookups.countries.KN"
+          order: 186
+        LC:
+          value: "core.lookups.countries.LC" 
+          order: 187
+        PM:
+          value: "core.lookups.countries.PM" 
+          order: 188
+        VC:
+          value: "core.lookups.countries.VC" 
+          order: 189
+        WS:
+          value: "core.lookups.countries.WS" 
+          order: 190
+        SM:
+          value: "core.lookups.countries.SM" 
+          order: 191
+        ST:
+          value: "core.lookups.countries.ST"
+          order: 192
+        SA:
+          value: "core.lookups.countries.SA"
+          order: 193
+        SN:
+          value: "core.lookups.countries.SN" 
+          order: 194
+        RS:
+          value: "core.lookups.countries.RS" 
+          order: 195
+        SC:
+          value: "core.lookups.countries.SC" 
+          order: 196
+        SL:
+          value: "core.lookups.countries.SL" 
+          order: 197
+        SG:
+          value: "core.lookups.countries.SG" 
+          order: 198
+        SX:
+          value: "core.lookups.countries.SX" 
+          order: 199
+        SK:
+          value: "core.lookups.countries.SK"
+          order: 200
+        SI:
+          value: "core.lookups.countries.SI" 
+          order: 201
+        SB:
+          value: "core.lookups.countries.SB" 
+          order: 202
+        SO:
+          value: "core.lookups.countries.SO" 
+          order: 203
+        ZA:
+          value: "core.lookups.countries.ZA" 
+          order: 204
+        GS:
+          value: "core.lookups.countries.GS" 
+          order: 205
+        SS:
+          value: "core.lookups.countries.SS"
+          order: 206
+        ES:
+          value: "core.lookups.countries.ES" 
+          order: 207
+        LK:
+          value: "core.lookups.countries.LK" 
+          order: 208
+        SD:
+          value: "core.lookups.countries.SD" 
+          order: 209
+        SR:
+          value: "core.lookups.countries.SR" 
+          order: 210
+        SJ:
+          value: "core.lookups.countries.SJ" 
+          order: 211
+        SZ:
+          value: "core.lookups.countries.SZ" 
+          order: 212
+        SE:
+          value: "core.lookups.countries.SE"
+          order: 213
+        CH:
+          value: "core.lookups.countries.CH" 
+          order: 214
+        SY:
+          value: "core.lookups.countries.SY" 
+          order: 215
+        TW:
+          value: "core.lookups.countries.TW" 
+          order: 216
+        TJ:
+          value: "core.lookups.countries.TJ" 
+          order: 217
+        TZ:
+          value: "core.lookups.countries.TZ" 
+          order: 218
+        TH:
+          value: "core.lookups.countries.TH" 
+          order: 219
+        TL:
+          value: "core.lookups.countries.TL"
+          order: 220
+        TG:
+          value: "core.lookups.countries.TG" 
+          order: 221
+        TK:
+          value: "core.lookups.countries.TK" 
+          order: 222
+        TO:
+          value: "core.lookups.countries.TO" 
+          order: 223
+        TT:
+          value: "core.lookups.countries.TT" 
+          order: 224
+        TN:
+          value: "core.lookups.countries.TN" 
+          order: 225
+        TR:
+          value: "core.lookups.countries.TR" 
+          order: 226
+        TM:
+          value: "core.lookups.countries.TM"
+          order: 227
+        TC:
+          value: "core.lookups.countries.TC" 
+          order: 228
+        TV:
+          value: "core.lookups.countries.TV" 
+          order: 229
+        UG:
+          value: "core.lookups.countries.UG" 
+          order: 230
+        UA:
+          value: "core.lookups.countries.UA" 
+          order: 231
+        AE:
+          value: "core.lookups.countries.AE" 
+          order: 232
+        GB:
+          value: "core.lookups.countries.GB"
+          order: 233
+        US:
+          value: "core.lookups.countries.US" 
+          order: 234
+        UM:
+          value: "core.lookups.countries.UM"
+          order: 235
+        UY:
+          value: "core.lookups.countries.UY" 
+          order: 236
+        UZ:
+          value: "core.lookups.countries.UZ"
+          order: 237
+        VU:
+          value: "core.lookups.countries.VU" 
+          order: 238
+        VE:
+          value: "core.lookups.countries.VE"
+          order: 239
+        VN:
+          value: "core.lookups.countries.VN" 
+          order: 240
+        VG:
+          value: "core.lookups.countries.VG"
+          order: 241
+        VI:
+          value: "core.lookups.countries.VI" 
+          order: 242
+        WF:
+          value: "core.lookups.countries.WF"
+          order: 243
+        EH:
+          value: "core.lookups.countries.EH" 
+          order: 244
+        YE:
+          value: "core.lookups.countries.YE"
+          order: 245
+        ZM:
+          value: "core.lookups.countries.ZM" 
+          order: 246
+        ZW:
+          value: "core.lookups.countries.ZW"   
+          order: 247
+        IODG:
+          value: "core.lookups.countries.IODG"
+          order: 248
+        CIS:
+          value: "core.lookups.countries.CIS"
+          order: 249
+        CNS:
+          value: "core.lookups.countries.CNS"
+          order: 250
+        CAM:
+          value: "core.lookups.countries.CAM"
+          order: 251
+        CPI:
+          value: "core.lookups.countries.CPI"
+          order: 252
+        MKD:
+          value: "core.lookups.countries.MKD"
+          order: 253
+        STP:
+          value: "core.lookups.countries.STP"
+          order: 254
+        SZW:
+          value: "core.lookups.countries.SZW"
+          order: 255
+        UMOO:
+          value: "core.lookups.countries.UMOO"
+          order: 256
+        XK:
+          value: "core.lookups.countries.XK"
+          order: 257
+      readonly: true
+    states:
+      entries:
+        AK:
+          value: "core.lookups.states.AK"
+          order: 1
+        AL:
+          value: "core.lookups.states.AL"
+          order: 2
+        AR:
+          value: "core.lookups.states.AR"
+          order: 3
+        AZ:
+          value: "core.lookups.states.AZ"
+          order: 4
+        CA:
+          value: "core.lookups.states.CA"
+          order: 5
+        CO:
+          value: "core.lookups.states.CO"
+          order: 6
+        CT:
+          value: "core.lookups.states.CT"
+          order: 7
+        DC:
+          value: "core.lookups.states.DC"
+          order: 8
+        DE:
+          value: "core.lookups.states.DE"
+          order: 9
+        FL:
+          value: "core.lookups.states.FL"
+          order: 10
+        GA:
+          value: "core.lookups.states.GA"
+          order: 11
+        HI:
+          value: "core.lookups.states.HI"
+          order: 12
+        IA:
+          value: "core.lookups.states.IA"
+          order: 13
+        ID:
+          value: "core.lookups.states.ID"
+          order: 14
+        IL:
+          value: "core.lookups.states.IL"
+          order: 15
+        IN:
+          value: "core.lookups.states.IN"
+          order: 16
+        KS:
+          value: "core.lookups.states.KS"
+          order: 17
+        KY:
+          value: "core.lookups.states.KY"
+          order: 18
+        LA:
+          value: "core.lookups.states.LA"
+          order: 19
+        MA:
+          value: "core.lookups.states.MA"
+          order: 20
+        MD:
+          value: "core.lookups.states.MD"
+          order: 21
+        ME:
+          value: "core.lookups.states.ME"
+          order: 22
+        MI:
+          value: "core.lookups.states.MI"
+          order: 23
+        MN:
+          value: "core.lookups.states.MN"
+          order: 24
+        MO:
+          value: "core.lookups.states.MO"
+          order: 25
+        MS:
+          value: "core.lookups.states.MS"
+          order: 26
+        MT:
+          value: "core.lookups.states.MT"
+          order: 27
+        NC:
+          value: "core.lookups.states.NC"
+          order: 28
+        ND:
+          value: "core.lookups.states.ND"
+          order: 29
+        NE:
+          value: "core.lookups.states.NE" 
+          order: 30
+        NH:
+          value: "core.lookups.states.NH"
+          order: 31
+        NJ:
+          value: "core.lookups.states.NJ"
+          order: 32
+        NM:
+          value: "core.lookups.states.NM"
+          order: 33
+        NV:
+          value: "core.lookups.states.NV" 
+          order: 34
+        NY:
+          value: "core.lookups.states.NY"
+          order: 35
+        OH:
+          value: "core.lookups.states.OH"
+          order: 36
+        OK:
+          value: "core.lookups.states.OK"
+          order: 37
+        OR:
+          value: "core.lookups.states.OR" 
+          order: 38   
+        PA:
+          value: "core.lookups.states.PA"
+          order: 39 
+        RI:
+          value: "core.lookups.states.RI"
+          order: 40
+        SC:
+          value: "core.lookups.states.SC"
+          order: 41
+        SD:
+          value: "core.lookups.states.SD"  
+          order: 42
+        TN:
+          value: "core.lookups.states.TN"
+          order: 43 
+        TX:
+          value: "core.lookups.states.TX"
+          order: 44     
+        UT:
+          value: "core.lookups.states.UT"  
+          order: 45
+        VA:
+          value: "core.lookups.states.VA"  
+          order: 46
+        VT:
+          value: "core.lookups.states.VT"  
+          order: 47
+        WA:
+          value: "core.lookups.states.WA"  
+          order: 48
+        WI:
+          value: "core.lookups.states.WI"  
+          order: 49
+        WV:
+          value: "core.lookups.states.WV"  
+          order: 50
+        WY:
+          value: "core.lookups.states.WY"      
+          order: 51                          
+      readonly: true
+    canadaProvinces:
+      entries:
+        AB:
+          value: "core.lookups.canadaStates.AB" 
+          order: 1
+        BC:
+          value: "core.lookups.canadaStates.BC" 
+          order: 2
+        MB:
+          value: "core.lookups.canadaStates.MB" 
+          order: 3
+        NB:
+          value: "core.lookups.canadaStates.NB" 
+          order: 4
+        NL:
+          value: "core.lookups.canadaStates.NL" 
+          order: 5
+        NT:
+          value: "core.lookups.canadaStates.NT" 
+          order: 6
+        NS:
+          value: "core.lookups.canadaStates.NS" 
+          order: 7
+        NU:
+          value: "core.lookups.canadaStates.NU" 
+          order: 8 
+        ONN:
+          value: "core.lookups.canadaStates.ON"  
+          order: 9
+        PE:
+          value: "core.lookups.canadaStates.PE"  
+          order: 10
+        QC:
+          value: "core.lookups.canadaStates.QC" 
+          order: 11
+        SK:
+          value: "core.lookups.canadaStates.SK" 
+          order: 12
+        YT:
+          value: "core.lookups.canadaStates.YT" 
+          order: 13
+      readonly: true    
+    japanStates:
+      entries:
+        Aichi:
+          value: "core.lookups.japanStates.AI"  
+          order: 1
+        Akita:
+          value: "core.lookups.japanStates.AK"
+          order: 2
+        Aomori:
+          value: "core.lookups.japanStates.AO"
+          order: 3
+        Chiba:
+          value: "core.lookups.japanStates.CH" 
+          order: 4
+        Ehime:
+          value: "core.lookups.japanStates.EH"  
+          order: 5
+        Fukui:
+          value: "core.lookups.japanStates.FU"
+          order: 6
+        Fukuoka:
+          value: "core.lookups.japanStates.FK"
+          order: 7
+        Fukushima:
+          value: "core.lookups.japanStates.FS" 
+          order: 8
+        Gifu:
+          value: "core.lookups.japanStates.GI"  
+          order: 9
+        Gunma:
+          value: "core.lookups.japanStates.GU"
+          order: 10
+        Hiroshima:
+          value: "core.lookups.japanStates.HI"
+          order: 11
+        Hokkaido:
+          value: "core.lookups.japanStates.HK" 
+          order: 12
+        Hyōgo:
+          value: "core.lookups.japanStates.HY"  
+          order: 13
+        Ibaraki:
+          value: "core.lookups.japanStates.IB"
+          order: 14
+        Ishikawa:
+          value: "core.lookups.japanStates.IS"
+          order: 15
+        Iwate:
+          value: "core.lookups.japanStates.IW" 
+          order: 16
+        Kagawa:
+          value: "core.lookups.japanStates.KA"  
+          order: 17
+        Kagoshima:
+          value: "core.lookups.japanStates.KG"
+          order: 18
+        Kanagawa:
+          value: "core.lookups.japanStates.KN"
+          order: 19
+        Kōchi:
+          value: "core.lookups.japanStates.KO" 
+          order: 20
+        Kumamoto:
+          value: "core.lookups.japanStates.KU"  
+          order: 21
+        Kyoto:
+          value: "core.lookups.japanStates.KY"
+          order: 22
+        Mie:
+          value: "core.lookups.japanStates.MI"
+          order: 23
+        Miyagi:
+          value: "core.lookups.japanStates.MI"  
+          order: 24
+        Miyazaki:
+          value: "core.lookups.japanStates.MZ"
+          order: 25
+        Nagano:
+          value: "core.lookups.japanStates.NA"
+          order: 26
+        Nagasaki:
+          value: "core.lookups.japanStates.NG"
+          order: 27
+        Nara:
+          value: "core.lookups.japanStates.NR"
+          order: 28
+        Niigata:
+          value: "core.lookups.japanStates.NI"
+          order: 29
+        Ōita:
+          value: "core.lookups.japanStates.OI"
+          order: 30
+        Okayama:
+          value: "core.lookups.japanStates.OK"
+          order: 31
+        Okinawa:
+          value: "core.lookups.japanStates.ON"
+          order: 32
+        Osaka:
+          value: "core.lookups.japanStates.OS"
+          order: 33
+        Saga:
+          value: "core.lookups.japanStates.SA"
+          order: 34
+        Saitama:
+          value: "core.lookups.japanStates.ST"
+          order: 35
+        Shiga:
+          value: "core.lookups.japanStates.SH"
+          order: 36
+        Shimane:
+          value: "core.lookups.japanStates.SM"
+          order: 37
+        Shizuoka:
+          value: "core.lookups.japanStates.SZ"
+          order: 38
+        Tochigi:
+          value: "core.lookups.japanStates.TO"
+          order: 39
+        Tokushima:
+          value: "core.lookups.japanStates.TK"
+          order: 40
+        Tokyo:
+          value: "core.lookups.japanStates.TY"
+          order: 41
+        Tottori:
+          value: "core.lookups.japanStates.TR"
+          order: 42
+        Toyama:
+          value: "core.lookups.japanStates.TM"
+          order: 43
+        Wakayama:
+          value: "core.lookups.japanStates.WA"
+          order: 44
+        Yamagata:
+          value: "core.lookups.japanStates.YA"
+          order: 45
+        Yamaguchi:
+          value: "core.lookups.japanStates.YG"
+          order: 46
+        Yamanashi:
+          value: "core.lookups.japanStates.YM"
+          order: 47
+      readonly: true
+    organizationIdTypes:
+      entries:
+        EIN:
+          value: "core.lookups.organizationIdTypes.ein"
+          order: 1
+        DUNS:
+          value: "core.lookups.organizationIdTypes.duns"
+          order: 2
+        Cage Code:
+          value: "core.lookups.organizationIdTypes.cageCode"
+          order: 3
+      readonly: true 
+    organizationTypes:
+      entries:
+        Non-profit:
+          value: "core.lookups.organizationTypes.non-profit"
+          order: 1
+        Government:
+          value: "core.lookups.organizationTypes.government"
+          order: 2
+        Corporation:
+          value: "core.lookups.organizationTypes.corporation"
+          order: 3
+        Unknown:
+          value: "core.lookups.organizationTypes.unknown"  
+          order: 4
+      readonly: true 
+    personTitles:
+      entries:
+        mr:
+          value: "core.lookups.personTitles.mr"
+          order: 1
+        ms:
+          value: "core.lookups.personTitles.ms"
+          order: 2
+        mrs:
+          value: "core.lookups.personTitles.mrs"
+          order: 3
+        miss:
+          value: "core.lookups.personTitles.miss"
+          order: 4
+      readonly: true    
+    documentParticipantTypes:
+      entries:
+        owning group:
+          value: "core.lookups.common.owning-group"
+          readonly: true 
+          order: 1
+        collaborator group:
+          value: "core.lookups.common.collaborator-group"
+          readonly: true 
+          order: 2
+        collaborator:
+          value: "core.lookups.common.collaborator"
+          readonly: true 
+          order: 3
+        reader:
+          value: "core.lookups.common.reader"  
+          readonly: true 
+          order: 4
+        No Access:
+          value: "core.lookups.common.no-access"  
+          readonly: true 
+          order: 5
+        owner:
+          value: "core.lookups.organizationalParticipantTypes.owner"    
+          readonly: true     
+          order: 6
+      readonly: true    
+    organizationalParticipantTypes:
+      entries:
+        owning group:
+          value: "core.lookups.common.owning-group"
+          readonly: true 
+          order: 1
+        collaborator group:
+          value: "core.lookups.common.collaborator-group"
+          readonly: true 
+          order: 2
+        collaborator:
+          value: "core.lookups.common.collaborator"
+          readonly: true 
+          order: 3
+        reader:
+          value: "core.lookups.common.reader"  
+          readonly: true 
+          order: 4
+        No Access:
+          value: "core.lookups.common.no-access"  
+          readonly: true 
+          order: 5
+        owner:
+          value: "core.lookups.organizationalParticipantTypes.owner"    
+          readonly: true     
+          order: 6
+      readonly: true  
+    entitiesParticipantTypes:
+      entries:
+        assignee:
+          value: "core.lookups.entitiesParticipantTypes.assignee"
+          readonly: true 
+          order: 1
+        co-owner:
+          value: "core.lookups.entitiesParticipantTypes.co-owner"
+          readonly: true  
+          order: 2 
+        supervisor:
+          value: "core.lookups.entitiesParticipantTypes.supervisor"
+          readonly: true   
+          order: 3
+        owning group:
+          value: "core.lookups.common.owning-group"
+          readonly: true 
+          order: 4
+        collaborator group:
+          value: "core.lookups.common.collaborator-group"
+          readonly: true
+          order: 5
+        approver:
+          value: "core.lookups.entitiesParticipantTypes.approver"
+          readonly: true     
+          order: 6
+        collaborator:
+          value: "core.lookups.common.collaborator"
+          readonly: true 
+          order: 7
+        follower:
+          value: "core.lookups.entitiesParticipantTypes.follower"    
+          readonly: true 
+          order: 8
+        reader:
+          value: "core.lookups.common.reader"  
+          readonly: true 
+          order: 9
+        No Access:
+          value: "core.lookups.common.no-access"  
+          readonly: true 
+          order: 10
+      readonly: true
+    taskOutcomes:
+      entries:
+        Approve Document:
+          value: "core.lookups.taskOutcomes.approve"
+          order: 1
+        Send for Rework:
+          value: "core.lookups.taskOutcomes.rework"
+          order: 2
+        Resubmit:
+          value: "core.lookups.taskOutcomes.resubmit"
+          order: 3
+        Cancel Document:
+          value: "core.lookups.taskOutcomes.cancel"  
+          order: 4
+        Concur:
+          value: "core.lookups.taskOutcomes.concur" 
+          order: 5 
+        Non-Concur:
+          value: "core.lookups.taskOutcomes.nonConcur"    
+          order: 6
+      readonly: true
+    reportStates:
+      entries:
+        Draft:
+          value: "core.lookups.reportStates.draft"
+          order: 1
+        In Approval:
+          value: "core.lookups.reportStates.inApproval"
+          order: 2
+        Active:
+          value: "core.lookups.reportStates.active"
+          order: 3
+        Inactive:
+          value: "core.lookups.reportStates.inActive"  
+          order: 4
+        Closed:
+          value: "core.lookups.reportStates.closed"  
+          order: 5
+      readonly: true
+    auditReportNames:
+      entries:
+        ALL:
+          value: "core.lookups.auditReportNames.all"
+          order: 1
+        CASE_FILE:
+          value: "core.lookups.auditReportNames.case_file"
+          order: 2
+        CONSULTATION:
+          value: "core.lookups.auditReportNames.consultation"
+          order: 3
+        TASK:
+          value: "core.lookups.auditReportNames.task" 
+          order: 5
+        COMPLAINT:
+          value: "core.lookups.auditReportNames.complaint"   
+          order: 4
+        FILE:
+          value: "core.lookups.auditReportNames.file"
+          order: 6
+        PERSON:
+          value: "core.lookups.auditReportNames.person"
+          order: 7
+        ORGANIZATION:
+          value: "core.lookups.auditReportNames.organization"
+          order: 8
+      readonly: true
+    businessProcessTypes:
+      entries:
+        acmDocumentTaskWorkflow:
+          value: "core.lookups.businessProcessTypes.acmDocumentWorkflow"
+          readonly: true
+          order: 1
+        notDefinedWorkflow:
+          value: "core.lookups.businessProcessTypes.notDefinedWorkflow"
+          readonly: true
+          order: 2
+        acmDocumentSingleTaskWorkflow:
+          value: "core.lookups.businessProcessTypes.acmDocumentSingleTaskWorkflow"
+          readonly: true
+          order: 3
+      readonly: true 
+    documentsParticipantTypes:
+      entries:
+        group-write:
+          value: "core.lookups.documentsParticipantTypes.group-write"
+          readonly: true
+          order: 1
+        group-read:
+          value: "core.lookups.documentsParticipantTypes.group-read"
+          readonly: true
+          order: 2
+        group-no-access:
+          value: "core.lookups.documentsParticipantTypes.group-no-access"
+          readonly: true
+          order: 3
+        write:
+          value: "core.lookups.documentsParticipantTypes.write"
+          readonly: true
+          order: 4
+        read:
+          value: "core.lookups.documentsParticipantTypes.read"
+          readonly: true
+          order: 5
+        no-access:
+          value: "core.lookups.documentsParticipantTypes.no-access"
+          readonly: true  
+          order: 6
+      readonly: true 
+    annotationTags:
+      entries:
+        X1:
+          value: "X1"
+          order: 1
+        X2:
+          value: "X2"
+          order: 2
+        X3:
+          value: "X3"
+          order: 3
+        X4:
+          value: "X4"
+          order: 4
+        X51:
+          value: "X5.1"
+          order: 5
+        X52:
+          value: "X5.2"
+          order: 6
+        X53:
+          value: "X5.3"
+          order: 7
+        X6:
+          value: "X6"
+          order: 8
+        X7a:
+          value: "X7a"
+          order: 9
+        X7b:
+          value: "X7b"
+          order: 10
+        X7c:
+          value: "X7c"
+          order: 11
+        X7d:
+          value: "X7d"
+          order: 12
+        X7e:
+          value: "X7e"
+          order: 13
+        X7f:
+          value: "X7f"
+          order: 14
+        X8:
+          value: "X8"
+          order: 15
+        X9:
+          value: "X9"
+          order: 16
+      readonly: true
+    sequenceParts:
+      entries:
+        AUTOINCREMENT:
+          value: "core.lookups.sequenceParts.autoincrement"
+          order: 1
+        OBJECT_PROPERTY:
+          value: "core.lookups.sequenceParts.objectProperty"
+          order: 2
+        UUID:
+          value: "core.lookups.sequenceParts.uuid"
+          order: 3
+        DATE:
+          value: "core.lookups.sequenceParts.date"
+          order: 4
+        ARBITRARY_TEXT:
+          value: "core.lookups.sequenceParts.arbitraryText"
+          order: 5
+      readonly: true 
+    sequenceResetPeriod:
+      entries:
+        "0":
+          value: "core.lookups.sequenceResetPeriod.daily"
+          order: 1
+        "-1":
+          value: "core.lookups.sequenceResetPeriod.weekly"
+          order: 2
+        "-2":
+          value: "core.lookups.sequenceResetPeriod.monthly"
+          order: 3
+        "-3":
+          value: "core.lookups.sequenceResetPeriod.yearly"
+          order: 4
+      readonly: true 
+    sequenceName:
+      entries:
+        caseNumberSequence:
+          value: "core.lookups.sequenceName.caseNumberSequence"
+          order: 1
+        consultationNumberSequence:
+          value: "core.lookups.sequenceName.consultationNumberSequence"
+          order: 2
+        complaintNumberSequence:
+          value: "core.lookups.sequenceName.complaintNumberSequence"
+          order: 3
+      readonly: true
+    sequenceObjectProperty:
+      entries:
+        id:
+          value: "core.lookups.sequenceObjectProperty.id"
+          order: 1
+        caseType:
+          value: "core.lookups.sequenceObjectProperty.caseType"
+          order: 2
+        status:
+          value: "core.lookups.sequenceObjectProperty.status"
+          order: 3
+        priority:
+          value: "core.lookups.sequenceObjectProperty.priority"  
+          order: 4
+      readonly: true   
+    objectTitleTypes:
+      entries:
+        CASE_FILE:
+          value: "core.lookups.objectTitleTypes.caseFile"
+          readonly: true
+          order: 1
+        CONSULTATION:
+          value: "core.lookups.objectTitleTypes.consultation"
+          readonly: true
+          order: 2
+        COMPLAINT:
+          value: "core.lookups.objectTitleTypes.complaint"
+          readonly: true
+          order: 3
+      readonly: true 
+    taskParentTypes:
+      entries:
+        CASE_FILE:
+          value: "core.lookups.taskParentTypes.caseFile"
+          order: 1
+        CONSULTATION:
+          value: "core.lookups.taskParentTypes.consultation"
+          order: 2
+        COMPLAINT:
+          value: "core.lookups.taskParentTypes.complaint"
+          order: 3
+        COSTSHEET:
+          value: "core.lookups.taskParentTypes.costsheet"
+          order: 4
+        TIMESHEET:
+          value: "core.lookups.taskParentTypes.timesheet"
+          order: 5
+        DOC_REPO:
+          value: "core.lookups.taskParentTypes.doc_repo"
+          order: 6
+      readonly: true
+    reportExportTypes:
+      entries:
+        pdf:
+          value: "core.lookups.reportExportTypes.pdf"
+          order: 1
+        xml:
+          value: "core.lookups.reportExportTypes.xml"
+          order: 2
+      readonly: true
+    taskPersonTypes:
+      entries:
+        Contact Person:
+          value: core.lookups.taskPersonTypes.contactPerson
+          order: 1
+      readonly: true
+    caseTaskTypes:
+      entries:
+        Ack Letter:
+          value: core.lookups.caseTaskTypes.ackLetter
+          description: Ack Letter sent to requester (default or special)
+          order: 1
+        Additional Extension Reminder:
+          value: core.lookups.caseTaskTypes.additionalExtensionReminder
+          description: Additional Extension Reminder action
+          order: 2
+        Appeal Received:
+          value: core.lookups.caseTaskTypes.appealReceived
+          description: Appeal Received
+          order: 3
+        Appeal Upheld:
+          value: core.lookups.caseTaskTypes.appealUpheld
+          description: Original Determination Upheld
+          order: 4
+        Appeal Grant New:
+          value: core.lookups.caseTaskTypes.appealGrantNew
+          description: Info not previously retrieved for request now granted
+          order: 5
+        Appeal Assign Internally:
+          value: core.lookups.caseTaskTypes.appealAssignInternally
+          description: Appea to be handled internally
+          order: 6
+        Appeal Assign to Presidents Office:
+          value: core.lookups.caseTaskTypes.appealAssignToPresidentsOffice
+          description: Appeal assigned to President's Office
+          order: 7
+        Extension:
+          value: core.lookups.caseTaskTypes.extension
+          order: 8
+        Case Closed:
+          value: core.lookups.caseTaskTypes.caseClosed
+          order: 9
+        Clarification Notification:
+          value: core.lookups.caseTaskTypes.clarificationNotification
+          description: Requester's clarification conveyed to Departments
+          order: 10
+        Clarification Received:
+          value: core.lookups.caseTaskTypes.clarificationReceived
+          description: Clarification received from requester - email to Department
+          order: 11
+        Clarification Requester:
+          value: core.lookups.caseTaskTypes.clarificationRequester
+          description: Need clarification from requester
+          order: 12
+        Commercial List:
+          value: core.lookups.caseTaskTypes.commercialList
+          order: 13
+        Commercial List A:
+          value: core.lookups.caseTaskTypes.commercialListA
+          description: Commercial List Letter A
+          order: 14
+        Commercial List B:
+          value: core.lookups.caseTaskTypes.commercialListB
+          description: Commercial List Letter B
+          order: 15
+        Commercial Lists:
+          value: core.lookups.caseTaskTypes.commercialLists
+          description: Letter to Requester re Commercial Lists Affidavit
+          order: 16
+        Consult:
+          value: core.lookups.caseTaskTypes.consult
+          order: 17
+        Cross reference:
+          value: core.lookups.caseTaskTypes.crossReference
+          description: Info that was previously denied now granted
+          order: 18
+        Deposit Needed:
+          value: core.lookups.caseTaskTypes.depositNeeded
+          description: Deposit needed upfront from requester
+          order: 19
+        DOD Search:
+          value: core.lookups.caseTaskTypes.dodSearch
+          description: Search E-mail for DOD Request
+          order: 20
+        Extension Reminder:
+          value: core.lookups.caseTaskTypes.extensionReminder
+          description: Extension reminder for 15 day deadline
+          order: 21
+        Heads Up Notification:
+          value: core.lookups.caseTaskTypes.headsUpNotification
+          description: Heads Up Notice of request for records (Media usually)
+          order: 22
+        Invoice:
+          value: core.lookups.caseTaskTypes.invoice
+          description: Fee Invoice sent to requestor
+          order: 23
+        Note to File:
+          value: core.lookups.caseTaskTypes.noteToFile
+          description: Note to File
+          order: 24
+        Partial Response:
+          value: core.lookups.caseTaskTypes.partialResponse
+          description: Partial response received for search assignment
+          order: 25
+        Req Phone Memo:
+          value: core.lookups.caseTaskTypes.reqPhoneMemo
+          description: Requester phone call memorialization
+          order: 26
+        Resolved by Media Relations:
+          value: core.lookups.caseTaskTypes.resolvedByMediaRelations
+          description: Request resolved my Media Relations directly
+          order: 27
+        Scan Documents:
+          value: core.lookups.caseTaskTypes.scanDocuments
+          description: Scan Records
+          order: 28
+        Search Extension:
+          value: core.lookups.caseTaskTypes.searchExtension
+          description: Extension granted to search office
+          order: 29
+        Search Internal:
+          value: core.lookups.caseTaskTypes.searchInternal
+          description: Where In-house files (coaching contract etc) Kept
+          order: 30
+        Search Delinquency:
+          value: core.lookups.caseTaskTypes.searchDelinquency
+          description: Search offices delinquent, refer to OPR Dir.
+          order: 31
+        Search Records:
+          value: core.lookups.caseTaskTypes.searchRecords
+          description: Department letter sent for record search
+          order: 32
+        Search Reminder:
+          value: core.lookups.caseTaskTypes.searchReminder
+          description: Reminder to division for record search
+          order: 33
+        Second Invoice:
+          value: core.lookups.caseTaskTypes.secondInvoice
+          description: Second attempt to invoice requester
+          order: 34
+        Snapshot Request:
+          value: core.lookups.caseTaskTypes.snapshotRequest
+          description: Department requests snapshot
+          order: 35
+        Staged Release Exemptions:
+          value: core.lookups.caseTaskTypes.stagedReleaseExemptions
+          description: Staged Release with Exemptions
+          order: 36
+        Staged Release No Additional Record:
+          value: core.lookups.caseTaskTypes.stagedReleaseNoAdditionalRecord
+          description: Staged Release - No Additional Records
+          order: 37
+        Staged Release Redactions:
+          value: core.lookups.caseTaskTypes.stagedReleaseRedactions
+          description: Staged Release with Redactions
+          order: 38
+        Staged Release Redactions or Exemptions:
+          value: core.lookups.caseTaskTypes.stagedReleaseRedactionsOrExemptions
+          description: Staged Release with Redactions/Exemptions
+          order: 39
+        Staged Release Wholly Released:
+          value: core.lookups.caseTaskTypes.stagedReleaseWhollyReleased
+          description: Staged Release - Wholly Release
+          order: 40
+        Third Party Notification:
+          value: core.lookups.caseTaskTypes.thirdPartyNotification
+          description: Courtesy Notification to Third Parties
+          order: 41
+        Third Party Extension:
+          value: core.lookups.caseTaskTypes.thirdPartyExtension
+          description: 3rd Party Needs More Time to Review
+          order: 42
+        Third Party Objection:
+          value: core.lookups.caseTaskTypes.thirdPartyObjection
+          description: Legal Notification to Third Party
+          order: 43
+    caseFileOrganizationTypes:
+      entries:
+        Complaintant:
+          value: "core.lookups.complaintPersonTypes.complaintant"
+          order: 1
+        Subject: 
+          value: "core.lookups.complaintPersonTypes.subject"
+          order: 2
+        Witness:
+          value: "core.lookups.complaintPersonTypes.witness"
+          order: 3
+        Wrongdoer:
+          value: "core.lookups.complaintPersonTypes.wrongdoer"
+          order: 4
+        Other: 
+          value: "core.lookups.common.other"
+          order: 5
+        Defendant:
+          value: "core.lookups.caseFilePersonTypes.defendant"
+          order: 6
+        WAS Officer:
+          value: "core.lookups.caseFilePersonTypes.was-officer"
+          order: 7
+        Victim: 
+          value: "core.lookups.caseFilePersonTypes.victim"
+          order: 8
+        Defense Counsel:
+          value: "core.lookups.caseFilePersonTypes.defenseCounsel"
+          order: 9
+        Forensic Scientist:
+          value: "core.lookups.caseFilePersonTypes.forensicScientist"
+          order: 10
+        Unknown: 
+          value: "core.lookups.caseFilePersonTypes.unknown" 
+          order: 11  
+      readonly: true
+
+         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

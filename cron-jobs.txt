@@ -1,0 +1,21 @@
+# ArkCase Backup Cron Jobs
+# Add these entries to your crontab: crontab -e
+
+# Daily backup at 2 AM
+0 2 * * * /opt/arkcase/scripts/backup.sh >> /opt/arkcase-backups/logs/cron.log 2>&1
+
+# Weekly backup verification on Sundays at 3 AM
+0 3 * * 0 /opt/arkcase/scripts/verify-backup.sh >> /opt/arkcase-backups/logs/verify.log 2>&1
+
+# Monthly cleanup on the 1st of each month at 4 AM
+0 4 1 * * find /opt/arkcase-backups -type f -mtime +90 -delete
+
+# Health check every 5 minutes
+*/5 * * * * /opt/arkcase/scripts/health-check.sh >> /opt/arkcase-backups/logs/health.log 2>&1
+
+# To install these cron jobs:
+# 1. Save this file
+# 2. Run: crontab -l > /tmp/current-cron
+# 3. Run: cat /opt/arkcase/cron-jobs.txt >> /tmp/current-cron
+# 4. Run: crontab /tmp/current-cron
+# 5. Verify: crontab -l

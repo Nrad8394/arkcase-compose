@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.armedia.arkcase</groupId>
+    <artifactId>arkcase-config</artifactId>
+    <version>2021.03</version>
+    <packaging>pom</packaging>
+    <name>ArkCase Configuration</name>
+    <description>Arkcase Configuration</description>
+    <inceptionYear>2014</inceptionYear>
+    <licenses>
+        <license>
+            <name>GNU Lesser General Public License</name>
+            <url>https://www.gnu.org/licenses/lgpl-3.0.en.html</url>
+        </license>
+    </licenses>
+    <organization>
+        <name>ArkCase LLC</name>
+        <url>http://www.arkcase.com</url>
+    </organization>
+
+    <properties>
+        <gitflow-maven-plugin.version>1.14.0</gitflow-maven-plugin.version>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.amashchenko.maven.plugin</groupId>
+                <artifactId>gitflow-maven-plugin</artifactId>
+                <version>${gitflow-maven-plugin.version}</version>
+                <configuration>
+                    <gitFlowConfig>
+                        <productionBranch>master-core</productionBranch>
+                        <developmentBranch>core</developmentBranch>          
+                        <releaseBranchPrefix>release-core/</releaseBranchPrefix>              
+                        <hotfixBranchPrefix>hotfix-core/</hotfixBranchPrefix>
+                        <supportBranchPrefix>support-core/</supportBranchPrefix>
+                        <versionTagPrefix>core-</versionTagPrefix>
+                    </gitFlowConfig>
+                </configuration>
+            </plugin>
+            
+        </plugins>
+    </build>
+</project>

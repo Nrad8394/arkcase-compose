@@ -1,0 +1,189 @@
+################### LDAP authentication configuration ###################
+springConfigLdapProperties:
+  ldapDirectoryConfig:
+    arkcase:
+      base: dc=arkcase-ce
+      authUserDn: CN=Administrator,CN=Users,DC=arkcase-ce
+      authUserPassword: AcMd3v$
+      userSearchBase: OU=Users,OU=ArkCase
+      groupSearchBase: OU=Groups,OU=ArkCase
+      ldapUrl: ldaps://acm-arkcase:636
+      userAttributes: cn,userAccountControl,sn,givenName,dn,distinguishedname,memberOf,sAMAccountName,userPrincipalName,uid,uidNumber,c,co,company,department,title,shadowMax,shadowLastChange,msDS-UserPasswordExpiryTimeComputed,modifyTimestamp,description,member
+      userDomain: arkcase.org
+      syncPageSize: 500
+      enableEditingLdapUsers: true
+      directoryType: activedirectory
+      userSearchFilter: (&(objectClass=user)(sAMAccountName=%s))
+      allUsersFilter: (&(objectCategory=person)(objectClass=user)(!(userAccountControl:1.2.840.113556.1.4.803:=2)))
+      allChangedUsersFilter: (&(objectCategory=person)(objectClass=user)(!(userAccountControl:1.2.840.113556.1.4.803:=2))(modifyTimestamp>=%s))
+      allUsersPageFilter: (&(objectCategory=person)(objectClass=user)(!(userAccountControl:1.2.840.113556.1.4.803:=2))(sAMAccountName>=%s))
+      allChangedUsersPageFilter: (&(objectCategory=person)(objectClass=user)(!(userAccountControl:1.2.840.113556.1.4.803:=2))(sAMAccountName>=%s)(modifyTimestamp>=%s))
+      allUsersSortingAttribute: sAMAccountName
+      groupSearchFilterForUser: (&(objectClass=group)(member=%s))
+      userIdAttributeName: sAMAccountName
+      groupSearchFilter: (objectclass=group)
+      changedGroupSearchFilter: (&(objectclass=group)(modifyTimestamp>=%s))
+      groupSearchPageFilter: (&(objectclass=group)(cn>=%s))
+      changedGroupSearchPageFilter: (&(objectclass=group)(cn>=%s)(modifyTimestamp>=%s))
+      groupsSortingAttribute: cn
+      userPrefix: 
+      groupPrefix: 
+      userControlGroup: 
+      groupControlGroup: 
+      syncEnabled: true
+      autoGenerateUserId: false
+      partialSyncCron: 0 0/30 * 1/1 * ? *
+      fullSyncCron: 0 5 0 1/1 * ? *
+      ldapAddUserConfig:
+        homeDirectory: homeDirectory
+        mail: mail
+        sAMAccountName: sAMAccountName
+        unicodePwd: unicodePwd
+        givenName: givenName
+        objectClass: top,person,user,organizationalPerson
+        cn: cn
+        sn: sn
+        userPrincipalName: userPrincipalName
+        userAccountControl: 512
+      ldapAddGroupConfig:
+        sAMAccountName: sAMAccountName
+        objectClass: top,group
+        cn: cn
+  ldapEditUserValuesTransformation:
+    givenName: firstName
+    sn: lastName
+    mail: mail
+  ldapAddUserValuesTransformations:
+    cn: userId
+    givenName: firstName
+    sn: lastName
+    uid: userId
+    mail: mail
+    memberOf: memberOf
+    userAccountControl: userAccountControl
+    userPassword: password
+    unicodePwd: unicodePassword
+    uidNumber: uidNumber
+    gidNumber: gidNumber
+    homeDirectory: homeDirectory
+    objectClass: objectClass
+    shadowWarning: shadowWarning
+    shadowLastChange: shadowLastChange
+    shadowMax: shadowMax
+    sAMAccountName: userId
+    userPrincipalName: userPrincipalName
+  ldapAddGroupValuesTransformations:
+    cn: fullName
+    member: member
+    gidNumber: gidNumber
+    objectClass: objectClass
+    sAMAccountName: fullName
+    memberOf: memberOf
+
+
+#Open Ldap directory sample configuration
+# springConfigLdapProperties:
+#     arkcase_openldap:
+#       changedGroupSearchPageFilter: (&(objectclass=groupOfNames)(cn>=%s)(modifyTimestamp>=%s))
+#       authUserDn: uid=admin,ou=system
+#       changedGroupSearchFilter: (&(objectclass=groupOfNames)(modifyTimestamp>=%s))
+#       directoryType: openldap 
+#       syncEnabled: true 
+#       partialSyncCron: 0 0/30 * 1/1 * ? * 
+#       allUsersPageFilter: (&(objectClass=person)(uid>=%s))
+#       userSearchBase: OU=users
+#       userSearchFilter: (&(objectClass=person)(uid=%s))
+#       syncPageSize: 500 
+#       groupSearchFilterForUser: (&(objectClass=group)(member=%s))
+#       groupSearchFilter: (objectclass=groupOfNames)
+#       authUserPassword: ENC(FoAZj16C0QDt6BWen5Ah38re4ERDIEZw0xxZE3nHPO4=)
+#       ldapUrl: ldaps://acm-apacheds:10636
+#       userAttributes: cn,userAccountControl,sn,givenName,dn,distinguishedname,memberOf,sAMAccountName,userPrincipalName,uid,uidNumber,c,co,company,department,title,shadowMax,shadowLastChange,msDS-UserPasswordExpiryTimeComputed,modifyTimestamp,description,member
+#       userPrefix:   
+#       groupControlGroup:   
+#       id: arkcase 
+#       allUsersSortingAttribute: uid 
+#       userControlGroup:   
+#       groupSearchPageFilter: (&(objectclass=group)(cn>=%s)) 
+#       enableEditingLdapUsers: true 
+#       userDomain: arkcase.org 
+#       allUsersFilter: (&(objectClass=person))
+#       userIdAttributeName: uid 
+#       groupPrefix:   
+#       groupSearchBase: OU=groups
+#       allChangedUsersFilter: (&(objectClass=person)(modifyTimestamp>=%s))
+#       groupsSortingAttribute: cn 
+#       fullSyncCron: 0 5 0 1/1 * ? * 
+#       allChangedUsersPageFilter: (&(objectClass=person)(uid>=%s)(modifyTimestamp>=%s))
+#       base: dc=arkcase,dc=org
+#       ldapAddGroupConfig:
+#         member: member
+#         objectClass: top,groupOfNames,sortableGroupofnames
+#         cn: cn
+#         gidNumber: gidNumber
+#       ldapAddUserConfig:
+#         userPassword: userPassword
+#         homeDirectory: homeDirectory
+#         mail: mail
+#         givenName: givenName
+#         objectClass: top,person,inetOrgPerson,organizationalPerson,posixAccount,uacPerson,shadowAccount
+#         shadowMax: 99999
+#         shadowWarning: 7
+#         cn: cn
+#         shadowLastChange: 12994
+#         uid: uid
+#         uidNumber: uidNumber
+#         sn: sn
+#         gidNumber: gidNumber
+#         userAccountControl: 1
+
+
+#Active directory/samba sample configuration
+# springConfigLdapProperties:
+#     arkcase:
+#       base: dc=arkcase-ce
+#       authUserDn: CN=Administrator,CN=Users,DC=arkcase-ce
+#       authUserPassword: AcMd3v$
+#       userSearchBase: OU=Users,OU=ArkCase
+#       groupSearchBase: OU=Groups,OU=ArkCase
+#       ldapUrl: ldaps://acm-arkcase:636
+#       userAttributes: cn,userAccountControl,sn,givenName,dn,distinguishedname,memberOf,sAMAccountName,userPrincipalName,uid,uidNumber,c,co,company,department,title,shadowMax,shadowLastChange,msDS-UserPasswordExpiryTimeComputed,modifyTimestamp,description,member
+#       userDomain: arkcase.org
+#       syncPageSize: 500
+#       enableEditingLdapUsers: true
+#       directoryType: activedirectory
+#       userSearchFilter: (&(objectClass=user)(sAMAccountName=%s))
+#       allUsersFilter: (&(objectCategory=person)(objectClass=user)(!(userAccountControl:1.2.840.113556.1.4.803:=2)))
+#       allChangedUsersFilter: (&(objectCategory=person)(objectClass=user)(!(userAccountControl:1.2.840.113556.1.4.803:=2))(modifyTimestamp>=%s))
+#       allUsersPageFilter: (&(objectCategory=person)(objectClass=user)(!(userAccountControl:1.2.840.113556.1.4.803:=2))(sAMAccountName>=%s))
+#       allChangedUsersPageFilter: (&(objectCategory=person)(objectClass=user)(!(userAccountControl:1.2.840.113556.1.4.803:=2))(sAMAccountName>=%s)(modifyTimestamp>=%s))
+#       allUsersSortingAttribute: sAMAccountName
+#       groupSearchFilterForUser: (&(objectClass=group)(member=%s))
+#       userIdAttributeName: sAMAccountName
+#       groupSearchFilter: (objectclass=group)
+#       changedGroupSearchFilter: (&(objectclass=group)(modifyTimestamp>=%s))
+#       groupSearchPageFilter: (&(objectclass=group)(cn>=%s))
+#       changedGroupSearchPageFilter: (&(objectclass=group)(cn>=%s)(modifyTimestamp>=%s))
+#       groupsSortingAttribute: cn
+#       userPrefix: 
+#       groupPrefix: 
+#       userControlGroup: 
+#       groupControlGroup: 
+#       syncEnabled: true
+#       partialSyncCron: 0 0/30 * 1/1 * ? *
+#       fullSyncCron: 0 5 0 1/1 * ? *
+#       ldapAddGroupConfig:
+#         cn: cn
+#         sAMAccountName: sAMAccountName
+#         objectClass: top,group
+#       ldapAddUserConfig:
+#         cn: cn
+#         sAMAccountName: sAMAccountName
+#         userPrincipalName: userPrincipalName
+#         givenName: givenName
+#         sn: sn
+#         mail: mail
+#         userAccountControl: 512
+#         unicodePwd: unicodePwd
+#         homeDirectory: homeDirectory
+#         objectClass: top,person,user,organizationalPerson

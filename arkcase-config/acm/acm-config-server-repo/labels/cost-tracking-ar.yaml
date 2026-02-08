@@ -1,0 +1,142 @@
+costTracking:
+  title: تتبع التكلفة
+  progressNoCostsheet: '[ لم يتم تحديد ورقة تكاليف ]'
+  progressLoading: ' يتم تحميل ورقة التكلفة'
+  progressError: فشل تحميل ورقة التكاليف
+costTracking.menus:
+  leftnav.item: تتبع التكلفة
+  topbar.item: ورقة التكلفة
+costTracking.comp.main:
+  title: نظرة عامة
+costTracking.comp.info:
+  title: معلومات
+  lastModified.label: آخر تعديل
+  incidentDate: تاريخ الحادث
+  priority: أفضلية
+  assignedTo: مخصص ل
+  subjectType: نوع الموضوع
+  state: حالة
+costTracking.comp.actions:
+  title: أجراءات
+  new.button: ورقة تكاليف جديدة
+  edit.button: تحرير ورقة التكاليف
+costTracking.comp.details:
+  title: تفاصيل
+  informSaved: تم حفظ تفاصيل صحيفة التكلفة
+  table.columns:
+    title: تفاصيل
+    modified: تاريخ التعديل الأخير
+    modifier: آخر تعديل للمستخدم
+costTracking.comp.person:
+  title: المستعمل
+  table.columns:
+    fullName: الاسم الكامل
+    userId: اسم المستخدم
+costTracking.comp.summary:
+  title: كلفة
+  table.columns:
+    parentId: هوية شخصية
+    parentNumber: معرّف الوالدين
+    parentType: نوع الوالدين
+    value: التكلفة الإجمالية
+    title: عنوان
+    description: وصف
+costTracking.comp.tags:
+  title: العلامات
+  table.columns:
+    tag: بطاقة شعار
+    created: خلقت
+    createdBy: انشأ من قبل
+  modal:
+    title: بطاقة شعار
+    search: ابحث عن الوسم
+    buttons:
+      cancel: إلغاء
+      ok: إضافة علامة
+  message:
+    tagExists: توجد بالفعل علامة بهذا الاسم أو الوصف أو النص
+    tagAssociated: مرتبط بالفعل
+    delete:
+      success: تم حذف العلامة بنجاح
+      error: خطأ في حذف العلامة
+costTracking.comp.tasks:
+  title: مهام
+  table.columns:
+    title: عنوان
+    assignee: المحال إليه
+    due: بسبب
+    status: الحالة
+    priority: أفضلية
+    created: خلقت
+    fullName: الاسم الكامل
+    userId: هوية شخصية
+  table.deadline.tooltip: حد اقصى
+  table.overdue.tooltip: تأخر
+costTracking.comp.expenses:
+  title: نفقات
+  table.columns:
+    date: تاريخ
+    title: عنوان
+    description: وصف
+    amount: كمية
+costTracking.comp.documents:
+  title: مستندات
+  filterInputPlaceholder: منقي
+  searchInputPlaceholder: بحث
+  newTask: مهمة جديدة
+  sendEmail: ارسل بريد الكتروني
+costTracking.comp.newCostsheet:
+  title: نفقات
+  editCase.title: تحرير المصاريف
+  user: المستعمل
+  status: الحالة
+  costType: نوع
+  selectTypeMessage: يجب عليك تحديد "النوع" ، بحيث يمكنك إدخال "الرمز".
+  code: الشفرة
+  objectPicker:
+    title: ابحث عن كائن
+    table.columns:
+      name: اسم
+      type: نوع
+      title: عنوان
+      id: هوية شخصية
+      username: اسم المستخدم
+  userSearch.title: بحث المستخدم / المجموعة
+  cost:
+    title: التكاليف
+    date: تاريخ
+    date.placeholder: حدد تاريخ
+    date.close.button: قريب
+    costTitle: عنوان
+    description: وصف
+    amount: كمية
+    balance: توازن
+    removeBtn: إزالة التكلفة
+    addBtn: أضف تكلفة أخرى
+  details: تفاصيل
+  approver:
+    title: موافق
+    placeholder: حدد موافق
+    removeBtn: إزالة موافق
+    addBtn: أضف جهة اعتماد أخرى
+    owningGroup: امتلاك المجموعة
+  cancelButton: إلغاء
+  saveButton: حفظ
+  updateButton: تحديث
+  sendForApproval: أرسل للموافقة
+costTracking.tree:
+  nodeTypes:
+    details.label: تفاصيل
+    person.label: المستعمل
+    summary.label: نفقات
+    tags.label: العلامات
+    tasks.label: مهام
+    documents.label: مستندات
+  sorters:
+    dateAsc: فرز التاريخ تصاعديا
+    dateDesc: تاريخ فرز تنازلي
+    idAsc: فرز معرف ورقة التكاليف تصاعديًا
+    idDesc: فرز معرف ورقة التكاليف التنازلي
+    nameDesc: فرز حسب اسم ورقة التكاليف
+    noSort: (بدون فرز)
+costTracking.comp.approvers.title: الموافقون

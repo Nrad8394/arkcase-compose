@@ -1,0 +1,159 @@
+documentDetails:
+  title: تفاصيل الوثيقة
+  creator: المنشئ
+  created: خلقت
+  assignee: المحال إليه
+  fileType: نوع الملف
+  status: الحالة
+  name: اسم
+  enableEditing: تمكين التحرير
+  fileChangedAlert: تم تغيير الملف الذي تعرضه وستتم إعادة تحميله!
+  comp.transcription:
+    title: نسخة طبق الأصل
+    buttons:
+      cancel: إلغاء
+      transcribe: مثل برموز صوتية
+      complete: مكتمل
+      compile: ترجمة
+      save: حفظ
+      ok: حسنا
+    startTime: وقت البدء
+    confidence: الثقة
+    corrected: تصحيح
+    enterText: أدخل النص
+    newRow: صف جديد
+    mediaViewer:
+      length: الطول
+      transcriptStatus: حالة النص
+      confidence: الثقة
+      wordCount: عدد الكلمات
+      language: لغة
+      fileType: نوع الملف
+      readyForTranscription: جاهز للنسخ
+    dialog:
+      title: هل هذا النص مكتمل أم تريد حفظه كمعالجة؟
+      processing: معالجة
+      completed: منجز
+      cancel.title: هل تريد إلغاء النسخ؟
+      complete.title: هل تريد إكمال النسخ؟
+      transcribe.title: سيؤدي هذا الإجراء إلى تجاوز النسخ الحالية. هل تريد المتابعة؟
+      compile.title: سيؤدي هذا الإجراء إلى تجاوز الملف الموجود. هل تريد المتابعة؟
+  comp.ocr:
+    readyForOCR: جاهز لاستخدام OCR
+    ocrStatus: حالة OCR
+  comp.comprehendMedical:
+    status: حالة عملية البرمجة اللغوية العصبية
+    readyStatus: جاهز لعملية البرمجة اللغوية العصبية
+  comp.eventHistory:
+    title: التاريخ
+    table.columns:
+      eventType: اسم الحدث
+      eventDate: خلقت
+      userId: المستعمل
+  comp.tags:
+    title: العلامات
+    table.columns:
+      tag: شقة قرطاس
+      created: خلقت
+      createdBy: انشأ من قبل
+    modal:
+      title: بطاقة شعار
+      search: ابحث عن الوسم
+      buttons:
+        cancel: إلغاء
+        ok: إضافة علامة
+    message.tagExists: توجد بالفعل علامة بهذا الاسم أو الوصف أو النص
+    message.tagAssociated: مرتبط بالفعل
+    message.delete.success: تم حذف العلامة بنجاح
+    message.delete.error: خطأ في حذف العلامة
+  comp.participants:
+    title: المشاركين
+    table.columns:
+      name: اسم
+      type: نوع
+    dialogUserPicker:
+      header: اختر المستخدم
+      table.columns:
+        name: اسم
+        type: نوع
+        title: عنوان
+        id: اسم المستخدم
+    dialogGroupPicker:
+      header: اختر مجموعة
+      table.columns:
+        name: اسم
+  comp.notes:
+    title: ملاحظات
+    table.columns:
+      note: ملحوظة
+      tag: إصدار المستند
+      created: خلقت
+      creator: مؤلف
+  comp.versionHistory:
+    title: إصدارات
+    table.columns:
+      creator: المستعمل
+      created: خلقت
+      versionTag: الإصدار
+  comp.details:
+    title: تفاصيل
+    label:
+      creator: صاحب
+      modifier: مؤلف
+      created: تاريخ الإنشاء
+      modified: تعديل التاريخ
+      description: وصف
+      type: نوع
+      organization: منظمة المصدر
+      person: كيان المصدر
+      format: شكل
+      size: بحجم
+      gps: موقعك
+      duration: المدة (بالثواني)
+      width: العرض (بكسل)
+      height: الارتفاع (بكسل)
+      camera.type: نوع الكاميرا
+      camera.version: إصدار الكاميرا
+      button.save: حفظ
+      button.wait: أرجو الإنتظار
+    message:
+      save.success: تم تحديث بيانات تعريف الملف بنجاح
+      save.error: تعذر تحديث البيانات الوصفية للملف
+  comp.annotationTags.modal:
+    title: إضافة علامات وتعليقات توضيحية
+    buttons:
+      ok: حسنا
+      cancel: إلغاء
+  comp.billing:
+    title: الفواتير
+    table.columns:
+      item: 'بند #'
+      description: وصف
+      amount: كمية
+      total: ' مجموع:'
+      buttons:
+        listInvoices: إدراج الفواتير
+        emailInvoice: فاتورة البريد الإلكتروني
+        generateInvoice: إنشاء فاتورة
+    modal:
+      title: إضافة عنصر إعداد الفواتير
+      cancel.btn: إلغاء
+      save.btn: حفظ
+      billingItems.title: بند إعداد الفواتير لـ
+    invoice:
+      title: فواتير
+      table.columns:
+        invoiceNumber: رقم الفاتورة
+        status: الحالة
+        creator: المنشئ
+        created: خلقت
+        view: رأي
+    amount.title: الرجاء إدخال مبلغ الفاتورة
+    description.title: الرجاء إدخال وصف الفواتير
+  transcribe:
+    email:
+      subject: حالة النسخ
+      body: 'عمل :action تتم تحت النسخ مع معرف :transcribeId
+        لملف الوسائط بالاسم '':name''. يرجى التحقق من الحالة <a style="letter-spacing:
+        1px; text-align: center; font-size:44px;  font-family: Raleway , ''times new
+        roman''; font-weight:400;" href=":host/home.html#!/viewer/:id/:containerId/:containerType/:name/:id">here</a>.'

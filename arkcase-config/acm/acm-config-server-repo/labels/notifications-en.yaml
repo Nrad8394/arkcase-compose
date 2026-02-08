@@ -1,0 +1,67 @@
+notifications:
+  title: Notifications
+  search.btn: Search
+  export.btn: Export
+  search.placeholder: Search for notifications
+  menus:
+    leftnav.item: Notifications
+  comp:
+    notificationsFacetedSearch:
+      title: Notifications Faceted Search
+    grid:
+      columns:
+        id: ID
+        description: Description
+        objNumber: Object Number
+        parentNumber: Parent Number
+        objType: Object Type
+        modified: Modified
+  username:
+    forgot: Forgot Username
+  password:
+    reset: Reset password
+    request: Request password reset
+  status:
+    transcription: Transcription status
+  task:
+    completed: "Task '${idLabel}' has been completed"
+    upcoming: "Task '${idLabel}' upcoming notification"
+    overdue: "Task '${idLabel}' overdue notification"
+    status.changed: "Task '${nameLabel}' status changed"
+    priority.changed: "Task '${nameLabel}' priority changed"
+    concur.nonconcur: "Task '${nameLabel}' completed"
+    concur.note: "Task '${nameLabel}' completed with CONCUR action by ${userLabel}"
+    nonconcur.note: "Task '${nameLabel}' completed with NON_CONCUR action by ${userLabel}" 
+  complaint:
+    invoice: "Complaint %s invoice"
+    status.changed: "Complaint '${nameLabel}' status changed"
+    priority.changed: "Complaint '${nameLabel}' priority changed"
+  case:
+    status.changed: "Case '${nameLabel}' status changed"
+    priority.changed: "Case '${nameLabel}' priority changed"
+    dueDate.approaching: "The Due Date on '${nameLabel}' is Approaching"
+    dueDate.overdue: "The Due Date on '${nameLabel}' is Overdue"
+    dueDate.changed: "The Due Date on '${nameLabel}' has changed"
+  note.added: "Note added in ${typeLabel}: ${nameLabel}"
+  participants:
+    added: "Participants added in ${typeLabel}: ${nameLabel}"
+    deleted: "Participants deleted from ${typeLabel}: ${nameLabel}"
+    user:
+      added: "Your user was added as a participant on ${nameLabel}"
+  acmdocumentsingletask.workflow: "%s - ACM Document Workflow - Single Task" 
+  email:
+    mentions: "${userLabel} mentioned you in ${typeLabel}: ${nameLabel}"
+  calendar.event.added: "Calendar event added"
+  object.assigned: "${typeLabel}: ${nameLabel}, assigned to ${userLabel}"
+  object.unassigned: "${typeLabel}: ${nameLabel}, unassigned from ${userLabel}"
+  type:
+    label:
+      casefile: Case File
+      complaint: Complaint
+      consultation: Consultation
+      task: Task
+      note: Note
+      file: File
+      doc-repo: Document Repository
+      person-association: Person
+      participant: Participant

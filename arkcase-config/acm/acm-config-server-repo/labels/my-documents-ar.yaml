@@ -1,0 +1,6 @@
+my-documents:
+  title: مستنداتي
+my-documents.menus:
+  leftnav.item: مستنداتي
+document-repository.comp.referenceSearchGrid:
+  title: بحث مرجعي

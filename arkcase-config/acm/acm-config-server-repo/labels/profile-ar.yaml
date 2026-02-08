@@ -1,0 +1,128 @@
+profile:
+  title: ملف تعريفي للمستخدم
+  unknown: مجهول
+profile.menus:
+  usermenu.item: الملف الشخصي
+profile.subscriptions:
+  title: الاشتراكات
+  unsubscribeSelect: تم إلغاء الاشتراك
+  table.columns:
+    title: عنوان
+    created: خلقت
+    parentId: معرّف الوالدين
+    userId: معرف المستخدم
+profile.mfa:
+  title: مصادقة متعددة العوامل
+  noData: لم يتم تسجيل عوامل
+  sms: SMS
+  email: البريد الإلكتروني
+  authy: Authy Software Token
+  createSucceeded: تم إنشاء العامل بنجاح
+  createFailed: فشل في إنشاء عامل
+  activateSucceeded: تم تنشيط العامل بنجاح
+  activateFailed: فشل تنشيط العامل
+  editSucceeded: تم تعديل العامل بنجاح
+  editFailed: فشل في تعديل العامل
+  deleteSucceeded: تم حذف العامل بنجاح
+  deleteFailed: فشل حذف العامل
+  table:
+    title: عوامل المصادقة
+    create: عامل جديد
+    activate: تنشيط عامل
+    edit: تحرير عامل
+    delete: حذف عامل
+    columns:
+      factorType: نوع
+      factorDetails: تفاصيل
+      status: الحالة
+    factorStatus:
+      not_setup: لا الإعداد
+      pending_activation: في انتظار التنشيط
+      enrolled: المقيدين
+      active: نشيط
+      inactive: غير نشط
+      expired: منتهية الصلاحية
+  modal:
+    create: عامل جديد
+    edit: تحرير عامل
+    cancel: إلغاء
+    save: حفظ
+    factorType:
+      label: نوع العامل
+      placeholder: حدد نوع العامل
+    emailAddress:
+      label: عنوان بريد الكتروني
+      placeholder: أدخل عنوان البريد الالكتروني
+    phoneNumber:
+      label: رقم الهاتف
+      placeholder: أدخل رقم الهاتف
+  activateModal:
+    title: تنشيط عامل
+    cancel: إلغاء
+    confirm: تفعيل
+    factorType:
+      label: نوع العامل
+      placeholder: حدد نوع العامل
+    sharedSecret:
+      label: Shared Secret (أدخل هذا في Authy لإنشاء رمز التفعيل)
+    activationCode:
+      label: رمز التفعيل
+      placeholder: أدخل رمز التفعيل
+  deleteModal:
+    title: تأكيد حذف عامل
+    cancel: إلغاء
+    confirm: حذف
+    confirmationMessage: هل أنت متأكد أنك تريد حذف العامل
+profile.company:
+  title: تفاصيل الشركة
+  name: اسم الشركة
+  address1: العنوان 1
+  address2: العنوان 2
+  city: مدينة
+  state: حالة
+  zip: الرمز البريدي
+  mainPhone: هاتف المكتب الرئيسي
+  fax: فاكس
+  website: موقع الكتروني
+  websiteTitle: تمكين التحرير
+profile.contact:
+  title: معلومات للتواصل
+  location: موقعك
+  im: حساب المراسلة الفورية
+  officePhone: هاتف المكتب
+  mobilePhone: جوال
+profile.groups:
+  title: مجموعات
+profile.buttons:
+  save: حفظ التغييرات
+  message: أدخل كلمة المرور الجديدة.
+  confirmation: أدخل كلمة المرور الجديدة مرة أخرى.
+  cancel: إلغاء
+  outlookPassword: تخزين كلمة مرور Outlook
+  ldapPassword: تغيير كلمة المرور
+profile.picture:
+  title: تغيير الصورة
+  email: عنوان بريد الكتروني
+  uploadImgError: لقد قمت بتحميل نوع ملف صورة غير صالح
+  uploadError: فشل تحميل صورة الملف الشخصي الجديدة
+profile.signature:
+  title: تغيير التوقيع
+  uploadError: فشل تحميل التوقيع الجديد
+profile.modal:
+  title: معلومات
+  emptyPassword: لا يمكن أن تكون كلمة المرور فارغة
+  confirmation: من فضلك أعد إدخال الرمز السري.
+  differentPasswords: كلمة المرور غير مطابقة. حاول مرة اخرى.
+  ok: OK
+  success: تم تغيير كلمة المرور بنجاح
+  changePassword.header: تغيير كلمة المرور
+profile.comp.subscription:
+  title: اشتراك
+profile.comp.company:
+  title: شركة
+profile.comp.contact:
+  title: اتصل
+profile.comp.group:
+  title: مجموعة
+profile.comp.picture:
+  title: صورة

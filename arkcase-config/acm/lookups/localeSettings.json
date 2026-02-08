@@ -1,0 +1,89 @@
+{
+    "locales": [
+        {
+            "code": "en",
+            "iso": "en",
+            "desc": "English",
+            "native": "English",
+            "currencySymbol": "$"
+        },
+        {
+            "code": "de",
+            "iso": "de",
+            "desc": "German",
+            "native": "Deutsche",
+            "currencySymbol": "US$"
+        },
+        {
+            "code": "en-in",
+            "iso": "en-IN",
+            "desc": "English (India)",
+            "native": "English(India)",
+            "currencySymbol": "US$"
+        },
+        {
+            "code": "es",
+            "iso": "es",
+            "desc": "Spanish",
+            "native": "Español",
+            "currencySymbol": "US$"
+        },
+        {
+            "code": "fr",
+            "iso": "fr",
+            "desc": "French",
+            "native": "Français",
+            "currencySymbol": "US$"
+        },
+        {
+            "code": "hi",
+            "iso": "hi",
+            "desc": "Hindi",
+            "native": "हिंदी",
+            "currencySymbol": "डॉलर"
+        },
+        {
+            "code": "ja",
+            "iso": "ja",
+            "desc": "Japanese",
+            "native": "日本語",
+            "currencySymbol": "米ドル"
+        },
+        {
+            "code": "pt",
+            "iso": "pt",
+            "desc": "Portuguese",
+            "native": "Português",
+            "currencySymbol": "US$"
+        },
+        {
+            "code": "ru",
+            "iso": "ru",
+            "desc": "Russian",
+            "native": "Русский",
+            "currencySymbol": "US$"
+        },
+        {
+            "code": "zh-cn",
+            "iso": "zh-CN",
+            "desc": "Chinese (Simplified)",
+            "native": "中文（简体）",
+            "currencySymbol": "美元"
+        },
+        {
+            "code": "zh-tw",
+            "iso": "zh-TW",
+            "desc": "Chinese (Traditional)",
+            "native": "中文（繁體）",
+            "currencySymbol": "美元"
+        },
+        {
+            "code": "ar",
+            "iso": "ar",
+            "desc": "Arabic",
+            "native": "عربى",
+            "currencySymbol": "د.إ"
+        }
+    ]
+}
+

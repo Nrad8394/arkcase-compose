@@ -1,0 +1,31 @@
+frevvo:
+  title: Frevvo
+  errorForm: نموذج Frevvo غير محدد
+frevvo.dialogUserPicker:
+  header: اختر المستخدم
+  table.columns:
+    name: اسم
+    type: نوع
+    title: عنوان
+    id: اسم المستخدم
+frevvo.dialogObjectPicker:
+  header: ابحث عن كائن
+  table.columns:
+    name: اسم
+    type: نوع
+    title: عنوان
+    id: هوية شخصية
+frevvo.timesheetCustomPicker:
+  header: حدد رمز الشحن
+frevvo.userAndGroupPicker:
+  header: ابحث عن مستخدم أو مجموعة
+  table.columns:
+    name: اسم
+    type: نوع
+    title: عنوان
+    id: هوية شخصية
+    username: اسم المستخدم
+  cancel: إلغاء
+  ok: حسنا
+  search: بحث
+  search-placeholder: اكتب للبحث

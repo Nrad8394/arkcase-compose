@@ -1,0 +1,25 @@
+audit:
+  title: تدقيق
+  menus:
+    leftnav.item: تدقيق
+  navigation:
+    label:
+      reportName: تقرير اسم
+      inputID: هوية شخصية
+      dateFrom: من عند
+      dateTo: ل
+    placeholder:
+      selectAudit: الكل
+      inputId: '#'
+    checkBox:
+      xmlReport: إظهار بتنسيق XML
+    button:
+      generateAuditReport.btn: إنشاء تقرير تدقيق
+  datepicker:
+    close: منجز
+    clear: واضح
+    current: اليوم
+audit.comp.auditselection:
+  title: تدقيق
+audit.comp.datepickers:
+  title: تدقيق

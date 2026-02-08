@@ -1,0 +1,17 @@
+subscriptions:
+  title: الاشتراكات
+  search.btn: بحث
+  export.btn: تصدير
+  search.placeholder: ابحث عن الاشتراكات
+  menus:
+    leftnav.item: الاشتراكات
+  comp:
+    subscriptionsFacetedSearch:
+      title:  بحث الأوجه الاشتراكات
+    grid:
+      columns:
+        id: هوية شخصية
+        event: حدث
+        parentName: اسم الوالدين
+        parentType: نوع الوالدين
+        modified: تم التعديل

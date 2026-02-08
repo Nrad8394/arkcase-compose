@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security" xmlns:beans="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+               http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-5.4.xsd">
+    <beans:beans profile="externalOidc">
+        <!-- This file contains common beans and filters for OpenID Connect authentication -->
+        <!-- acmAuthenticationManager, acmLoginSuccessHandler, acmLogoutSuccessHandler, acmAuthenticationDetailsFactory,
+            acmBasicAndTokenAuthenticationFilter, acmRestAuthenticationSuccessHandler, acmRestAuthenticationFailureHandler, acmRestAuthenticationEntryPoint
+            are defined in spring-library-user-login.xml -->
+ 
+        
+        <http entry-point-ref="acmStaticResourcesAuthenticationEntryPoint" use-expressions="true" request-matcher="regex"
+            pattern="^/assets/.*$|^/custom_assets/.*$|^/directives/.*$|^/custom_directives/.*$|^/filters/.*$|^/modules/.*$|^/custom_modules/.*$|^/modules_config/.*$|^/services/.*$"
+            authentication-manager-ref="acmAuthenticationManager">
+            <intercept-url pattern="^/.*$" access="isAuthenticated()"/>
+            <http-basic/>
+            <csrf disabled="true"/>
+            <headers>
+              <frame-options policy="SAMEORIGIN" />
+            </headers>
+            <custom-filter ref="acmBasicAndTokenAuthenticationFilter" before="BASIC_AUTH_FILTER"/>
+            <custom-filter position="CONCURRENT_SESSION_FILTER" ref="concurrencyFilter"/>
+            <form-login authentication-success-handler-ref="acmRestAuthenticationSuccessHandler"
+                authentication-failure-handler-ref="acmRestAuthenticationFailureHandler"/>
+            <session-management session-fixation-protection="migrateSession"/>
+        </http>
+
+       <!-- Open URL -->
+        <http use-expressions="true" request-matcher="regex"
+            pattern=".*acm_email_ticket=.*$|.*EXT_TRANS_ID=.*$" security="none">
+        </http>
+
+        <http entry-point-ref="acmRestAuthenticationEntryPoint" use-expressions="true" request-matcher="regex"
+            pattern="^/api/.*$|^/plugin/.*$" authentication-manager-ref="acmAuthenticationManager">
+            <intercept-url pattern="^/.*$" access="isAuthenticated()"/>
+            <http-basic/>
+            <csrf disabled="true"/>
+            <headers>
+              <frame-options policy="SAMEORIGIN" />
+            </headers>
+            <custom-filter ref="acmBasicAndTokenAuthenticationFilter" before="BASIC_AUTH_FILTER"/>
+            <custom-filter position="CONCURRENT_SESSION_FILTER" ref="concurrencyFilter"/>
+            <custom-filter position="PRE_AUTH_FILTER" ref="externalAuthFilter"/>
+            <form-login authentication-success-handler-ref="acmRestAuthenticationSuccessHandler"
+                authentication-failure-handler-ref="acmRestAuthenticationFailureHandler"/>
+            <session-management session-fixation-protection="migrateSession"/>
+        </http>
+
+
+        <http auto-config="true" authentication-manager-ref="acmAuthenticationManager" use-expressions="true" request-matcher="regex">
+            <intercept-url pattern="/**" access="isAuthenticated()"/>
+            <http-basic/>
+            <csrf disabled="true"/>
+            <headers>
+              <frame-options policy="SAMEORIGIN" />
+            </headers>
+            <custom-filter before="BASIC_AUTH_FILTER" ref="acmBasicAndTokenAuthenticationFilter"/>
+            <custom-filter position="CONCURRENT_SESSION_FILTER" ref="concurrencyFilter"/>
+            <oauth2-login 
+                client-registration-repository-ref="clientRegistrationRepository" 
+                authorized-client-service-ref="authorizedClientService" login-page="/oauth-login" 
+                authentication-success-handler-ref="acmOAuth2LoginSuccessHandler" 
+                authentication-failure-handler-ref="acmOAuth2LoginFailureRedirectHandler"/>
+            <logout logout-url="/oauth-logout" delete-cookies="JSESSIONID" success-handler-ref="acmLogoutSuccessHandler"
+                invalidate-session="true"/>    
+            <session-management invalid-session-url="/oauth/loggedout?login_error=1"
+                session-fixation-protection="migrateSession"/>    
+        </http>
+
+        <beans:bean id="acmOAuth2LoginFailureRedirectHandler"
+            class="org.springframework.security.web.authentication.ExceptionMappingAuthenticationFailureHandler">
+            <beans:property name="exceptionMappings">
+                <beans:props>
+                    <beans:prop key="org.springframework.security.core.userdetails.UsernameNotFoundException">/oauth/loggedout?login_error=4</beans:prop>
+                </beans:props>
+            </beans:property>
+            <beans:property name="defaultFailureUrl" value="/oauth/loggedout?login_error=3"/>
+        </beans:bean>
+
+        <beans:bean id="logoutUrl" class="java.lang.String">
+            <beans:constructor-arg value="oauth-logout"/>
+        </beans:bean>
+
+        <beans:bean id="expiredUrl" class="java.lang.String">
+            <beans:constructor-arg value="/oauth/loggedout?login_error=2"/>
+        </beans:bean>
+
+        <beans:bean id="sessionDestroyedListener" class="com.armedia.acm.auth.SessionDestroyedListener">
+            <beans:property name="authenticationTokenService" ref="authenticationTokenService"/>
+        </beans:bean>
+
+        <beans:bean id="externalAuthFilter" class="com.armedia.acm.auth.AcmPreAuthenticatedLoginHandler">
+            <beans:property name="principalRequestHeader" value="X-ARKCASE-EXTERNAL-USER"/>
+            <beans:property name="authenticationManager" ref="acmAuthenticationManager"/>
+            <beans:property name="loginSuccessOperations" ref="acmLoginSuccessOperations"/>
+            <beans:property name="exceptionIfHeaderMissing" value="false"/>
+            <beans:property name="checkForPrincipalChanges" value="true"/>
+            <beans:property name="invalidateSessionOnPrincipalChange" value="false"/>
+        </beans:bean>
+
+    </beans:beans>
+</beans:beans>
+    

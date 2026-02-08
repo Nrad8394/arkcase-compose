@@ -1,0 +1,1143 @@
+common:
+  select.option.none: (اختر واحدة)
+  value.unknown: مجهول
+  value.none: لا شيء
+  _1_: يرجى عدم استخدام أو إضافة تنسيقات تاريخ مخصصة ، لأنه من الخطأ أن يكون متوافقًا مع i18n.
+  _2_: "الرجاء استخدام أحد التنسيقات المحددة مسبقًا:"
+  _3_: '''medium''    - equivalent to ''MMM d, y h:mm:ss a'' for en_US locale (e.g.
+    Sep 3, 2010 12:05:08 PM)'
+  _4_: '''short''     - equivalent to ''M/d/yy h:mm a'' for en_US locale (e.g. 9/3/10
+    12:05 PM)'
+  _5_: '''fullDate''  - equivalent to ''EEEE, MMMM d, y'' for en_US locale (e.g. Friday,
+    September 3, 2010)'
+  _6_: '''longDate''  - equivalent to ''MMMM d, y'' for en_US locale (e.g. September
+    3, 2010)'
+  _7_: '''mediumDate''- equivalent to ''MMM d, y'' for en_US locale (e.g. Sep 3, 2010)'
+  _8_: '''shortDate'' - equivalent to ''M/d/yy'' for en_US locale (e.g. 9/3/10)'
+  _9_: '''mediumTime''- equivalent to ''h:mm:ss a'' for en_US locale (e.g. 12:05:08
+    PM)'
+  _10: '''shortTime'' - equivalent to ''h:mm a'' for en_US locale (e.g. 12:05 PM)'
+  _11: ' '
+  _12: 'يتم التخلص من تنسيقات التاريخ التالية. إذا طلب العملاء تخصيص تنسيق ، فنحن بحاجة '
+  _13: لتثقيفهم لتجنب القيام بذلك ، بسبب مخاوف i18n
+  ## date formats should not be translated in other languages ##
+  defaultDateFormat: MM/DD/YYYY
+  defaultTimeFormat: hh:mm:ss
+  defaultDateTimeFormat: MM/DD/YYYY hh:mm
+  defaultDateLongTimeFormat: MM/DD/YYYY HH:mm
+  defaultDatePickerFormat: MM/dd/yyyy
+  defaultDateUIFormat: MM/dd/yyyy
+  defaultDateTimeUIFormat: MM/dd/yyyy h:mm a
+  defaultDateTimePickerFormat: MM/DD/YYYY h:mm A
+  defaultDateTimeUTCFormat: YYYY-MM-DDTHH:mm:ssZZ
+  defaultDateTimeLongUIFormat: MM/dd/yyyy HH:mm:ss
+  ## date formats should not be translated in other languages ##
+common.userOrGroupSearch:
+  id: بحث المستخدم
+  title: بحث المستخدم / المجموعة
+  search:
+    btn: بحث
+    placeholder: ابحث عن المستخدم أو المجموعة.
+  cancelButton: إلغاء
+  confirmButton: تؤكد
+  assigneeGridColumns:
+    name: اسم
+    type: نوع
+    title: عنوان
+    username: اسم المستخدم
+common.frevvo:
+  defaultDateFormat: YYYY-MM-DD
+common.service:
+  error.invalidData: بيانات غير صالحة
+common.objects:
+  progressNoData: '[ لايوجد بيانات ]'
+  progressLoading: ' يتم تحميل البيانات'
+  progressError: ' يتم تحميل البيانات فشل'
+common.service.messageService:
+  authorizationError: غير مصرح لك لاتخاذ هذا الإجراء
+  serverError: منعنا استثناء من التعامل مع طلبك. يرجى الاتصال بالدعم للحصول على مزيد من المعلومات حول المشكلة.
+  actionMessages:
+    success: كان العمل ناجحا
+    error: خطأ في الإجراء
+common.directive.docTree:
+  btnRefresh: تحديث
+  waitUploading: رفع...
+  confirmFileDeletion: هل أنت متأكد أنك تريد حذف هذا الملف؟
+  confirmVersion: هل أنت متأكد من العودة إلى الإصدار الأقدم؟
+  declareSuccessful: أعلن بنجاح. تحديث شجرة المستندات ...
+  prevItems: ' العناصر أعلاه ...'
+  prevItemsTooltip: راجع العناصر السابقة
+  moreItems: ' المزيد من العناصر...'
+  moreItemsTooltip: تحميل المزيد من العناصر
+  moreItemsBegin: المزيد من العناصر...
+  email:
+    defaultBodyLinks: يُرجى النقر فوق الزر "فتح المستند (المستندات)" للاستعراض للوصول إلى الارتباط. تنتهي صلاحية الروابط في 3 أيام.
+    defaultBodyAttachments: يرجى العثور على المستندات المرفقة لمراجعتك.
+    defaultFooter: مدعوم من ArkCase ، منصة Enterprise Case Management ، http://www.arkcase.com
+    successMessage: تم ارسال البريد الالكتروني بنجاح
+    unsuccessMessage: لم يتم إرسال البريد الإلكتروني
+    noEmailAddress: ' لم يتم إدخال بريد إلكتروني لهذا'
+    defaultBodyAttachmentsAndLinks: يرجى العثور على المستند (المستندات) المرفق لمراجعتك أو النقر فوق الزر "فتح المستند (المستندات)" للاستعراض وصولاً إلى الارتباط. تنتهي صلاحية الروابط في 3 أيام.
+  menu:
+    noop: (اختر البند)
+    editWithWebDAV: تعديل
+    coEdit: التحرير المشترك
+    cancelEditing: إلغاء التحرير
+    newFolder: ملف جديد
+    newDocument: مستند جديد
+    newCorrespondence: المراسلات الجديدة
+    open: افتح
+    email: البريد الإلكتروني
+    newTask: مهمة جديدة
+    nlpProcess: عملية البرمجة اللغوية العصبية
+    download: تحميل
+    copy: نسخ
+    cut: يقطع
+    paste: معجون
+    pasteAsLink: لصق كارتباط
+    rename: إعادة تسمية
+    delete: حذف
+    replace: يحل محل
+    checkout: الدفع
+    checkin: تحقق في
+    declareRecord: الإعلان كسجل (سجلات)
+    editWithOfficeOnline: افتح في Microsoft Office Online
+    searchDocument: بحث عن المستندات
+  nlpProcess.messages:
+    queued: تم بالفعل وضع عملية البرمجة اللغوية العصبية لهذا الملف في قائمة الانتظار
+    processing: بدأت عملية NLP لهذا الملف
+    completed: اكتملت عملية البرمجة اللغوية العصبية لهذا الملف
+    failed: فشلت عملية البرمجة اللغوية العصبية لهذا الملف
+  table.columns:
+    title: عنوان
+    type: نوع
+    created: خلقت
+    modified: تم التعديل
+    modifier: تم التعديل بواسطة
+    version: الإصدار
+    status: الحالة
+  dndDialog:
+    title: اسحب وأفلت
+    radReplace.text: استبدال المستند (إذا تم إسقاط أكثر من ملف ، فسيتم استخدام الملف الأول فقط)
+    radUploadToParent.text: إنشاء مستند (مستندات) في المجلد الأصل
+    selFileTypes.label: 'نوع الملف:'
+    optFileType.prompt: '[اختر نوع الملف]'
+    btnCancel.text: إلغاء
+    btnOk.text: إرسال
+  emailDialog:
+    title: البريد الإلكتروني
+    recipients.label: 'المستلمون:'
+    recipients.placeholder: اختر المستلمين
+    subject.label: 'موضوع:'
+    subject.placeholder: أدخل الموضوع
+    attachments.label: 'المرفقات:'
+    deliveryMethod.label: 'طريقة التوصيل:'
+    sendWithAttachments.checkbox: إرسال بريد إلكتروني مرفق
+    sendWithHyperlink.checkbox: إرسال بريد إلكتروني مع ارتباط تشعبي
+    sendWithAttachmentsAndHyperlink.checkbox: إرسال كمرفق وارتباط تشعبي
+    btnCancel.text: إلغاء
+    btnOk.text: ارسل بريد الكتروني
+  participantsDialog:
+    titlePart: ' المشاركون في'
+    title: المشاركين
+  recipientsDialog:
+    title: اختر المستلمين
+    search.placeholder: البحث عن المستلمين
+    recipients.label: 'المستلمون:'
+    externalRecipients.placeholder: أدخل عناوين البريد الإلكتروني الخارجية
+    cancel.button: إلغاء
+    addRecipients.button: أضف المستلمين
+    gridColumns:
+      name: اسم
+      email: البريد الإلكتروني
+  mediaDialog:
+    title: مشغل وسائط ArkCase
+    btnCancel.text: إلغاء
+  comment:
+    title: إيداع مستند جديد
+    addComent: ملاحظة تفصيلية
+    btnCancel.text: إلغاء
+    btnOk.text: تحقق في
+    chooseFiles: اختر الملفات
+    noFiles: لم يتم تحديد ملفات
+  error:
+    nodeTitle: (خطأ)
+    folderNodeTitle: (خطأ) لم يتم إنشاء المجلد.
+    fileNodeTitle: (خطأ) لم يتم تحميل الملف.
+  lockedTitle: ' تم تأمين هذا المستند بواسطة'
+  delete.confirmation.dialog:
+    header: هل أنت متأكد أنك تريد حذف هذا المجلد؟
+    body.message: 'يحتوي المجلد على:'
+    body.content.files: الملفات
+    body.content.folders: المجلدات
+    btn.delete.folder: "نعم"
+    btn.cancel.delete.folder: "لا"
+  fileTypesDialog:
+    header: يرجى تحديد نوع المستند
+    type: نوع الوثيقة
+    language: لغة الوثيقة
+    btnOK: OK
+    btnCancel: إلغاء
+common.directive.objectTree:
+  btnPrev.title: ' السجلات أعلاه ...'
+  btnPrev.toolTip: مراجعة السجلات السابقة
+  btnNext.titleUnknownSize: المزيد من السجلات ...
+  btnNext.title: ' المزيد من السجلات ...'
+  btnNext.toolTip: تحميل المزيد من السجلات
+  edtQuery.placeHolder: بحث
+  btnQuery.text: اذهب!
+  errorNode.title: (خطأ)
+  errorNode.toolTip: (خطأ)
+  noAccessNode.title: (ممنوع الدخول)
+  noAccessNode.toolTip: (ممنوع الدخول)
+common.directive.simplePager:
+  rowCountLabel: مواد لكل صفحة
+  pagerCountLabel: '{{pageCount}} من {{pageTotal}} العناصر'
+common.directive.objectAuthorization:
+  choose: أختر
+  not_authorized: غير مخول
+  not_member: ليس عضوا
+  tooltip.move_right: تحرك يمينا
+  tooltip.move_left: تحرك يسارا
+  authorized: مخول
+  member: عضو
+common.directive.objectAuthorizationRolesFilter:
+  pattern.title: خطأ ، مطلوب حرفان.
+  search.placeHolder: بحث
+common.directive.searchModal:
+  header: بحث
+  btnSearch.text: بحث
+  btnOk.text: إرسال النتيجة
+  btnConfirm.text: تؤكد
+  btnCancel.text: إلغاء
+  edtPlaceholder: اكتب للبحث
+  noData.text: لا نتائج
+  pickUserLabel: اختر المستخدم المرتبط
+  pickGroupLabel: اختر مجموعة أسوشيتد
+  selectedItemsGrid.label: إدخالات مختارة
+  notValidUser: يجب أن يكون المستخدم المحدد عضوًا في مجموعة المجموعة المالكة! يمكنك اختيار مجموعة امتلاك جديدة من الشبكة الثانية ، أو تغيير المستخدم المحدد بأحد الأعضاء في مجموعة امتلاك المجموعة
+  notValidGroup: يجب أن تكون المجموعة المحددة هي المجموعة التي يكون المحال إليها عضوًا! يمكنك اختيار محال جديد من الشبكة الثانية ، أو تغيير المجموعة المحددة بأخرى يكون المحال إليها عضوًا
+common.directive.search:
+  showMore.button.text: إظهار المزيد من القيم
+  showLess.button.text: إظهار قيم أقل
+  results.text: النتائج
+  noResults.text: لا نتائج
+  tooltip:
+    collapseFacetList: طي قائمة الأوجه
+    expandFacetList: قم بتوسيع قائمة الواجهة
+  facet:
+    blankValue: غير محدد
+    names.modifyUser%: تعديل المستخدم
+    names.taskPriority%: أولوية المهمة
+    fields.taskPriority.medium%: متوسط
+    fields.taskPriority.low%: منخفض
+    fields.taskPriority.high%: عالي
+    fields.taskPriority.expedite%: تعجيل
+    names.group%: مجموعة
+    names.tagToken%: علامة الرمز
+    names.assignee%: الاسم المحال إليه بالكامل
+    names.documentRepository%: اسم مستودع المستندات
+    names.taskStatus%: حالة المهمة
+    fields.taskStatus.active%: نشيط
+    fields.taskStatus.draft%: مشروع
+    fields.taskStatus.closed%: مغلق
+    fields.taskStatus.record%: سجل
+    fields.taskStatus.inactive%: غير نشط
+    fields.taskStatus.inApproval%: في الموافقة
+    fields.taskStatus.delete%: حذف
+    fields.taskStatus.approved%: وافق
+    fields.taskStatus.unclaimed%: غير مطلوب
+    fields.taskStatus.valid%: صالح
+    names.documentLanguage%: لغة الوثيقة
+    names.createUser%: إنشاء مستخدم
+    names.postalCode%: الكود البريدى
+    names.incidentType%: نوع الحادث
+    fields.incidentType.agricultural%: زراعي
+    fields.incidentType.arson%: حريق متعمد
+    fields.incidentType.backgroundInvestigation%: خلفية التحقيق
+    fields.incidentType.benefitsAppeal%: استئناف المنافع
+    fields.incidentType.businessDispute%: نزاع تجاري أفضل
+    fields.incidentType.clinicalFraud%: احتيال الباحث السريري
+    fields.incidentType.congressional%: رد الكونغرس
+    fields.incidentType.disabilityWaiver%: طلب التنازل عن الإعاقة
+    fields.incidentType.domesticDispute%: شجار عائلي
+    fields.incidentType.drugTrafficking%: تهريب المخدرات
+    fields.incidentType.educationWaiver%: طلب تنازل عن التعليم
+    fields.incidentType.eeoHarassment%: EEO / المضايقة
+    fields.incidentType.embezzlement%: الاختلاس
+    fields.incidentType.extortion%: الابتزاز
+    fields.incidentType.fraud%: تزوير
+    fields.incidentType.government%: حكومة
+    fields.incidentType.investorComplaint%: شكوى المستثمر
+    fields.incidentType.laborRacketeering%: عمل المضرب
+    fields.incidentType.local%: محلي
+    fields.incidentType.murder%: قتل
+    fields.incidentType.newDrugFraud%: الاحتيال الجديد في تطبيق الدواء
+    fields.incidentType.payoff%: سدد دينك
+    fields.incidentType.pensionWaiver%: طلب التنازل عن المعاش
+    fields.incidentType.pollution%: التلوث
+    fields.incidentType.productTampering%: المنتج العبث
+    fields.incidentType.assetTheftMisuse%: سرقة الأصول أو إساءة استخدامها
+    names.objectType%: نوع الكائن
+    fields.objectType.participant%: مشارك
+    fields.objectType.contactMethod%: طريقة الاتصال
+    fields.objectType.task%: مهمة
+    fields.objectType.file%: ملف
+    fields.objectType.person%: شخص
+    fields.objectType.personAssociation%: جمعية الشخص
+    fields.objectType.reference%: مرجع
+    fields.objectType.location%: موقعك
+    fields.objectType.organization%: منظمة
+    fields.objectType.organizationAssociation%: جمعية التنظيم
+    fields.objectType.caseFile%: ملف القضية
+    fields.objectType.complaint%: شكوى
+    fields.objectType.associatedTag%: علامة مرتبطة
+    fields.objectType.group%: مجموعة
+    fields.objectType.costsheet%: ورقة التكلفة
+    fields.objectType.note%: ملحوظة
+    fields.objectType.docRepo%: Doc Repo
+    fields.objectType.personAlias%: شخص الاسم المستعار
+    fields.objectType.timesheet%: ورقة التوقيت
+    fields.objectType.subscription%: اشتراك
+    fields.objectType.user%: المستعمل
+    fields.objectType.objectLock%: قفل الكائن
+    names.state%: حالة
+    names.parentType%: نوع الوالدين
+    fields.parentType.container%: حاوية
+    fields.parentType.caseFile%: ملف القضية
+    fields.parentType.complaint%: شكوى
+    fields.parentType.organization%: منظمة
+    fields.parentType.person%: شخص
+    fields.parentType.task%: مهمة
+    fields.parentType.file%: ملف
+    fields.parentType.group%: مجموعة
+    fields.parentType.docRepo%: Doc Repo
+    fields.parentType.costsheet%: ورقة التكلفة
+    fields.parentType.timesheet%: ورقة التوقيت
+    names.owner%: صاحب
+    names.parentObjectType%: نوع الكائن الأصل
+    fields.parentObjectType.container%: حاوية
+    fields.parentObjectType.caseFile%: ملف القضية
+    fields.parentObjectType.complaint%: شكوى
+    fields.parentObjectType.organization%: منظمة
+    fields.parentObjectType.person%: شخص
+    fields.parentObjectType.task%: مهمة
+    fields.parentObjectType.file%: ملف
+    fields.parentObjectType.group%: مجموعة
+    fields.parentObjectType.docRepo%: Doc Repo
+    fields.parentObjectType.costsheet%: ورقة التكلفة
+    fields.parentObjectType.timesheet%: ورقة التوقيت
+    names.subType%: النوع الفرعي
+    names.city%: مدينة
+    names.createDate%: تاريخ الإنشاء
+    fields.createDate.previousWeek%: الأسبوع السابق
+    fields.createDate.previousMonth%: الشهر الماضى
+    fields.createDate.previousYear%: السنة الماضية
+    names.dueDate%: تاريخ الاستحقاق
+    fields.dueDate.previousWeek%: الأسبوع السابق
+    fields.dueDate.previousMonth%: الشهر الماضى
+    fields.dueDate.previousYear%: السنة الماضية
+    names.incidentDate%: تاريخ الحادث
+    fields.incidentDate.previousWeek%: الأسبوع السابق
+    fields.incidentDate.previousMonth%: الشهر الماضى
+    fields.incidentDate.previousYear%: السنة الماضية
+    names.modifyDate%: تعديل التاريخ
+    fields.modifyDate.previousWeek%: الأسبوع السابق
+    fields.modifyDate.previousMonth%: الشهر الماضى
+    fields.modifyDate.previousYear%: السنة الماضية
+common.directive.coreNotes:
+  title: ملاحظات
+  modal.addNote: اضف ملاحظة
+  modal.editNote: تحرير السجل
+  modal.notes.label: ملحوظة
+  modal.btnOk.text: حفظ
+  modal.btnCancel.text: إلغاء
+common.directive.coreCalendar:
+  title: التقويم
+  start.label: ' بداية:'
+  end.label: ' النهاية:'
+  newEvent.button: حدث جديد
+  agenda.button:
+    today: اليوم
+    month: شهر
+    week: أسبوع
+    day: يوم
+  addNewEventDialog:
+    title: حدث جديد
+    cancel.button: إلغاء
+    add.button: أضف حدث جديد
+    edit.button: حدث التحديث
+    next.button: التالى
+    previous.button: السابق
+    stepOneTitle: الخطوة 1 - أدخل تفاصيل الحدث
+    stepTwoTitle: الخطوة 2 - أدخل التعليقات
+    stepThreeTitle: الخطوة 3 - إرفاق المستندات
+    form:
+      requiredAttendees.label: الحضور المطلوب
+      requiredAttendees.placeholder: اختر الحضور المطلوبين
+      optionalAttendees.label: الحضور الاختياري
+      optionalAttendees.placeholder: اختر الحضور الاختياريين
+      subject.label: موضوع
+      subject.placeholder: أدخل الموضوع
+      location.label: موقعك
+      location.placeholder: إدخال الدولة
+      startDate.label: تاريخ البدء
+      startDate.placeholder: اختر تاريخ البدء
+      startTime.label: وقت البدء
+      startTime.placeholder: اختر وقت البدء
+      priority.label: أفضلية
+      priority.placeholder: اختر الأولوية
+      priorityOptions:
+        normalImportance: الأهمية العادية
+        highImportance: أهمية عالية
+        lowImportance: أهمية منخفضة
+      endDate.label: تاريخ الانتهاء
+      endDate.placeholder: اختر تاريخ الانتهاء
+      endTime.label: وقت النهاية
+      endTime.placeholder: اختر وقت الانتهاء
+      reminder.label: تذكير
+      reminder.placeholder: اختر نافذة التذكير
+      datePickerClose.button: قريب
+      datePickerCurrent.button: تيار
+      datePickerClear.button: واضح
+      otherOptions.label: خيارات أخرى
+      allDayEvent.checkbox: حدث طوال اليوم
+      privateEvent.checkbox: حدث خاص
+      recurrence.label: تكرار
+      setRecurrence.button: تعيين تكرار الحدث
+      editRecurrence.button: تحرير تكرار الحدث
+      browseFiles.button: تصفح ملفات
+      selectedFiles.label: 'الملفات المحددة لإرفاقها:'
+      noFiles.label: لم يتم تحديد ملفات.
+      attachedFiles.label: 'الملفات المرفقة:'
+      reminderOptions:
+        none: لا يوجد
+        0Minutes: 0 دقائق
+        5Minutes: 5 دقائق
+        10Minutes: 10 الدقائق
+        15Minutes: 15 الدقائق
+        30Minutes: 30 الدقائق
+        1Hours: 1 ساعة
+        2Hours: 2 ساعة
+        3Hours: 3 ساعة
+        4Hours: 4 ساعة
+        5Hours: 5 ساعة
+        6Hours: 6 ساعة
+        7Hours: 7 ساعة
+        8Hours: 8 ساعة
+        9Hours: 9 ساعة
+        10Hours: 10 ساعة
+        11Hours: 11 ساعة
+        halfDay: 0.5 أيام
+        18Hours: 18 ساعة
+        1Days: 1 أيام
+        2Days: 2 أيام
+        3Days: 3 أيام
+        4Days: 4 أيام
+        1Week: 1 أسبوع
+        2Weeks: 2 أسبوع
+  chooseEventAttendeesDialog:
+    table.columns.name: اسم
+    table.columns.email: عنوان بريد الكتروني
+    title: اختر الحضور
+    attendees.label: الحاضرين
+    attendees.placeholder: أدخل حاضرين إضافيين
+    searchAttendees.placeholder: البحث عن الحضور
+    cancel.button: إلغاء
+    addAttendees.button: أضف حاضرين
+  recurrencePatternDialog:
+    title: تكرار الحدث
+    durationError.text: يجب أن تكون مدة الحدث أقصر من عدد مرات حدوثه.
+    recurrencePattern.label: نمط التكرار
+    recurrencePattern.placeholder: اختر نمط التكرار
+    cancel.button: إلغاء
+    removeRecurrence.button: إزالة تكرار الحدث الحالي
+    setRecurrence.button: تعيين تكرار الحدث
+    repeatsOptions:
+      daily: اليومي
+      weekly: أسبوعي
+      monthly: شهريا
+      yearly: سنوي
+    sunday.checkbox: الأحد
+    monday.checkbox: الإثنين
+    tuesday.checkbox: الثلاثاء
+    wednesday.checkbox: الأربعاء
+    thursday.checkbox: الخميس
+    friday.checkbox: يوم الجمعة
+    saturday.checkbox: يوم السبت
+    monthOptions:
+      january: كانون الثاني
+      february: شهر فبراير
+      march: مارس
+      april: أبريل
+      may: مايو
+      june: يونيو
+      july: يوليو
+      august: أغسطس
+      september: سبتمبر
+      october: اكتوبر
+      november: شهر نوفمبر
+      december: ديسمبر
+    dayOptions:
+      sunday: الأحد
+      monday: الإثنين
+      tuesday: الثلاثاء
+      wednesday: الأربعاء
+      thursday: الخميس
+      friday: يوم الجمعة
+      saturday: يوم السبت
+      day: يوم
+      weekDay: أيام الأسبوع
+      weekendDay: يوم عطلة نهاية الأسبوع
+    dayOccurrenceOptions:
+      first: أول
+      second: ثانيا
+      third: الثالث
+      fourth: الرابع
+      last: الاخير
+    every.label: كل
+    day.label: يوم
+    week.label: أسبوع
+    month.label: شهر
+    _1_: '''on.label'' appears not in use. _TO_BE_REMOVED_'
+    _2_: إذا لزم الأمر ، أعد صياغة الرسالة لتجنب قواعد اللغة الإنجليزية في الرسالة
+    _on.label: "على"
+    day.placeholder: يوم
+    year.placeholder: عام
+    dailyRecurrence:
+      every.text: كل
+      days.text: يوم (أيام)
+      everyWeekday.text: كل ايام الاسبوع
+    weeklyRecurrence:
+      recurEvery.text: العناية بالكل
+      weeksOn.text: 'الأسبوع في:'
+    monthlyRecurrence:
+      day.text: يوم
+      ofEvery.text: كل
+      months.text: شهر
+      the.text: ال
+    yearlyRecurrence:
+      recurEvery.text: العناية بالكل
+      years.text: عام
+      on.text: 'على:'
+      onThe.text: 'على ال:'
+      of.text: من
+    recurrenceRange:
+      label: نطاق التكرار
+      noEndDate.text: لا يوجد تاريخ انتهاء
+      endAfter.text: 'تنتهي بعد:'
+      occurrences.text: مرات الحدوث
+      endBy.text: 'تنتهي في:'
+    descriptionString:
+      effective: فعال
+      until: حتى
+      from: من عند
+      to: إلى
+      occurs: يحدث
+      every: كل
+      on: "على"
+      of: من
+      the: ال
+      and: و
+      years: سنوات
+      day: يوم
+      days: أيام
+      weekday: أيام الأسبوع
+      weeks: الأسبوع (الأسابيع)
+      months: الشهور
+  eventDetailsDialog:
+    title: تفاصيل الحدث
+    private.label: نشر
+    start.label: 'بداية:'
+    end.label: 'النهاية:'
+    priority.label: 'أفضلية:'
+    occurs.label: 'يحدث:'
+    reminders.label: 'تذكير:'
+    attachments.label: المرفقات
+    invited.label: 'مدعو:'
+    accepted.label: 'قبلت:'
+    maybe.label: 'يمكن:'
+    declined.label: 'رفض:'
+    cancel.button: إلغاء
+    delete.button: حذف
+    edit.button: تحرير الحدث
+  updateEventDialog:
+    title: حدث التحديث
+    cancel.button: إلغاء
+    updateEvent.button: تحديث
+    thisOne.radio: هذه فقط
+    entireSeries.radio: السلسلة بأكملها
+    updateWarning.text: هذا حدث واحد في سلسلة. ما الذي تريد تحديثه؟
+  deleteEventDialog:
+    title: حذف الحدث
+    cancel.button: إلغاء
+    deleteEvent.button: حذف
+    thisOne.radio: هذه فقط
+    entireSeries.radio: السلسلة بأكملها
+    deleteWarning.text: هل أنت متأكد من حذف هذا الحدث؟
+  message:
+    error.accessDenied: تم رفض الوصول إلى خدمة التقويم.
+    error.serviceConfiguration: تكوين خدمة التقويم غير صالح.
+    error.serviceCredentials: بيانات الاعتماد غير صالحة. يرجى الاتصال بمسؤول النظام.
+    error.calendarIntegration: مشكلة في تكوين تكامل التقويم.
+    error.internalServerError: حدث خطأ داخلي في الخادم.
+common.directive.coreParticipants:
+  title: المشاركين
+  replaceFolderChildrenParticipants: استبدال المشاركين الوثائق الفرعية
+  modal:
+    addParticipant.label: إضافة مشارك
+    editParticipant.label: تحرير السجل
+    participantType.label: ' نوع المشارك'
+    participantName.label: اسم المشارك
+    btnOk.text: حفظ
+    btnCancel.text: إلغاء
+    dialogUserPicker.header: البحث عن مستخدم
+    dialogUserGroupPicker.header: بحث عن مستخدم / مجموعة
+    dialogGroupPicker.header: مجموعة البحث
+    replaceChildrenParticipant: استبدال الأطفال المشاركين
+  message:
+    error.groupType: لا يمكن أن تكون المجموعة المالكة شخصًا.
+    error.userType: ' لا يمكن أن يكون نوع المستخدم مجموعة.'
+    error.assigneeUnique: مسموح واحد فقط المحال إليه.
+    error.assigneeDelete: حذف المحال إليه غير مسموح به.
+    error.owninggroupUnique: يسمح بمجموعة واحدة فقط.
+    error.owninggroupDelete: حذف ملكية المجموعة غير مسموح به.
+    error.noAccessCombo: الجمع بين عدم الوصول والمحال إليه غير مسموح به.
+    error.duplicateUserOrGroup: مشارك غير صالح. تم العثور على إدخالات مكررة للمشارك.
+    error.userOrGroupNotFound: مشارك غير صالح. إدخال المشارك مفقود في النظام.
+    error.emptyParticipantLdapId: لا يمكن أن يكون اسم المشارك فارغًا
+    error.emptyParticipantType: لا يمكن أن يكون نوع المشارك فارغًا
+    error.ownerUnique: يسمح بمالك واحد فقط.
+common.directive.coreParticipantsCreateNewObjectForm.modal:
+  addParticipant.label: إضافة مشارك
+  editParticipant.label: تحرير السجل
+  participantType.label: نوع المشارك
+  participantName.label: اسم المشارك
+  btnOk.text: حفظ
+  btnCancel.text: إلغاء
+  dialogUserGroupPicker.header: بحث عن مستخدم / مجموعة
+  replaceChildrenParticipant: استبدال الأطفال المشاركين
+common.directive.progressIndicator:
+  progressCompletion: '٪ اكتمال'
+common.directive.folderActions:
+  button.addFile: اضف ملف
+  button.addFolder: أضف المجلد
+common.directive.downloadAllAsZip:
+  button: تنزيل الكل باسم Zip
+  message:
+    start: سيتم تنزيل ملف مضغوط
+    finish: تم تنزيل ملف مضغوط
+    containerError: تعذر العثور على الحاوية
+    downloadError: فشل تنزيل ملف مضغوط
+common.comp.acmLogin:
+  confirmLogout: لحمايتك ، التطبيق على وشك الخروج. انقر فوق "إلغاء الأمر" للبقاء متصلاً.
+  logoutBtn: تسجيل خروج
+  cancelBtn: إلغاء
+common.objectTypes:
+  CASE_FILE: ملف القضية
+  COMPLAINT: شكوى
+  CONSULTATION: التشاور
+  TASK: مهمة
+  TIMESHEET: ورقة التوقيت
+  COSTSHEET: ورقة التكلفة
+  FILE: ملف
+  FOLDER: مجلد
+  DOC_REPO: مستودع المستندات
+  ORGANIZATION: منظمة
+  PERSON: شخص
+  PERSON-ASSOCIATION: جمعية الأشخاص
+  PARTICIPANT: مشارك
+  NOTE: ملحوظة
+  PARTICIPANT-ASSOCIATION: جمعية المشاركين
+  ASSIGNMENT: مهمة
+  ASSOCIATE_TAG: بطاقة شعار
+  TRANSCRIBE: النسخ
+  BILLING_INVOICE: فاتورة الفواتير
+  BILLING_ITEM: عنصر الفوترة
+frevvo.dialogUserPicker:
+  header: اختر المستخدم
+  table.columns:
+    name: اسم
+    type: نوع
+    title: عنوان
+    id: اسم المستخدم
+common.objects.objectWasCreatedMessage: '{{objectTypeString}} بمعرف {{objectId}}
+  تم انشائه.'
+common.newPerson:
+  title: شخص
+  addAnother: أضف آخر
+  remove: إزالة
+  familyName: الكنية
+  familyName.placeholder: أدخل اسم العائلة
+  givenName: الاسم الاول
+  givenName.placeholder: أدخل الاسم الأول
+  middleName: الاسم الوسطى
+  middleName.placeholder: أدخل الاسم الأوسط
+  saveButton: حفظ الشخص
+  cancelButton: إلغاء
+  communicationAccounts:
+    title: حسابات الاتصالات
+    phone: هاتف
+    phone.placeholder: أدخل الهاتف
+    phoneType: نوع الهاتف
+    email: البريد الإلكتروني
+    email.placeholder: أدخل البريد الإلكتروني
+    emailType: نوع البريد الإلكتروني
+    url: URL
+    url.placeholder: إدخال عنوان الموقع
+    removeContactMethod: إزالة
+    urlType: نوع URL
+    validationMessage: 'رقم الهاتف الذي أدخلته غير صالح. يجب أن يكون في هذا الشكل: xxx-xxx-xxxx'
+  organizations:
+    title: المنظمات
+    searchExisting.placeholder: بحث المنظمات القائمة
+    organizationType: نوع العلاقة
+  picture:
+    title: صورة
+    browse: تصفح
+  locations:
+    title: المواقع
+    country: بلد
+    country.placeholder: حدد الدولة
+    state: الولاية / المقاطعة
+    state.placeholder: أدخل الولاية / المقاطعة
+    zip: الرمز البريدي
+    zip.placeholder: أدخل الرمز البريدي/بريدي
+    city: مدينة
+    city.placeholder: أدخل المدينة
+    type: نوع العنوان
+    type.placeholder: حدد نوع العنوان
+    streetAddress: العنوان 1
+    streetAddress.placeholder: أدخل العنوان 1
+    streetAddress2: العنوان 2
+    streetAddress2.placeholder: أدخل العنوان 2
+  identification:
+    title: معين الهوية
+    identificationID: معرف التعريف
+    identificationID.placeholder: أدخل معرف التعريف
+    identificationType: نوع الهوية
+    identificationType.placeholder: حدد نوع التعريف
+    identificationNumber: رقم الهوية
+    identificationNumber.placeholder: أدخل رقم التعريف
+    identificationIssuer: جهة إصدار الهوية
+    identificationIssuer.placeholder: أدخل جهة إصدار الهوية
+    identificationYearIssued: إصدار الهوية
+    identificationYearIssued.placeholder: حدد التعريف الصادر
+    identificationYearIssued.close.button: قريب
+  details:
+    title: تفاصيل
+common.addPerson:
+  title: أضف شخصًا
+  addNew.label: إضافة شخص جديد
+  selectExisting.label: حدد الشخص الموجود
+  person.label: شخص
+  type.label: نوع ارتباط الشخص
+  btnCancel.text: إلغاء
+  btnOk.text: حفظ الشخص
+  setPrimary.label: هل تريد تعيينه أساسي؟
+  radioName: الاختيار الأساسي
+  radioYes.text: "نعم"
+  radioNo.text: "لا"
+  duplicatePersonRoleErrorMessage: الشخص لديه بالفعل الارتباط المحدد
+common.editPerson:
+  title: تحرير شخص
+common.dialogPersonPicker:
+  header: ابحث عن الناس
+  table.columns:
+    givenName: الاسم الاول
+    familyName: اسم العائلة
+    id: هوية شخصية
+    organization: منظمة
+    phone: هاتف
+    email: البريد الإلكتروني
+    location: موقعك
+common.duplicatePersonPicker:
+  headerPick: هذا البريد الإلكتروني قيد الاستخدام بالفعل. اختر شخصًا موجودًا أو ارجع لتغيير عنوان البريد الإلكتروني.
+  headerRedirect: هذا البريد الإلكتروني قيد الاستخدام بالفعل. اختر شخصًا موجودًا إذا كنت ترغب في المراجعة.
+  btn.cancel: عودة
+  btn.pickPerson: اختر شخصًا
+  btn.goToPerson: تحقق من الشخص
+  table.columns:
+    givenName: الاسم الاول
+    familyName: اسم العائلة
+    id: هوية شخصية
+    organization: منظمة
+    phone: هاتف
+    location: موقعك
+common.dialogOrganizationPicker:
+  header: اختر منظمة
+  table.columns:
+    type: نوع المنظمة
+    name: منظمة
+    identification: هوية شخصية
+    contact: اتصال رئيسي
+    phone: هاتف
+    location: موقعك
+common.dialogObjectPicker:
+  header: بحث {{objectLabel}}
+  table.columns:
+    id: معرف المستند
+    title: عنوان الوثيقة
+    parentId: معرف الكائن الأصل
+    parentTitle: عنوان الكائن الأصل
+  addDocument: اختر وثيقة لإضافتها
+common.addOrganization:
+  title: أضف منظمة
+  parentTitle: إضافة المنظمة الأم
+  addNew.label: إضافة منظمة جديدة
+  selectExisting.label: حدد المنظمة الموجودة
+  organization.label: منظمة
+  description: وصف
+  type.label: نوع جمعية المنظمة
+  type.label.default.text: لا توجد منظمة أم
+  type.label.text: المنظمة الأم
+  btnCancel.text: إلغاء
+  btnOk.text: حفظ المنظمة
+  setPrimary.label: هل تريد تعيينه أساسي؟
+  radioName: الاختيار الأساسي
+  radioYes.text: "نعم"
+  radioNo.text: "لا"
+  duplicateOrganizationRoleErrorMessage: المنظمة لديها بالفعل الارتباط المحدد
+  notifyParentOrgWillBeChanged: المنظمة المختارة لديها بالفعل منظمة أم. إذا تابعت سيتم تغيير المنظمة الأم.
+common.addObjectAssociation:
+  title.add: أضف {{objectLabel}} جمعية
+  title.edit: تعديل {{objectLabel}} جمعية
+  object.label: تحديد {{objectLabel}}
+  selectExisting.label: حدد القائمة {{objectLabel}}
+  description: وصف
+  type.label: نوع الجمعية
+  btnCancel.text: إلغاء
+  btnOk.text: حفظ
+  setPrimary.label: هل تريد تعيينه أساسي؟
+  radioYes.text: "نعم"
+  radioNo.text: "لا"
+common.duplicates:
+  header: مكرر
+  columnDefs: 
+    case_file : ملف القضية
+    name : اسم
+    folder : مجلد
+    ext: تمديد
+    type: نوع
+    created : خلقت
+    modified : تم التعديل
+    modifier : تم التعديل بواسطة
+    version : الإصدار
+    status : الحالة
+  btnCancel: قريب  
+  btnDelete: حذف
+common.editOrganization:
+  title: تحرير المنظمة
+  parentTitle: تحرير المنظمة الأم
+common.newOrganization:
+  title: منظمة
+  addAnother: أضف آخر
+  remove: إزالة
+  name: اسم المنظمة
+  name.placeholder: أدخل اسم المنظمة
+  type: نوع المنظمة
+  type.placeholder: حدد نوع المؤسسة
+  saveButton: حفظ المنظمة
+  cancelButton: إلغاء
+  details.title: تفاصيل
+  parentOrganization: المنظمة الأم
+  searchParentOrganization.placeholder: البحث عن المنظمة الأم
+  communicationAccounts:
+    title: حسابات الاتصالات
+    phone: هاتف
+    phone.placeholder: أدخل الهاتف
+    phoneType: نوع الهاتف
+    email: البريد الإلكتروني
+    email.placeholder: أدخل البريد الإلكتروني
+    emailType: نوع البريد الإلكتروني
+    fax: فاكس
+    fax.placeholder: أدخل الفاكس
+    faxType: نوع الفاكس
+    url: URL
+    url.placeholder: إدخال عنوان الموقع
+    removeContactMethod: إزالة
+    urlType: نوع URL
+    validationMessage: "رقم الهاتف الذي أدخلته غير صالح. يجب أن يكون بهذا التنسيق: xxx-xxx-xxxx"
+  people:
+    title: اشخاص
+    searchExisting.placeholder: ابحث عن شخص موجود
+    personType: نوع الشخص
+  locations:
+    title: المواقع
+    country: بلد
+    country.placeholder: حدد الدولة
+    state: الولاية / المقاطعة
+    state.placeholder: أدخل الولاية / المقاطعة
+    zip: بريدي/الرمز البريدي
+    zip.placeholder: أدخل الرمز البريدي/بريدي
+    city: مدينة
+    city.placeholder: أدخل المدينة
+    type: نوع العنوان
+    type.placeholder: حدد نوع العنوان
+    streetAddress: العنوان 1
+    streetAddress.placeholder: أدخل العنوان 1
+    streetAddress2: العنوان 2
+    streetAddress2.placeholder: أدخل العنوان 2
+  identification:
+    title: معين الهوية
+    identificationID: معرف الهوية
+    identificationID.placeholder: أدخل معرف التعريف
+    identificationType: نوع الهوية
+    identificationType.placeholder: حدد نوع التعريف
+    identificationNumber: رقم الهوية
+    identificationNumber.placeholder: أدخل رقم التعريف
+    identificationIssuer: جهة إصدار الهوية
+    identificationIssuer.placeholder: أدخل جهة إصدار الهوية
+    identificationYearIssued: إصدار الهوية
+    identificationYearIssued.placeholder: حدد التعريف الصادر
+    identificationYearIssued.close.button: قريب
+common.labels:
+  primary: ' [ابتدائي]'
+common.objectHistory:
+  modal:
+    title: تفاصيل التاريخ
+    btn:
+      close: قريب
+    table.columns:
+      action: عمل
+      newValue: قيمة جديدة
+      oldValue: القيمة القديمة
+  client:
+    title: التاريخ
+    label:
+      updated: محدث
+    table.columns:
+      eventType: اسم الحدث
+      eventDate: تاريخ
+      userId: المستعمل
+      details.btn.text: رأي {{count}} التغييرات
+common.objectAction:
+  updated: تم تحديث
+common.multicorrespondence:
+  modal:
+    title: قوالب المراسلات
+    select: حدد قوالب المراسلات
+    documentName.label: أدخل اسم قالب المراسلات المتعددة
+    documentName.placeholder: اسم الملف
+    buttons:
+      ok: خلق
+      cancel: إلغاء
+eventType.com.armedia.acm.activiti.businessProcess.end: تم إنهاء عملية النشاط
+eventType.com.armedia.acm.activiti.businessProcess.start: بدأت عملية الأعمال النشاط
+eventType.com.armedia.acm.activiti.task.assignment: تعيين مهمة النشاط
+eventType.com.armedia.acm.activiti.task.complete: اكتمال مهمة النشاط
+eventType.com.armedia.acm.activiti.task.create: تم إنشاء مهمة النشاط
+eventType.com.armedia.acm.activiti.task.delete: حذف مهمة النشاط
+eventType.com.armedia.acm.services.ocr.processing: تمت معالجة خدمة OCR
+eventType.com.armedia.acm.services.ocr.created: تم إنشاء خدمة Ocr
+eventType.com.armedia.acm.services.ocr.queued: خدمة Ocr في قائمة الانتظار
+eventType.com.armedia.acm.services.ocr.updated: تم تحديث خدمة Ocr
+eventType.com.armedia.acm.services.transcribe.created: إنشاء خدمة النسخ
+eventType.com.armedia.acm.services.transcribe.updated: تم تحديث خدمة النسخ
+eventType.com.armedia.acm.services.transcribe.queued: تم وضع خدمة الكتابة في قائمة الانتظار
+eventType.com.armedia.acm.services.transcribe.processing: معالجة خدمة النسخ
+eventType.com.armedia.acm.folder.participant.changed: قام المجلد بتغيير المشترك       
+eventType.com.armedia.acm.app.task.complete: اكتملت المهمة
+eventType.com.armedia.acm.app.task.create: تم إنشاء المهمة
+eventType.com.armedia.acm.app.task.delete: تم حذف المهمة
+eventType.com.armedia.acm.app.task.findById: البحث عن مهمة حسب المعرّف
+eventType.com.armedia.acm.app.task.save: حفظ المهمة
+eventType.com.armedia.acm.app.task.searchResult: البحث عن المهام يعطي نتائج
+eventType.com.armedia.acm.app.task.details.changed: تم تغيير تفاصيل المهمة
+eventType.com.armedia.acm.app.task.reworkdetails.changed: تم تغيير تفاصيل إعادة العمل
+eventType.com.armedia.acm.app.task.priority.changed: تم تغيير أولوية المهمة
+eventType.com.armedia.acm.app.task.status.changed: تم تغيير حالة المهمة
+eventType.com.armedia.acm.businessprocess.started: بدأت عملية الأعمال
+eventType.com.armedia.acm.casefile: حدث ملف القضية
+eventType.com.armedia.acm.casefile.ACTIVE: ملف الحالة نشط
+eventType.com.armedia.acm.casefile.DRAFT: ملف القضية هو مسودة
+eventType.com.armedia.acm.casefile.CLOSED: ملف القضية مغلق
+eventType.com.armedia.acm.casefile.In review: ملف القضية قيد المراجعة
+eventType.com.armedia.acm.casefile.search: بحث ملف القضية
+eventType.com.armedia.acm.casefile.updated: تم تحديث ملف القضية
+eventType.com.armedia.acm.casefile.file.added: تمت إضافة ملف القضية
+eventType.com.armedia.acm.casefile.viewed: تم عرض الحالة
+eventType.com.armedia.acm.casefile.file.rejected: تم رفض المستند من الموجز
+eventType.com.armedia.acm.ecm.file.rejected: تم رفض المستند من الموجز
+eventType.com.armedia.acm.casefile.file.lodged: تم حفظ المستند
+eventType.com.armedia.acm.ecm.file.file.lodged: تم حفظ المستند
+eventType.com.armedia.acm.changeCaseStatus.created: تغيير حالة الحالة
+eventType.com.armedia.acm.closeComplaintRequest.created: تم إنشاء طلب إغلاق الشكوى
+eventType.com.armedia.acm.consultation.viewed: تم عرض الاستشارة
+eventType.com.armedia.acm.consultation.updated: ينظر التشاور
+eventType.com.armedia.acm.consultation: حدث استشاري
+eventType.com.armedia.acm.consultation.ACTIVE: التشاور نشط
+eventType.com.armedia.acm.consultation.DRAFT: التشاور هو مشروع
+eventType.com.armedia.acm.consultation.CLOSED: تم إغلاق الاستشارة
+eventType.com.armedia.acm.consultation.INACTIVE: الاستشارة غير نشطة
+eventType.com.armedia.acm.consultation.In review: التشاور قيد المراجعة
+eventType.com.armedia.acm.consultation.search: البحث عن المشاورة
+eventType.com.armedia.acm.consultation.file.added: تمت إضافة الاستشارة
+eventType.com.armedia.acm.consultation.created: تم إنشاء الاستشارة
+eventType.com.armedia.acm.consultation.createdFromComplaint: تم إنشاء الاستشارة من الشكوى
+eventType.com.armedia.acm.consultation.updatedFromComplaint: تم تحديث الاستشارة من الشكوى
+eventType.com.armedia.acm.consultation.priority.changed: تم تغيير أولوية التشاور
+eventType.com.armedia.acm.consultation.details.changed: تم تغيير تفاصيل الاستشارة
+eventType.com.armedia.acm.consultation.title.changed: تم تغيير عنوان الاستشارة
+eventType.com.armedia.acm.consultation.status.changed: تم تغيير وضع الاستشارة
+eventType.com.armedia.acm.consultation.queue.changed: تم تغيير قائمة انتظار الاستشارة
+eventType.com.armedia.acm.consultation.participant.added: تمت إضافة مشارك
+eventType.com.armedia.acm.consultation.participant.deleted: تم حذف مشارك
+eventType.com.armedia.acm.consultation.participant.changed: تم تغيير المشارك
+eventType.com.armedia.acm.consultation.costsheet.associated: ورقة التكاليف المرتبطة
+eventType.com.armedia.acm.complaint.closed: تم إغلاق الشكوى
+eventType.com.armedia.acm.complaint.created: تم إنشاء الشكوى
+eventType.com.armedia.acm.complaint.file.added: تمت إضافة ملف جديد إلى الشكوى
+eventType.com.armedia.acm.complaint.findById: ابحث عن شكوى
+eventType.com.armedia.acm.complaint.search.result: نتيجة البحث عن شكوى
+eventType.com.armedia.acm.complaint.submittedForReview: تم تقديم الشكوى للمراجعة
+eventType.com.armedia.acm.complaint.updated: تم تحديث الشكوى
+eventType.com.armedia.acm.dashboard.created: لوحة القيادة الافتراضية التي تم إنشاؤها لأول مرة 
+eventType.com.armedia.acm.dashboard.getByUserId: تم استرداد لوحة القيادة
+eventType.com.armedia.acm.dashboard.updated: تم تحديث تهيئة لوحة المعلومات
+eventType.com.armedia.acm.dashboard.widget.getByUserRoles: تم استرداد القطعة بواسطة أدوار المستخدم
+eventType.com.armedia.acm.dashboard.widget.getRolesByWidgets: تم استرداد الأدوار بواسطة Widgets
+eventType.com.armedia.acm.dashboard.widget.setAuthorizedRoles: تم تحديث الوصول إلى أداة لوحة المعلومات
+eventType.com.armedia.acm.ecm.file.document.viewed: تم عرض المستند
+eventType.com.armedia.acm.ecm.file.added: تم تحميل المستند
+eventType.com.armedia.acm.ecm.file.downloaded: تم تنزيل المستند
+eventType.com.armedia.acm.ecm.folder.downloaded: تم تنزيل المجلد
+eventType.com.armedia.acm.ecm.file.updated: تم تحديث الوثيقة
+eventType.com.armedia.acm.ecm.file.copied: تم نسخ الوثيقة
+eventType.com.armedia.acm.ecm.file.copiedAsLink: تم نسخ المستند كارتباط
+eventType.com.armedia.acm.ecm.file.replaced: تم استبدال المستند
+eventType.com.armedia.acm.file.version.set: إصدار المستند
+eventType.com.armedia.acm.file.deleted: تم حذف المستند
+eventType.com.armedia.acm.ecm.file.moved: تم نقل المستند
+eventType.com.armedia.acm.file.renamed: تمت إعادة تسمية المستند
+eventType.com.armedia.acm.file.co_edit.user.joined: انضم المستخدم إلى مستند التحرير المشترك
+eventType.com.armedia.acm.file.co_edit.user.leave: غادر المستخدم مستند التحرير المشترك
+eventType.com.armedia.acm.file.co_edit.document.saved: تم حفظ التحرير المشترك للمستند
+eventType.com.armedia.acm.functionalaccess.updated: تم تحديث الوصول
+eventType.com.armedia.acm.login: تسجيل دخول المستخدم
+eventType.com.armedia.acm.logout: تسجيل خروج المستخدم
+eventType.com.armedia.acm.object.assignee.change: تم تغيير المحال إليه
+eventType.com.armedia.acm.object.participants.change: تم تغيير المشارك
+eventType.com.armedia.acm.objecthistory.created: تاريخ إنشاء الكائن
+eventType.com.armedia.acm.personAssociation.created: الشخص المرتبط
+eventType.com.armedia.acm.personAssociation.deleted: تم حذف ارتباط الشخص
+eventType.com.armedia.acm.personAssociation.updated: تم تحديث ارتباط الشخص
+eventType.com.armedia.acm.person.postalAddress.added: تمت إضافة العنوان البريدي
+eventType.com.armedia.acm.person.postalAddress.deleted: تم حذف العنوان البريدي
+eventType.com.armedia.acm.person.postalAddress.updated: تم تحديث العنوان البريدي
+eventType.com.armedia.acm.person.personAlias.added: تمت إضافة الاسم المستعار
+eventType.com.armedia.acm.person.personAlias.deleted: تم حذف الاسم المستعار
+eventType.com.armedia.acm.person.personAlias.updated: تم تحديث الاسم المستعار
+eventType.com.armedia.acm.person.contactMethod.added: تمت إضافة جهة الاتصال
+eventType.com.armedia.acm.person.contactMethod.deleted: تم حذف جهة الاتصال
+eventType.com.armedia.acm.person.contactMethod.updated: تم تحديث جهة الاتصال
+eventType.com.armedia.acm.person.organization.added: تمت إضافة المنظمة
+eventType.com.armedia.acm.person.organization.deleted: تم حذف المؤسسة
+eventType.com.armedia.acm.person.organization.updated: تم تحديث المنظمة
+eventType.com.armedia.acm.person.created: تم إنشاء الشخص
+eventType.com.armedia.acm.person.updated: تم تحديث الشخص
+eventType.com.armedia.acm.person.viewed: شخص ينظر إليه
+eventType.com.armedia.acm.person.image.uploaded :  تم تحميل صورة محدثة للشخص
+eventType.com.armedia.acm.organization.created: تم إنشاء المنظمة
+eventType.com.armedia.acm.organization.updated: تم تحديث المنظمة
+eventType.com.armedia.acm.organization.viewed: تمت مشاهدة المنظمة
+eventType.com.armedia.acm.plugins.search.result: نتيجة بحث الإضافات
+eventType.com.armedia.acm.plugins.task.adHocTaskCreated: إنشاء Ad Hoc Taks
+eventType.com.armedia.acm.plugins.task.completed:  تمت المهمة
+eventType.com.armedia.acm.plugins.task.findById: ابحث عن مهمة
+eventType.com.armedia.acm.plugins.task.search.result: ابحث عن نتيجة مهمة
+eventType.com.armedia.acm.profile.getByUserId: تم استرداد الملف الشخصي بواسطة المستخدم
+eventType.com.armedia.acm.profile.userorg.created: تم إنشاء ارتباط المستخدم بالمنظمة
+eventType.com.armedia.acm.profile.userorg.updated: تم تحديث ارتباط المستخدم بالمنظمة
+eventType.com.armedia.acm.subscription.created: تم إنشاء الاشتراك
+eventType.com.armedia.acm.subscription.deleted: تم حذف الاشتراك
+eventType.com.armedia.acm.subscriptionevent.created: تم إنشاء حدث الاشتراك
+eventType.com.armedia.acm.task.added: تمت إضافة المهمة
+eventType.com.armedia.acm.widget.created: تم إنشاء أداة جديدة
+eventType.com.armedia.acm.widgetrole.created: تم إنشاء دور الأداة
+eventType.com.armedia.acm.widgetrole.update: تحديث دور القطعة
+eventType.com.armedia.acm.widget.update: تحديث القطعة
+eventType.com.armedia.acm.complaint.priority.changed: تم تغيير أولوية الشكوى
+eventType.com.armedia.acm.complaint.details.changed: تم تغيير تفاصيل الشكوى
+eventType.com.armedia.acm.complaint.status.changed: تم تغيير حالة الشكوى
+eventType.com.armedia.acm.complaint.location.updated: تم تحديث الموقع
+eventType.com.armedia.acm.complaint.participant.added: تمت إضافة مشارك
+eventType.com.armedia.acm.complaint.participant.deleted: تم حذف مشارك
+eventType.com.armedia.acm.complaint.costsheet.associated: ورقة التكاليف المرتبطة
+eventType.com.armedia.acm.complaint.timesheet.associated: ورقة زمنية مرتبطة
+eventType.com.armedia.acm.casefile.created: تم إنشاء ملف القضية
+eventType.com.armedia.acm.casefile.createdFromComplaint: تم إنشاء ملف القضية من شكوى
+eventType.com.armedia.acm.casefile.updatedFromComplaint: تحديث ملف القضية من شكوى
+eventType.com.armedia.acm.casefile.priority.changed: تم تغيير أولوية ملف القضية
+eventType.com.armedia.acm.casefile.details.changed: تم تغيير تفاصيل ملف القضية
+eventType.com.armedia.acm.casefile.title.changed: تم تغيير عنوان ملف القضية
+eventType.com.armedia.acm.casefile.status.changed: تم تغيير حالة ملف القضية
+eventType.com.armedia.acm.casefile.queue.changed: تم تغيير قائمة انتظار ملف الحالة
+eventType.com.armedia.acm.casefile.participant.added: تمت إضافة مشارك
+eventType.com.armedia.acm.casefile.participant.deleted: تم حذف مشارك
+eventType.com.armedia.acm.casefile.participant.changed: تم تغيير المشارك
+eventType.com.armedia.acm.casefile.costsheet.associated: ورقة التكاليف المرتبطة
+eventType.com.armedia.acm.costsheet.savefinal: تم حفظ ورقة التكاليف بشكل نهائي
+eventType.com.armedia.acm.costsheet.submit: تم إرسال ورقة التكاليف
+eventType.com.armedia.acm.costsheet.save: تم حفظ ورقة التكاليف
+eventType.com.armedia.acm.casefile.timesheet.associated: ورقة زمنية مرتبطة
+eventType.com.armedia.acm.timesheet.savefinal: تم حفظ ورقة الوقت النهائية
+eventType.com.armedia.acm.timesheet.save: تم حفظ ورقة الوقت
+eventType.com.armedia.acm.timesheet.submit: قدمت ورقة الوقت
+eventType.com.armedia.acm.correspondence.file.added: تمت إضافة المراسلات
+eventType.com.armedia.acm.app.note.added: تمت إضافة الملاحظة
+eventType.com.armedia.acm.app.note.rejectcomment.added: تمت إضافة رفض التعليق
+eventType.com.armedia.acm.app.note.updated: تم تحديث الملاحظة
+eventType.com.armedia.acm.app.note.deleted: تم حذف الملاحظة
+eventType.com.armedia.acm.outlook.calendar.event.added: تمت إضافة حدث التقويم
+eventType.com.armedia.acm.associatedtag.created: تمت إضافة العلامة
+eventType.com.armedia.acm.participant.created: تم إنشاء المشارك
+eventType.com.armedia.acm.objectassociation.created: تم إنشاء المرجع
+eventType.com.armedia.acm.objectassociation.reference.added: تمت إضافة المرجع
+eventType.com.armedia.acm.objectassociation.reference.updated: تم تحديث المرجع
+eventType.com.armedia.acm.objectassociation.reference.deleted: تم حذف المرجع
+eventType.com.armedia.acm.objectlock.checkout: فحصت
+eventType.com.armedia.acm.objectlock.checkin: تم تسجيل الوصول
+eventType.com.armedia.acm.objectlock.cancel: إلغاء التحرير
+eventType.com.armedia.acm.objectlock.lock.read: قراءة الكائن مقفل
+eventType.com.armedia.acm.objectlock.unlock.read: قراءة الكائن غير مؤمن
+eventType.com.armedia.acm.objectlock.lock.write: كائن مقفل للكتابة
+eventType.com.armedia.acm.objectlock.unlock.write: كائن غير مؤمن الكتابة
+eventType.com.armedia.acm.objectlock.lock.delete: تم حذف الكائن
+eventType.com.armedia.acm.objectlock.unlock.delete: الكائن غير مؤمن للحذف
+eventType.com.armedia.acm.objectlock.lock.object_lock: تم تأمين الكائن
+eventType.com.armedia.acm.objectlock.unlock.object_lock: تم فتح الكائن
+eventType.com.armedia.acm.smtp.event.sent: مستند بالبريد الإلكتروني
+eventType.com.armedia.acm.smtp.event.sent.hyperlink: مستند بالبريد الإلكتروني
+eventType.com.armedia.acm.smtp.event.mail.sent: تم إرسال البريد
+eventType.com.armedia.acm.smtp.event.received: رسالة الكترونية تلقتها
+eventType.com.armedia.acm.app.signature.signed.task: تم توقيع المهمة
+eventType.com.armedia.acm.documentrepository.created: تم إنشاء مستودع المستندات
+eventType.com.armedia.acm.documentrepository.updated: تم تحديث مستودع المستندات
+eventType.com.armedia.acm.documentrepository.viewed: تم عرض مستودع المستندات
+eventType.com.armedia.acm.documentrepository.name.updated: تم تغيير عنوان مستودع المستندات
+eventType.com.armedia.acm.documentrepository.participant.deleted: تم حذف مشارك
+eventType.com.armedia.acm.documentrepository.participant.added: تمت إضافة مشارك
+eventType.com.armedia.acm.documentrepository.participant.updated: تم تغيير المشارك
+eventType.com.armedia.acm.folder.created: تم إنشاء المجلد
+eventType.com.armedia.acm.folder.renamed: تمت إعادة تسمية المجلد
+eventType.com.armedia.acm.folder.copied: تم نسخ المجلد
+eventType.com.armedia.acm.folder.copiedAsLink: تم إنشاء ارتباط بالمجلد
+eventType.com.armedia.acm.ldapUser.created: تم إنشاء مستخدم LDAP
+eventType.com.armedia.acm.ldapUser.updated: تم تحديث مستخدم LDAP
+eventType.com.armedia.acm.ldapUser.deleted: تم حذف مستخدم LDAP
+eventType.com.armedia.acm.ldapGroup.deleted: تم حذف مجموعة LDAP
+eventType.com.armedia.acm.transcribe.created: تم إنشاء النسخ
+eventType.com.armedia.acm.transcribe.updated: تم تحديث النسخ
+eventType.com.armedia.acm.transcribe.queued: النسخ في قائمة الانتظار
+eventType.com.armedia.acm.transcribe.processing: معالجة النسخ
+eventType.com.armedia.acm.transcribe.completed: اكتمل النسخ
+eventType.com.armedia.acm.transcribe.failed: فشل النسخ
+eventType.com.armedia.acm.transcribe.cancelled: تم إلغاء النسخ
+eventType.com.armedia.acm.transcribe.compiled: تم تجميع النسخ
+eventType.com.armedia.acm.transcribe.rollback: التراجع عن النسخ
+eventType.com.armedia.acm.transcribe.provider.failed: فشل موفر النسخ
+eventType.com.armedia.acm.billing.item.created: تم إنشاء عنصر إعداد الفواتير
+eventType.com.armedia.acm.exemption.code.created: تمت إضافة رمز الإعفاء
+eventType.com.armedia.acm.exemption.code.deleted: تم حذف رمز الإعفاء
+eventType.com.armedia.acm.exemption.code.updated: تم تحديث رمز الإعفاء

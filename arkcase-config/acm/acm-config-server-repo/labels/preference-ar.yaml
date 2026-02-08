@@ -1,0 +1,103 @@
+preference:
+  title: التفضيلات
+  menus:
+    usermenu.item: التفضيلات
+  overviewWidgets:
+    aliases:
+      title: اسماء مستعارة
+    approvalRouting:
+      title: توجيه الموافقة
+    approvers:
+      title: الموافقون
+    calendar:
+      title: التقويم
+    cases:
+      title: الحالات
+    complaints:
+      title: شكاوي
+    cost:
+      title: كلفة
+    dbas:
+      title: DBAs
+    details:
+      title: تفاصيل
+    docReview:
+      title: المستندات قيد المراجعة
+    documents:
+      title: مستندات
+    emails:
+      title: رسائل البريد الإلكتروني
+    expenses:
+      title: نفقات
+    faxes:
+      title: الفاكسات
+    history:
+      title: التاريخ
+    hoursSummary:
+      title: ملخص الساعات
+    ids:
+      title: معرفات
+    locations:
+      title: المواقع
+    notes:
+      title: ملاحظات
+    organizations:
+      title: المنظمات
+    parentDocs:
+      title: المستندات الأم
+    participants:
+      title: المشاركين
+    people:
+      title: اشخاص
+    person:
+      title: شخص
+    phones:
+      title: الهواتف
+    pictures:
+      title: صور
+    references:
+      title: المراجع
+    relOrganizations:
+      title: المنظمات ذات الصلة
+    related:
+      title: الناس ذات الصلة
+    reworkDetails:
+      title: تفاصيل إعادة العمل
+    signature:
+      title: التوقيع
+    tags:
+      title: شقة قرطاس
+    tasks:
+      title: مهام
+    time:
+      title: زمن
+    urls:
+      title: عناوين URL
+    workflow:
+      title: نظرة عامة على سير العمل
+  widgets.list:
+    defaultView: طريقة العرض الافتراضية
+    expanded: موسع
+    collapsed: انهار
+    disabled: معاق
+    enabled: ممكّن
+  modules.list:
+    complaints:
+      title: شكاوي
+    cases:
+      title: ملفات القضية
+    tasks:
+      title: مهام
+    people:
+      title: اشخاص
+    organizations:
+      title: المنظمات
+    document-repository:
+      title: مستندات
+    my-documents:
+      title: مستنداتي
+    cost-tracking:
+      title: تتبع التكلفة
+    time-tracking:
+      title: تتبع الوقت
+    noModules: لم يتم العثور على وحدات في النظام

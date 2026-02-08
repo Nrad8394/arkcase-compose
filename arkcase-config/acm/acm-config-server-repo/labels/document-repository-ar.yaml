@@ -1,0 +1,192 @@
+document-repository:
+  title: مستندات
+document-repository.menus:
+  leftnav.item: مستندات
+  topbar.item: مستودع المستندات
+document-repository.error:
+  invalidData: ""
+document-repository.comp.main:
+  title: نظرة عامة
+document-repository.comp.info:
+  title: معلومات
+  docRepoId: 'معرّف المستودع:'
+  docRepoName: 'اسم مستودع المستندات:'
+  modified.label: تعديل التاريخ
+  assignee.label: مخصص ل
+  owningGroup.label: امتلاك المجموعة
+  description.label: وصف
+document-repository.comp.actions:
+  title: أجراءات
+  restrict: بتقييد؟
+  subscribe.button: الإشتراك
+  unsubscribe.button: إلغاء الاشتراك
+  delete.button: حذف المستودع
+  confirm.delete.documentRepository.msg: سيؤدي هذا الإجراء إلى حذف المستودع بأكمله. هل انت متأكد انك تريد المتابعة؟
+document-repository.comp.details:
+  title: تفاصيل
+  informSaved: تم حفظ تفاصيل مستودع المستندات
+  table.columns:
+    title: تفاصيل
+    modified: تاريخ التعديل الأخير
+    modifier: آخر تعديل للمستخدم
+document-repository.comp.documents:
+  title: مستندات
+  sendEmail: ارسل بريد الكتروني
+  filterInputPlaceholder: منقي
+  searchInputPlaceholder: بحث
+  newTask: مهمة جديدة
+document-repository.comp.participants:
+  title: المشاركين
+  table.columns:
+    type: نوع
+    name: اسم
+  dialogUserPicker:
+    header: اختر المستخدم
+    table.columns:
+      name: اسم
+      type: نوع
+      title: عنوان
+      id: اسم المستخدم
+  dialogGroupPicker:
+    header: اختر مجموعة
+    table.columns:
+      name: اسم
+document-repository.comp.tasks:
+  title: مهام
+  table.columns:
+    title: عنوان
+    assignee: المحال إليه
+    created: خلقت
+    priority: أفضلية
+    due: بسبب
+    status: الحالة
+  table.overdue.tooltip: المهمة متأخرة
+  table.deadline.tooltip: الموعد النهائي يقترب
+document-repository.comp.notes:
+  title: ملاحظات
+  table.columns:
+    note: ملحوظة
+    created: خلقت
+    creator: مؤلف
+document-repository.comp.references:
+  title: المراجع
+  table.columns:
+    targetName: رقم
+    parentName: الأبوين
+    targetTitle: عنوان
+    modified: تم التعديل
+    targetType: نوع مرجع
+    status: الحالة
+  message:
+    delete:
+      success: تم حذف المرجع بنجاح
+      error: خطأ في حذف المرجع
+document-repository.comp.history:
+  title: التاريخ
+  table.columns:
+    eventType: اسم الحدث
+    eventDate: تاريخ
+    userId: المستعمل
+document-repository.comp.tags:
+  title: العلامات
+  table.columns:
+    tag: بطاقة شعار
+    created: خلقت
+    createdBy: انشأ من قبل
+  modal:
+    title: شقة قرطاس
+    search: ابحث عن الوسم
+    buttons:
+      cancel: إلغاء
+      ok: إضافة علامة
+  message:
+    tagExists: توجد بالفعل علامة بهذا الاسم أو الوصف أو النص
+    tagAssociated: مرتبط بالفعل
+    delete:
+      success: تم حذف العلامة بنجاح
+      error: خطأ في حذف العلامة
+document-repository.comp.referenceSearchGrid:
+  title: بحث مرجعي
+document-repository.comp.addreference:
+  title: يضيف مرجعا
+  cancelButton: إلغاء
+  confirmButton: أضف
+  search:
+    placeholder: ابحث عن الحالة أو الشكوى أو الملف أو المهمة
+    btn: بحث
+  grid:
+    columns:
+      id: هوية شخصية
+      name: اسم
+      type: نوع
+      title: عنوان
+      parent: الأبوين
+      assignee: المحال إليه
+      modified: تم التعديل
+document-repository.comp.assigneePickerModal:
+  title: تغيير المحال إليه
+  assigneeNamelabel: اسم المحال إليه
+  btnCancelText: إلغاء
+  btnSaveText: حفظ
+  searchAssigneeHeader: ابحث عن المتنازل عنه
+document-repository.comp.groupPickerModal:
+  title: تغيير المجموعة
+  groupNamelabel: أسم المجموعة
+  btnCancelText: إلغاء
+  btnSaveText: حفظ
+  searchGroupHeader: مجموعة البحث
+document-repository.userOrGroupSearch:
+  id: بحث المستخدم
+  title: بحث المستخدم / المجموعة
+  search:
+    btn: بحث
+    placeholder: ابحث عن المستخدم أو المجموعة.
+  cancelButton: إلغاء
+  confirmButton: تؤكد
+  assigneeGridColumns:
+    name: اسم
+    type: نوع
+    title: عنوان
+    username: اسم المستخدم
+document-repository.newRepository:
+  title: إنشاء مستودع
+  assigneeLabel: المحال إليه
+  owningGroupLabel: امتلاك المجموعة
+  assignee.placeholder: ابحث عن المتنازل عنه
+  saveButton: إنشاء مستودع
+  cancelButton: إلغاء
+  nameLabel: اسم
+  name.placeholder: أدخل الاسم
+  descriptionLabel: وصف
+  description.placeholder: أدخل الوصف
+  searchUser: ابحث عن المستخدم والمجموعة
+  cancelBtn: إلغاء
+  okBtn: حسنا
+  search-placeholder: ابحث عن مستخدم أو مجموعة
+  personalRepository: مستنداتي
+document-repository.dialogUserPicker:
+  table.columns.name: اسم
+  table.columns.type: نوع
+  table.columns.title: عنوان
+  table.columns.id: اسم المستخدم
+document-repository.tree:
+  nodeTypes:
+    details.label: تفاصيل
+    documents.label: مستندات
+    participants.label: المشاركين
+    tasks.label: مهام
+    tags.label: العلامات
+    references.label: المراجع
+    notes.label: ملاحظات
+    history.label: التاريخ
+  filters:
+    iHaveCreated: كل ما صنعته
+    iAmFollowing: كل ما أتبعه
+    noFilter: (بدون فلتر)
+  sorters:
+    dateAsc: فرز تصاعديفرز التاريخ تصاعديا
+    dateDesc: تاريخ فرز تنازلي
+    idAsc: فرز معرّف المستودع تصاعديًا
+    idDesc: فرز معرّف المستودع تنازليًا
+    nameAsc: فرز حسب اسم المستودع التصاعدي
+    noSort: (بدون فرز)

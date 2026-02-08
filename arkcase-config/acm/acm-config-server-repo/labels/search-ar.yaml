@@ -1,0 +1,21 @@
+search:
+  title: بحث
+  search.btn: بحث
+  export.btn: تصدير
+  compress.btn: تنزيل الملفات المحددة
+  download.ready: سيتم إرسال البريد الإلكتروني الذي يحتوي على الرابط المرفق عندما يكون التنزيل جاهزًا
+  search.placeholder: اكتب للبحث
+  menus:
+    leftnav.item: بحث
+  comp:
+    facetedSearch:
+      title: بحث الأوجه
+    grid:
+      columns:
+        id: هوية شخصية
+        name: اسم
+        type: نوع
+        title: عنوان
+        parent: الأبوين
+        assignee: المحال إليه
+        modified: تم التعديل

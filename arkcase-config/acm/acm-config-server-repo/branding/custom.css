@@ -1,0 +1,181 @@
+/* Application Background */
+/* .page-content {
+     background-color: #fffffe;
+}
+/*
+
+/* Left Menu Background */
+/* .leftnav-menu {
+     background-color: #b8d9e9;
+}
+*/
+
+/* Left Menu Username/Profile  Background */
+/* .leftnav-menu .user-info {
+     background-color: #177bbb;
+}
+ .leftnav-menu .user-info .user-pic img {
+     border: 1px solid #c3e2f2;
+}
+/*
+
+/* Left Menu Username/Profile Hyperlinks */
+/* .leftnav-menu a {
+     color: #c3e2f2;
+}
+ .leftnav-menu .title {
+     color: #000;
+     color: rgba(0, 0, 0, 0.7);
+}
+ .leftnav-menu li {
+     color: #e1e6ef;
+     color: #000;
+     color: rgba(0, 0, 0, 0.5);
+}
+*/
+
+/* Left Menu Main Hyperlinks */
+/* .leftnav-menu li a {
+     color: #fff;
+     color: #000;
+     color: rgba(0, 0, 0, 0.5);
+}
+ .leftnav-menu li.active {
+     background-color: #177bbb;
+     color: #e1e6ef;
+}
+ .leftnav-menu li.active a {
+     background-color: #177bbb;
+     color: #fff;
+}
+ .leftnav-menu ul.nav > li > a:hover {
+     background-color: #177bbb;
+     color: #fff;
+}
+ .leftnav-menu > li > a:hover, .leftnav-menu > li > a:focus {
+     background-color: #262c35;
+     color: #fff;
+}
+ .leftnav-menu > li > a:hover a, .leftnav-menu > li > a:focus a {
+     background-color: #262c35;
+     color: #fff;
+}
+*/
+
+/* Left Menu Footer Background Color (Collapse Button) */
+/* .leftnav-menu footer {
+     background-color: #177bbb;
+}
+ .leftnav-menu footer .btn-icon {
+     color: #c3e2f2;
+}
+*/
+
+/* Top Header for Each Module */
+/* .module-header {
+     background-color: #177bbb;
+     border-bottom: 1px solid #e1e6ef;
+}
+*/
+
+/* Left Sidebar (i.e. Tree View Area) */
+/* .module-content .left-sidebar, .module-content .left-sidebar-sm, .module-content .left-sidebar-lg {
+     background-color: #fffffe;
+     border-right: 1px solid #e1e6ef;
+}
+ .module-content .left-sidebar header.header, .module-content .left-sidebar-sm header.header, .module-content .left-sidebar-lg header.header {
+     background-color: #fffffe;
+     border-bottom: 1px solid #e1e6ef;
+}
+*/
+
+/* User Profile Styles */
+/* .module-content .left-sidebar-lg .row.profile {
+     background-color: #fffffe;
+     filter: none;
+}
+*/
+
+/* Hyperlinks */
+/* a {
+     color: #177bbb;
+}
+*/
+
+/* Module Header Font Color */
+/* h3 {
+     color: #fff;
+     color: rgba(255, 255, 255, 0.7);
+}
+*/
+
+/* Primary Button Color */
+/* .btn-primary {
+     color: #fff;
+     background-color: #177bbb;
+     border-color: #177bbb;
+}
+*/
+
+/* Panel Header (i.e. Heading for Data Grids/Dashboard Widgets/etc.) */
+/* .panel-success > .panel-heading {
+     background-color: #177bbb;
+     background-image: none;
+     color: #fff;
+}
+*/
+
+/* Modal Window Primary Button */
+/* .panel-heading .btn.btn-default {
+     box-shadow: none;
+}
+*/
+
+/* Top Navigation Menu (i.e. Language Switcher) */
+/* .navbar-arkcase .nav > li > a:hover, .navbar-arkcase .nav > li > a:focus {
+     color: #fff;
+     background-color: #177bbb;
+}
+ .navbar-arkcase .nav > li > a:hover, .navbar-arkcase .nav > li > a:focus {
+     color: #fff;
+     background-color: #177bbb;
+}
+ .navbar-arkcase .nav .open > a, .navbar-arkcase .nav .open > a:hover, .navbar-arkcase .nav .open > a:focus {
+     background-color: #177bbb;
+}
+*/
+
+/* Modal Window Header */
+/* .modal-header {
+     background-color: #177bbb;
+     color: #fff;
+}
+*/
+
+/* Modal Window Footer */
+/* .modal-footer {
+     background-color: #177bbb;
+     color: #fff;
+}
+ .modal-footer .btn-primary {
+     background-color: #b8d9e9;
+     color: #17658c !important;
+     font-weight: bold;
+     text-shadow: none;
+}
+*/
+
+/* Groups Displayed on the User Profile */
+/* .label-info {
+     background-color: #177bbb;
+}
+*/
+
+/* Allows a long list of documents to be scrollable */
+.ui-menu .ui-widget .ui-widget-content .ui-front {
+    top: -1px !important;
+}
+
+.h4.font-bold{ 
+    font-weight: bold !important; 
+}

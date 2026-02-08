@@ -1,0 +1,138 @@
+timeTracking:
+  title: تتبع الوقت
+  progressNoTimesheet: '[ لم يتم تحديد جدول زمني ]'
+  progressLoading: ' يتم تحميل الجدول الزمني'
+  progressError: فشل تحميل الجدول الزمني
+timeTracking.menus:
+  leftnav.item: تتبع الوقت
+  topbar.item: ورقة التوقيت
+timeTracking.comp.main:
+  title: نظرة عامة
+timeTracking.comp.info:
+  title: معلومات
+  lastModified.label: آخر تعديل
+  state: حالة
+timeTracking.comp.actions:
+  title: أجراءات
+  new.button: جدول زمني جديد
+  edit.button: تحرير الجدول الزمني
+timeTracking.comp.details:
+  title: تفاصيل
+  informSaved: تم حفظ تفاصيل الجدول الزمني
+  table.columns:
+    title: تفاصيل
+    modified: تاريخ التعديل الأخير
+    modifier: آخر تعديل للمستخدم
+timeTracking.comp.person:
+  title: المستعمل
+  table.columns:
+    fullName: الاسم الكامل
+    userId: اسم المستخدم
+timeTracking.comp.summary:
+  title: ساعات / التكلفة
+  table.columns:
+    code: معرّف الوالدين
+    type: نوع الوالدين
+    role: دور المسؤول
+    value: مجموع الساعات
+    cost: التكلفة الإجمالية
+    date: تاريخ الشحن
+    modified: تعديل التاريخ
+timeTracking.comp.tags:
+  title: العلامات
+  table.columns:
+    tag: بطاقة شعار
+    created: خلقت
+    createdBy: انشأ من قبل
+  modal:
+    title: بطاقة شعار
+    search: ابحث عن الوسم
+    buttons:
+      cancel: إلغاء
+      ok: إضافة علامة
+  message:
+    tagExists: توجد بالفعل علامة بهذا الاسم أو الوصف أو النص
+    tagAssociated: مرتبط بالفعل
+    delete:
+      success: تم حذف العلامة بنجاح
+      error: خطأ في حذف العلامة
+timeTracking.comp.tasks:
+  title: مهام
+  table.columns:
+    title: عنوان
+    assignee: المحال إليه
+    created: خلقت
+    priority: أفضلية
+    due: تاريخ الاستحقاق
+    status: الحالة
+  table.deadline.tooltip: حد اقصى
+  table.overdue.tooltip: تأخر
+timeTracking.comp.newTimesheet:
+  title: تتبع الوقت
+  editCase.title: تحرير تتبع الوقت
+  user: المستعمل
+  status: الحالة
+  objectPicker:
+    title: ابحث عن كائن
+    table.columns:
+      name: اسم
+      type: نوع
+      title: عنوان
+      id: هوية شخصية
+      username: اسم المستخدم
+  otherChargeCodePicker:
+    title: كود شحن البحث
+    table.columns:
+      name: اسم
+      type: نوع
+    buttons:
+      cancel: إلغاء
+      ok: OK
+  time:
+    title: ورقة التوقيت
+    date: فترة
+    date.placeholder: حدد الأسبوع
+    date.close.button: قريب
+    prevWeekBtn: الأسبوع السابق
+    nextWeekBtn: الاسبوع القادم
+    type: نوع
+    selectTypeMessage: يجب عليك تحديد 'النوع' ، بحيث يمكنك اختيار 'رمز الشحن'.
+    chargeCode: كود الشحن
+    chargeRole: دور المسؤول
+    total: مجموع
+    totalCost: التكلفة الإجمالية
+    removeBtn: إزالة
+    addBtn: أضف
+  userSearch.title: بحث المستخدم / المجموعة
+  details: تفاصيل
+  approver:
+    title: موافق
+    placeholder: حدد موافق
+    removeBtn: إزالة موافق
+    addBtn: أضف جهة اعتماد أخرى
+    owningGroup: امتلاك المجموعة
+  cancelButton: إلغاء
+  saveButton: حفظ
+  updateButton: تحديث
+  sendForApproval: أرسل للموافقة
+timeTracking.tree:
+  nodeTypes:
+    details.label: تفاصيل
+    person.label: المستعمل
+    summary.label: ساعات
+    tags.label: العلامات
+    tasks.label: مهام
+  sorters:
+    dateAsc: فرز التاريخ تصاعديا
+    dateDesc: تاريخ فرز تنازلي
+    idAsc: فرز معرف الجدول الزمني تصاعدي
+    idDesc: معرّف ورقة وقت الفرز تنازليًا
+    nameDesc: فرز حسب اسم ورقة الوقت
+    noSort: (بدون فرز)
+timeTracking.widgets.summary:
+  table:
+    columns:
+      date: تاريخ
+      objectTitle: عنوان الكائن
+      objectNumber: رقم الكائن
+      hours: ساعات

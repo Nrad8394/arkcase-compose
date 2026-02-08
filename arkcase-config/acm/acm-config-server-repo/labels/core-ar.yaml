@@ -1,0 +1,755 @@
+core:
+  lookups:
+    common:
+      home: الصفحة الرئيسية
+      other: آخر
+      owning-group: امتلاك المجموعة
+      collaborator-group: مجموعة المتعاونين
+      collaborator: متعاون
+      reader: قارئ
+      no-access: ممنوع الدخول
+      case: ملف القضية
+    cmisVersioningState:
+      none: لا شيء
+      minor: قاصر
+      major: الشئ الأهم
+    addressTypes:
+      selectAddressType: حدد نوع العنوان
+      business: اعمال
+    aliasTypes:
+      fka: FKA
+      married: متزوج
+    personTitles:
+      selectTitle: حدد العنوان
+      selectPrefix: حدد بادئة
+      mr: مستر
+      mrs: مدام
+      ms: آنسة
+      miss: آنسة
+    contactMethodTypes:
+      phone: هاتف
+      work: عمل
+      mobile: التليفون المحمول
+      fax: فاكس
+      email: البريد الإلكتروني
+      personal: شخصي
+      business: اعمال
+      url: عنوان Url
+      website: موقع الكتروني
+      facebook: Facebook
+      linkedIn: LinkedIn
+      twitter: Twitter
+    dbasTypes:
+      dba: DBA
+    fileTypes:
+      ev: التسليم الإلكتروني
+      gr: الإفراج العام
+      mr: بيان طبي
+      noi: إشعار التحقيق
+      sig: توقيع SF86
+      wir: طلب مقابلة الشاهد
+      draw: رسم المهندس
+      other: آخر
+    identificationTypes:
+      ssn: SSN
+      driverLicense: رخصة السائق
+      passport: جواز سفر
+      birthCertificate: شهادة الميلاد
+    organizationIdTypes:
+      ein: EIN
+      duns: DUNS
+      cageCode: كود القفص
+    organizationTypes:
+      unknown: مجهول
+      non-profit: غير ربحية
+      government: حكومة
+      corporation: مؤسسة
+    organizationalParticipantTypes:
+      owner: صاحب
+    entitiesParticipantTypes:
+      assignee: المحال إليه
+      co-owner: شريك مشارك
+      supervisor: مشرف
+      approver: موافق
+      follower: تابع
+    personOrganizationRelationTypes:
+      unknown: مجهول
+      owner: صاحب
+      owned: مملوكة
+      employee: القائم مقام موظف
+      employer: صاحب العمل
+      partner: شريك
+      director-president-ceo: مخرج
+      manager: مدير
+      general-counsel: المستشار
+      executive: تنفيذي
+    documentsParticipantTypes:
+      group-write: كتابة المجموعة
+      group-read: قراءة المجموعة
+      group-no-access: مجموعة لا يمكن الوصول إليها
+      write: كتابة
+      read: اقرأ
+      no-access: ممنوع الدخول
+    personRelationTypes:
+      sibling: أخوان
+      children: الأطفال
+      parent: الأبوين
+    organizationRelationTypes:
+      partner: شريك
+      subCompany: الفرعية شركة
+      parentCompany: الشركة الام
+    documentPersonTypes:
+      defendent: المدعى عليه
+      witness: الشاهد
+      was-officer: ضابط WAS
+      victim: ضحية
+      defense-counsel: محامي الدفاع
+      forensic-scientist: عالم في الطب الشرعي
+    correspondence:
+      casefile: ملف القضية
+      complaint: شكوى
+    complaintPersonTypes:
+      initiator: البادئ
+      complaintant: المشتكي
+      subject: موضوع
+      witness: الشاهد
+      wrongdoer: مقترف
+      externalReferal: الإحالة الخارجية
+    caseFilePersonTypes:
+      defendant: المدعى عليه
+      was-officer: ضابط WAS
+      victim: ضحية
+      defenseCounsel: محامي الدفاع
+      forensicScientist: عالم في الطب الشرعي
+      unknown: مجهول
+    deviceTypes:
+      homePhone: هاتف المنزل
+      workPhone: هاتف عمل
+      mobile: التليفون المحمول
+      email: البريد الإلكتروني
+      facebook: Facebook
+    priorities:
+      low: منخفض
+      medium: متوسط
+      high: عالي
+      expedite: تعجيل
+    frequencies:
+      once: ذات مرة
+      ongoing: جاري التنفيذ
+      intermittent: على فترات متقطعة
+    dispositions:
+      add_existing_case: أضف إلى الحالة الحالية
+      open_investigation: تحقيق مفتوح
+      no_action: أي إجراء آخر
+      refer_external: راجع الخارجية
+    resolutions:
+      denied: رفض
+      full: ممتلئ
+      partial: جزئي
+    categories:
+      agricultural: زراعي
+      arson: حريق متعمد
+      backgroundInvestigation: خلفية التحقيق
+      benefits-appeal: استئناف المنافع
+      better-business-dispute: نزاع تجاري أفضل
+      clinical-investigator-fraud: احتيال الباحث السريري
+      congressionalResponse: رد الكونغرس
+      disability-waiver-request: طلب التنازل عن الإعاقة
+      domesticDispute: شجار عائلي
+      drugTrafficking: تهريب المخدرات
+      education-waiver-request: طلب تنازل عن التعليم
+      eeo-harassment: EEO / المضايقة
+      embezzlement: الاختلاس
+      extortion: الابتزاز
+      fraud: تزوير
+      government: حكومة
+      generatedFromEmail: تم إنشاؤها من البريد الإلكتروني
+      investorComplaint: شكوى المستثمر
+      laborRacketeering: عمل المضرب
+      local: محلي
+      murder: قتل
+      new-drug-application-fraud: الاحتيال الجديد في تطبيق الدواء
+      payoff: سدد دينك
+      pension-waiver-request: طلب التنازل عن المعاش
+      pollution: التلوث
+      productTampering: المنتج العبث
+      theft-or-misuse-of-asset: سرقة الأصول أو إساءة استخدامها
+    caseFileProperties:
+      id: هوية شخصية
+      caseNumber: رقم القضية
+      caseType: نوع القضية
+      title: عنوان
+      status: الحالة
+      details: تفاصيل
+      incidentDate: الحادث
+      created: خلقت
+      creator: المنشئ
+      modified: تم التعديل
+      modifier: المعدل
+      closed: مغلق
+      disposition: تغير
+      priority: أفضلية
+      objectType: نوع الكائن
+    complaintProperties:
+      complaintId: معرف الشكوى
+      complaintNumber: رقم الشكوى
+      complaintType: نوع الشكوى
+      priority: أفضلية
+      complaintTitle: عنوان الشكوى
+    complaint.statuses:
+      draft: مشروع
+      inapproval: في الموافقة
+      closed: مغلق
+      deleted: تم الحذف
+    countries:
+      selectCountry: حدد الدولة
+      AF: أفغانستان
+      AX: جزر آلاند
+      AL: ألبانيا
+      DZ: الجزائر
+      AS: ساموا الأمريكية
+      AD: أندورا
+      AO: أنغولا
+      AI: أنغيلا
+      AQ: أنتاركتيكا
+      AG: أنتيغوا وبربودا
+      AR: الأرجنتين
+      AM: أرمينيا
+      AW: أروبا
+      AU: أستراليا
+      AT: النمسا
+      AZ: أذربيجان
+      BS: جزر البهاما
+      BH: البحرين
+      BD: بنغلاديش
+      BB: بربادوس
+      BY: روسيا البيضاء
+      BE: بلجيكا
+      BZ: بليز
+      BJ: بنين
+      BM: برمودا
+      BT: بوتان
+      BO: بوليفيا
+      BA: البوسنة والهرسك
+      BW: بوتسوانا
+      BV: Bouvet Island
+      BR: البرازيل
+      IO: إقليم المحيط البريطاني الهندي
+      BN: بروناي دار السلام
+      BG: بلغاريا
+      BF: بوركينا فاسو
+      BI: بوروندي
+      KH: كمبوديا
+      CM: الكاميرون
+      CA: كندا
+      CV: Cape Verde
+      KY: جزر كايمان
+      CF: جمهورية افريقيا الوسطى
+      TD: تشاد
+      CL: تشيلي
+      CN: الصين
+      CX: جزيرة الكريسماس
+      CC: جزر كوكوس (كيلنج)
+      CO: كولومبيا
+      KM: جزر القمر
+      CG: الكونغو
+      CD: جمهورية الكونغو الديمقراطية
+      CK: جزر كوك
+      CR: كوستا ريكا
+      CI: جمهورية ساحل العاج
+      HR: كرواتيا
+      CU: كوبا
+      CW: كوراساو
+      CY: قبرص
+      CZ: جمهورية التشيك
+      DK: الدنمارك
+      DJ: جيبوتي
+      DM: دومينيكا
+      DO: جمهورية الدومنيكان
+      EC: إكوادور
+      EG: مصر
+      SV: السلفادور
+      GQ: غينيا الإستوائية
+      ER: إريتريا
+      EE: إستونيا
+      ET: أثيوبيا
+      FK: جزر فوكلاند (مالفيناس)
+      FO: جزر فاروس
+      FJ: فيجي
+      FI: فنلندا
+      FR: فرنسا
+      GF: غيانا الفرنسية
+      PF: بولينيزيا الفرنسية
+      TF: المناطق الجنوبية لفرنسا
+      GA: الغابون
+      GM: غامبيا
+      GE: جورجيا
+      DE: ألمانيا
+      GH: غانا
+      GI: جبل طارق
+      GR: اليونان
+      GL: الأرض الخضراء
+      GD: غرينادا
+      GP: غواديلوب
+      GU: غوام
+      GT: غواتيمالا
+      GG: غيرنسي
+      GN: غينيا
+      GW: غينيا - بيساو
+      GY: غيانا
+      HT: هايتي
+      HM: Heard Island and Mcdonald Islands
+      VA: الكرسي الرسولي (دولة الفاتيكان)
+      HN: هندوراس
+      HK: هونج كونج
+      HU: هنغاريا
+      IS: أيسلندا
+      IN: الهند
+      ID: إندونيسيا
+      IR: جمهورية إيران الإسلامية
+      IQ: العراق
+      IE: أيرلندا
+      IM: Isle of Man
+      IL: إسرائيل
+      IT: إيطاليا
+      JM: جامايكا
+      JP: اليابان
+      JE: جيرسي
+      JO: الأردن
+      KZ: كازاخستان
+      KE: كينيا
+      KI: كيريباتي
+      KP: كوريا، الجمهورية الشعبية الديمقراطية
+      KR: جمهورية كوريا
+      KW: الكويت
+      KG: قيرغيزستان
+      LA: جمهورية لاو الديمقراطية الشعبية
+      LV: لاتفيا
+      LB: لبنان
+      LS: ليسوتو
+      LR: ليبيريا
+      LY: الجماهيرية العربية الليبية
+      LI: ليختنشتاين
+      LT: ليتوانيا
+      LU: لوكسمبورج
+      MO: ماكاو
+      MK: مقدونيا
+      MG: مدغشقر
+      MW: ملاوي
+      MY: ماليزيا
+      MV: جزر المالديف
+      ML: مالي
+      MT: مالطا
+      MH: جزر مارشال
+      MQ: مارتينيك
+      MR: موريتانيا
+      MU: موريشيوس
+      YT: مايوت
+      MX: المكسيك
+      FM: ولايات ميكرونيزيا الموحدة
+      MD: جمهورية مولدوفا
+      MC: موناكو
+      MN: منغوليا
+      ME: الجبل الأسود
+      MS: مونتسيرات
+      MA: المغرب
+      MZ: موزمبيق
+      MM: ميانمار
+      NA: ناميبيا
+      NR: ناورو
+      NP: نيبال
+      NL: هولندا
+      AN: جزر الأنتيل الهولندية
+      NC: كاليدونيا الجديدة
+      NZ: نيوزيلندا
+      NI: نيكاراغوا
+      NE: النيجر
+      NG: نيجيريا
+      NU: نيوي
+      NF: جزيرة نورفولك
+      MP: جزر مريانا الشمالية
+      NO: النرويج
+      OM: سلطنة عمان
+      PK: باكستان
+      PW: بالاو
+      PS: الأراضي الفلسطينية المحتلة
+      PA: بنما
+      PG: بابوا غينيا الجديدة
+      PY: باراغواي
+      PE: بيرو
+      PH: الفلبين
+      PN: بيتكيرن
+      PL: بولندا
+      PT: البرتغال
+      PR: بورتوريكو
+      QA: دولة قطر
+      RE: جمع شمل
+      RO: رومانيا
+      RU: الاتحاد الروسي
+      RW: رواندا
+      SH: سانت هيلانة وأسنسيون وتريستان دا كونها
+      KN: سانت كيتس ونيفيس
+      LC: القديسة لوسيا
+      PM: سانت بيير وميكلون
+      VC: سانت فنسنت وجزر غرينادين
+      WS: ساموا
+      SM: سان مارينو
+      ST: سان تومي وبرينسيبي
+      SA: المملكة العربية السعودية
+      SN: السنغال
+      RS: صربيا
+      SC: سيشيل
+      SL: سيرا ليون
+      SG: سنغافورة
+      SX: سينت مارتن
+      SK: سلوفاكيا
+      SI: سلوفينيا
+      SB: جزر سليمان
+      SO: الصومال
+      ZA: جنوب أفريقيا
+      GS: جورجيا الجنوبية وجزر ساندويتش الجنوبية
+      SS: جنوب السودان
+      ES: إسبانيا
+      LK: سيريلانكا
+      SD: السودان
+      SR: سورينام
+      SJ: سفالبارد وجان ماين
+      SZ: سوازيلاند
+      SE: السويد
+      CH: سويسرا
+      SY: الجمهورية العربية السورية
+      TW: مقاطعة تايوان الصينية
+      TJ: طاجيكستان
+      TZ: جمهورية تنزانيا المتحدة
+      TH: تايلاند
+      TL: تيمور ليشتي
+      TG: توجو
+      TK: توكيلاو
+      TO: تونغا
+      TT: ترينداد وتوباغو
+      TN: تونس
+      TR: ديك رومي
+      TM: تركمانستان
+      TC: جزر تركس وكايكوس
+      TV: توفالو
+      UG: أوغندا
+      UA: أوكرانيا
+      AE: الإمارات العربية المتحدة
+      GB: المملكة المتحدة
+      US: الولايات المتحدة الأمريكية
+      UM: جزر الولايات المتحدة البعيدة الصغرى
+      UY: أوروغواي
+      UZ: أوزبكستان
+      VU: فانواتو
+      VE: فنزويلا
+      VN: فييت نام
+      VG: جزر العذراء البريطانية
+      VI: جزر فيرجن ، الولايات المتحدة
+      WF: واليس وفوتونا
+      EH: الصحراء الغربية
+      YE: اليمن
+      ZM: زامبيا
+      ZW: زيمبابوي
+    states:
+      selectState: اختر ولايه
+      AK: AK
+      AL: AL
+      AR: AR
+      AZ: AZ
+      CA: CA
+      CO: CO
+      CT: CT
+      DC: DC
+      DE: DE
+      FL: FL
+      GA: GA
+      HI: HI
+      IA: IA
+      ID: ID
+      IL: IL
+      IN: IN
+      KS: KS
+      KY: KY
+      LA: LA
+      MA: MA
+      MD: MD
+      ME: ME
+      MI: MI
+      MN: MN
+      MO: MO
+      MS: MS
+      MT: MT
+      NC: NC
+      ND: ND
+      NE: NE
+      NH: NH
+      NJ: NJ
+      NM: NM
+      NV: NV
+      NY: NY
+      OH: OH
+      OK: OK
+      OR: OR
+      PA: PA
+      RI: RI
+      SC: SC
+      SD: SD
+      TN: TN
+      TX: TX
+      UT: UT
+      VA: VA
+      VT: VT
+      WA: WA
+      WI: WI
+      WV: WV
+      WY: WY
+    canadaStates:
+      AB: ألبرتا
+      BC: كولومبيا البريطانية
+      MB: مانيتوبا
+      NB: برونزيك جديد
+      NL: نيوفاوندلاند ولابرادور
+      NT: الاقاليم الشمالية الغربية
+      NS: مقاطعة نفوفا سكوشيا
+      NU: نونافوت
+      ON: أونتاريو
+      PE: جزيرة الأمير ادوارد
+      QC: كيبيك
+      SK: ساسكاتشوان
+      YT: يوكون
+    japanStates:
+      AI: أيتشي
+      AK: اكيتا
+      AO: أوموري
+      CH: شيبا
+      EH: ايمى
+      FU: فوكوي
+      FK: فوكوكا
+      FS: فوكوشيما
+      GI: جيفو
+      GU: غونما
+      HI: هيروشيما
+      HK: هوكايدو
+      HY: هيوغو
+      IB: ايباراكي
+      IS: إيشيكاوا
+      IW: ايوات
+      KA: كاغاوا
+      KG: كاجوشيما
+      KN: كانجاوا
+      KO: كوتشي
+      KU: كوماموتو
+      KY: كيوتو
+      MI: مي
+      MY: مياجي
+      MZ: ميازاكي
+      NA: ناغانو
+      NG: ناغازاكي
+      NR: نارا
+      NI: نيغاتا
+      OI: أويتا
+      OK: أوكاياما
+      ON: أوكيناوا
+      OS: أوساكا
+      SA: قصة طويلة
+      ST: سايتاما
+      SH: شيجا
+      SM: شيمان
+      SZ: شيزوكا
+      TO: توتشيغي
+      TK: توكوشيما
+      TY: طوكيو
+      TR: توتوري
+      TM: توياما
+      WA: واكاياما
+      YA: ياماغاتا
+      YG: ياماغوتشي
+      YM: ياماناشي
+    costsheet:
+      titles:
+        taxi: سيارة اجره
+        hotel: الفندق
+        overtime: متأخر، بعد فوات الوقت
+        food: طعام
+        postage: رسوم البريد
+      statuses:
+        draft: مشروع
+        inapproval: في الموافقة
+        approved: وافق
+        final: نهائي
+    timesheet:
+      statuses:
+        draft: مشروع
+        inapproval: في الموافقة
+        approved: وافق
+        final: نهائي
+      other:
+        leap: LEAP
+        training: تدريب
+        conference: مؤتمر
+      types:
+        case_file: قضية
+        complaint: شكوى
+        consultation: التشاور
+        task: مهمة
+      chargeCodes:
+        investigator: محقق
+        analyst: المحلل
+    changeConsultation:
+      statuses:
+        active: نشيط
+        inactive: غير نشط
+        closed: مغلق
+        deleted: تم الحذف    
+    changeCase:
+      statuses:
+        active: نشيط
+        inactive: غير نشط
+        closed: مغلق
+        deleted: تم الحذف
+      resolutions:
+        denied: رفض
+        full: ممتلئ
+        partial: جزئي
+    taskOutcomes:
+      approve: الموافقة على الوثيقة
+      rework: إرسال لإعادة العمل
+      resubmit: إعادة التقديم
+      cancel: إلغاء المستند
+      concur: توافق
+      nonConcur: غير موافق
+    businessProcessTypes:
+      acmDocumentWorkflow: سير عمل مستند ACM
+      notDefinedWorkflow: مهمة Ad-Hoc
+      arrestWarrant: مذكرة توقيف
+    reportStates:
+      draft: مشروع
+      inApproval: في الموافقة
+      active: نشيط
+      inActive: غير نشط
+      closed: مغلق
+    auditReportNames:
+      all: الكل
+      case_file: قضية
+      complaint: شكوى
+      consultation: التشاور
+      task: مهمة
+      file: ملف
+      document: المستند
+      person: شخص
+      organization: منظمة
+    sequenceParts:
+      autoincrement: زيادة تلقائية
+      objectProperty: الملكية الكائن
+      uuid: UUID
+      date: بلح
+      arbitraryText: نص التحكيم
+    sequenceResetPeriod:
+      daily: اليومي
+      weekly: أسبوعي
+      monthly: شهريا
+      yearly: سنوي
+    sequenceName:
+      caseNumberSequence: تسلسل رقم القضية
+      complaintNumberSequence: تسلسل رقم الشكوى
+      consultationNumberSequence: تسلسل رقم الاستشارة
+    sequenceObjectProperty:
+      id: هوية شخصية
+      caseType: نوع القضية
+      status: الحالة
+      priority: أفضلية
+    objectTitleTypes:
+      caseFile: ملف 
+      consultation: التشاور
+      complaint: شكوى
+    taskParentTypes:
+      caseFile: ملف القضية
+      complaint: شكوى
+      consultation: التشاور
+      costsheet: تتبع التكلفة
+      timesheet: ورقة التوقيت
+      doc_repo: مستودع المستندات
+    consultationPersonInitiatorTypes.initiator: البادئ
+    consultationPersonTypes:
+      complaintant: المشتكي
+      subject: موضوع
+      witness: الشاهد
+      wrongdoer: مخطئ
+      defendant: المدعى عليه
+      was-officer: ضابط WAS
+      victim: ضحية
+      defenseCounsel: محامي الدفاع
+      forensicScientist: عالم في الطب الشرعي
+      unknown: مجهول  
+    reportExportTypes:
+      selectLabel: حدد تنسيق التصدير
+      pdf: PDF
+      xml: XML
+  userInfo:
+    addedMenu:
+      help: مساعدة
+      logout: تسجيل خروج
+  leftNav:
+    title: التنقل
+  topBar:
+    new: جديد
+    toggle.btn: تبديل التنقل
+    search.placeholder: بحث ArkCase
+    locale.updateList: تحديث القائمة أعلاه
+  progressBar:
+    header: تحميل التفاصيل ...
+    viewDetails: عرض تفاصيل التحميل
+    addMoreFiles: إضافة المزيد من الملفات
+    currentFileProgress: تقدم الملف الحالي
+    totalProgress: التقدم الكلي
+    hide: إخفاء
+    footer: اكتمل تحميل الملف
+    done: منجز
+    close: قريب
+    failed: فشل تحميل الملف!
+    uploading: جارٍ التحميل ...
+    retry: إعادة المحاولة
+  loginWarning:
+    btnOK.text: حسنا
+    btnCancel.text: إلغاء
+    checkbox_warning.label: أقر بهذا التحذير.
+  unknown: مجهول
+  menus:
+    usermenu.profile: الملف الشخصي
+    leftnav:
+      cases.main: ملفات القضية
+      consultations.main: تشاور
+      complaints.main: شكاوي
+      document-repository.main: مستندات
+      my-documents.main: مستنداتي
+      tasks.main: مهام
+      time-tracking.main: تتبع الوقت
+      organizations.main: المنظمات
+      cost-tracking.main: تتبع التكلفة
+      people.main: اشخاص
+      admin: مشرف
+      analytics: تحليلات البيانات
+      analytics-audit: سجل التحليلات
+      audit: تدقيق
+      dashboard: لوحة القيادة
+      notifications: إشعارات
+      reports: التقارير
+      adhoc-reports: تقارير مخصصة
+      search: بحث
+      subscriptions: الاشتراكات
+      tags: العلامات
+    topbar:
+      frevvo:
+        new-case: قضية
+        new-complaint: شكوى
+        new-costsheet: ورقة التكلفة
+        new-timesheet: ورقة التوقيت
+      newComplaint: شكوى
+      newTask: مهمة
+      newCostsheet: ورقة التكلفة
+      newPerson: شخص
+      newTimesheet: ورقة التوقيت
+      newOrganization: منظمة
+      newCase: قضية
+      newConsultation: تشاور
+      new-document-repository: مستودع المستندات

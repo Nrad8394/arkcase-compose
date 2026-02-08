@@ -1,0 +1,14 @@
+progress-bar:
+  modal:
+    openNewVersion: Open New Version of File
+    viewDetails: View Details
+    currentFileProgress: Current File Progress
+    totalProgress: Total Progress
+    hide: Hide
+    done: Done
+    complete: Complete!
+    close: Close
+    versioning: New version of file being created...
+    newVersionComplete: New version of file complete
+    timeout: Burning the document seems to take more than expected. Please wait...
+    processing: "Processing:"

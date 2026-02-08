@@ -1,0 +1,509 @@
+complaints:
+  title: شكاوي
+  progressNoComplaint: '[ لا توجد بيانات شكوى ]'
+  progressLoading: ' تحميل شكوى'
+  progressError: ' فشل تحميل الشكوى'
+complaints.menus:
+  leftnav.item: شكاوي
+  topbar.item: شكاوي
+complaints.comp.main:
+  title: نظرة عامة
+complaints.comp.info:
+  title: معلومات
+  complaintId: 'معرف الشكوى:'
+  complaintNumber: 'معرف الشكوى:'
+  courtRoomName: 'اسم قاعة المحكمة:'
+  type.label: نوع
+  created.label: تاريخ الإنشاء
+  priority.label: أفضلية
+  assignee.label: مخصص ل
+  owningGroup.label: امتلاك المجموعة
+  dueDate.label: تاريخ الاستحقاق
+  alertMessage: ' يجب أن يكون تاريخ الاستحقاق بعد تاريخ الإنشاء'
+complaints.comp.actions:
+  title: أجراءات
+  restrict: بتقييد؟
+  new.button: شكوى جديدة
+  close.button: شكوى قريبة
+  subscribe.button: الإشتراك
+  unsubscribe.button: إلغاء الاشتراك
+  claim.button: مطالبة ب
+  unclaim.button: مطالبة الامم المتحدة
+complaints.comp.details:
+  title: تفاصيل
+  informSaved: تم حفظ تفاصيل الشكوى
+  table.columns:
+    title: تفاصيل
+    modified: تاريخ التعديل الأخير
+    modifier: آخر تعديل للمستخدم
+complaints.comp.documents:
+  title: مستندات
+  sendEmail: ارسل بريد الكتروني
+  filterInputPlaceholder: منقي
+  searchInputPlaceholder: بحث
+  menu:
+    forms:
+      rptInvestigation%: تقرير التحقيق
+    correspondences:
+      correspondenceInvitation%: دعوة المراسلات
+      approvalLetter%: خطاب الموافقة على الشكوى
+      generalRelease%: الإفراج العام
+      medicalRelease%: بيان طبي
+      clearanceGranted%: منح التخليص
+      clearanceDenied%: تم رفض التخليص
+      witnessInterview%: طلب مقابلة الشاهد
+      witnessInterview2%: طلب مقابلة الشاهد -2.0
+  newTask: مهمة جديدة
+complaints.comp.people:
+  title: اشخاص
+  table.columns:
+    type: وظيفة
+    firstName: الاسم الاول
+    lastName: اسم العائلة
+    organization: منظمة
+    phone: هاتف
+    location: موقعك
+complaints.comp.organizations:
+  title: المنظمات
+  table.columns:
+    name: اسم المنظمة
+    associationType: وظيفة
+    type: نوع المنظمة
+    identification: هوية شخصية
+    value: منظمة
+    contact: اتصال رئيسي
+    phone: هاتف
+    location: موقعك
+  actions:
+    delete: حذف
+    setPrimary: تعيين كأساسي
+    addNew: اضف جديد
+    addExisting: اضف جديد
+complaints.comp.participants:
+  title: المشاركين
+  table.columns:
+    type: نوع
+    name: اسم
+  dialogUserPicker:
+    header: اختر المستخدم
+    table.columns:
+      name: اسم
+      type: نوع
+      title: عنوان
+      id: اسم المستخدم
+  dialogGroupPicker:
+    header: اختر مجموعة
+    table.columns:
+      name: اسم
+complaints.comp.addresses:
+  title: المواقع
+  table.columns:
+    type: نوع
+    streetAddress: العنوان 1
+    streetAddress2: العنوان 2
+    city: مدينة
+    state: الولاية / المقاطعة
+    zip: بريدي/الرمز البريدي
+    country: بلد
+    created: تم إضافة التاريخ
+    creator: أضيف بواسطة
+    modified: آخر تعديل
+    modifier: تم التعديل بواسطة
+  actions:
+    addNew: اضف جديد
+    map: رسم بتفصيل
+  modal:
+    addAddress: إضافة موقع
+    editAddress: تحرير السجل
+    type.label: نوع العنوان
+    type.placeholder: أدخل نوع العنوان
+    streetAddress.label: العنوان 1
+    streetAddress.placeholder: أدخل العنوان 1
+    streetAddress2.label: العنوان 2
+    streetAddress2.placeholder: أدخل العنوان 2
+    city.label: مدينة
+    city.placeholder: أدخل المدينة
+    zip.label: الرمز البريدي / الدولة
+    zip.placeholder: أدخل الرمز البريدي
+    state.label: الولاية / المقاطعة
+    state.placeholder: إدخال الدولة
+    country.label: بلد
+    country.placeholder: أدخل البلد
+    btnCancel.text: إلغاء
+    btnOk.text: حفظ الموقع
+    setPrimary: هل تريد التعيين على أنه أساسي؟
+    yes: "نعم"
+    no: "لا"
+complaints.comp.notes:
+  title: ملاحظات
+  table.columns:
+    note: نوتة
+    created: خلقت
+    creator: مؤلف
+complaints.comp.tasks:
+  title: مهام
+  table.columns:
+    title: عنوان
+    assignee: المحال إليه
+    created: خلقت
+    priority: أفضلية
+    due: بسبب
+    status: الحالة
+  table.overdue.tooltip: المهمة متأخرة
+  table.deadline.tooltip: الموعد النهائي يقترب
+complaints.comp.references:
+  title: المراجع
+  table.columns:
+    targetName: رقم
+    targetTitle: عنوان
+    targetType: نوع
+    assignee: المحال إليه
+    modified: تم التعديل
+    status: الحالة
+    parentName: اسم الوالدين
+complaints.comp.history:
+  title: التاريخ
+  table.columns:
+    eventType: اسم الحدث
+    eventDate: تاريخ
+    userId: المستعمل
+complaints.comp.time:
+  title: زمن
+  table.columns:
+    name: اسم النموذج
+    user: المستعمل
+    tally: مجموع الساعات
+    cost: التكلفة الإجمالية
+    modified: تعديل التاريخ
+    status: الحالة
+  formNamePrefix: ورقة التوقيت
+complaints.comp.cost:
+  title: كلفة
+  table.columns:
+    name: اسم النموذج
+    user: المستعمل
+    tally: التكلفة الإجمالية
+    modified: تعديل التاريخ
+    status: الحالة
+  formNamePrefix: ورقة التكلفة
+complaints.comp.tags:
+  title: العلامات
+  table.columns:
+    tag: شقة قرطاس
+    created: خلقت
+    createdBy: انشأ من قبل
+  modal:
+    title: شقة قرطاس
+    search: ابحث عن الوسم
+    placeholder: إضافة علامة
+    buttons:
+      cancel: إلغاء
+      ok: إضافة علامة
+  message:
+    tagExists: توجد بالفعل علامة بهذا الاسم أو الوصف أو النص
+    tagAssociated: مرتبط بالفعل
+    delete:
+      success: تم حذف العلامة بنجاح
+      error: خطأ في حذف العلامة
+complaints.comp.calendar:
+  title: التقويم
+  infoMessage: لم يتم تمكين تكوين تكامل التقويم
+complaints.comp.referenceSearchGrid:
+  title: بحث مرجعي
+complaints.comp.addreference:
+  title: يضيف مرجعا
+  cancelButton: إلغاء
+  confirmButton: أضف
+  search:
+    placeholder: ابحث عن الحالة أو الشكوى أو الملف أو المهمة
+    btn: بحث
+  grid:
+    columns:
+      id: هوية شخصية
+      name: اسم
+      type: نوع
+      title: عنوان
+      parent: الأبوين
+      assignee: المحال إليه
+      modified: تم التعديل
+complaints.comp.assigneePickerModal:
+  title: تغيير المحال إليه
+  assigneeNamelabel: اسم المحال إليه
+  btnCancelText: إلغاء
+  btnSaveText: حفظ
+  searchAssigneeHeader: ابحث عن المتنازل عنه
+complaints.comp.groupPickerModal:
+  title: تغيير المجموعة
+  groupNamelabel: أسم المجموعة
+  btnCancelText: إلغاء
+  btnSaveText: حفظ
+  searchGroupHeader: مجموعة البحث
+complaints.comp.approvalRouting:
+  title: الموافقون
+  addNewTooltip: إضافة جهة اعتماد جديدة
+  noBuckslipMessage: لايوجد بيانات
+  processInitialize.successfull: تمت تهيئة العملية
+  processInitialize.fail: العملية غير مهيأة
+  processWithdraw.successfull: تم سحب العملية
+  processWithdraw.fail: العملية لم تسحب
+  businessProcessUpdate.successfull: تم تحديث توجيه الموافقة
+  businessProcessUpdate.fail: لم يتم تحديث توجيه الموافقة
+  button:
+    save.tooltip: حفظ التغييرات
+    initiate: الشروع في
+    withdraw: انسحب
+    initiate.tooltip: بدء المهمة
+    withdraw.tooltip: سحب المهمة
+  checkbox:
+    nonConcurEndsApprovalCycle: Non concur ينتهي دورة الموافقة
+  table.columns:
+    assignee: المحال إليه
+    owningGroup: امتلاك المجموعة
+    subject: موضوع
+    details: تفاصيل
+    dueDate: تاريخ الاستحقاق
+    status: الحالة
+    addedBy: أضيف بواسطة
+  assigne.none: لا يوجد
+  assignee.label: المحال إليه
+  owningGroup.label: امتلاك المجموعة
+  priority.label: أفضلية
+  startDate.label: تاريخ البدء
+  dueDate.label: تاريخ الاستحقاق
+  state.label: حالة
+  future.task.modal:
+    title: مهمة مستقبلية جديدة
+    assignee: المحال إليه
+    owningGroup: امتلاك المجموعة
+    subject.label: موضوع
+    subject.placeholder: أدخل موضوع الحالة المستقبلية
+    details.label: تفاصيل
+    cancel.button: إلغاء
+    save.button: حفظ
+complaints.comp.pastApprovals:
+  title: الموافقون السابقون
+  noBuckslipMessage: لايوجد بيانات
+  table.columns:
+    approvalDate: تاريخ الموافقة
+    approverId: موافق
+    approverFullName: موافق
+    approverDecision: قرار الموافقة
+complaints.comp.billing:
+  title: الفواتير
+  table.columns:
+    item: 'بند #'
+    description: وصف
+    type: نوع
+    object: موضوع
+    amount: كمية
+    total: ' مجموع:'
+    buttons:
+      listInvoices: إدراج الفواتير
+      emailInvoice: فاتورة البريد الإلكتروني
+      generateInvoice: إنشاء فاتورة
+  modal:
+    title: إضافة عنصر إعداد الفواتير
+    cancel.btn: إلغاء
+    save.btn: حفظ
+    billingItems.title: بنود إعداد الفواتير لـ
+  invoice:
+    title: فواتير
+    table.columns:
+      invoiceNumber: رقم الفاتورة
+      status: الحالة
+      creator: المنشئ
+      created: خلقت
+      view: رأي
+  amount.title: الرجاء إدخال مبلغ الفاتورة
+  description.title: الرجاء إدخال وصف الفواتير
+complaints.comp.closeComplaint:
+  title: شكوى قريبة
+  info: معلومات الحادث
+  description.label: وصف
+  infoMessage: أدخل في كل همومك وشكواك. يرجى أن تكون محددًا جدًا فيما يتعلق بالأسماء والأماكن والأوقات والتواريخ والأسباب والنتائج.
+  complaintTitle: عنوان الشكوى
+  information:
+    title: أغلق معلومات الشكوى
+    close.date: تاريخ إغلاق الشكوى
+    complaint.number: رقم الشكوى
+    complaint.disposition: ترتيب الشكوى
+  add.existing.case:
+    title: أضف حالة موجودة
+    search: بحث
+    case:
+      number: أدخل رقم القضية
+      title: عنوان القضية
+      date: تاريخ إنشاء الحالة
+      priority: أولوية الحالة
+  refer.external:
+    title: راجع الخارجية
+    name: اسم الوكالة
+    date: تاريخ الإحالة
+    contact:
+      title: اتصل
+      name: اسم جهة الاتصال
+      type: نوع
+      value: القيمة
+  approver:
+    placeholder: حدد موافق
+    label: موافق
+    addAnother: أضف آخر
+    remove: إزالة موافق
+    pickerModal.header: بحث المستخدم / المجموعة
+    owningGroup: امتلاك المجموعة
+  cancelButton: إلغاء
+  saveButton: حفظ الشكوى
+complaints.comp.newComplaint:
+  title: شكوى جديدة
+  addAnother: أضف آخر
+  remove: إزالة
+  info: معلومات الحادث
+  infoMessage: أدخل في كل همومك وشكواك. يرجى أن تكون محددًا جدًا فيما يتعلق بالأسماء والأماكن والأوقات والتواريخ والأسباب والنتائج.
+  complaintTitle: عنوان الشكوى
+  complaintTitle.placeholder: أدخل عنوان الشكوى
+  incidentCategory: فئة الحادث
+  initiator: البادئ
+  initiator.placeholder: حدد البادئ
+  complaintDesc: وصف الشكوى
+  priority: أفضلية
+  incidentDate: تاريخ الحادث
+  incidentDate.placeholder: حدد تاريخ الحادث
+  incidentDate.close.button: قريب
+  complaintTag: علامة شكوى
+  complaintTag.placeholder: أدخل علامة شكوى
+  frequency: تكرر
+  location:
+    title: موقعك
+    addressType: نوع
+    streetAddress: العنوان 1
+    streetAddress.placeholder: أدخل العنوان 1
+    streetAddress2: العنوان 2
+    streetAddress2.placeholder: أدخل العنوان 2
+    city: مدينة
+    city.placeholder: أدخل المدينة
+    state: الولاية / المقاطعة
+    state.placeholder: أدخل الولاية / المقاطعة
+    country: بلد
+    country.placeholder: حدد الدولة
+    zip: بريدي/الرمز البريدي
+    zip.placeholder: أدخل الرمز البريدي / البريدي
+    dateCreated: تم إضافة التاريخ
+    creator: أضيف بواسطة
+    creator.placeholder: أدخل الخالق
+  people:
+    title: اشخاص
+    selectPerson.placeholder: ابحث عن شخص موجود
+    personType: نوع الشخص
+  participants:
+    title: المشاركين
+    owningGroup: امتلاك المجموعة
+    owningGroup.info: لا يمكن اختيار مجموعة الامتلاك إلا من خلال حقل المالك
+    selectParticipant.placeholder: حدد مشارك
+    participantType: نوع المشارك
+  cancelButton: إلغاء
+  saveButton: حفظ الشكوى
+  removeButton: إزالة
+  addButton: أضف آخر
+complaints.userOrGroupSearch:
+  id: بحث المستخدم
+  title: بحث المستخدم / المجموعة
+  search:
+    btn: بحث
+    placeholder: ابحث عن المستخدم أو المجموعة.
+  cancelButton: إلغاء
+  confirmButton: تؤكد
+  assigneeGridColumns:
+    name: اسم
+    type: نوع
+    title: عنوان
+    username: اسم المستخدم
+complaints.dialogObjectPicker:
+  header: ابحث عن مستند
+  table.columns:
+    name: اسم
+    type: نوع
+    title: عنوان
+    id: هوية شخصية
+complaints.tree:
+  nodeTypes:
+    details.label: تفاصيل
+    locations.label: المواقع
+    people.label: اشخاص
+    organizations.label: المنظمات
+    documents.label: مستندات
+    participants.label: المشاركين
+    notes.label: ملاحظات
+    tasks.label: مهام
+    references.label: المراجع
+    history.label: التاريخ
+    time.label: زمن
+    cost.label: كلفة
+    tags.label: العلامات
+    calendar.label: التقويم
+    approvalRouting.label: توجيه الموافقة
+    billing.label: الفواتير
+  filters:
+    opened: جميع الشكاوى المفتوحة
+    iHaveCreated: كل ما صنعته
+    iAmAssigned: كل ما تم تعيينه لي
+    iAmFollowing: كل ما أتبعه
+    closedNoFurtherAction: جميعها مغلقة ولم يتم اتخاذ أي إجراء آخر
+    closedReferExternal: جميع مغلقة الرجوع إلى الخارجية
+    closedOpenInvestigation: جميع التحقيقات المفتوحة المغلقة
+    noFilter: (بدون فلتر)
+  sorters:
+    incidentDateAsc: فرز تاريخ الحادث تصاعدياً
+    incidentDateDesc: تاريخ الفرز تنازلياً
+    createdDateAsc: فرز تاريخ الإنشاء تصاعدياً
+    createdDateDesc: فرز تاريخ الإنشاء تنازليًا
+    nameAsc: فرز حسب الاسم تصاعدي
+    noSort: (بدون فرز)
+changes:
+  object_replaced:
+    complaint:
+      defaultAddress: تم تغيير العنوان الافتراضي
+  value_changed:
+    complaint:
+      details: شكوى - تم تغيير التفاصيل
+      complaintTitle: شكوى - تم تغيير العنوان
+      complaintType: تم تغيير نوع الشكوى
+      priority: شكوى - تم تغيير الأولوية
+      status: شكوى - تم تغيير الحالة
+      complaintNumber: شكوى - تم تغيير الرقم
+      dueDate: شكوى - تم تغيير تاريخ الاستحقاق
+      tag: شكوى - تم تغيير العلامة
+      modifier: شكوى - تم تغيير المعدل
+      personAssociations.personAssociation.personType: تم تغيير نوع اقتران الشخص
+      organizationAssociations.organizationAssociation.associationType: تم تغيير نوع ارتباط المؤسسة
+      addresses.address:
+        city: العنوان - تغيرت المدينة
+        zip: العنوان - تم تغيير الرمز البريدي
+        streetAddress: العنوان - تم تغيير الشارع
+        streetAddress2: العنوان - تم تغيير الشارع 2
+        type: العنوان- غير النوع
+        country: العنوان - تم تغيير الدولة
+        state: العنوان - تم تغيير الحالة
+      defaultAddress:
+        city: العنوان - تم تغيير المدينة
+        zip: العنوان - تم تغيير الرمز البريدي
+        streetAddress: العنوان - تم تغيير الشارع
+        streetAddress2: العنوان - تم تغيير الشارع 2
+        type: العنوان - تم تغيير النوع
+        country: العنوان - تم تغيير الدولة
+        state: العنوان - تم تغيير الحالة
+  collection_element_added:
+    complaint:
+      addresses.address: تمت إضافة العنوان
+      personAssociations.personAssociation: تمت إضافة شخص
+      organizationAssociations.organizationAssociation: تمت إضافة المنظمة
+      childObjects: تمت إضافة الاقتران
+      associationsToObjects: تمت إضافة الاقتران
+      associationsFromObjects: تمت إضافة الاقتران
+  collection_element_removed:
+    complaint:
+      addresses.address: تمت إزالة العنوان
+      personAssociations.personAssociation: تمت إزالة الشخص
+      organizationAssociations.organizationAssociation: تمت إزالة المؤسسة
+      childObjects: تمت إزالة الاقتران
+      associationsToObjects: تمت إزالة الاقتران
+      associationsFromObjects: تمت إزالة الاقتران

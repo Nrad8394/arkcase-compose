@@ -1,0 +1,62 @@
+notifications:
+  title: إعلام
+  search.btn: بحث
+  export.btn: تصدير
+  search.placeholder: ابحث عن الإخطارات
+  menus:
+    leftnav.item: إعلام
+  comp:
+    notificationsFacetedSearch:
+      title: إعلام البحث عن الأوجه 
+    grid:
+      columns:
+        id: هوية شخصية
+        description: وصف
+        objNumber: رقم الكائن
+        parentNumber: رقم الوالدين
+        objType: نوع الكائن
+        modified: تم التعديل
+  username:
+    forgot: نسيت إسم المستخدم
+  password:
+    reset: إعادة تعيين كلمة المرور
+    request: اعادة تعيين كلمة المرور طلب
+  status:
+    transcription: حالة النسخ
+  task:
+    completed: تم الانتهاء من المهمة
+    upcoming: إخطار المهمة القادمة
+    overdue: إشعار تأخر المهمة
+    status.changed: "مهمة '${nameLabel}' تغير الوضع"
+    priority.changed: "مهمة '${nameLabel}' تغيرت الأولوية"
+    concur.nonconcur: "مهمة '${nameLabel}' منجز"
+    concur.note: "مهمة '${nameLabel}' تم استكماله باتفاق ${userLabel}"
+    nonconcur.note: "مهمة '${nameLabel}' اكتمل مع عدم اتخاذ إجراء من قبل ${userLabel}" 
+  complaint:
+    invoice: "شكوى %s فوتر يعد الفاتورة"
+    status.changed: "شكوى '${nameLabel}' تغير الوضع"
+    priority.changed: "شكوى '${nameLabel}' تغيرت الأولوية"
+  case:
+    status.changed: "حالة '${nameLabel}' تغير الوضع"
+    priority.changed: "حالة '${nameLabel}' تغيرت الأولوية"
+  note.added: "تمت إضافة الملاحظة في ${typeLabel}: ${nameLabel}"
+  participants:
+    added: "تمت إضافة مشاركين في ${typeLabel}: ${nameLabel}"
+    deleted: "تم حذف المشاركين من ${typeLabel}: ${nameLabel}"
+  arrest.warrant: "%s - مذكرة توقيف" 
+  email:
+    mentions: "%s أشار إليك في %s %d"
+  calendar.event.added: "تمت إضافة حدث التقويم"
+  object.assigned: "${typeLabel}: '${nameLabel}', مخصص ل ${userLabel}"
+  object.unassigned: "${typeLabel}: '${nameLabel}', لم يتم تعيينه من ${userLabel}"
+  type:
+    label:
+      casefile: ملف القضية
+      complaint: شكوى
+      consultation: التشاور
+      task: مهمة
+      note: ملحوظة
+      file: ملف
+      doc-repo: مستودع المستندات
+      person-association: شخص
+      participant: مشارك

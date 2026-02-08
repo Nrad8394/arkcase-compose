@@ -1,0 +1,99 @@
+[
+    {
+        "fieldId": "initiatorGivenName",
+        "correspondenceFieldValue": "personAssociations.?[personType == 'Initiator'][0].person.givenName",
+        "emailFieldValue": null,
+        "fieldDescription": "Initiator First Name",
+        "fieldObjectType": "CASE_FILE"
+    },
+    {
+        "fieldId": "personFirstName",
+        "correspondenceFieldValue": "personAssociations.?[personType == 'Initiator'][0].person.givenName",
+        "emailFieldValue": null,
+        "fieldDescription": "Person First Name",
+        "fieldObjectType": "CASE_FILE"
+    },
+    {
+        "fieldId": "personId",
+        "correspondenceFieldValue": "personAssociations[0].person.id",
+        "emailFieldValue": null,
+        "fieldDescription": "Person Id",
+        "fieldObjectType": "CASE_FILE"
+    },
+    {
+        "fieldId": "caseNumber",
+        "correspondenceFieldValue": "caseNumber",
+        "emailFieldValue": null,
+        "fieldDescription": "Case Number",
+        "fieldObjectType": "CASE_FILE"
+    },
+    {
+        "fieldId":"caseTitle",
+        "correspondenceFieldValue": "title",
+        "emailFieldValue": null,
+        "fieldDescription": "Case Title",
+        "fieldObjectType": "CASE_FILE"
+    },
+    {
+        "fieldId": "personFirstName",
+        "correspondenceFieldValue": "personAssociations[0].person.givenName",
+        "emailFieldValue": null,
+        "fieldDescription": "Person First Name",
+        "fieldObjectType": "COMPLAINT"
+    },
+    {
+        "fieldId": "personId",
+        "correspondenceFieldValue": "personAssociations[0].person.id",
+        "emailFieldValue": null,
+        "fieldDescription": "Person Id",
+        "fieldObjectType": "COMPLAINT"
+    },
+    {
+        "fieldId": "caseNumber",
+        "correspondenceFieldValue": "caseNumber",
+        "emailFieldValue": null,
+        "fieldDescription": "Case Number",
+        "fieldObjectType": "COMPLAINT"
+    },
+    {
+        "fieldId": "caseTitle",
+        "correspondenceFieldValue": "title",
+        "emailFieldValue": null,
+        "fieldDescription": "Case Title",
+        "fieldObjectType": "COMPLAINT"
+    },
+    {
+        "fieldId": "caseDetailsSummary",
+        "correspondenceFieldValue": "caseDetailsSummary",
+        "emailFieldValue": null,
+        "fieldDescription": "Case Details Summary",
+        "fieldObjectType": "CASE_FILE"
+    },
+    {
+        "fieldId": "details",
+        "correspondenceFieldValue": "details",
+        "emailFieldValue": null,
+        "fieldDescription": "Details",
+        "fieldObjectType": "CASE_FILE"
+    },
+    {
+        "fieldId": "tenBusinessDays",
+        "correspondenceFieldValue": "T(com.armedia.acm.services.holiday.service.HolidayConfigurationService).util.addWorkingDaysToDate(T(java.time.LocalDate).now(), 10)",
+        "emailFieldValue": "T(com.armedia.acm.services.holiday.service.HolidayConfigurationService).util.addWorkingDaysToDate(T(java.time.LocalDate).now(), 10)",
+        "fieldDescription": "Ten working days from today",
+        "fieldObjectType": "CASE_FILE"
+    },
+    {
+        "fieldId": "entityPaymentDate",
+        "emailFieldValue": "#toClientDateTimezone(paymentDate)",
+        "fieldDescription": "Invoice Payment Date",
+        "fieldObjectType": "Object"
+    },
+    {
+        "fieldId": "currentDate",
+        "correspondenceFieldValue": "#currentDateToClientDate()",
+        "emailFieldValue": "#currentDateToClientDate()",
+        "fieldDescription": "Current Date",
+        "fieldObjectType": "CASE_FILE"
+    }
+]

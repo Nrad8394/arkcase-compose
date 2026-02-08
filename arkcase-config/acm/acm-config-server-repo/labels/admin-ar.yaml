@@ -1,0 +1,1134 @@
+admin:
+  title: مشرف
+  security.title: أمن
+  security.functionalAccessControl: التحكم في الوصول الوظيفي
+  security.functionalAccessControl.applicationRole: دور التطبيق
+  security.ldapConfig: تكوين LDAP
+  security.ldapConfig.addNewDirectory: إضافة دليل جديد
+  security.ldapConfig.addNewMember: إضافة عضو جديد
+  security.ldapConfig.addMembers: إضافة أعضاء
+  security.ldapConfig.addSubgroup: إضافة مجموعة فرعية
+  security.ldapConfig.addExistingSubgroup: إضافة مجموعة موجودة
+  security.ldapConfig.addExistingMembers: إضافة أعضاء حاليين
+  security.ldapConfig.addLdapSubgroup: إضافة مجموعة LDAP الفرعية
+  security.ldapConfig.deleteLdapGroup: حذف مجموعة LDAP
+  security.ldapConfig.removeGroup: إزالة المجموعة
+  security.ldapConfig.addOrEditSupervisor: إضافة / تعديل مشرف
+  security.ldapConfig.editMember: تحرير عضو
+  security.ldapConfig.removeMember: إزالة العضو
+  security.ldapConfig.table.ldapUrl: عنوان LDAP
+  security.ldapConfig.table.directoryName: اسم الدليل
+  security.ldapConfig.table.userAttributesConfig: تكوين مستخدم LDAP
+  security.ldapConfig.table.groupAttributesConfig: تكوين مجموعة LDAP
+  security.ldapConfig.table.editRecord: تحرير سجل LDAP
+  security.ldapConfig.table.editPassword: تحرير كلمة المرور
+  security.ldapConfig.table.deleteRecord: حذف سجل LDAP
+  security.ldapConfig.table.action.partialSync: ابدأ مزامنة LDAP الجزئية
+  security.ldapConfig.data:
+    sync.dialog.header: قم بتشغيل المزامنة
+    sync.dialog.type.partial: ' تزامن تفاضلي'
+    sync.dialog.type.full: مزامنة كاملة
+    userAttributesTemplate: قالب سمات المستخدم Ldap
+    groupAttributesTemplate: قالب سمات مجموعة Ldap
+    addNewDirectory: إضافة دليل جديد
+    editRecord: تحرير السجل
+    id: هوية شخصية
+    id.validationMessage: .يمكن أن يتكون المعرّف فقط من أحرف أو أرقام أو نقاط
+    directoryType: حدد خادم الدليل
+    ldapUrl: عنوان LDAP
+    base: يتمركز
+    directoryName: اسم الدليل
+    authUserDn: مصادقة مستخدم Dn
+    authUserPassword: مصادقة كلمة مرور المستخدم
+    confirmAuthUserPassword: تأكيد كلمة مرور مستخدم المصادقة
+    userSearchBase: قاعدة بحث المستخدمين
+    userSearchFilter: فلتر بحث المستخدم
+    allUsersFilter: تصفية كافة المستخدمين
+    allChangedUsersFilter: تصفية كافة المستخدمين الذين تم تغييرهم
+    allUsersPageFilter: تصفية صفحة كافة المستخدمين
+    allChangedUsersPageFilter: تصفية صفحة جميع المستخدمين الذين تم تغييرهم
+    allUsersSortingAttribute: سمة الفرز للمستخدمين
+    groupSearchBase: قاعدة بحث المجموعة
+    groupSearchFilterForUser: تصفية بحث المجموعة للمستخدم
+    userIdAttributeName: اسم سمة معرف المستخدم
+    userDomain: مجال المستخدم
+    userPrefix: بادئة اسم المستخدم
+    userControlGroup: مجموعة تحكم المستخدم
+    groupPrefix: بادئة المجموعة
+    groupControlGroup: مجموعة تحكم المجموعة
+    syncPageSize: مزامنة حجم الصفحة
+    groupSearchFilter: تصفية بحث المجموعة
+    changedGroupSearchFilter: تم تغيير فلتر بحث المجموعة
+    groupsSortingAttribute: سمة الفرز للمجموعات
+    groupSearchPageFilter: تصفية صفحة بحث المجموعة
+    changedGroupSearchPageFilter: تم تغيير فلتر صفحة بحث المجموعة
+    enableEditingLdapUsers: تمكين إدارة المستخدمين والمجموعات
+    syncEnabled: تمكين مزامنة المستخدمين
+    fullSync: مزامنة كرون كاملة
+    fullSync.validationMessage: .تعبير Cron غير صالح
+    partialSync: مزامنة كرون جزئية
+    partialSync.validationMessage: .تعبير Cron غير صالح
+    cancel: إلغاء
+    ok: حفظ
+  security.documentUploadPolicy:
+    title: سياسة تحميل الوثيقة
+    table.title: تحويل الملف إلى PDF قبل رفع
+    convertHtml.checkbox: تحويل HTML إلى PDF
+    convertMsg.checkbox: تحويل MSG إلى PDF
+    convertEml.checkbox: تحويل EML إلى PDF
+    save.button: حفظ
+  menus:
+    leftnav.item: مشرف
+  security.ldapConfig.data.placeholders:
+    id: أدخل اسم الدليل
+    ldapUrl: أدخل عنوان URL للاتصال
+    base: أدخل مكون النطاق الأساسي (مثل dc = example، dc = com)
+    authUserDn: أدخل الاسم المميز للمستخدم للمصادقة (على سبيل المثال cn = John Doe ، ou = users ، dc = example ، dc = com)
+    authUserPassword: أدخل كلمة المرور لمستخدم المصادقة
+    confirmAuthUserPassword: تأكيد كلمة المرور لمستخدم المصادقة
+    userSearchBase: أدخل قاعدة بحث المستخدمين (مثل ou = users)
+    userSearchFilter: أدخل عامل تصفية البحث لمستخدم واحد (مثل (& (objectClass=person) (uid=%s))
+    allUsersFilter: أدخل عامل تصفية البحث لجميع المستخدمين (على سبيل المثال (objectClass=person))
+    allUsersPageFilter: أدخل عامل التصفية بما في ذلك سمة الفرز (على سبيل المثال ((& (objectClass=person)(uidNumber>=%s)))
+    allUsersSortingAttribute: أدخل سمة الفرز للمستخدمين (مثل 'uidNumber')
+    allChangedUsersFilter: أدخل عامل التصفية لجميع المستخدمين الذين تم تغييرهم
+    allChangedUsersPageFilter: أدخل عامل التصفية بما في ذلك سمة الفرز لجميع المستخدمين الذين تم تغييرهم
+    groupSearchBase: أدخل قاعدة بحث للمجموعات (مثل ou=groups)
+    groupSearchFilterForUser: أدخل عامل تصفية البحث للمستخدم في المجموعة (على سبيل المثال (& (objectClass=group)(العضو=%s)))
+    userIdAttributeName: أدخل السمة المستخدمة لمعرف المستخدم (مثل 'uid')
+    userDomain: أدخل مجال المستخدم
+    userPrefix: .املأ بادئة اسم المستخدم لبيئة SAML
+    groupPrefix: .املأ بادئة المجموعة لبيئة SAML
+    userControlGroup: .املأ مجموعة تحكم المستخدم لبيئة SAML
+    groupControlGroup: .املأ مجموعة التحكم بالمجموعة لبيئة SAML
+    syncPageSize: بحجم الصفحة أدخل 
+    groupSearchFilter: أدخل عامل تصفية البحث للمجموعات (مثل (objectClass=group))
+    groupsSortingAttribute: أدخل سمة لفرز المجموعات (مثل 'gidNumber')
+    changedGroupSearchFilter: أدخل عامل تصفية البحث لجميع المجموعات التي تم تغييرها
+    changedGroupSearchPageFilter: أدخل عامل التصفية بما في ذلك سمة الفرز لجميع المجموعات التي تم تغييرها
+    groupSearchPageFilter: أدخل عامل التصفية بما في ذلك سمة الفرز (على سبيل المثال (& (objectClass = group)(gidNumber>=%s)))
+    enableEditingLdapUsers: تحقق مما إذا كان يُسمح بإدارة المستخدمين والمجموعات إلى DS الخاص بك
+    syncEnabled: تحقق مما إذا كان يُسمح بمزامنة المستخدمين مع DS الخاص بك
+    fullSync: أدخل تعبير cron لوظيفة المزامنة الكاملة
+    partialSync: أدخل تعبير cron لوظيفة المزامنة الجزئية
+  security.ldapConfig.messages:
+    delete.success: .تم حذف الصف بنجاح
+    delete.error: .خطأ في حذف الصف
+    insert.success: .تم إدراج صف جديد بنجاح
+    insert.error: .خطأ في إدراج صف جديد
+    update.success: .بنجاح محدث صف
+    update.error: .خطأ في تحديث الصف
+    insert.template.success: إنشاء قالب بنجاح
+    insert.template.error: خطأ في إنشاء القالب
+  security.ldapConfig.dialog:
+    cancel: إلغاء
+    ok: Save
+    confirm.delete:
+      deleteBtn: حذف
+      cancelBtn: إلغاء
+      headerText: ?هل أنت واثق
+      bodyText:  سيتم حذف هذا السجل. هل أنت واثق؟ 
+  admin.security.addNew: إضافة دليل جديد
+  security.organizationalHierarchy:
+    title: التسلسل الهرمي التنظيمي
+    btn:
+      createAdHocGroup: إنشاء AdHocGroup
+    createGroupDialog:
+      ldapGroup:
+        title: أضف مجموعة LDAP
+      adHocGroup:
+        title: إضافة مجموعة AdHoc
+      selectDirectory: --اختر تكوين الدليل--
+      disabledGroupWarning: لا يُسمح بإضافة مجموعات LDAP جديدة لهذا الدليل!
+      name: اسم
+      namePlaceholder: أدخل اسم المجموعة
+      description: وصف
+      descriptionPlaceholder: أدخل الوصف
+      btn:
+        ok: أضف مجموعة
+        cancel: إلغاء
+    addSubGroupDialog:
+      title: إضافة مجموعة فرعية إلى
+      name: اسم
+      namePlaceholder: أدخل اسم المجموعة
+      description: وصف
+      descriptionPlaceholder: أدخل الوصف
+      btn:
+        ok: إضافة مجموعة AdHoc
+        cancel: إلغاء
+    addMembers:
+      title: إضافة أعضاء
+      group.title: أضف مجموعة موجودة كعضو
+      btn:
+        search: اذهب!
+        cancel: إلغاء
+        ok: أضف
+        searchPlaceholder: .أدخل للبحث عن الأعضاء
+    createUserDialog:
+      addLdapMember:
+        title: إضافة عضو Ldap
+        btn:
+          cancel: إلغاء
+          ok: إضافة مستخدم Ldap
+        username: ادخل اسم المستخدم
+        firstName: أدخل الاسم الأول
+        lastName: إدخال اسم آخر
+        email: أدخل البريد الإلكتروني
+        password: أدخل كلمة المرور
+        confirmation: أدخل كلمة مرورك مرة أخرى
+        samlMaxUsernameLengthError: لا يمكن أن يحتوي اسم المستخدم على أكثر من 20 حرفًا
+        _1_: .القيم الرقمية غير صالحة في ملف المورد _TO_BE_REMOVED_
+        _2_: إذا لزم الأمر 'minLengthForPassword' ، يرجى نقله إلى config.json
+        _minLengthForPassword: "7"
+      editLdapMember:
+        title: تحرير عضو Ldap
+        btn:
+          cancel: إلغاء
+          ok: تحرير مستخدم Ldap
+      username: اسم المستخدم
+      firstName: الاسم الاول
+      lastName: اسم العائلة
+      email: البريد الإلكتروني
+      password: كلمه السر
+      confirmation: Cتأكيد كلمة المرور
+    addMembersGridColumns:
+      name: اسم
+      type: نوع
+      title: عنوان
+      parent: الأبوين
+      assignee: المحال إليه
+      modified: تم التعديل
+    addSupervisor:
+      title: إضافة مشرف
+      btn:
+        search: اذهب!
+        cancel: إلغاء
+        ok: أضف
+        searchPlaceholder: .أدخل للبحث عن المشرف
+    addSupervisorGridColumns:
+      name: اسم
+      type: نوع
+      title: عنوان
+      parent: الأبوين
+      assignee: المحال إليه
+      modified: تم التعديل
+    dialog.group:
+      confirm.delete:
+        cancelBtn: إلغاء
+        deleteBtn: حذف
+        headerText: 'أنت على وشك حذف مجموعة: '
+        controlGroupHeaderWarning: إنك على وشك حذف مجموعة {{groupName}} التي هي عضو في مجموعة التحكم {{controlGroupName}}
+        bodyText: هل أنت واثق؟
+    dialog.member:
+      confirm.delete:
+        cancelBtn: إلغاء
+        deleteBtn: حذف
+        headerText: 'أنت على وشك حذف العضو: '
+        bodyText: هل أنت واثق؟
+    messages:
+      delete:
+        group:
+          success: نجاح
+          error: خطأ
+        member:
+          success: نجاح
+          error: خطأ
+    tableColumns:
+      name: اسم
+      type: Type
+      supervisorName: اسم المشرف
+      actions: أجراءات
+    searchFilter.placeholder: بحث
+  security.selectPrivileges: حدد الامتيازات
+  security.selectPrivileges.applicationRole: دور التطبيق
+  security.selectPrivileges.createRole: إنشاء دور
+  security.selectPrivileges.editRole: تحرير الدور
+  security.selectPrivileges.applyChanges: تطبيق التغييرات
+  security.selectPrivileges.enterRoleName: .أدخل اسم الدور في المربع أدناه
+  security.selectPrivileges.cancel: إلغاء
+  security.selectPrivileges.name: اسم
+  security.modules: الوحدات
+  security.modules.module: الوحدات
+  security.ldap.user.management:
+    title: إدارة مستخدم LDAP
+    cloneButton: استنساخ المستخدم
+    deleteUserBtn: حذف المستخدم
+    deleteUserMsg: هل أنت متأكد أنك تريد حذف هذا المستخدم؟
+    user: المستعمل
+    cancelBtn: إلغاء
+    alertMessage: إدارة المستخدم غير مسموح بها في هذا الدليل
+  security.group.management:
+    title: إدارة المجموعة
+    group: مجموعة
+  security.calendarConfiguration:
+    title: التقويم ترتيب
+    calendarConfigForm:
+      email.placeholder: أدخل عنوان البريد الإلكتروني للنظام
+      password.placeholder: أدخل كلمة مرور النظام
+      purge.placeholder: اختر خيار التطهير
+      purgeDays.placeholder: أدخل الأيام
+      save.button: حفظ
+      validate.button: التحقق من الصحة
+      purge.label: المسهل دواء
+      email.label: عنوان البريد الإلكتروني للنظام
+      password.label: كلمة مرور النظام
+      password.changeButton: تغيير كلمة مرور مستخدم التقويم
+      purgeDays.label: أيام
+      emailValid: عنوان البريد الإلكتروني للنظام وكلمة المرور صالحان
+      emailNotValid: Sعنوان البريد الإلكتروني للنظام أو كلمة المرور غير صالحة
+      enableCalendarIntegration.checkbox: تمكين تكامل التقويم
+      purgeOptions:
+        retainIndefinitely: احتفظ إلى أجل غير مسمى
+        objectClosed: الكائن = 'مغلق'
+        objectClosedXDays: الكائن = 'مغلق' + X أيام
+      configurableObjectTypes:
+        cases.label: الحالات
+        complaints.label: شكاوي
+        tasks.label: مهام
+  security.calendarCredentialsConfiguration:
+    title: ترتيب أوراق اعتماد التقويم
+    accountConfigForm:
+      account: عنوان البريد الإلكتروني للنظام
+      password: كلمة مرور النظام
+      password.placeholder: كلمة مرور النظام
+      save.button: حفظ
+      validate.button: التحقق من الصحة
+    modal:
+      title: تجاوز مجلد Outlook
+      message: لقد قمت بتغيير حساب البريد الإلكتروني النظام الخاص بك. سيتم تجاوز مجلدات التوقعات المرتبطة بأخرى جديدة. يرجى تأكيد الإجراء الخاص بك.
+      confirm.button: تؤكد
+      cancel.button: إلغاء
+    message:
+      credentials.valid: أوراق الاعتماد صالحة
+      credentials.invalid: بيانات الاعتماد غير صالحة
+      credentials.error: حدث خطأ أثناء التحقق من أوراق الاعتماد
+      save.successful: تم حفظ منشئ مجلدات Outlook بنجاح
+      save.fail: لم يتم حفظ منشئ مجلدات Outlook
+  security.emailConfiguration:
+    title: سياسة تسليم المستندات
+    emailConfigForm:
+      save.button: حفظ
+      deliveryMethods.label: طرق التوصيل
+      enableDocumentEmail.checkbox: يمكن إرسال المستندات عبر البريد الإلكتروني
+      enableDocumentAttach.checkbox: يمكن إرفاق المستندات برسائل البريد الإلكتروني
+      enableDocumentHyperlink.checkbox: يمكن إرسال المستندات كارتباطات تشعبية
+      documentsAsPdf.checkbox: إرسال المستندات كملفات PDF
+      serverSettings.label: اعدادات الخادم
+      serverType.label: نوع الخادم
+      serverType.placeholder: اختر نوع خادم البريد الإلكتروني
+      serverTypeOptions:
+        smtp: SMTP
+        outlook: تبادل مايكروسوفت
+      serverType.configuredExchange.label: للحصول على تفاصيل الرجوع إلى تبادل مايكروسوفت
+      server.label: الخادم عنون
+      server.placeholder: أدخل عنوان الخادم
+      port.label: بورت خمرة
+      port.placeholder: أدخل المنفذ
+      encryption.label: التشفير
+      encryption.placeholder: اختر التشفير
+      encryptionOptions:
+        "off": "OFF"
+        ssl-tls: SSL/TLS
+        starttls: STARTTLS
+      username.label: اسم المستخدم
+      username.placeholder: ادخل اسم المستخدم
+      password.label: كلمه السر
+      password.placeholder: أدخل كلمة المرور
+      userFrom.label: من عند
+      userFrom.placeholder: أدخل حقل البريد الإلكتروني من
+      validate.label: التحقق من صحة SMTP
+      validate.button: التحقق من الصحة
+      smtpValid: إعدادات SMTP صالحة
+      smtpNotValid: إعدادات SMTP غير صالحة
+      errorMsg: يرجى تحديد كيفية إرسال المستندات
+  security.emailTemplates:
+    title: تكوين البريد الإلكتروني
+    table.title: قوالب البريد الإلكتروني
+    settings:
+      emailCaseFile.label: CaseFile استقبال البريد الإلكتروني
+      emailComplaint.label: شكوى مستلم البريد الإلكتروني
+      password.label: كلمه السر
+      email.placeholder: أدخل عنوان البريد الالكتروني
+      password.placeholder: أدخل كلمة المرور
+      btnSave: حفظ
+      enableCase: تفعيل إنشاء CaseFiles من بريد الدخل
+      enableComplaint: تمكين إنشاء الشكاوى من بريد الدخل
+    bursting.configuration:
+      header: تكوين انفجار البريد الإلكتروني
+      label: تمكين انفجار المرفقات من البريد الوارد
+    table.columns:
+      templateName: اسم القالب
+      emailPattern: نموذج البريد الإلكتروني
+      source: مصدر
+      objectTypes: أنواع الكائنات
+      actions: احداث الرواية
+      modified: تعديل التاريخ
+      modifier: تعديل بواسطة
+    modal:
+      title: قالب البريد الإلكتروني
+      templateName.label: اسم القالب
+      templateName.placeholder: أدخل اسم القالب
+      emailPattern.label: نمط البريد الإلكتروني
+      emailPattern.description: استخدم ". *" لجميع المستلمين ' استخدم '.+@armedia.com' لمستلمي armedia.com أو بعض التعبير العادي. يرجى ملاحظة أنه يجب الهروب من النقطة (.) بخط مائل!
+      emailPattern.placeholder: أدخل نمط البريد الإلكتروني
+      source.label: مصدر
+      objectTypes.label: أنواع الكائنات
+      actions.label: احداث الرواية
+      manual.label: كتيب
+      automated.label: الآلي
+      choose.file: اختر ملف
+      download: تحميل
+      save: حفظ
+      cancel: إلغاء
+      validationResponse: قالب البريد الإلكتروني موجود بالفعل مع المعلمات المحددة
+      uploadError: تم إلغاء تحميل الملف بسبب نوع الملف غير الصحيح. يمكنك فقط تحميل ملف html.
+    objectTypes:
+      caseFile: ملف القضية
+      complaint: شكوى
+      consultation: التشاور
+      task: مهمة
+      document: دعم بالوثائق
+    actions:
+      sendAsAttachments: إرسال كمرفقات
+      sendAsLinks: إرسال كروابط
+      sendAsAttachmentsAndLinks: إرسال كمرفقات وروابط
+  security.exchangeConfiguration:
+    title: تكوين تبادل مايكروسوفت
+    exchangeConfigForm:
+      save.button: حفظ
+      enableExchangeIntegration.checkbox: تفعيل تكامل تبادل مايكروسوفت
+      exchangeServerVersion.label: إصدار الخادم تبادل
+      exchangeServerVersion.placeholder: اختر إصدار الخادم
+      exchangeServerVersionOptions:
+        Exchange2007: Exchange2007
+        Exchange2007_SP1: Exchange2007_SP1
+        Exchange2010: Exchange2010
+        Exchange2010_SP1: Exchange2010_SP1
+        Exchange2010_SP2: Exchange2010_SP2
+        Exchange2013: Exchange2013
+        Exchange2013_SP1: Exchange2013_SP1
+      enableAutodiscovery.checkbox: تمكين الاكتشاف التلقائي
+      clientAccessServer.label: وصول خادم العميل
+      clientAccessServer.description: 'قبل تغيير مستوى الوصول الافتراضي ، تفضل بزيارة:
+        http://help.unc.edu/help/exchange-what-are-permission-levels-in-outlook/ إلى عن على
+        مزيد من المعلومات'
+      clientAccessServer.placeholder: أدخل خادم وصول العميل
+      exchangeDefaultAccess.label: تبادل الوصول الافتراضي
+      exchangeDefaultAccess.placeholder: اختر تبادل الوصول الافتراضي
+      exchangeDefaultAccessOptions:
+        None: لا أحب إلأ هي
+        Owner: صاحب
+        PublishingEditor: محرر النشر
+        Editor: محرر
+        PublishingAuthor: مؤلف النشر
+        Author: مؤلف
+        NoneditingAuthor: مؤلف غير محرر
+        Reviewer: ناقد أدبي
+        Contributor: مساهم
+        FreeBusyTimeOnly: مجانا وقت مشغول فقط
+        FreeBusyTimeAndSubjectAndLocation: مجانا مشغول زمن خاضع والموقع
+        Custom: مخصص
+  forms.timesheetConfiguration:
+    title: تكوين الوقت
+    chargeRole.title: تكوين أدوار المسؤول
+    timeSheetProperties: خصائص ورقة الوقت
+    workflow: إدارة سير عمل الموافقة
+    chargeRole: دور المسؤول
+    chargeRole.placeholder: أدخل دور المسؤول
+    rate: معدل
+    rate.placeholder: ($) أدخل السعر
+    active: غير نشط/نشط
+    active.active: نشط
+    active.inactive: غير نشط
+    useWorkflowCheckbox: استخدام سير عمل الموافقة
+    addTimesheetToBilling: يجب إضافة ورقة الوقت إلى جدول الفواتير عند الانتهاء
+    modal:
+      button.save: حفظ
+      button.cancel: إلغاء
+  forms.costsheetConfiguration:
+    title: تكوين ورقة التكلفة
+    costSheetProperties: خصائص ورقة التكلفة
+    workflow: إدارة سير عمل الموافقة
+    useWorkflowCheckbox: استخدام سير عمل الموافقة
+    addCostsheetToBilling: يجب إضافة أوراق التكلفة إلى جدول الفواتير عند الانتهاء
+  portals.portalsConfiguration:
+    nodeTitle: خدمة البوابة
+    title: تكوين المدخل
+    url: URL
+    id: ID
+    portalId: معرف المدخل
+    portalDescription: وصف
+    portalUser: المستعمل
+    groupName: مجموعة
+    save: حفظ
+    cancel: إلغاء
+    placeholder:
+      portalUrl: أدخل عنوان URL الخاص بالبوابة
+      portalId: سيتم إنشاء معرف
+      portalDescription: أدخل وصف المدخل
+      portalUser: حدد مستخدم المدخل
+      groupName: اختر مجموعة
+    message:
+      edit: ...يتم نقل مستخدمي المدخل إلى مجموعة تم تكوينها حديثًا
+      add: تمت إضافة البوابة بنجاح
+      delete: تم حذف المدخل بنجاح
+  userSearch:
+    title: بحث المستخدم
+    cancelButton: إلغاء
+    confirmButton: حفظ
+    search:
+      placeholder: ابحث عن المستخدم لتعيينه في هذه البوابة
+      btn: بحث
+    assigneeGridColumns:
+      name: اسم
+      type: نوع
+      title: عنوان
+      username: اسم المستخدم
+  groupSearch:
+    title: بحث جماعي
+    cancelButton: إلغاء
+    confirmButton: حفظ
+    search:
+      placeholder: ابحث عن المجموعة التي تريد إضافة مستخدمي المدخل إليها
+      btn: بحث
+    assigneeGridColumns:
+      name: اسم
+      type: نوع
+      title: عنوان
+      username: اسم المستخدم
+  dashboard.title: لوحة القيادة
+  dashboard.config: تكوين لوحة القيادة
+  dashboard.widgets: الحاجيات
+  reports:
+    title: التقارير
+    config: إدارة التقارير
+    btn:
+      reportDesigner: مصمم تقرير
+      sync: تزامن
+      export: تشغيل التقرير
+    schedule:
+      title: جدولة التقارير
+      selectReportType: حدد نوع التقرير
+      emailAddress:
+        title: أدخل عناوين البريد الإلكتروني
+        placeholder: يرجى إدخال عناوين بريد إلكتروني مفصولة بفواصل (،)
+      table:
+        header: الجدول الحالي
+        startTimeFormat: hh:mm a
+        columns:
+          jobName: اسم الجدول
+          recurrence: تكرار
+          startTime: وقت البدء
+          startDate: تاريخ البدء
+          endDate: تاريخ الانتهاء
+          emailAddresses: عناوين البريد الإلكتروني
+          state: حالة
+      delete:
+        success: تم حذف الجدول الزمني بنجاح
+        error: فشل حذف الجدول الزمني
+      update:
+        success: تم تحديث الجدول الزمني بنجاح
+        error: فشل تحديث الجدول الزمني
+      createScheduleSuccess: تم إنشاء الجدول الزمني بنجاح
+      createScheduleFailure: فشل في إنشاء الجدول الزمني
+      invalidScheduleTime: '.إدخال غير صالح أو مفقود من نوع الجدول الزمني: يومي ، أسبوعي ، وما إلى ذلك'
+      beforeTimeError: لا يمكن أن يكون وقت الانتهاء قبل وقت البدء
+      parsingError: حدث خطأ بسبب تحليل وقت البدء أو الانتهاء
+      enterFutureDate: أدخل وقت البدء في المستقبل
+      recurrence: التكرار (أدخل الوقت المستقبلي)
+      time: زمن
+      startDate: تاريخ البدء
+      endDate: تاريخ الانتهاء
+      filterStartDate: تاريخ بدء تصفية النتائج
+      filterEndDate: تاريخ انتهاء تصفية النتائج
+      outputFormat: حدد تنسيق الإخراج
+      submit: إرسال
+      cancel: إلغاء
+    export:
+      title: تقرير خيارات التصدير
+      label: تنسيق التصدير  
+  forms.title: نماذج
+  forms.config: تكوين النموذج
+  workflows.title: سير العمل
+  workflows.config: تكوين سير العمل
+  workflows.config.bpmn.upload: رفع
+  workflows.config.bpmn.addNewWorkflow: تحميل سير العمل
+  workflows.config.bpmn.modal:
+    label.description: وصف
+    label.noFileSelected: لم يتم اختيار اي ملف
+    btnCancel.text: إلغاء
+    btnOk.text: تحميل سير العمل
+  workflows.config.activate:
+    error: غير قادر على تنشيط هذه العملية!
+    success: .تم تنشيط العملية بنجاح
+  workflows.config.deactivate:
+    error: لا يمكن جعل هذه العملية غير نشطة!
+    success: تم إلغاء تنشيط العملية بنجاح.
+  workflows.config.showHistory.dialog:
+    title: التاريخ
+    body: .فيما يلي سجل ملفات BPMN السابقة. لاستعادة سير عمل سابق ، حدد سير العمل وانقر فوق نشط
+    cancel: إلغاء
+    activate: نشط
+  workflows.config.noHistory: .لا يوجد تاريخ لسير العمل هذا
+  workflows.config.grid:
+    businessProcess: طريقة العمل
+    description: وصف
+    actions: أجراءات
+    modified: تم التعديل
+    creator: مؤلف
+    version: الإصدار
+    status: الحالة
+    activated: مفعل
+    deactivated: معطل
+  workflows.config.btn:
+    showDeactivated: إظهار غير نشط
+    createNew: إنشاء نموذج جديد
+    uploadNew: BPMN رفع جديد
+  workflows.config.deactivated:
+     title: سير العمل المعطل
+     close.btn: قريب    
+  workflows.config.links:
+    download: تحميل
+    replaceFile: استبدل الملف
+    versionHistory: تاريخ النسخة
+    diagram: مخطط العملية
+  workflows.config.upload:
+    success: تم تحميل تعريف العملية الجديد بنجاح
+    error: خطأ في تحميل تعريف العملية الجديد
+  workflows.config.diagram:
+    title: مخطط العملية
+    error.loading: لا يمكن تحميل الرسم التخطيطي
+    modal:
+      btnClose.text: قريب
+  formWorkflows.title: شكل / رابط سير العمل
+  formWorkflows.link: ربط النماذج / سير العمل
+  formWorkflows.link.undo: الغاء التحميل
+  formWorkflows.link.saveChanges: حفظ التغييرات
+  formWorkflows.link.editRole.save.success: تم حفظ تكوين نماذج الارتباط / سير العمل بنجاح
+  formWorkflows.link.editRole.save.error: لا يمكن حفظ نماذج الارتباط/تكوين سير العمل
+  application:
+    title: تطبيق
+    productVersion: إصدار المنتج
+    extensionVersion: نسخة التمديد
+    dateLastInstalled: تاريخ آخر تثبيت
+    locale.config:
+      title: تكوين الإعدادات المحلية
+      defaultLabel: 'اللغة الافتراضية:'
+    version.config:
+      title: إصدار التطبيق
+    labels.config:
+      title: تكوين التسمية
+      progressMessage: جاري تحديث التسميات ... الرجاء الانتظار
+      data:
+        description: وصف
+        defaultValue: القيمة تخلف بالدفع
+        id: هوية شخصية
+        value: القيمة
+      btnReset:
+        label: إعادة تعيين...
+        title: إعادة تعيين موارد التسمية إلى الافتراضي
+      setToDefault:
+        dialog.title: إعادة تعيين التسميات إلى الافتراضي
+        chkResetCustom.label: هل تريد مسح الملصقات المخصصة أيضًا؟
+        btnCancel.label: إلغاء
+        btnCancel.title: أغلق مربع الحوار بدون أي إجراء
+        btnReset.label: إعادة تعيين
+        btnReset.title: امسح التصنيفات المخصصة وأعد تعيينها إلى القيم الافتراضية
+        btnRefresh.label: إعادة تعيين
+        btnRefresh.title: إعادة تعيين التسميات إلى القيم الافتراضية مع الاحتفاظ بالتسميات المخصصة دون تغيير
+        resetCustom.confirm: هل أنت متأكد من أنك تريد إزالة الموارد المخصصة المحددة؟
+    lookups.config:
+      title: عمليات بحث التكوين
+      choose: اختر بحث
+      data:
+        key: مفتاح الرموز
+        value: القيمة
+        inverseKey: مفتاح معكوس
+        inverseValue: قيمة عكسية
+        description: وصف
+      modal:
+        title: تسمية البحث
+        editEntry: تحرير إدخال البحث
+        addEntry: إضافة إدخال بحث
+        key.placeholder: أدخل مفتاح الإدخال
+        value.placeholder: أدخل قيمة الإدخال كمفتاح تسمية
+        inversekey.placeholder: أدخل مفتاح معكوس الإدخال
+        inversevalue.placeholder: أدخل القيمة المعكوسة لإدخال كمفتاح تسمية
+        description.placeholder: أدخل وصف الإدخال 
+        btnCancel.text: إلغاء
+        btnOk.text: حفظ الإدخال
+        setPrimary: تعيين الأساسي
+        "yes": "نعم"
+        "no": "لا"
+      addLookup: أضف بحث
+      label: نوع البحث
+      lookupName: اسم البحث
+      placeholder: أدخل اسم البحث
+      btnSave.text: حفظ
+      deleteLookupMsg: هل أنت متأكد أنك تريد حذف هذا البحث؟
+      deleteEntryMsg: هل أنت متأكد أنك تريد حذف هذا الإدخال؟
+      delete.success: تم حذف البحث بنجاح
+      delete.error: لا يمكن حذف البحث
+      lookupExists.error: البحث بهذا الاسم موجود بالفعل
+      dialog:
+        deleteEntryConfirm: حذف المدخلات
+        deleteLookupConfirm: حذف البحث
+        cancel: إلغاء
+    module.config:
+      title: تكوين الوحدة النمطية
+      btnDisabled: مصاب بعجز
+      btnEnabled: مكن
+      message: لم يتم العثور على وحدات في النظام
+    userName.config:
+      title: تكوين عرض اسم المستخدم
+      userId.label: استخدم معرف المستخدم
+      userName.label: استخدم اسم المستخدم الكامل
+      apply: تطبيق
+      modal.title: معلومات
+      modal.info: ستسري الإعدادات بعد التحديث
+      modal.ok: أكد
+    formsType.config:
+      title: تكوين نوع النماذج
+      angular.label: استخدم الأشكال Angular
+      frevvo.label: استخدم نماذج Frevvo
+      apply: تطبيق
+      modal.title: معلومات
+      modal.info: ستسري الإعدادات بعد التحديث
+      modal.ok: تؤكد
+    sequenceManagement.config:
+      title: تكوين التسلسل
+      sequenceEnabled: مكن
+      sequenceDisabled: مصاب بعجز
+      grid:
+        sequenceName: اسم
+        sequenceDescription: وصف
+        sequenceStatus: مكانة
+      placeholder:
+        name: أدخل اسم التسلسل
+        description: أدخل وصف التسلسل
+      modal:
+        title: أضف/تحرير التسلسل
+        sequenceName: اسم التسلسل
+        sequenceDescription: وصف التسلسل
+        sequenceEnabled: تم تمكين التسلسل
+        cancel: إلغاء
+        save: حفظ
+      registry: ميناء التسجيل
+      editSequenceNumber:
+        modal:
+          title: تحرير رقم التسلسل
+          sequencePartValue: تسلسل رقم
+    sequenceManagementParts.config:
+      title: جزء تسلسل
+      footer:
+        cancelBtn: OK
+      grid:
+        sequenceName: اسم
+        sequenceDescription: نوع
+      message: لم يتم حفظ التسلسل الذي أدخلته! اسم التسلسل موجود بالفعل!
+      autoincrement:
+        startNumber: رقم البداية
+        incrementSize: حجم الزيادة
+        numberLength: طول الرقم
+        reuseSkippedSequenceValues: إعادة استخدام قيم التسلسل التي تم تخطيها
+      objectProperty:
+        name: اسم خاصية الكائن
+      date:
+        text: 'صيغة التاريخ (على سبيل المثال: ddMMyyyyHHmmssSSS)'
+      arbitraryText:
+        text: نص تعسفي
+      modal:
+        title: أضف/تحرير جزء التسلسل
+        sequencePartName: اسم جزء التسلسل
+        sequencePartType: نوع جزء التسلسل
+        sequenceCondition: شرط التنفيذ (SPEL التعبير)
+        cancel: إلغاء
+        save: حفظ
+        placeholders:
+          autoincrement:
+            startNumber: حدد أو أدخل رقم البداية
+            incrementSize: حدد أو أدخل حجم الزيادة
+            numberLength: حدد أو أدخل طول الرقم
+          arbitraryText: النص التعسفي للدخول
+          objectProperty: أدخل خاصية الكائن أو تعبير SPEL
+          date: 'أدخل تنسيق التاريخ (على سبيل المثال: ddMMyyyyHHmmssSSS)'
+          sequencePartName: أدخل اسم جزء التسلسل
+          sequencePartType: حدد نوع الجزء
+          sequenceCondition: أدخل شرط التنفيذ
+    sequenceManagementReset:
+      title: إعادة تعيين القائمة
+      editBtn: تعديل
+      viewBtn: رأي
+      removeBtn: إزالة
+      cancelBtn: إلغاء
+      saveBtn: حفظ
+      grid:
+        startResetDate: بدء إعادة تعيين التاريخ
+        executedDate: تاريخ التنفيذ
+        repeat: كرر
+        repeatPeriod: كرر الفترة
+      detailsModal:
+        title: إعادة تعيين تلقائي
+        addTitle: إضافة إعادة تعيين تلقائية
+        editTitle: تحرير إعادة تعيين تلقائية
+        resetStartDate: إعادة تعيين تاريخ البدء
+        repeatReset: كرر إعادة التعيين
+        repeatResetPeriod: كرر فترة إعادة تعيين (أيام)
+        sequenceResetScheduledWarning: تمت جدولة إعادة التسلسل لهذا اليوم
+    sequenceRegistry:
+      title: رأي/تحرير سجل التسلسل
+      sequenceValue: قيمة التسلسل
+      sequenceName: اسم التسلسل
+      sequencePartName: اسم جزء التسلسل
+      sequencePartValue: قيمة جزء التسلسل
+      sequencePartValueUsedFlag: قيمة جزء التسلسل المستخدمة
+      cancel: إلغاء
+      save: حفظ
+    login.config:
+      title: تكوين تسجيل الدخول
+      idleLimit.label: حد خمول تسجيل الدخول (بالمللي ثانية)
+      inform: ستسري الإعدادات على جميع جلسات المستخدم الجديدة
+      apply.label: تطبيق
+      dialog:
+        OKBtn: تؤكد
+    auditHistory.config:
+      title: سجل المراجعة
+      historyDays.label: الاحتفاظ بأحداث التدقيق والإعلام (بالأيام)
+      inform: تم حفظ الإعداد بنجاح
+      apply.label: تطبيق
+      dialog:
+        OKBtn: تؤكد
+    holiday:
+      title: جدول العطلة
+      label: قم بتضمين عطلات نهاية الأسبوع كأيام عمل
+      grid:
+        holidayName: اسم العطلة
+        holidayDate: تاريخ العطلة
+      cancel: إلغاء
+      save: حفظ
+      message: لم يتم حفظ العطلة التي أدخلتها! تاريخ العطلة موجود بالفعل!
+      placeholder:
+        name: أدخل اسم العطلة
+        date: أدخل تاريخ العطلة
+    recycleBin:
+      title: سلة المهملات
+      error: لم يتم العثور على الملف. يرجى المحاولة مرة أخرى أو اتصل بمسؤول النظام
+      grid:
+        objectName: اسم
+        containerObjectTitle: الموقع الأصلي (معرف الكائن الأصل)
+        dateModified: تم حذف التاريخ
+        fileSizeBytes: بحجم
+        fileActiveVersionNameExtension: نوع العنصر
+    resetConfiguration:
+      title: إعادة تعيين التكوين
+      btnReset.title: إعادة تعيين
+      modal:
+        title: هل أنت متأكد أنك تريد إعادة تعيين التكوين؟
+        body: لا يمكنك التراجع عن هذا العمل!
+        btnConfirm.title: تؤكد
+        btnCancel.title: إلغاء
+    objectTitleConfiguration:
+      title: تكوين عنوان الكائن
+      save: حفظ
+      enableTitleField: تمكين عنوان الحقل
+      displayOptions: 'خيارات عرض العنوان: '
+      objectId: استخدم "معرف الكائن" كعنوان
+      titleTitle: استخدم "العنوان" كعنوان
+      titleObjectId: استخدم "العنوان - معرف الكائن" كعنوان
+      objectIdTitle: استخدم ال 'معرف الكائن - العنوان' كعنوان
+      numberTitle: استخدم "رقم الكائن - العنوان" كعنوان
+      objectType: نوع الكائن
+      titleOption: عنوان
+      caseFile: ملف القضية
+      complaint: شكوى
+      consultation: التشاور
+      message:
+        success: تم حفظ تكوين عنوان الكائن بنجاح
+        error: خطأ. لم يتم حفظ تكوين عنوان الكائن.
+        exist1: "تكوين عنوان الكائن لـ"
+        exist2: ' موجود مسبقا.'
+        editRow: لم ينجح تحرير الصف
+      button:
+        save: حفظ
+        cancel: إلغاء
+    scheduled.jobs:
+      title: الوظائف المجدولة
+      column:
+        jobName.title: اسم العمل
+        trigger.title: فاصل الزناد (بالثواني) / كرون
+        lastRun.title: التشغيل الأخير
+        nextRun.title: التشغيل التالي
+      btn:
+        run: يركض
+        spin: تنفيذ
+        pause: وقفة
+        resume: استئنف
+  branding.title: العلامة التجارية
+  branding.logo: شعار
+  branding.logo.messages:
+    upload.success: تم تحديث ملفات الشعار المخصص. قم بتحديث صفحة المتصفح لرؤية النتيجة.
+    upload.error: خطأ في تحميل ملفات الشعار المخصصة.
+  branding.logo.header.title: العنوان
+  branding.logo.login.title: صفحة تسجيل الدخول
+  branding.logo.email.title: البريد الإلكتروني
+  branding.logo.warningMessage: يسمح بتنسيق PNG فقط. النسبة الموصى بها هي 1 إلى 4. الحد الأدنى للارتفاع هو 50 بكسل.
+  branding.logo.btn:
+    chooseHeader: اختر شعار الرأس
+    chooseLogin: اختر شعار تسجيل الدخول
+    chooseEmail: اختر شعار البريد الإلكتروني
+    saveFiles: حفظ
+  branding:
+    customCss: CSS مخصص
+    customCss.save.success: تم تحديث CSS المخصص. قم بتحديث صفحة المتصفح لرؤية النتيجة.
+    customCss.save.error: خطأ في حفظ CSS المخصص.
+    customCss.save: حفظ
+  correspondenceManagement:
+    title: إدارة المراسلات
+    templates: قوالب المراسلات
+    templates.addNewTemplate: رفع عارضة
+    templates.addTemplate: رفع
+    templates.versionTemplate: إصدارات
+    templates.deleteTemplate: حذف
+    templates.editTemplate: تحرير القالب
+    templates.grid:
+      id: هوية شخصية
+      title: عنوان
+      label: اسم العرض
+      path: مسار
+      created: خلقت
+      modified: تم التعديل
+      creator: المنشئ
+      modifier: تم التعديل بواسطة
+      activated: الحالة
+      statusDeactivated: معطل
+      statusActivated: مفعل
+      objectType: نوع الكائن
+      version: الإصدار
+      templateVersionActive: نشيط
+      templateModelProvider: موفر نموذج القالب
+    templates.fieldNames.label: عيّن الحقول إلى القيم من القالب
+    templates.querySelect:
+      header.text: حدد الاستعلام
+      btnCancel.text: إلغاء
+      btnOk.text: حدد الاستعلام
+      table.columns:
+        beanId: معرف الفول
+        jpaQuery: استعلام JPA
+        objectType: نوع الاستعلام
+    templates.modal:
+      objectTypes.selectedFiles: لم يتم اختيار اي ملف
+      objectTypes.label: أنواع الكائنات
+      querySelect.label: تحديد الاستعلام
+      label.label: اسم العرض
+      btnCancel.text: إلغاء
+      btnOk.text: Upload قالب
+      templateModelProvider.label: موفر نموذج القالب
+      navigationBar: حقل النموذج للمراسلات
+    templates.version.modal:
+      btnOk.text: تؤكد
+    templates.tabs:
+      firstTab: عرض شجرة كائن المراسلات
+      secondTab: دمج الحقول
+    mergefields: دمج تكوين الحقول
+    mergefields.saveMergeFields: حفظ
+    mergefields.deleteMergeFields: حذف
+    mergefields.grid:
+      fieldId: هوية شخصية
+      fieldValue: القيمة
+      fieldDescription: وصف
+    mergefields.version.grid:
+      mergingVersion: الإصدار
+      modified: تم التعديل
+      modifier: تم التعديل بواسطة
+      mergingActiveVersion: نشيط
+    mergefields.version.modal:
+      btnLoadVersion.text: تحميل الإصدار
+      btnCancel.text: إلغاء
+    mergefields.addModal:
+      fieldId: معرف الحقل
+      fieldValue: قيمة الحقل
+      fieldDescription: حقل الوصف
+      objectType: نوع الكائن
+      mergeFieldForm: دمج تكوين الحقول
+      addMergeField: إضافة حقل دمج
+    mergefields.addModal.placeHolders:
+      fieldId: أدخل معرف حقل الدمج
+      fieldValue: أدخل قيمة حقل الدمج
+      fieldDescription: أدخل وصف حقل الدمج
+  forms.defaultValue: حدد الهدف
+  forms.addForm: إضافة نموذج عادي
+  forms.data:
+    name: اسم النموذج
+    applicationName: اسم التطبيق
+    description: وصف
+    target: استهداف
+  forms.message.delete.success: تم حذف الصف بنجاح.
+  forms.message.delete.error: خطأ في حذف الصف.
+  documentManagement:
+    title: إدارة المستندات
+    cmisConfiguration: تكوين CMIS
+    cmisConfiguration.addNewConfig: إضافة تكوين CMIS جديد
+    cmisConfiguration.addNewConfig.modal:
+      header:
+        new: تكوين CMIS الجديد
+        edit: تحرير تكوين CMIS
+      dialog:
+        testConnection: اختبار الاتصال
+        cancel: إلغاء
+        ok: حفظ التكوين
+      guidelineMessage:
+        repositoryId: 'بالنسبة لـ Alfresco: اترك cmis.repositoryId فارغة. بالنسبة إلى Documentum: قم بتعيين cmis.repositoryId إلى اسم docbase. '
+    cmisConfiguration.data:
+      id:
+        label: معرف CMIS
+        placeholder: معرف CMIS
+      baseUrl:
+        label: عنوان URL الأساسي
+        placeholder: عنوان URL الأساسي
+      username:
+        label: اسم المستخدم
+        placeholder: اسم المستخدم
+      password:
+        label: كلمه السر
+        placeholder: كلمه السر
+      useAlfrescoExtension:
+        label: استخدم ملحق Alfresco
+        placeholder: استخدم ملحق Alfresco
+      maxIdle:
+        label: أقصى خمول
+        placeholder: أقصى خمول
+      maxActive:
+        label: أقصى نشاط
+        placeholder: أقصى نشاط
+      maxWait:
+        label: الحد الأقصى للانتظار
+        placeholder: الحد الأقصى للانتظار
+      minEvictionMillis:
+        label: الحد الأدنى لطرد المللي ثانية
+        placeholder: الحد الأدنى لطرد المللي ثانية
+      evictionCheckIntervalMillis:
+        label: الفاصل الزمني للتحقق من الإخلاء ميلي ثانية
+        placeholder: الفاصل الزمني للتحقق من الإخلاء ميلي ثانية
+      reconnectCount:
+        label: إعادة ربط العد
+        placeholder: إعادة ربط العد
+      reconnectFrequency:
+        label: تردد إعادة الاتصال
+        placeholder: تردد إعادة الاتصال
+      repositoryId:
+        label: معرّف المستودع
+        placeholder: معرّف المستودع
+      cmisVersioningState:
+        label: إصدارات الدولة
+        placeholder: إصدارات الدولة
+    cmisConfiguration.deleteDialog:
+      cancelBtn: إلغاء
+      deleteBtn: تأكيد الحذف
+      headerText: "أنت على وشك حذف تكوين CMIS:"
+      bodyText: هل أنت واثق؟
+    cmisConfiguration.messages:
+      delete.success: تم حذف التكوين بنجاح.
+      delete.error: خطأ في حذف التكوين.
+      insert.success: تم بنجاح إنشاء صف تكوين جديد.
+      insert.error: خطأ في إنشاء صف تكوين جديد.
+      update.success: تم تحديث صف التكوين بنجاح.
+      update.error: خطأ في تحديث صف التكوين.
+      test.conection.success: تم الاتصال بنجاح.
+    fileUploader:
+      title: إعدادات برنامج تحميل الملفات
+      uploadFileSizeLimit.label: قم بتحميل أجزاء أكبر من حجم الملف هذا
+      singleChunkFileSizeLimit.label: حجم ملف قطعة واحدة
+      enableFileChunkUpload.label: تمكين تحميل مقطع الملف
+      inform: ستسري الإعدادات على جميع الملفات الجديدة
+      apply.label: تطبيق
+      dialog:
+        OKBtn: تؤكد
+    deDuplication:
+      title: إعدادات إزالة الازدواجية
+      enableDeDuplication: تمكين إلغاء الازدواجية
+      apply: تطبيق
+  mediaServices:
+    title: خدمات وسائل الإعلام
+    transcriptionManagement: إدارة النسخ
+    transcriptionConfigForm:
+      title: خدمات النسخ
+      save.button: حفظ
+      automation.label: التشغيل الآلي
+      enableTranscription.checkbox: تمكين النسخ
+      automaticTranscription.checkbox: النسخ التلقائي
+      overwriteTranscription.checkbox: استبدال النسخ الأصلية بإصدارات جديدة
+      mediaFileAdded.label: "عند إضافة إصدار جديد من ملف الوسائط ، سيقوم النظام بما يلي:"
+      generateTranscription.radio: إنشاء نسخة جديدة للنسخة الجديدة
+      copyTranscription.radio: انسخ النسخ من الإصدار النشط إلى الإصدار الجديد
+      provider.label: مزود
+      numOfFiles.label: عدد الملفات المراد معالجتها
+      selectProvider: حدد موفر
+      wordCount.label: عدد الكلمات
+      costPerSecond.label: تكلفة ثانية واحدة
+      confidenceThreshold.label: عتبة الثقة
+      mediaDurationInSeconds.label: حد مدة الوسائط بالثواني
+      silenceBetweenWords.label: الصمت بين الكلمات في ثوان
+      validation.messages:
+        requiredErrorMsg: هذه الخانة مطلوبه
+        maxErrorMsg: يجب أن تكون القيمة أقل من أو تساوي 100
+        minZeroValueErrorMsg: يجب أن تكون القيمة أكبر من أو تساوي 0
+        minOneValueErrorMsg: يجب أن تكون القيمة أكبر من أو تساوي 1
+        minPositiveValueErrorMsg: يجب أن تكون القيمة أكبر من 0
+    ocrManagement: إدارة OCR
+    ocrConfigForm:
+      title: خدمات OCR
+      save.button: حفظ
+      enableOCR.checkbox: تمكين OCR
+    awsManagement: إدارة النسخ AWS
+    awsConfigForm:
+      title: خدمة النسخ AWS
+      save.button: حفظ
+      awsConfig:
+        bucket.label: Bucket name
+        region.label: منطقة
+        host.label: مضيف
+        profile.label: الملف الشخصي
+      awsCredentials:
+        accessKeyId.label: معرف مفتاح الوصول
+        secretAccessKey.label: معرف مفتاح الوصول السري
+      validation.messages:
+        requiredErrorMsg: هذه الخانة مطلوبه
+  stateOfArkcase:
+    title: ولاية ArkCase
+    pickDate: اختر التاريخ
+    btn.download: تحميل
+    datePicker:
+      clear: واضح
+      current: اليوم الحالي
+      close: قريب
+  comp:
+    securityLdapConfig:
+      title: الأمان - شبكة تكوين Ldap
+    correspondenceManagementMergeFields:
+      title: شبكة حقول إدارة المراسلات
+    correspondenceManagementMergeFieldsVersions:
+      title: شبكة إصدار حقول إدارة المراسلات
+    correspondenceManagementTemplates:
+      title: شبكة قوالب إدارة المراسلات
+    correspondenceManagementTemplateVersions:
+      title: شبكة إصدارات قالب إدارة المراسلات
+    labelsConfig:
+      title: التطبيق - شبكة تكوين التسمية
+    plainFormsConfig:
+      title: نماذج - شبكة تكوين النماذج
+    workflowsConfig:
+      title: مهام سير العمل - شبكة تكوين مهام سير العمل
+    workflowsHistoryDialogConfig:
+      title: مهام سير العمل - شبكة حوار محفوظات تكوين سير العمل
+    usersPicker:
+      title: حدد المستخدمين
+    orgHierarchy:
+      title: الهيكل التنظيمي
+    cmisConfiguration:
+      title: شبكة تكوين CMIS
+    emailTemplates:
+      title: قوالب البريد الإلكتروني
+contextMenu.options:
+  restore: استعادة
+  delete: حذف
+  copyVariablePath: انسخ المسار المتغير

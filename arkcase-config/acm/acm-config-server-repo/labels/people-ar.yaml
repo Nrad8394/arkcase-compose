@@ -1,0 +1,534 @@
+people:
+  title: اشخاص
+  progressNoComplaint: '[ لا بيانات الناس ]'
+  progressLoading: ' تحميل الناس'
+  progressError: ' فشل تحميل الناس'
+people.menus:
+  leftnav.item: اشخاص
+  topbar.item: شخص
+people.comp.main:
+  title: نظرة عامة
+people.comp.info:
+  title: معلومات
+  phone.label: هاتف
+  email.label: البريد الإلكتروني
+  status.label: الحالة
+  organization.label: منظمة
+  organization.type: نوع المنظمة
+  identification.label: هوية شخصية
+  identification.type: نوع الهوية
+people.comp.actions:
+  title: أجراءات
+  export.button: تصدير
+  import.button: استيراد
+  delete.button: حذف
+  activate.button: تفعيل
+  deactivate.button: إبطال
+  merge.button: دمج
+  restrict: بتقييد؟
+people.comp.details:
+  title: تفاصيل
+  informSaved: تم حفظ تفاصيل الشخص
+  table.columns:
+    title: تفاصيل
+    modified: تاريخ التعديل الأخير
+    modifier: آخر تعديل للمستخدم
+people.comp.history:
+  title: التاريخ
+  table.columns:
+    eventType: اسم الحدث
+    eventDate: تاريخ
+    userId: المستعمل
+    details.btn.text: تفاصيل
+people.comp.pictures:
+  title: صور
+  actions:
+    delete: حذف
+    setPrimary: تعيين كأساسي
+    upload: رفع
+  table.columns:
+    thumbnail: ظفري
+    title: اسم الملف
+    description: وصف
+    created: تم إضافة التاريخ
+    creator: أضيف بواسطة
+    modified: آخر تعديل
+    modifier: تم التعديل بواسطة
+  dialog:
+    title: تحميل الصورة
+    setPrimary: هل تريد التعيين على أنه أساسي؟
+    yes: "نعم"
+    no: "لا"
+    cancel: إلغاء
+    upload: تحميل الصورة
+    noPictureSelected: لم يتم تحديد ملفات.
+    browse: تصفح
+    description: وصف
+  dialog.edit:
+    title: تحرير الصورة
+    setPrimary: هل تريد التعيين على أنه أساسي؟
+    yes: "نعم"
+    change: تغيير الصورة
+    save: احفظ التغييرات
+  message.error:
+    uploadSamePicture: تم تحميل الصورة بهذا الاسم بالفعل
+people.comp.addresses:
+  title: المواقع
+  table.columns:
+    type: نوع
+    streetAddress: العنوان 1
+    streetAddress2: العنوان 2
+    city: مدينة
+    state: الولاية / المقاطعة
+    zip: البريدي / الرمز البريدي
+    country: بلد
+    created: تم إضافة التاريخ
+    creator: أضيف بواسطة
+    modified: آخر تعديل
+    modifier: تم التعديل بواسطة
+  actions:
+    addNew: اضف جديد
+    map: خريطة
+  modal:
+    addAddress: إضافة موقع
+    editAddress: تحرير السجل
+    type.label: نوع العنوان
+    type.placeholder: أدخل نوع العنوان
+    streetAddress.label: العنوان 1
+    streetAddress.placeholder: أدخل العنوان 1
+    streetAddress2.label: العنوان 2
+    streetAddress2.placeholder: أدخل العنوان 2
+    city.label: مدينة
+    city.placeholder: أدخل المدينة
+    zip.label: البريدي / الرمز البريدي
+    zip.placeholder: البريدي / الرمز البريدي
+    state.label: الولاية / المقاطعة
+    state.placeholder: أدخل الولاية / المقاطعة
+    country.label: بلد
+    country.placeholder: أدخل البلد
+    btnCancel.text: إلغاء
+    btnOk.text: حفظ الموقع
+    setPrimary: هل تريد التعيين على أنه أساسي؟
+    yes: "نعم"
+    no: "لا"
+people.comp.phones:
+  title: أرقام الهواتف
+  table.columns:
+    type: نوع
+    value: رقم الهاتف
+    description: وصف
+    created: تم إضافة التاريخ
+    creator: أضيف بواسطة
+    modified: آخر تعديل
+    modifier: تم التعديل بواسطة
+  actions:
+    delete: حذف
+    setPrimary: تعيين كأساسي
+    addNew: اضف جديد
+  modal:
+    addPhone: إضافة رقم هاتف جديد
+    editPhone: تحرير رقم الهاتف
+    title: إضافة رقم هاتف جديد
+    setPrimary: هل تريد التعيين على أنه أساسي؟
+    yes: "نعم"
+    no: "لا"
+    description: وصف
+    btnCancel.text: إلغاء
+    btnOk.text: حفظ رقم الهاتف
+    type.label: نوع الهاتف
+    type.placeholder: أدخل نوع الهاتف
+    value.label: رقم الهاتف
+    value.placeholder: أدخل رقم الهاتف
+    validationMessage: 'رقم الهاتف الذي أدخلته غير صالح. يجب أن يكون بهذا التنسيق: xxx-xxx-xxxx'
+people.comp.emails:
+  title: عناوين البريد الإلكتروني
+  table.columns:
+    type: نوع
+    value: عنوان بريد الكتروني
+    description: وصف
+    created: تم إضافة التاريخ
+    creator: أضيف بواسطة
+    modified: آخر تعديل
+    modifier: تم التعديل بواسطة
+  actions:
+    delete: حذف
+    setPrimary: تعيين كأساسي
+    addNew: اضف جديد
+  modal:
+    title: أضف عنوان بريد إلكتروني جديد
+    addEmail: أضف عنوان بريد إلكتروني جديد
+    editEmail: تحرير عنوان البريد الإلكتروني
+    setPrimary: هل تريد التعيين على أنه أساسي؟
+    "yes": "نعم"
+    "no": "لا"
+    description: وصف
+    btnCancel.text: إلغاء
+    btnOk.text: حفظ عنوان البريد الإلكتروني
+    type.label: نوع البريد الإلكتروني
+    type.placeholder: أدخل نوع البريد الإلكتروني
+    value.label: عنوان بريد الكتروني
+    value.placeholder: أدخل عنوان البريد الالكتروني
+    validation.emailTaken: البريد الإلكتروني قيد الاستخدام بالفعل
+people.comp.urls:
+  title: عناوين URL
+  table.columns:
+    value: URL
+    type: نوع
+    description: وصف
+    created: تم إضافة التاريخ
+    creator: أضيف بواسطة
+    modified: آخر تعديل
+    modifier: تم التعديل بواسطة
+  actions:
+    delete: حذف
+    setPrimary: تعيين كأساسي
+    addNew: اضف جديد
+  modal:
+    title: أضف عنوان URL جديد
+    addUrl: أضف عنوان URL جديد
+    editUrl: تحرير URL
+    setPrimary: هل تريد التعيين على أنه أساسي؟
+    "yes": "نعم"
+    "no": "لا"
+    description: وصف
+    btnCancel.text: إلغاء
+    btnOk.text: حفظ URL
+    type.label: نوع
+    type.placeholder: أدخل النوع
+    value.label: URL
+    value.placeholder: إدخال عنوان الموقع
+    value.title: يجب أن يكون عنوان URL صالحًا (مثل https://www.google.com)
+people.comp.participants:
+  title: المشاركين
+  table.columns:
+    type: نوع
+    name: اسم
+  dialogUserPicker:
+    header: اختر المستخدم
+    table.columns:
+      name: اسم
+      type: نوع
+      title: عنوان
+      id: اسم المستخدم
+  dialogGroupPicker:
+    header: اختر مجموعة
+    table.columns:
+      name: اسم
+people.comp.aliases:
+  title: اسماء مستعارة
+  actions:
+    delete: حذف
+    setPrimary: تعيين كأساسي
+    upload: الاسم المستعار الجديد
+  table.columns:
+    type: نوع
+    aliasValue: الاسم المستعار
+    description: وصف
+    created: تم إضافة التاريخ
+    creator: أضيف بواسطة
+    modified: آخر تعديل
+    modifier: تم التعديل بواسطة
+  modal:
+    aliasValue: قيمة الاسم المستعار
+    type: نوع
+    addAlias: إضافة اسم مستعار جديد
+    editAlias: تعديل الاسم المستعار
+    title: أدخل اسم مستعار جديد
+    setPrimary: هل تريد التعيين على أنه أساسي؟
+    "yes": "نعم"
+    "no": "لا"
+    btnCancel.text: إلغاء
+    btnOk.text: حفظ الاسم المستعار
+    value.label: الاسم المستعار
+    value.placeholder: أدخل الاسم المستعار
+    description: وصف
+    aliasType.label: نوع الاسم المستعار
+    aliasType.placeholder: أدخل نوع الاسم المستعار
+people.comp.ids:
+  title: معرفات
+  table.columns:
+    type: نوع
+    id: هوية شخصية
+    number: رقم
+    issuer: جهة الإصدار
+    yearIssued: سنة الإصدار
+    created: تم إضافة التاريخ
+    creator: أضيف بواسطة
+    modified: آخر تعديل
+    modifier: تم التعديل بواسطة
+  actions:
+    delete: حذف
+    setPrimary: تعيين كأساسي
+    addNew: اضف جديد
+  modal:
+    addID: إضافة تعريف جديد
+    editID: تحرير التعريف
+    title: إضافة تعريف جديد
+    setPrimary: هل تريد التعيين على أنه أساسي؟
+    "yes": "نعم"
+    "no": "لا"
+    type.label: نوع
+    type.placeholder: أدخل النوع
+    id.label: هوية شخصية
+    id.placeholder: أدخل معرف
+    number.label: رقم
+    number.placeholder: أدخل رقم
+    issuer.label: جهة الإصدار
+    issuer.placeholder: أدخل جهة الإصدار
+    yearIssued.label: سنة الإصدار
+    yearIssued.placeholder: أدخل سنة الإصدار
+    yearIssued.close.button: قريب
+    btnCancel.text: إلغاء
+    btnOk.text: حفظ الهوية
+people.comp.organizations:
+  title: المنظمات
+  table.columns:
+    type: نوع
+    id: هوية شخصية
+    value: منظمة
+    identification: هوية شخصية
+    contact: اتصال رئيسي
+    phone: هاتف
+    location: موقعك
+    created: تم إضافة التاريخ
+    creator: أضيف بواسطة
+    modified: آخر تعديل
+    modifier: تم التعديل بواسطة
+  actions:
+    delete: حذف
+    setPrimary: تعيين كأساسي
+    addNew: اضف جديد
+    addExisting: إضافة موجود
+people.comp.cases:
+  title: الحالات
+  objectType.label: ملف القضية
+  table.columns:
+    role: وظيفة
+    priority: أفضلية
+    id: هوية شخصية
+    title: عنوان
+    status: الحالة
+    assignee: المحال إليه
+    modified: تم التعديل
+people.comp.consultations:
+  title: استشارة
+  objectType.label: استشارة
+  table.columns:
+    role: وظيفة
+    priority: أفضلية
+    id: هوية شخصية
+    title: عنوان
+    status: الحالة
+    assignee: الوكيل
+    modified: تم التعديل    
+people.comp.complaints:
+  title: شكاوي
+  objectType.label: شكوى
+  table.columns:
+    role: وظيفة
+    priority: أفضلية
+    id: هوية شخصية
+    title: عنوان
+    status: الحالة
+    assignee: المحال إليه
+    modified: تم التعديل
+people.comp.related:
+  title: الناس ذات الصلة
+  linkTitle: الناس ذات الصلة
+  table.columns:
+    firstName: الاسم الاول
+    lastName: اسم العائلة
+    type: صلة
+    description: وصف
+    organization: منظمة
+    phone: هاتف
+    location: موقعك
+  modal:
+    title: إضافة شخص ذي صلة
+    type.label: صلة
+    type.placeholder: أدخل العلاقة
+    person.label: شخص
+    person.placeholder: بحث الناس
+    btnCancel.text: إلغاء
+    btnOk.text: حفظ الشخص ذي الصلة
+people.comp.editPerson:
+  title: شخص
+  addAnother: أضف آخر
+  remove: إزالة
+  familyName: الكنية
+  familyName.placeholder: إدخال اسم آخر
+  givenName: الاسم الاول
+  givenName.placeholder: أدخل الاسم الأول
+  middleName: الاسم الوسطى
+  middleName.placeholder: أدخل الاسم الأوسط
+  saveButton: حفظ الشخص
+  cancelButton: إلغاء
+  informCreated: '{{personType}} {{firstName}} {{lastName}} تم انشائه.'
+  informUpdated: '{{firstName}} {{lastName}} محدث'
+  communicationAccounts:
+    title: حسابات الاتصالات
+    phone: هاتف
+    phone.placeholder: أدخل الهاتف
+    phoneType: نوع الهاتف
+    email: البريد الإلكتروني
+    email.placeholder: أدخل البريد الإلكتروني
+    emailType: نوع البريد الإلكتروني
+    url: URL
+    url.placeholder: إدخال عنوان الموقع
+    removeContactMethod: إزالة
+    urlType: نوع URL
+    validationMessage: 'رقم الهاتف الذي أدخلته غير صالح. يجب أن يكون بهذا التنسيق: xxx-xxx-xxxx'
+  organizations:
+    title: المنظمات
+    searchExisting.placeholder: بحث المنظمات القائمة
+    organizationType: نوع العلاقة
+  picture:
+    title: صورة
+  locations:
+    title: المواقع
+    country: بلد
+    country.placeholder: حدد الدولة
+    state: الولاية / المقاطعة
+    state.placeholder: أدخل الولاية / المقاطعة
+    zip: البريدي / الرمز البريدي
+    zip.placeholder: البريدي / الرمز البريدي
+    city: مدينة
+    city.placeholder: أدخل المدينة
+    type: نوع العنوان
+    type.placeholder: حدد نوع العنوان
+    streetAddress: العنوان 1
+    streetAddress.placeholder: أدخل العنوان 1
+    streetAddress2: العنوان 2
+    streetAddress2.placeholder: أدخل العنوان 2
+  identification:
+    title: التعريفات
+    identificationID: معرف الهوية
+    identificationID.placeholder: أدخل معرف التعريف
+    identificationType: نوع الهوية
+    identificationType.placeholder: حدد نوع التعريف
+    identificationNumber: رقم الهوية
+    identificationNumber.placeholder: أدخل رقم التعريف
+    identificationIssuer: جهة إصدار الهوية
+    identificationIssuer.placeholder: أدخل جهة إصدار الهوية
+    identificationYearIssued: تم إصدار الهوية
+    identificationYearIssued.placeholder: حدد التعريف الصادر
+    identificationYearIssued.close.button: قريب
+people.tree:
+  nodeTypes:
+    details.label: تفاصيل
+    pictures.label: صور
+    addresses.label: المواقع
+    phones.label: أرقام الهواتف
+    emails.label: عناوين البريد الإلكتروني
+    urls.label: عناوين URL
+    participants.label: المشاركين
+    aliases.label: اسماء مستعارة
+    organizations.label: المنظمات
+    ids.label: معرفات
+    complaints.label: شكاوي
+    cases.label: الحالات
+    consultations.label: التشاور
+    related.label: الناس ذات الصلة
+    history.label: التاريخ
+  filters:
+    iHaveCreatedActive: قمت بإنشائه - نشط
+    iHaveCreated: لقد خلقت
+    active: نشيط
+    inActive: غير نشط
+    noFilter: (بدون فلتر)
+  sorters:
+    createdDateAsc: تاريخ الفرز تم إنشاؤه تصاعديًا
+    createdDateDesc: تاريخ الفرز تاريخ الإنشاء تنازليًا
+    idAsc: فرز هوية الأشخاص تصاعديا
+    idDesc: فرز هوية الأشخاص تنازليًا
+    nameAsc: رتب حسب اسم الشخص A-Z
+    nameDesc: فرز حسب اسم الشخص Z-A
+    noSort: (بدون فرز)
+changes:
+  object_replaced:
+    person:
+      defaultPhone: تم تغيير الهاتف الافتراضي
+      defaultEmail: تم تغيير البريد الإلكتروني الافتراضي
+      defaultAddress: تم تغيير العنوان الافتراضي
+      defaultUrl: تم تغيير عنوان Url الافتراضي
+      defaultAlias: تم تغيير الاسم المستعار الافتراضي
+      defaultIdentification: تم تغيير التعريف الافتراضي
+      defaultPicture: تم تغيير الصورة الافتراضية
+  value_changed:
+    person:
+      details: الشخص - تم تغيير التفاصيل
+      title: الشخص - تم تغيير العنوان
+      company: الشخص - تم تغيير الشركة
+      status: الشخص - تم تغيير الحالة
+      givenName: تم تغيير الاسم - الشخص
+      middleName: الشخص - تم تغيير الاسم الأوسط
+      familyName: الشخص - تم تغيير اسم العائلة
+      hairColor: الشخص - تغير لون الشعر
+      eyeColor: الشخص - تغير لون العين
+      heightInInches: الشخص - تم تغيير الارتفاع بالبوصة
+      weightInPounds: الشخص - تغير الوزن بالبوصة
+      dateOfBirth: الشخص - تم تغيير تاريخ الميلاد
+      placeOfBirth: الشخص - تم تغيير مكان الميلاد
+      dateMarried: شخص - تم تغيير تاريخ الزواج
+      contactMethods.contactMethod:
+        subType: طريقة الاتصال - تم تغيير النوع
+        value: طريقة الاتصال - تغيرت القيمة
+      defaultPhone:
+        subType: الهاتف الافتراضي - تم تغيير النوع
+        value: الهاتف الافتراضي - تم تغيير القيمة
+      defaultEmail:
+        subType: البريد الإلكتروني الافتراضي - تم تغيير النوع
+        value: البريد الإلكتروني الافتراضي - تم تغيير القيمة
+      defaultUrl:
+        subType: عنوان Url الافتراضي - تم تغيير النوع
+        value: عنوان Url الافتراضي - تم تغيير القيمة
+      addresses.address:
+        city: العنوان - تم تغيير المدينة
+        zip: العنوان - تم تغيير الرمز البريدي
+        streetAddress: العنوان - تم تغيير الشارع
+        streetAddress2: العنوان - تم تغيير الشارع 2
+        type: العنوان - تم تغيير النوع
+        country: العنوان - تم تغيير الدولة
+        state: العنوان - تم تغيير الحالة
+      defaultAddress:
+        city: العنوان - تم تغيير المدينة
+        zip: العنوان - تم تغيير الرمز البريدي
+        streetAddress: العنوان - تم تغيير الشارع
+        streetAddress2: العنوان - تم تغيير الشارع 2
+        type: العنوان - تم تغيير النوع
+        country: العنوان - تم تغيير الدولة
+        state: العنوان - تم تغيير الحالة
+      identifications.identification:
+        identificationType: التعريف - تم تغيير النوع
+        identificationNumber: التعريف - تم تغيير الرقم
+        identificationIssuer: التعريف - تم تغيير جهة الإصدار
+        identificationYearIssued: التعريف - سنة الإصدار التي تم تغييرها
+      defaultIdentification:
+        identificationType: التعريف - تم تغيير النوع
+        identificationNumber: التعريف - تم تغيير الرقم
+        identificationIssuer: التعريف - تم تغيير جهة الإصدار
+        identificationYearIssued: التعريف - سنة الإصدار التي تم تغييرها
+  collection_element_added:
+    person:
+      identifications.identification: تمت إضافة الهوية
+      contactMethods.contactMethod: تمت إضافة طريقة الاتصال
+      personAliases.alias: تمت إضافة الاسم المستعار
+      addresses.address: تمت إضافة العنوان
+      organizations.organization: تمت إضافة المنظمة
+      associationsToObjects: تمت إضافة الاقتران
+      associationsFromObjects: تمت إضافة الاقتران
+      organizationAssociations: تمت إضافة المنظمة
+  collection_element_removed:
+    person:
+      identifications.identification: تمت إزالة الهوية
+      contactMethods.contactMethod: تمت إزالة طريقة الاتصال
+      personAliases.alias: تمت إزالة الاسم المستعار
+      addresses.address: تمت إزالة العنوان
+      organizations.organization: تمت إزالة المؤسسة
+      associationsToObjects: تمت إزالة الاقتران
+      associationsFromObjects: تمت إزالة الاقتران
+      organizationAssociations: تمت إزالة المؤسسة
+    personAliases.alias:
+      aliasType: الاسم المستعار - تم تغيير النوع
+      aliasValue: الاسم المستعار - تغيرت القيمة
+      description: الاسم المستعار - تم تغيير الوصف

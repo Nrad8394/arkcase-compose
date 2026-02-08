@@ -1,0 +1,519 @@
+organizations:
+  title: المنظمات
+  progressNoComplaint: '[ لا توجد بيانات المنظمات ]'
+  progressLoading: ' تحميل المنظمة'
+  progressError: ' فشل تحميل المؤسسة'
+  noDataMessage: لايوجد بيانات
+organizations.menus:
+  leftnav.item: المنظمات
+  topbar.item: منظمة
+organizations.comp.main:
+  title: نظرة عامة
+organizations.comp.info:
+  title: معلومات
+  phone.label: هاتف
+  email.label: البريد الإلكتروني
+  status.label: الحالة
+  identification.label: هوية شخصية
+  primary.label: اتصال رئيسي
+  parent.label: المنظمة الأم
+  parent.placeholder: أدخل المؤسسة الأم
+  type.label: نوع
+organizations.comp.actions:
+  title: أجراءات
+  export.button: تصدير
+  import.button: استيراد
+  delete.button: حذف
+  activate.button: تفعيل
+  deactivate.button: همد
+  merge.button: دمج
+  restrict: بتقييد؟
+organizations.comp.details:
+  title: تفاصيل
+  informSaved: تم حفظ تفاصيل المؤسسة
+  table.columns:
+    title: تفاصيل
+    modified: تاريخ التعديل الأخير
+    modifier: آخر تعديل للمستخدم
+organizations.comp.addresses:
+  title: المواقع
+  table.columns:
+    type: نوع
+    streetAddress: العنوان 1
+    streetAddress2: العنوان 2
+    city: مدينة
+    state: الولاية / المقاطعة
+    zip: البريدي / الرمز البريدي
+    country: بلد
+    created: تم إضافة التاريخ
+    creator: أضيف بواسطة
+    modified: آخر تعديل
+    modifier: تم التعديل بواسطة
+    setPrimary: هل تريد التعيين على أنه أساسي؟
+    yes: "نعم"
+    no: "لا"
+  actions:
+    addNew: اضف جديد
+    map: خريطة
+  modal:
+    addAddress: إضافة موقع
+    editAddress: تحرير السجل
+    type.label: نوع العنوان
+    type.placeholder: أدخل نوع العنوان
+    streetAddress.label: العنوان 1
+    streetAddress.placeholder: أدخل العنوان 1
+    streetAddress2.label: العنوان 2
+    streetAddress2.placeholder: أدخل العنوان 2
+    city.label: مدينة
+    city.placeholder: أدخل المدينة
+    zip.label: البريدي / الرمز البريدي
+    zip.placeholder: البريدي / الرمز البريدي
+    state.label: الولاية / المقاطعة
+    state.placeholder: أدخل الولاية / المقاطعة
+    country.label: بلد
+    country.placeholder: أدخل البلد
+    btnCancel.text: إلغاء
+    btnOk.text: حفظ الموقع
+    setPrimary: هل تريد التعيين على أنه أساسي؟
+    yes: "نعم"
+    no: "لا"
+organizations.comp.phones:
+  title: أرقام الهواتف
+  table.columns:
+    type: نوع الهاتف
+    value: رقم الهاتف
+    description: وصف
+    created: تم إضافة التاريخ
+    creator: أضيف بواسطة
+    modified: آخر تعديل
+    modifier: تم التعديل بواسطة
+  actions:
+    delete: حذف
+    setPrimary: تعيين كأساسي
+    addNew: اضف جديد
+  modal:
+    addPhone: إضافة رقم هاتف جديد
+    editPhone: تحرير رقم الهاتف
+    title: إضافة رقم هاتف جديد
+    setPrimary: هل تريد التعيين على أنه أساسي؟
+    yes: "نعم"
+    no: "لا"
+    description: وصف
+    btnCancel.text: إلغاء
+    btnOk.text: حفظ رقم الهاتف
+    type.label: نوع الهاتف
+    type.placeholder: أدخل نوع الهاتف
+    value.label: رقم الهاتف
+    value.placeholder: أدخل رقم الهاتف
+organizations.comp.faxes:
+  title: أرقام الفاكس
+  table.columns:
+    type: نوع الفاكس
+    value: رقم الفاكس
+    description: وصف
+    created: تم إضافة التاريخ
+    creator: أضيف بواسطة
+    modified: آخر تعديل
+    modifier: تم التعديل بواسطة
+  actions:
+    delete: حذف
+    setPrimary: تعيين كأساسي
+    addNew: اضف جديد
+  modal:
+    addFax: إضافة رقم فاكس جديد
+    editFax: تحرير رقم الفاكس
+    title: إضافة رقم فاكس جديد
+    setPrimary: هل تريد التعيين على أنه أساسي؟
+    yes: "نعم"
+    no: "لا"
+    description: وصف
+    btnCancel.text: إلغاء
+    btnOk.text: حفظ رقم الفاكس
+    type.label: نوع الفاكس
+    type.placeholder: أدخل نوع الفاكس
+    value.label: رقم الفاكس
+    value.placeholder: أدخل رقم الفاكس
+organizations.comp.emails:
+  title: عناوين البريد الإلكتروني
+  table.columns:
+    type: نوع عنوان البريد الإلكتروني
+    value: عنوان بريد الكتروني
+    description: وصف
+    created: تم إضافة التاريخ
+    creator: أضيف بواسطة
+    modified: آخر تعديل
+    modifier: تم التعديل بواسطة
+  actions:
+    delete: حذف
+    setPrimary: تعيين كأساسي
+    addNew: اضف جديد
+  modal:
+    title: أضف عنوان بريد إلكتروني جديد
+    addEmail: أضف عنوان بريد إلكتروني جديد
+    editEmail: تحرير عنوان البريد الإلكتروني
+    setPrimary: هل تريد التعيين على أنه أساسي؟
+    yes: "نعم"
+    no: "لا"
+    description: وصف
+    btnCancel.text: إلغاء
+    btnOk.text: حفظ عنوان البريد الإلكتروني
+    type.label: نوع البريد الإلكتروني
+    type.placeholder: أدخل نوع البريد الإلكتروني
+    value.label: عنوان بريد الكتروني
+    value.placeholder: أدخل عنوان البريد الالكتروني
+organizations.comp.urls:
+  title: عناوين URL
+  table.columns:
+    type: نوع
+    value: Url
+    description: وصف
+    created: تم إضافة التاريخ
+    creator: أضيف بواسطة
+    modified: آخر تعديل
+    modifier: تم التعديل بواسطة
+  actions:
+    delete: حذف
+    setPrimary: تعيين كأساسي
+    addNew: اضف جديد
+  modal:
+    title: أضف عنوان URL جديد
+    addUrl: أضف عنوان URL جديد
+    editUrl: تحرير URL
+    setPrimary: هل تريد التعيين على أنه أساسي؟
+    yes: "نعم"
+    no: "لا"
+    description: وصف
+    btnCancel.text: إلغاء
+    btnOk.text: حفظ URL
+    type.label: نوع
+    type.placeholder: أدخل النوع
+    value.label: URL
+    value.placeholder: إدخال عنوان الموقع
+    value.title: يجب أن يكون عنوان URL صالحًا (مثل https://www.google.com)
+organizations.comp.participants:
+  title: المشاركين
+  table.columns:
+    type: نوع
+    name: اسم
+  dialogUserPicker:
+    header: اختر المستخدم
+    table.columns:
+      name: اسم
+      type: نوع
+      title: عنوان
+      id: اسم المستخدم
+  dialogGroupPicker:
+    header: اختر مجموعة
+    table.columns:
+      name: اسم
+organizations.comp.dbas:
+  title: DBAs
+  actions:
+    delete: حذف
+    setPrimary: تعيين كأساسي
+    upload: DBA جديد
+  table.columns:
+    value: DBA
+    type: نوع
+    description: وصف
+    created: تم إضافة التاريخ
+    creator: أضيف بواسطة
+    modified: آخر تعديل
+    modifier: تم التعديل بواسطة
+  modal:
+    addDBA: إضافة DBA جديد
+    editDBA: تحرير DBA
+    title: إدراج DBA جديد
+    setPrimary: هل تريد التعيين على أنه أساسي؟
+    yes: "نعم"
+    no: "لا"
+    btnCancel.text: إلغاء
+    btnOk.text: حفظ DBA
+    value.label: DBA
+    value.placeholder: أدخل DBA
+    description: وصف
+    aliasType.label: نوع DBA
+    aliasType.placeholder: أدخل نوع DBA
+organizations.comp.ids:
+  title: معرفات
+  table.columns:
+    type: نوع
+    id: هوية شخصية
+    number: رقم
+    issuer: جهة الإصدار
+    yearIssued: سنة الإصدار
+    created: تم إضافة التاريخ
+    creator: أضيف بواسطة
+    modified: آخر تعديل
+    modifier: تم التعديل بواسطة
+  actions:
+    delete: حذف
+    setPrimary: تعيين كأساسي
+    addNew: اضف جديد
+  modal:
+    addID: أضف هوية جديدة
+    editID: تحرير التعريف
+    title: أضف هوية جديدة
+    setPrimary: هل تريد التعيين على أنه أساسي؟
+    yes: "نعم"
+    no: "لا"
+    type.label: نوع
+    type.placeholder: أدخل النوع
+    id.label: هوية شخصية
+    id.placeholder: أدخل معرف
+    number.label: رقم
+    number.placeholder: أدخل رقم
+    issuer.label: جهة الإصدار
+    issuer.placeholder: أدخل جهة الإصدار
+    yearIssued.label: سنة الإصدار
+    yearIssued.placeholder: أدخل سنة الإصدار
+    yearIssued.close.button: قريب
+    btnCancel.text: إلغاء
+    btnOk.text: حفظ الهوية
+organizations.comp.people:
+  title: اشخاص
+  table.columns:
+    type: وظيفة
+    firstName: الاسم الاول
+    lastName: اسم العائلة
+    organization: منظمة
+    phone: هاتف
+    location: موقعك
+  actions:
+    delete: حذف
+    setPrimary: تعيين كأساسي
+    addNew: اضف جديد
+    addExisting: إضافة موجود
+organizations.comp.cases:
+  title: الحالات
+  objectType.label: ملف القضية
+  table.columns:
+    role: وظيفة
+    priority: أفضلية
+    id: هوية شخصية
+    title: عنوان
+    status: الحالة
+    assignee: المحال إليه
+    modified: تم التعديل
+organizations.comp.consultations:
+  title: استشارات
+  objectType.label: التشاور
+  table.columns:
+    role: وظيفة
+    priority: أفضلية
+    id: هوية شخصية
+    title: عنوان
+    status: الحالة
+    assignee: الوكيل
+    modified: تم التعديل    
+organizations.comp.complaints:
+  title: شكاوي
+  objectType.label: شكوى
+  table.columns:
+    role: وظيفة
+    priority: أفضلية
+    id: هوية شخصية
+    title: عنوان
+    status: الحالة
+    assignee: المحال إليه
+    modified: تم التعديل
+organizations.comp.related:
+  title: منظمة ذات صلة
+  linkTitle: منظمة ذات صلة
+  table.columns:
+    associationType: صلة
+    type: نوع
+    identification: هوية شخصية
+    value: منظمة
+    contact: اتصال رئيسي
+    phone: هاتف
+    location: موقعك
+  modal:
+    title: إضافة منظمة ذات صلة
+    type.label: صلة
+    type.placeholder: أدخل العلاقة
+    organization.label: منظمة
+    organization.placeholder: البحث عن المنظمات
+    btnCancel.text: إلغاء
+    btnOk.text: حفظ المنظمة ذات الصلة
+organizations.comp.history:
+  title: التاريخ
+  table.columns:
+    eventType: اسم الحدث
+    eventDate: تاريخ
+    details.btn.text: تفاصيل
+    userId: المستعمل
+organizations.comp.newOrganization:
+  title: منظمة
+  addAnother: أضف آخر
+  remove: إزالة
+  name: اسم المنظمة
+  name.placeholder: أدخل اسم المنظمة
+  type: نوع المنظمة
+  type.placeholder: حدد نوع المؤسسة
+  saveButton: حفظ المنظمة
+  cancelButton: إلغاء
+  parentOrganization: المنظمة الأم
+  searchParentOrganization.placeholder: البحث عن المنظمة الأم
+  communicationAccounts:
+    title: حسابات الاتصالات
+    phone: هاتف
+    phone.placeholder: أدخل الهاتف
+    phoneType: نوع الهاتف
+    email: البريد الإلكتروني
+    email.placeholder: أدخل البريد الإلكتروني
+    emailType: نوع البريد الإلكتروني
+    fax: فاكس
+    fax.placeholder: أدخل الفاكس
+    faxType: نوع الفاكس
+    url: URL
+    url.placeholder: إدخال عنوان الموقع
+    removeContactMethod: إزالة
+    urlType: نوع URL
+    validationMessage: "رقم الهاتف الذي أدخلته غير صالح. يجب أن يكون بهذا التنسيق: xxx-xxx-xxxx"
+  people:
+    title: اشخاص
+    searchExisting.placeholder: ابحث عن شخص موجود
+    personType: نوع الشخص
+  locations:
+    title: المواقع
+    country: بلد
+    country.placeholder: حدد الدولة
+    state: الولاية / المقاطعة
+    state.placeholder: أدخل الولاية / المقاطعة
+    zip: البريدي / الرمز البريدي
+    zip.placeholder: البريدي / الرمز البريدي
+    city: مدينة
+    city.placeholder: أدخل المدينة
+    type: نوع العنوان
+    type.placeholder: حدد نوع العنوان
+    streetAddress: العنوان 1
+    streetAddress.placeholder: أدخل العنوان 1
+    streetAddress2: العنوان 2
+    streetAddress2.placeholder: أدخل العنوان 2
+  identification:
+    title: دمج المرء نفسه في كذا
+    identificationID: معرف الهوية
+    identificationID.placeholder: أدخل معرف التعريف
+    identificationType: نوع الهوية
+    identificationType.placeholder: حدد نوع التعريف
+    identificationNumber: رقم الهوية
+    identificationNumber.placeholder: أدخل رقم التعريف
+    identificationIssuer: جهة إصدار الهوية
+    identificationIssuer.placeholder: أدخل جهة إصدار الهوية
+    identificationYearIssued: تاريخ إصدار الهوية
+    identificationYearIssued.placeholder: حدد التعريف الصادر
+    identificationYearIssued.close.button: قريب
+  informCreated: 'تم انشائه. {{objectType}} {{organizationValue}}'
+organizations.tree:
+  nodeTypes:
+    details.label: تفاصيل
+    addresses.label: المواقع
+    phones.label: أرقام الهواتف
+    faxes.label: أرقام الفاكس
+    emails.label: عناوين البريد الإلكتروني
+    urls.label: عناوين URL
+    participants.label: المشاركين
+    dbas.label: DBAs
+    people.label: اشخاص
+    ids.label: معرفات
+    complaints.label: شكاوي
+    cases.label: الحالات
+    consultations.label: استشارات
+    related.label: المنظمات ذات الصلة
+    history.label: التاريخ
+  filters:
+    iHaveCreatedActive: هذا ما خلقته أنا - نشط
+    iHaveCreated: لقد خلقت
+    active: نشيط
+    inActive: غير نشط
+    noFilter: (بدون فلتر)
+  sorters:
+    createdDateAsc: تاريخ الفرز تم إنشاؤه تصاعديًا
+    createdDateDesc: تاريخ الفرز تاريخ الإنشاء تنازليًا
+    idAsc: فرز معرف المؤسسة تصاعديًا
+    idDesc: فرز معرف المؤسسة تنازليًا
+    nameAsc: فرز حسب اسم المنظمة A-Z
+    nameDesc: فرز حسب اسم المنظمة Z-A
+    noSort: (بدون فرز)
+changes:
+  object_replaced:
+    organization:
+      defaultPhone: تم تغيير الهاتف الافتراضي
+      defaultEmail: تم تغيير البريد الإلكتروني الافتراضي
+      defaultAddress: تم تغيير العنوان الافتراضي
+      defaultUrl: تم تغيير عنوان Url الافتراضي
+      defaultAlias: تم تغيير الاسم المستعار الافتراضي
+      defaultIdentification: تم تغيير التعريف الافتراضي
+      defaultPicture: تم تغيير الصورة الافتراضية
+  value_changed:
+    organization:
+      details: المؤسسة - تم تغيير التفاصيل
+      status: المؤسسة - تم تغيير الحالة
+      organizationType: المنظمة - نوع التغيير
+      organizationValue: المؤسسة - تم تغيير الاسم
+      contactMethods.contactMethod:
+        subType: طريقة الاتصال - تم تغيير النوع
+        value: طريقة الاتصال - تغيرت القيمة
+      defaultPhone:
+        subType: الهاتف الافتراضي - تم تغيير النوع
+        value: الهاتف الافتراضي - تم تغيير القيمة
+      defaultEmail:
+        subType: البريد الإلكتروني الافتراضي - تم تغيير النوع
+        value: البريد الإلكتروني الافتراضي - تم تغيير القيمة
+      defaultUrl:
+        subType: عنوان Url الافتراضي - تم تغيير النوع
+        value: عنوان Url الافتراضي - تم تغيير القيمة
+      defaultFax:
+        subType: الفاكس الافتراضي - تم تغيير النوع
+        value: الفاكس الافتراضي - تم تغيير القيمة
+      addresses.address:
+        city: العنوان - تم تغيير المدينة
+        zip: العنوان - تم تغيير الرمز البريدي
+        streetAddress: العنوان - تم تغيير الشارع
+        streetAddress2: العنوان - تم تغيير الشارع 2
+        type: العنوان - تم تغيير النوع
+        country: العنوان - تم تغيير الدولة
+        state: العنوان - تم تغيير الحالة
+      defaultAddress:
+        city: العنوان - تم تغيير المدينة
+        zip: العنوان - تم تغيير الرمز البريدي
+        streetAddress: العنوان - تم تغيير الشارع
+        streetAddress2: العنوان - تم تغيير الشارع 2
+        type: العنوان - تم تغيير النوع
+        country: العنوان - تم تغيير الدولة
+        state: العنوان - تم تغيير الحالة
+      identifications.identification:
+        identificationType: التعريف - تم تغيير النوع
+        identificationNumber: التعريف - تم تغيير الرقم
+        identificationIssuer: التعريف - تم تغيير جهة الإصدار
+        identificationYearIssued: التعريف - سنة الإصدار التي تم تغييرها
+      defaultIdentification:
+        identificationType: التعريف - تم تغيير النوع
+        identificationNumber: التعريف - تم تغيير الرقم
+        identificationIssuer: التعريف - تم تغيير جهة الإصدار
+        identificationYearIssued: التعريف - سنة الإصدار التي تم تغييرها
+  collection_element_added:
+    organization:
+      identifications.identification: تمت إضافة الهوية
+      contactMethods.contactMethod: تمت إضافة طريقة الاتصال
+      personAliases.alias: تمت إضافة الاسم المستعار
+      addresses.address: تمت إضافة العنوان
+      organizations.organization: تمت إضافة المنظمة
+      associationsToObjects: تمت إضافة الاقتران
+      associationsFromObjects: تمت إضافة الاقتران
+      organizationAssociations: تمت إضافة المنظمة
+  collection_element_removed:
+    organization:
+      identifications.identification: تمت إزالة الهوية
+      contactMethods.contactMethod: تمت إزالة طريقة الاتصال
+      personAliases.alias: تمت إزالة الاسم المستعار
+      addresses.address: تمت إزالة العنوان
+      organizations.organization: تمت إزالة المؤسسة
+      associationsToObjects: تمت إزالة الاقتران
+      associationsFromObjects: تمت إزالة الاقتران
+      organizationAssociations: تمت إزالة المؤسسة
+    personAliases.alias:
+      aliasType: الاسم المستعار - تم تغيير النوع
+      aliasValue: الاسم المستعار - تغيرت القيمة
+      description: الاسم المستعار - تم تغيير الوصف

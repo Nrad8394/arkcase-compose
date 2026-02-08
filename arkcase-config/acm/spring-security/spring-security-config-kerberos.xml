@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security" xmlns:beans="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
+               http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-5.4.xsd">
+
+    <beans:beans profile="kerberos">
+        <!-- the Kerberos configuration settings -->
+        <beans:bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+            <beans:property name="location" value="file:${user.home}/.arkcase/acm/spring/spring-config-kerberos.properties"/>
+        </beans:bean>
+
+        <!--Entry point for Kerberos / SPNEGO authentication  -->
+        <beans:bean id="spnegoEntryPoint" class="org.springframework.security.kerberos.web.authentication.SpnegoEntryPoint">
+            <beans:constructor-arg value="/login"/>
+        </beans:bean>
+
+        <!-- SPNEGO filter.  After successful authentication, it calls the ArkCase login handler, to setup the user session.
+             After unsuccessful authentication, it calls the ArkCase failure handler, to audit the login failure. -->
+        <beans:bean id="spnegoAuthenticationProcessingFilter"
+            class="org.springframework.security.kerberos.web.authentication.SpnegoAuthenticationProcessingFilter">
+            <beans:property name="authenticationManager" ref="acmAuthenticationManager"/>
+            <beans:property name="successHandler" ref="acmKerberosLoginSuccessHandler"/>
+            <beans:property name="failureHandler" ref="acmRestAuthenticationFailureHandler"/>
+        </beans:bean>
+
+        <!-- File handle to the Kerberos key tab -->
+        <beans:bean id="keyTabResource" class="org.springframework.core.io.FileSystemResource">
+            <beans:constructor-arg value="${kerberos.keyTabLocation}"/>
+        </beans:bean>
+
+        <!-- The ticket validator uses the key tab and the service principal, both of whom are configured in the
+             properties file. -->
+        <beans:bean id="sunJaasKerberosTicketValidator"
+            class="org.springframework.security.kerberos.authentication.sun.SunJaasKerberosTicketValidator">
+            <beans:property name="keyTabLocation" ref="keyTabResource"/>
+            <beans:property name="servicePrincipal" value="${kerberos.servicePrincipal}"/>
+
+        </beans:bean>
+
+        <!-- Standard LDAP user details mapper; this is how Kerberos gets user info from LDAP, after
+             authenticating the user. -->
+        <beans:bean id="ldapUserDetailsMapper" class="org.springframework.security.ldap.userdetails.LdapUserDetailsMapper"></beans:bean>
+
+        <!-- Kerberos 5 login config.  Like the ticket validator, this also uses the key tab and the service
+             principal. -->
+        <beans:bean id="sunJaasKrb5LoginConfig" class="org.springframework.security.kerberos.client.config.SunJaasKrb5LoginConfig">
+            <beans:property name="keyTabLocation" ref="keyTabResource"/>
+            <beans:property name="servicePrincipal" value="${kerberos.servicePrincipal}"/>
+            <beans:property name="debug" value="${kerberos.debug}"/>
+            <beans:property name="isInitiator" value="${kerberos.isInitiator}"/>
+            <beans:property name="useTicketCache" value="${kerberos.useTicketCache}"/>
+        </beans:bean>
+
+        <!-- The context source configures how we talk to LDAP. -->
+        <beans:bean id="kerberosLdapContextSource" class="org.springframework.security.kerberos.client.ldap.KerberosLdapContextSource">
+            <beans:constructor-arg value="${kerberos.ldapUrl}"/>
+            <beans:property name="loginConfig" ref="sunJaasKrb5LoginConfig"/>
+            <beans:property name="base" value="${kerberos.base}"/>
+            <beans:property name="password" value="${kerberos.password}"/>
+        </beans:bean>
+
+        <!-- The user search controls how we find users. -->
+        <beans:bean id="filterBasedLdapUserSearch" class="org.springframework.security.ldap.search.FilterBasedLdapUserSearch">
+            <beans:constructor-arg index="0" value="${kerberos.userSearchBase}"/>
+            <beans:constructor-arg index="1" value="${kerberos.userIdAttributeName}={0}"/>
+            <beans:constructor-arg index="2" ref="kerberosLdapContextSource"/>
+        </beans:bean>
+
+        <!-- The authorities populator receives the LDAP groups, and returns the ArkCase authorities. These
+             are the same settings used by the LDAP configuration.  -->
+        <beans:bean id="defaultLdapAuthoritiesPopulator"
+            class="org.springframework.security.ldap.userdetails.DefaultLdapAuthoritiesPopulator">
+            <beans:constructor-arg ref="kerberosLdapContextSource"/>
+            <beans:constructor-arg value='${kerberos.groupSearchBaseOU}'/>
+            <beans:property name="groupSearchFilter" value="member={0}"/>
+            <beans:property name="rolePrefix" value=""/>
+            <beans:property name="searchSubtree" value="true"/>
+            <beans:property name="convertToUpperCase" value="true"/>
+            <beans:property name="ignorePartialResultException" value="true"/>
+        </beans:bean>
+
+        <!-- The user details service combines the context source, the user search, and the user details mapper. -->
+        <beans:bean id="ldapUserDetailsService" class="org.springframework.security.ldap.userdetails.LdapUserDetailsService">
+            <beans:constructor-arg index="0" ref="filterBasedLdapUserSearch"/>
+            <beans:constructor-arg index="1" ref="defaultLdapAuthoritiesPopulator"/>
+            <beans:property name="userDetailsMapper" ref="ldapUserDetailsMapper"/>
+        </beans:bean>
+
+        <!-- The authentication provider is the overall Kerberos configuration, wrapping the ticket validator
+             (which ensures the user is valid via Kerberos) and the user details service (that gets info about the
+             authenticated user from LDAP. -->
+        <beans:bean id="kerberosServiceAuthenticationProvider"
+            class="org.springframework.security.kerberos.authentication.KerberosServiceAuthenticationProvider">
+            <beans:property name="ticketValidator" ref="sunJaasKerberosTicketValidator"/>
+            <beans:property name="userDetailsService" ref="ldapUserDetailsService"/>
+        </beans:bean>
+
+        <http entry-point-ref="acmStaticResourcesAuthenticationEntryPoint" use-expressions="true" request-matcher="regex"
+            pattern="^/assets/.*$|^/custom_assets/.*$|^/directives/.*$|^/custom_directives/.*$|^/filters/.*$|^/modules/.*$|^/custom_modules/.*$|^/modules_config/.*$|^/services/.*$"
+            authentication-manager-ref="acmAuthenticationManager">
+            <intercept-url pattern="^/.*$" access="isAuthenticated()"/>
+            <http-basic/>
+            <csrf disabled="true"/>
+            <headers>
+              <frame-options policy="SAMEORIGIN" />
+            </headers>
+            <custom-filter ref="spnegoAuthenticationProcessingFilter" after="DIGEST_AUTH_FILTER"/>
+            <custom-filter ref="acmBasicAndTokenAuthenticationFilter" before="BASIC_AUTH_FILTER"/>
+            <custom-filter position="CONCURRENT_SESSION_FILTER" ref="concurrencyFilter"/>
+            <form-login authentication-success-handler-ref="acmRestAuthenticationSuccessHandler"
+                authentication-failure-handler-ref="acmRestAuthenticationFailureHandler"/>
+            <session-management session-fixation-protection="migrateSession"/>
+        </http>
+		
+		<!-- Open URL -->
+        <http use-expressions="true" request-matcher="regex"
+            pattern=".*acm_email_ticket=.*$|.*EXT_TRANS_ID=.*$" security="none">
+        </http>
+
+        <!-- Ldap Entry Point authenticates users against LDAP server for REST calls -->
+        <http entry-point-ref="acmRestAuthenticationEntryPoint" use-expressions="true" request-matcher="regex"
+            pattern="^/api/.*$|^/plugin/.*$" authentication-manager-ref="acmAuthenticationManager">
+            <intercept-url pattern="^/.*$" access="isAuthenticated()"/>
+            <http-basic/>
+            <csrf disabled="true"/>
+            <headers>
+              <frame-options policy="SAMEORIGIN" />
+            </headers>
+            <custom-filter ref="spnegoAuthenticationProcessingFilter" after="DIGEST_AUTH_FILTER"/>
+            <custom-filter ref="acmBasicAndTokenAuthenticationFilter" before="BASIC_AUTH_FILTER"/>
+            <custom-filter position="CONCURRENT_SESSION_FILTER" ref="concurrencyFilter"/>
+            <form-login authentication-success-handler-ref="acmRestAuthenticationSuccessHandler"
+                authentication-failure-handler-ref="acmRestAuthenticationFailureHandler"/>
+            <session-management session-fixation-protection="migrateSession"/>
+        </http>
+
+        <!-- Kerberos entry point authenticates users against some Kerberos service -->
+        <http auto-config="true" entry-point-ref="spnegoEntryPoint" use-expressions="true"
+            authentication-manager-ref="acmAuthenticationManager">
+            <intercept-url pattern="/**" access="isAuthenticated()"/>
+            <http-basic/>
+            <csrf disabled="true"/>
+            <headers>
+              <frame-options policy="SAMEORIGIN" />
+            </headers>
+            <custom-filter ref="spnegoAuthenticationProcessingFilter" after="DIGEST_AUTH_FILTER"/>
+            <custom-filter ref="acmBasicAndTokenAuthenticationFilter" before="BASIC_AUTH_FILTER"/>
+            <custom-filter position="CONCURRENT_SESSION_FILTER" ref="concurrencyFilter"/>
+            <form-login login-page="/login" default-target-url="/home.html#!/welcome" login-processing-url="/login_post"
+                authentication-details-source-ref="acmAuthenticationDetailsFactory" authentication-failure-url="/login?login_error"
+                authentication-success-handler-ref="acmLoginSuccessHandler"/>
+            <logout logout-url="/logout" delete-cookies="JSESSIONID" success-handler-ref="acmLogoutSuccessHandler"
+                invalidate-session="true"/>
+            <session-management invalid-session-url="/login?login_error=1"
+                session-fixation-protection="migrateSession"/>
+        </http>
+
+        <beans:bean id="logoutUrl" class="java.lang.String">
+            <beans:constructor-arg value="logout"/>
+        </beans:bean>
+
+        <beans:bean id="expiredUrl" class="java.lang.String">
+            <beans:constructor-arg value="/login?login_error=2"/>
+        </beans:bean>
+
+        <beans:bean id="sessionDestroyedListener" class="com.armedia.acm.auth.SessionDestroyedListener">
+            <beans:property name="authenticationTokenService" ref="authenticationTokenService"/>
+        </beans:bean>
+
+    </beans:beans>
+
+</beans:beans>

@@ -1,0 +1,355 @@
+dashboard:
+  title: لوحة القيادة
+  menus:
+    leftnav.item: لوحة القيادة
+  widgets:
+    pagination:
+      default:
+        label: حدد عدد الصفوف المفضلة لديك.
+        fiveRows: "5"
+        tenRows: "10"
+        twentyFiveRows: "25"
+    casesByQueue:
+      title: ملفات الحالة النشطة بواسطة قائمة الانتظار
+      description: يعرض ملفات الحالة النشطة حسب قائمة الانتظار
+      xAxis: قوائم الانتظار
+      yAxis: عدد ملفات القضية
+      noDataMessage: حاليا لا توجد معلومات حالات
+      configDescription: وصف
+      configDescriptionPlaceholder: أدخل وصف القطعة
+    casesByStatus:
+      title: الحالات حسب الحالة
+      description: يعرض الحالات حسب الحالة
+      timePeriod:
+        label: حدد الفترة الزمنية
+        lastWeek: الاسبوع الماضى
+        lastMonth: الشهر الماضي
+        lastYear: العام الماضي
+        all: الكل
+      noDataMessage: حاليا لا توجد معلومات حالات
+      configDescription: وصف
+      configDescriptionPlaceholder: أدخل وصف القطعة
+    myCases:
+      title: حالاتي
+      description: يعرض حالاتي
+      noDataMessage: حاليا لا توجد معلومات حالات
+      table:
+        header:
+          caseId: هوية شخصية
+          title: عنوان
+          priority: أفضلية
+          created: خلقت
+          modified: تم التعديل
+          dueDate: تاريخ الاستحقاق
+          status: الحالة
+          assignee: المحال إليه
+        overdue.tooltip: ملف القضية متأخر
+        deadline.tooltip: الموعد النهائي يقترب
+      configDescription: وصف
+      configDescriptionPlaceholder: أدخل وصف القطعة
+    myConsultations:
+      title: استشاراتي
+      description: يعرض استشاراتي
+      noDataMessage: حاليا لا توجد معلومات استشارية
+      table:
+        header:
+          consultationId: هوية شخصية
+          title: عنوان
+          priority: أفضلية
+          created: خلقت
+          modified: تم التعديل
+          dueDate: تاريخ الاستحقاق
+          status: الحالة
+          assignee: المحال إليه
+        overdue.tooltip: المشاورات متأخرة
+        deadline.tooltip: الموعد النهائي يقترب
+      configDescription: وصف
+      configDescriptionPlaceholder: أدخل وصف القطعة  
+    myComplaints:
+      title: شكاوي
+      description: يعرض شكاوي
+      table:
+        header:
+          number: هوية شخصية
+          title: عنوان
+          priority: أفضلية
+          created: خلقت
+          modified: تم التعديل
+          dueDate: تاريخ الاستحقاق
+          status: الحالة
+          assignee: المحال إليه
+        overdue.tooltip: Complaint is Overdue
+        deadline.tooltip: الموعد النهائي يقترب
+        noDataMessage: حاليا لا توجد معلومات شكاوى
+      configDescription: وصف
+      configDescriptionPlaceholder: أدخل وصف القطعة
+    myTasks:
+      title: مهامي
+      description: يعرض المهام الخاصة بي
+      rowNumbers.label: عدد الصفوف الافتراضي
+      rowNumbers.placeholder: أدخل أرقام الصفوف الافتراضية
+      table:
+        header:
+          taskId: هوية شخصية
+          title: عنوان
+          priority: أفضلية
+          dueDate: بسبب
+          status: الحالة
+          objectId: معرف الكائن
+          parentType: نوع الوالدين
+          parentId: معرّف الوالدين
+        overdue.tooltip: المهمة متأخرة
+        deadline.tooltip: الموعد النهائي يقترب
+      noDataMessage: حاليا لا توجد معلومات مهام
+      configDescription: وصف
+      configDescriptionPlaceholder: أدخل وصف القطعة
+    newComplaints:
+      title: شكاوى جديدة
+      description: يعرض شكاوى جديدة
+      dueDate:
+        label: حدد فترة تاريخ الاستحقاق
+        pastDue: تاريخ الاستحقاق
+        dueTomorrow: غدا
+        dueWeek: تستحق خلال 7 أيام
+        dueMonth: مستحق في الشهر
+        all: الكل
+      noDataMessage: حاليا لا توجد معلومات شكاوى
+      configDescription: وصف
+      configDescriptionPlaceholder: أدخل وصف القطعة
+    newCases:
+      title: حالات جديدة
+      description: يعرض حالات جديدة
+      noDataMessage: حاليا لا توجد معلومات حالات
+      configDescription: وصف
+      configDescriptionPlaceholder: أدخل وصف القطعة
+    teamWorkload:
+      title: عبء العمل الجماعي
+      description: يعرض عبء عمل الفريق
+      dueDate:
+        label: حدد فترة تاريخ الاستحقاق
+        pastDue: تاريخ الاستحقاق
+        dueTomorrow: غدا
+        dueWeek: تستحق خلال 7 أيام
+        dueMonth: مستحق في الشهر
+        all: الكل
+      noDataMessage: حاليا لا توجد معلومات مهام الفريق
+      configDescription: وصف
+      configDescriptionPlaceholder: أدخل وصف القطعة
+    workflowReport:
+      title: تقرير سير العمل
+      description: يعرض تقرير سير العمل
+      rowNumbers.label: أرقام الصفوف الافتراضية
+      rowNumbers.placeholder: أدخل أرقام الصفوف الافتراضية
+      table:
+        header:
+          taskId: معرف المهمة
+          taskParentType: نوع الوالدين
+          taskParentName: اسم الوالدين
+          processName: اسم العملية التجارية
+          taskName: اسم المهمة
+      noDataMessage: حاليا لا يوجد معلومات تقرير سير العمل
+      configDescription: وصف
+      configDescriptionPlaceholder: أدخل وصف القطعة
+    news:
+      description: يعرض الأخبار
+      label:
+        enterFeedUrl: أدخل عنوان url الخاص بالموجز
+        description: يعرض موجز RSS / Atom
+        feedUrl: URL تغذية
+        insertUrl: يرجى إدراج عنوان url للخلاصة في تكوين الأداة
+      title: أخبار
+      noDataMessage: حاليا لا يوجد RSS / معلومات
+      configDescription: وصف
+      configDescriptionPlaceholder: أدخل وصف القطعة
+      message:
+        error: URL غير صالح
+    details:
+      title: تفاصيل
+      description: يعرض تفاصيل الحالة
+      noDataMessage: حاليا لا توجد تفاصيل
+    people:
+      title: اشخاص
+      description: يعرض تفاصيل الأشخاص
+      noDataMessage: حاليا لا يوجد أشخاص لعرضهم
+    ids:
+      title: معرفات
+      description: يعرض تفاصيل المعرفات
+      noDataMessage: حاليا لا يوجد معرفات لعرضها
+    complaints:
+      title: شكاوي
+      description: يعرض تفاصيل الشكوى
+      noDataMessage: حاليا لا توجد شكاوى لعرضها
+    cases:
+      title: الحالات
+      description: يعرض تفاصيل الحالة
+      noDataMessage: حاليا لا توجد حالات لعرضها
+    documents:
+      title: مستندات
+      description: يعرض مخطط المستندات حسب المجلد
+      noDataMessage: حاليا لا يوجد وثائق لعرضها
+      series: عدد الوثائق
+    locations:
+      title: المواقع
+      description: يعرض تفاصيل الموقع
+      noDataMessage: حاليا لا توجد مواقع لعرضها
+    phones:
+      title: أرقام الهواتف
+      description: يعرض أرقام الهاتف
+      noDataMessage: حاليا لا توجد أرقام هواتف لعرضها
+    faxes:
+      title: أرقام الفاكس
+      description: يعرض تفاصيل الفاكسات
+      noDataMessage: حاليا لا توجد رسائل فاكس لعرضها
+    emails:
+      title: عنوان بريد الكتروني
+      description: يعرض تفاصيل البريد الإلكتروني
+      noDataMessage: حاليا لا يوجد عناوين بريد إلكتروني لعرضها
+    urls:
+      title: عناوين URL
+      description: يعرض تفاصيل عناوين URL
+      noDataMessage: حاليا لا يوجد عناوين URL لعرضها
+    dbas:
+      title: DBAs
+      description: يعرض تفاصيل DBA
+      noDataMessage: حاليا لا يوجد DBAs لعرضها
+    tasks:
+      title: مهام
+      description: يعرض تفاصيل المهمة
+      noDataMessage: حاليا لا توجد مهام لعرضها
+    participants:
+      title: المشاركين
+      description: يعرض تفاصيل المشارك
+      noDataMessage: حاليا لا يوجد مشارك لعرضه
+    references:
+      title: المراجع
+      description: يعرض تفاصيل مرجعية
+      noDataMessage: حاليا لا توجد مراجع للعرض
+    relOrganizations:
+      title: المنظمات ذات الصلة
+      description: يعرض تفاصيل المنظمات ذات الصلة
+      noDataMessage: حاليا لا توجد منظمات ذات صلة لعرضها
+    history:
+      title: التاريخ
+      description: يعرض مخطط الأحداث التاريخية
+      noDataMessage: حاليا لا يوجد أحداث لعرضها
+    notes:
+      title: ملاحظات
+      description: يعرض تفاصيل المذكرة
+      noDataMessage: حاليا لا توجد ملاحظات لعرضها
+    time:
+      title: زمن
+      description: يعرض الرسم البياني لساعات لكل مستخدم
+      noDataMessage: حاليا لا توجد معلومات وقت لعرضها
+    cost:
+      title: كلفة
+      description: يعرض الرسم البياني للتكلفة لكل مستخدم
+      noDataMessage: حاليا لا توجد معلومات تكلفة لعرضها
+    calendar:
+      title: التقويم
+      description: يعرض مخطط الأحداث المجدولة في اليوم
+      noDataMessage: حاليا لا يوجد أحداث لعرضها
+      calendarIntegrationDisabledMessage: تم تعطيل تكامل التقويم بواسطة المسؤول
+    reworkDetails:
+      title: تفاصيل إعادة العمل
+      description: يعرض أحدث تفاصيل إعادة العمل
+      noDataMessage: حاليا لا توجد تفاصيل إعادة العمل لعرضها
+    docReview:
+      title: المستندات قيد المراجعة
+      description: يعرض المستندات قيد المراجعة
+      noDataMessage: حاليا لا يوجد وثائق تحت المراجعة
+    parentDocs:
+      title: المستندات الأم
+      description: يعرض المستندات الأصلية
+      noDataMessage: حاليا لا يوجد وثائق الأصل لعرضها
+    workflow:
+      title: نظرة عامة على سير العمل
+      description: نظرة عامة على سير العمل المعلق
+      noDataMessage: حاليا لا يوجد سير عمل لعرضه
+    signature:
+      title: التوقيع الإلكتروني
+      description: أداة التوقيع الإلكتروني
+      noDataMessage: حاليا لا يوجد تواقيع إلكترونية لعرضها
+    person:
+      title: شخص
+      description: وحدات التكلفة والوقت القطعة الشخص
+      noDataMessage: حاليا لا يوجد أشخاص لعرضهم
+    hoursSummary:
+      title: ملخص الساعات
+      description: يعرض ملخص ساعات العمل
+      noDataMessage: حاليا لا يوجد ملخص لعرضه
+    expenses:
+      title: نفقات
+      description: يعرض الرسم البياني للتكلفة للمستخدم
+      noDataMessage: حاليا لا توجد بيانات حساب لعرضها
+    organizations:
+      title: المنظمات
+      description: يعرض التنظيم
+      noDataMessage: حاليا لا توجد مؤسسات لعرضها
+    tags:
+      title: العلامات
+      description: يعرض العلامات
+      noDataMessage: حاليا لا توجد علامات لعرضها
+    approvalRouting:
+      title: التوجيه الموافقة
+      description: يعرض مسارات الموافقة
+      noDataMessage: حاليا لا يوجد جهات اعتماد لعرضها
+    pictures:
+      title: صور
+      description: عرض الصور
+      noDataMessage: حاليا لا يوجد صور للعرض
+    aliases:
+      title: اسماء مستعارة
+      description: عرض الأسماء المستعارة
+      noDataMessage: حاليا لا يوجد أسماء مستعارة لعرضها
+    related:
+      title: الناس ذات الصلة
+      description: عرض الأشخاص ذوي الصلة
+      noDataMessage: حاليا لا يوجد أشخاص ذوي صلة لعرضهم
+    approvers:
+      title: الموافقون
+      description: يعرض الموافقين
+      noDataMessage: حاليا لا يوجد مانحون لعرضهم
+    userWebsites:
+      title: القطعة مواقع الويب
+      description: يعرض مواقع الويب الخاصة بالمستخدم
+      noDataMessage: حاليا لا توجد معلومات موقع ويب
+      table:
+        header:
+          name: اسم الموقع
+          url: URL
+      modal:
+        addWebsite: أضف موقع ويب
+        editWebsite: تحرير موقع الويب
+        save: حفظ
+        cancel: إلغاء
+        name: اسم الموقع
+        url: URL
+      url.title: يجب أن يكون عنوان URL صالحًا.
+    savePromptModal:
+      title: حفظ لوحة القيادة
+      info: أنت في وضع التحرير. هل تريد حفظ التغيرات؟
+      save: حفظ
+      doNotSave: لا تقم بحفظ
+      cancel: إلغاء
+dashboard.comp.news:
+  title: أخبار القطعة
+dashboard.comp.myCases:
+  title: القطعة حالاتي
+dashboard.comp.myConsultations:
+  title: القطعة الاستشارات بلدي
+dashboard.comp.myTasks:
+  title: القطعة المهام الخاصة بي
+dashboard.comp.myComplaints:
+  title: القطعة بلدي الشكاوى
+dashboard.comp.workflowReport:
+  title: تقرير سير العمل
+dashboard.comp.newComplaints:
+  title: شكاوى جديدة
+dashboard.comp.newCases:
+  title: حالات جديدة
+dashboard.comp.casesByQueue:
+  title: الحالات حسب قائمة الانتظار
+dashboard.comp.teamWorkload:
+  title: عبء العمل الجماعي
+dashboard.comp.casesByStatus:
+  title: الحالة حسب الحالة

@@ -1,0 +1,4 @@
+analytics-audit:
+  title: Журнал аналитики
+  menus:
+    leftnav.item: Журнал аналитики

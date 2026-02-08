@@ -1,0 +1,416 @@
+consultations:
+  title: استشارات
+  progressNoConsultation: '[ لا توجد بيانات التشاور ]'
+  progressLoading: ' يتم تحميل التشاور'
+  progressError: فشل تحميل الاستشارة
+consultations.menus:
+  leftnav.item: التشاور
+  topbar.item: التشاور
+consultations.error:
+  invalidData: ""
+consultations.comp.main:
+  title: نظرة عامة
+consultations.comp.info:
+  title: معلومات
+  consultationId: 'معرف التشاور:'
+  consultationNumber: 'رقم الاستشارة:'
+  courtRoomName: 'اسم قاعة المحكمة:'
+  type.label: نوع
+  created.label: تاريخ الإنشاء
+  priority.label: أفضلية
+  assignee.label: مخصص ل
+  assignee.none: لا يوجد
+  owningGroup.label: امتلاك المجموعة
+  dueDate.label: تاريخ الاستحقاق
+  alertMessage: ' يجب أن يكون تاريخ الاستحقاق بعد تاريخ الإنشاء'
+  priorities:
+    low%: منخفض
+    medium%: متوسط
+    high%: عالي
+    expedite%: تعجيل
+    unknown%: مجهول
+  consultationTypes:
+    agricultural%: زراعي
+    arson%: حريق متعمد
+    backgroundInvestigation%: خلفية التحقيق
+    benefitsAppeal%: استئناف المنافع
+    businessDispute%: نزاع تجاري أفضل
+    clinicalFraud%: احتيال الباحث السريري
+    congressional%: رد الكونغرس
+    disabilityWaiver%: طلب التنازل عن الإعاقة
+    domesticDispute%: شجار عائلي
+    drugTrafficking%: تهريب المخدرات
+    educationWaiver%: طلب تنازل عن التعليم
+    eeoHarassment%: EEO / المضايقة
+    embezzlement%: الاختلاس
+    extortion%: الابتزاز
+    fraud%: تزوير
+    generatedFromEmail%: تم إنشاؤها من البريد الإلكتروني
+    government%: حكومة
+    investorComplaint%: شكوى المستثمر
+    laborRacketeering%: عمل المضرب
+    local%: محلي
+    murder%: قتل
+    newDrugFraud%: الاحتيال الجديد في تطبيق الدواء
+    payoff%: سدد دينك
+    pensionWaiver%: طلب التنازل عن المعاش
+    pollution%: التلوث
+    productTampering%: المنتج العبث
+    assetTheftMisuse%: سرقة الأصول أو إساءة استخدامها
+  receivedDate.label: تاريخ ووقت الاستلام
+  status.label: الحالة
+  modifier: التعديل الأخير من قبل
+  componentAgency: مكون
+  modified: تاريخ ووقت التعديل الأخير
+consultations.comp.actions:
+  title: أجراءات
+  restrict: بتقييد؟
+  new.button: جديد
+  edit.button: تعديل
+  status.button: تغيير حالة الاستشارة
+  reinvestigate.button: أعد التحقيق
+  subscribe.button: الإشتراك
+  unsubscribe.button: إلغاء الاشتراك
+  claim.button: مطالبة ب
+  unclaim.button: مطالبة الامم المتحدة
+  buckslip.add.cancel: عدم المطالبة
+  buckslip.add.confirm: تؤكد
+  buckslip.add.title: جديد باك زلة
+consultations.comp.details:
+  title: تفاصيل الاستشارة الكاملة
+  informSaved: تم حفظ تفاصيل الاستشارة
+  consultationSummary:
+    title: ملخص التشاور
+    informSaved: تم حفظ ملخص الاستشارة
+  table.columns:
+    title: تفاصيل الاستشارة الكاملة
+    modified: تاريخ التعديل الأخير
+    modifier: آخر تعديل للمستخدم
+consultations.comp.documents:
+  title: مستندات
+  sendEmail: ارسل بريد الكتروني
+  filterInputPlaceholder: منقي
+  searchInputPlaceholder: بحث
+  menu:
+    forms:
+      info%: معلومات
+      rptInvestigation%: تقرير التحقيق
+      ecomm%: الاتصالات الإلكترونية
+    correspondences:
+      correspondenceInvitation%: المراسلات - دعوة
+      approvalLetter%: خطاب الموافقة
+      medicalRelease%: بيان طبي
+      generalRelease%: الإفراج العام
+      clearanceGranted%: منح التخليص
+      clearanceDenied%: تم رفض التخليص
+      noticeInvestigation%: إشعار التحقيق
+      witnessInterview%: مقابلة طلب شاهد
+      witnessInterview2%: طلب مقابلة الشاهد - 2.0
+  newTask: مهمة جديدة
+consultations.comp.people:
+  title: اشخاص
+  table.columns:
+    entity: شخصية
+    type: وظيفة
+    firstName: الاسم الاول
+    lastName: اسم العائلة
+    organization: منظمة
+    phone: هاتف
+    location: موقعك
+consultations.comp.organizations:
+  title: المنظمات
+  table.columns:
+    name: اسم المنظمة
+    associationType: وظيفة
+    type: نوع المنظمة
+    identification: هوية شخصية
+    value: منظمة
+    contact: اتصال رئيسي
+    phone: هاتف
+    location: موقعك
+consultations.comp.participants:
+  title: المشاركين
+  table.columns:
+    type: نوع
+    name: اسم
+  dialogUserPicker:
+    header: اختر المستخدم
+    table.columns:
+      name: اسم
+      type: نوع
+      title: عنوان
+      id: اسم المستخدم
+  dialogGroupPicker:
+    header: اختر مجموعة
+    table.columns:
+      name: اسم
+consultations.comp.notes:
+  title: ملاحظات
+  table.columns:
+    note: ملحوظة
+    created: خلقت
+    creator: مؤلف
+consultations.comp.tasks:
+  title: مهام
+  table.columns:
+    title: عنوان
+    assignee: المحال إليه
+    created: خلقت
+    priority: أفضلية
+    due: بسبب
+    status: الحالة
+  table.overdue.tooltip: المهمة متأخرة
+  table.deadline.tooltip: الموعد النهائي يقترب
+consultations.comp.references:
+  title: المراجع
+  table.columns:
+    targetName: رقم
+    targetTitle: عنوان
+    targetType: نوع
+    assignee: المحال إليه
+    modified: تم التعديل
+    status: الحالة
+consultations.comp.history:
+  title: التاريخ
+  table.columns:
+    eventType: اسم الحدث
+    eventDate: تاريخ
+    userId: المستعمل
+consultations.comp.time:
+  title: زمن
+  table.columns:
+    name: اسم النموذج
+    user: المستعمل
+    tally: مجموع الساعات
+    cost: التكلفة الإجمالية
+    modified: تاريخ معدل
+    status: الحالة
+  formNamePrefix: ورقة التوقيت
+consultations.comp.cost:
+  title: كلفة
+  table.columns:
+    name: اسم النموذج
+    user: المستعمل
+    tally: التكلفة الإجمالية
+    modified: تاريخ معدل
+    status: الحالة
+  formNamePrefix: ورقة التكلفة
+consultations.comp.tags:
+  title: العلامات
+  table.columns:
+    tag:  شقة قرطاس
+    created: خلقت
+    createdBy: انشأ من قبل
+  modal:
+    title: شقة قرطاس
+    search: ابحث عن الوسم
+    buttons:
+      cancel: إلغاء
+      ok: إضافة علامة
+  message:
+    tagExists: توجد بالفعل علامة بهذا الاسم أو الوصف أو النص
+    tagAssociated: مرتبط بالفعل
+    delete:
+      success: تم حذف العلامة بنجاح
+      error: خطأ في حذف العلامة
+consultations.comp.calendar:
+  title: التقويم
+  message: لم يتم تمكين تكوين تكامل التقويم
+consultations.comp.referenceSearchGrid:
+  title: بحث مرجعي
+consultations.comp.addreference:
+  title: يضيف مرجعا
+  cancelButton: إلغاء
+  confirmButton: أضف
+  search:
+    placeholder: ابحث عن الحالة أو الاستشارة أو الشكوى أو الملف أو المهمة
+    btn: بحث
+  grid:
+    columns:
+      id: هوية شخصية
+      name: اسم
+      type: نوع
+      title: عنوان
+      parent: الأبوين
+      assignee: المحال إليه
+      modified: تم التعديل
+consultations.comp.assigneePickerModal:
+  title: تغيير المحال إليه
+  assigneeNamelabel: اسم المحال إليه
+  btnCancelText: إلغاء
+  btnSaveText: حفظ
+  searchAssigneeHeader: ابحث عن المتنازل عنه
+consultations.comp.groupPickerModal:
+  title: تغيير المجموعة
+  groupNamelabel: أسم المجموعة
+  btnCancelText: إلغاء
+  btnSaveText: حفظ
+  searchGroupHeader: مجموعة البحث
+consultations.comp.change.status:
+  title: تغيير حالة الاستشارة
+  description.label: وصف
+  information:
+    title: تغيير معلومات حالة الاستشارة
+    date: تغيير التاريخ
+    consultation.number: رقم الاستشارة
+    status:
+      title: الحالة
+      current: الحالة الحالية
+      resolution:
+        title: قرار التشاور
+        denied: رفض
+        full: ممتلئ
+        partial: جزئي
+  approver:
+    placeholder: حدد موافق
+    label: موافق
+    addAnother: أضف آخر
+    remove: إزالة موافق
+    pickerModal.header: بحث المستخدم / المجموعة
+    owningGroup: امتلاك المجموعة
+  button:
+    cancel: إلغاء
+    save: حفظ
+consultations.comp.suggestedConsultations:
+  title: المشاورات المقترحة
+  table.columns:
+    number: رقم
+    title: عنوان
+    referenceType: نوع مرجع
+    modified: تم التعديل
+    status: الحالة
+consultations.userOrGroupSearch:
+  id: بحث المستخدم
+  title: بحث المستخدم / المجموعة
+  search:
+    btn: بحث
+    placeholder: ابحث عن المستخدم أو المجموعة.
+  cancelButton: إلغاء
+  confirmButton: تؤكد
+  assigneeGridColumns:
+    name: اسم
+    type: نوع
+    title: عنوان
+    username: اسم المستخدم
+consultations.dialogObjectPicker:
+  header: ابحث عن مستند
+  table.columns:
+    name: اسم
+    type: نوع
+    title: عنوان
+    id: هوية شخصية
+consultations.tree:
+  nodeTypes:
+    details.label: تفاصيل
+    people.label: اشخاص
+    organizations.label: المنظمات
+    documents.label: مستندات
+    participants.label: المشاركين
+    notes.label: ملاحظات
+    tasks.label: مهام
+    references.label: المراجع
+    history.label: التاريخ
+    time.label: زمن
+    cost.label: كلفة
+    tags.label: العلامات
+    calendar.label: التقويم
+    suggestedConsultations.label: المشاورات المقترحة
+  filters:
+    opened: جميع الاستشارات المفتوحة
+    iHaveCreated: كل ما صنعته
+    iAmAssigned: تم تعيين الكل إلي
+    iAmFollowing: كل ما أتبعه
+    closed: الكل مغلق
+    noFilter: (بدون فلتر)
+  sorters:
+    dateAsc: فرز تاريخ الإنشاء تصاعدياً
+    dateDesc: فرز تاريخ الإنشاء تنازليًا
+    idAsc: فرز معرف استشارة تصاعدي
+    idDesc: معرّف التشاور فرز تنازلي
+    dueDateAsc: فرز حسب تاريخ الاستحقاق
+    dueDateDesc: فرز تاريخ الاستحقاق تنازليًا
+    nameAsc: فرز حسب اسم الاستشارة تصاعديا
+    noSort: (بدون فرز)
+consultations.newConsultation:
+  consultationTitle: استشارة جديدة
+  receivedDate.label: ميعاد الاستلام
+  section1: 'القسم 1: معلومات الاتصال بالمشاورة'
+  addNewPerson: شخص جديد
+  useExistingPerson: شخص موجود
+  searchPerson: البحث عن شخص
+  prefix:
+    label: اختصار
+    validation.error: يرجى تحديد البادئة
+  firstName:
+    label: الاسم الاول
+    placeholder: أدخل الاسم الأول
+    validation.error: يرجى إدخال الاسم الأول
+  middleName:
+    label: الاسم الوسطى
+    placeholder: أدخل الاسم الأوسط
+  lastName:
+    label: اسم العائلة
+    placeholder: أدخل اسم العائلة
+    validation.error: الرجاء إدخال اسم العائلة
+  position:
+    label: موضع
+    placeholder: أدخل الموقف
+  phone:
+    label: هاتف
+    placeholder: أدخل رقم الهاتف (xxx-xxx-xxxx)
+    validation.errorInvalid: 'رقم الهاتف الذي أدخلته غير صالح. يجب أن يكون بهذا التنسيق: xxx-xxx-xxxx'
+  organization:
+    label: منظمة
+    placeholder: أدخل المؤسسة
+  email:
+    label: البريد الإلكتروني
+    placeholder: أدخل البريد الإلكتروني
+    validation.error: يرجى إدخال البريد الإلكتروني
+    validation.errorInvalid: 'يرجى إدخال البريد الإلكتروني البريد الإلكتروني الذي أدخلته غير صالح. يجب أن يكون بهذا التنسيق: xxxx@xxxx.xxx'
+  confirmationEmail:
+    label: تأكيد عنوان البريد الإلكتروني
+    placeholder: تأكيد عنوان البريد الإلكتروني
+    validation.error: البريد الإلكتروني وتأكيد البريد الإلكتروني غير متطابقين يرجى تأكيد البريد الإلكتروني
+    validation.errorInvalid: يرجى تأكيد البريد الإلكتروني
+  country:
+    label: بلد
+    validation.error: يرجى تحديد البلد
+  address.type:
+    label: نوع العنوان
+    validation.error: يرجى تحديد نوع العنوان
+  address:
+    label: العنوان 1
+    placeholder: أدخل سطر العنوان 1
+    validation.error: يرجى إدخال العنوان 1
+  address2:
+    label: العنوان 2
+    placeholder: أدخل سطر العنوان 2
+  city: 
+    label: مدينة
+    placeholder: أدخل المدينة
+  state:
+    label: حالة
+    placeholder: إدخال الدولة
+  zip:
+    label: البريدي / الرمز البريدي
+    placeholder: أدخل البريدي / الرمز البريدي 
+  section2: 'القسم 2: معلومات التشاور'
+  externalAgency:
+    label: معرف الجهة الخارجية للوكالة
+    placeholder: أدخل المعرّف الخارجي للوكالة الطالبة
+    validation.error: يرجى إدخال رقم التعريف الخارجي للوكالة الطالبة
+  title:
+    label: عنوان
+    placeholder: أدخل العنوان
+    validation.error: يرجى إدخال العنوان
+  subject:
+    label: وصف
+    placeholder: أدخل الوصف
+    validation.error: الرجاء إدخال الوصف
+  dueDate.label: تاريخ الاستحقاق
+  addFile.label: تقدم الوكالة الطالبة المستندات
+  chooseFiles: اختر الملفات
+  duplicateFilesName.error: تم تحميل المستند نفسه أكثر من مرة ، يرجى تحميل مستندات مختلفة
+  cancelButton: إلغاء
+  saveButton: حفظ الاستشارة
+  remove: إزالة

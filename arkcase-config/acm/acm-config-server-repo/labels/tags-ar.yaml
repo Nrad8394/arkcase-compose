@@ -1,0 +1,19 @@
+tags:
+  title: العلامات
+  search.btn: بحث
+  export.btn: تصدير
+  search.placeholder: ابحث عن العلامات
+  menus:
+    leftnav.item: العلامات
+  comp:
+    tagsFacetedSearch:
+      title: البحث عن الأوجه للعلامات
+    grid:
+      columns:
+        id: هوية شخصية
+        name: اسم
+        type: نوع
+        title: عنوان
+        parent: الأبوين
+        assignee: المحال إليه
+        modified: تم التعديل

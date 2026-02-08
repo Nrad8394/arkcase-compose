@@ -1,0 +1,4 @@
+adhoc-reports:
+  title: Adhoc Reports
+  menus:
+    leftnav.item: Adhoc Reports

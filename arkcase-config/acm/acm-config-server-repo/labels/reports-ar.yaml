@@ -1,0 +1,38 @@
+reports:
+  title: التقارير
+  menus:
+    leftnav.item: التقارير
+  selectReport:
+    label: التقارير
+    placeholder: حدد تقرير
+  selectState:
+    label: حالة
+    placeholder: اختر ولايه
+  startDate:
+    label: من عند
+  endDate:
+    label: إلى
+  fiscalYear:
+    label: السنة المالية
+    selectLabel: حدد السنة المالية
+  dropdown:
+    __comment__: __ يبدو أن هذا'القائمة المنسدلة' غير مستخدم ، هل ما زلنا بحاجة إلى ذلك؟
+    turnaround: وقت الاستجابة حسب مقدم الطلب
+    requester: ملخص نوع مقدم الطلب
+    pending: تقرير الطلبات المعلقة
+    associate: تقرير الإنتاجية المنتسب
+    origination: Origination Count
+    transfers: تقرير التحويلات
+    exceptions: تقرير الاستثناءات (عدم الامتثال)
+  datepicker:
+    close: منجز
+    clear: واضح
+    current: اليوم
+  btn:
+    generateReport: انشاء تقرير
+  checkBox:
+    xmlReport: إظهار بتنسيق XML
+reports.comp.datepickers:
+  title: منتقي التاريخ
+reports.comp.reportselection:
+  title: التقارير
