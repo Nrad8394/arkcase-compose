@@ -1,0 +1,47 @@
+# Multi-stage build for ArkCase core application
+# Stage 1: Build with Java 8 (compiled from source)
+FROM maven:3.8.1-openjdk-8-slim as builder
+
+WORKDIR /build
+
+# Copy source code
+COPY arkcase-core/ /build/
+
+# Build the application (skip tests for speed)
+RUN mvn clean package -DskipTests -q && \
+    find target -name "arkcase*.war" -type f > /tmp/war_file.txt && \
+    if [ ! -s /tmp/war_file.txt ]; then find target -name "*.war" -type f > /tmp/war_file.txt; fi && \
+    cat /tmp/war_file.txt
+
+# Stage 2: Runtime container
+FROM tomcat:9.0-jdk11-openjdk-slim
+
+LABEL maintainer="ArkCase"
+LABEL description="ArkCase - Case Management System"
+
+# Create arkcase user
+RUN useradd --create-home --user-group arkcase && \
+    mkdir -p /opt/arkcase && \
+    chown -R arkcase:arkcase /opt/arkcase /usr/local/tomcat
+
+# Copy built WAR from builder
+COPY --from=builder --chown=arkcase:arkcase /build/target/arkcase*.war /usr/local/tomcat/webapps/arkcase.war
+
+# Remove default ROOT application
+RUN rm -rf /usr/local/tomcat/webapps/ROOT /usr/local/tomcat/webapps/docs /usr/local/tomcat/webapps/examples /usr/local/tomcat/webapps/manager /usr/local/tomcat/webapps/host-manager
+
+# Set environment variables for Tomcat startup
+ENV JDK_JAVA_OPTIONS="" \
+    CATALINA_OPTS="-XX:+UseG1GC -XX:MaxGCPauseMillis=200 -Dcom.sun.jndi.ldap.connect.pool=false"
+
+# Set proper permissions
+RUN chown -R arkcase:arkcase /usr/local/tomcat
+
+USER arkcase
+
+EXPOSE 8080
+
+HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \
+    CMD curl -f http://localhost:8080/arkcase/api/v1/health || exit 1
+
+CMD /usr/local/tomcat/bin/catalina.sh run

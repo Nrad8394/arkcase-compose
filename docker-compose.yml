@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   # PostgreSQL Database (or you can use MySQL/MariaDB)
   postgres:
@@ -98,37 +96,10 @@ services:
       postgres:
         condition: service_healthy
     environment:
-      JAVA_TOOL_OPTIONS: >
-        -Dencryption.keystore.type=JCEKS
-        -Dencryption.cipherAlgorithm=DESede/CBC/PKCS5Padding
-        -Dencryption.keyAlgorithm=DESede
-        -Dencryption.keystore.location=/usr/local/tomcat/shared/classes/alfresco/extension/keystore/keystore
-        -Dmetadata-keystore.password=mp6yc0UD9e
-        -Dmetadata-keystore.aliases=metadata
-        -Dmetadata-keystore.metadata.password=oKIWzVdEdA
-        -Dmetadata-keystore.metadata.algorithm=DESede
-      JAVA_OPTS: >
-        -Ddb.driver=org.postgresql.Driver
-        -Ddb.username=arkcase
-        -Ddb.password=${DB_PASSWORD:-changeme}
-        -Ddb.url=jdbc:postgresql://postgres:5432/alfresco
-        -Dsolr.host=solr
-        -Dsolr.port=8983
-        -Dsolr.http.connection.timeout=1000
-        -Dsolr.secureComms=secret
-        -Dsolr.sharedSecret=secret
-        -Dsolr.base.url=/solr
-        -Dindex.subsystem.name=solr6
-        -Dshare.host=alfresco-share
-        -Dshare.port=8080
-        -Dalfresco.host=localhost
-        -Dalfresco.port=8080
-        -Daos.baseUrlOverwrite=http://localhost:8080/alfresco/aos
-        -Dmessaging.broker.url="failover:(nio://activemq:61616)?timeout=3000&jms.useCompression=true"
-        -Ddeployment.method=DOCKER_COMPOSE
-        -DlocalTransform.core-aio.url=http://transform-core-aio:8090/
-        -Dcsrf.filter.enabled=false
-        -Xms1g -Xmx3g
+      JDK_JAVA_OPTIONS: ""
+      JAVA_TOOL_OPTIONS: "-Dencryption.keystore.type=JCEKS -Dencryption.cipherAlgorithm=DESede/CBC/PKCS5Padding -Dencryption.keyAlgorithm=DESede -Dencryption.keystore.location=/usr/local/tomcat/shared/classes/alfresco/extension/keystore/keystore -Dmetadata-keystore.password=mp6yc0UD9e -Dmetadata-keystore.aliases=metadata -Dmetadata-keystore.metadata.password=oKIWzVdEdA -Dmetadata-keystore.metadata.algorithm=DESede"
+      CATALINA_OPTS: |-
+        -Xms1g -Xmx3g -Ddb.driver=org.postgresql.Driver -Ddb.username=arkcase -Ddb.password=${DB_PASSWORD:-changeme} -Ddb.url=jdbc:postgresql://postgres:5432/alfresco -Dsolr.host=solr -Dsolr.port=8983 -Dsolr.http.connection.timeout=1000 -Dsolr.secureComms=secret -Dsolr.sharedSecret=secret -Dsolr.base.url=/solr -Dindex.subsystem.name=solr6 -Dshare.host=alfresco-share -Dshare.port=8080 -Dalfresco.host=localhost -Dalfresco.port=8080 -Daos.baseUrlOverwrite=http://localhost:8080/alfresco/aos -Dmessaging.broker.url=tcp://activemq:61616 -Ddeployment.method=DOCKER_COMPOSE -DlocalTransform.core-aio.url=http://transform-core-aio:8090/ -Dcsrf.filter.enabled=false
     volumes:
       - alfresco-data:/usr/local/tomcat/alf_data
     networks:
@@ -153,17 +124,12 @@ services:
     restart: unless-stopped
     depends_on:
       alfresco:
-        condition: service_healthy
+        condition: service_started
     environment:
+      JDK_JAVA_OPTIONS: ""
       REPO_HOST: alfresco
       REPO_PORT: 8080
-      JAVA_OPTS: >
-        -Xms512m
-        -Xmx1g
-        -Dalfresco.host=localhost
-        -Dalfresco.port=8080
-        -Dalfresco.context=alfresco
-        -Dalfresco.protocol=http
+      CATALINA_OPTS: "-Xms512m -Xmx1g -Dalfresco.host=localhost -Dalfresco.port=8080 -Dalfresco.context=alfresco -Dalfresco.protocol=http"
     networks:
       - arkcase-network
     healthcheck:
@@ -185,7 +151,7 @@ services:
     container_name: arkcase-transform-core-aio
     restart: unless-stopped
     environment:
-      JAVA_OPTS: -Xms256m -Xmx512m
+      JDK_JAVA_OPTIONS: "-Xms256m -Xmx512m"
     networks:
       - arkcase-network
     healthcheck:
@@ -200,50 +166,57 @@ services:
         reservations:
           memory: 512M
 
-  # Pentaho Business Intelligence
-  pentaho:
-    image: public.ecr.aws/arkcase/pentaho:latest
-    container_name: arkcase-pentaho
-    restart: unless-stopped
-    depends_on:
-      postgres:
-        condition: service_healthy
-    environment:
-      PENTAHO_DI_JAVA_OPTIONS: "-Xms1024m -Xmx2048m"
-      DB_TYPE: postgresql
-      DB_HOST: postgres
-      DB_PORT: 5432
-      DB_NAME: arkcase
-      DB_USER: arkcase
-      DB_PASSWORD: ${DB_PASSWORD:-changeme}
-    volumes:
-      - pentaho-data:/opt/pentaho/server/pentaho-server/pentaho-solutions/system
-    networks:
-      - arkcase-network
-    healthcheck:
-      test: ["CMD-SHELL", "curl -f http://localhost:8080/pentaho || exit 1"]
-      interval: 30s
-      timeout: 10s
-      retries: 5
-      start_period: 120s
-    deploy:
-      resources:
-        limits:
-          memory: 3G
-        reservations:
-          memory: 2G
+  # Pentaho Business Intelligence (NOT AVAILABLE - image not found in ECR)
+  # Uncomment when a valid Pentaho image is available
+  # pentaho:
+  #   image: public.ecr.aws/arkcase/pentaho:latest
+  #   container_name: arkcase-pentaho
+  #   restart: unless-stopped
+  #   depends_on:
+  #     postgres:
+  #       condition: service_healthy
+  #   environment:
+  #     PENTAHO_DI_JAVA_OPTIONS: "-Xms1024m -Xmx2048m"
+  #     DB_TYPE: postgresql
+  #     DB_HOST: postgres
+  #     DB_PORT: 5432
+  #     DB_NAME: arkcase
+  #     DB_USER: arkcase
+  #     DB_PASSWORD: ${DB_PASSWORD:-changeme}
+  #   volumes:
+  #     - pentaho-data:/opt/pentaho/server/pentaho-server/pentaho-solutions/system
+  #   networks:
+  #     - arkcase-network
+  #   healthcheck:
+  #     test: ["CMD-SHELL", "curl -f http://localhost:8080/pentaho || exit 1"]
+  #     interval: 30s
+  #     timeout: 10s
+  #     retries: 5
+  #     start_period: 120s
+  #   deploy:
+  #     resources:
+  #       limits:
+  #         memory: 3G
+  #       reservations:
+  #         memory: 2G
 
   # Spring Cloud Config Server
   config-server:
-    image: public.ecr.aws/arkcase/config-server:latest
+    image: nrad8393/arkcase-config-server:production
     container_name: arkcase-config-server
     restart: unless-stopped
     environment:
       SERVER_PORT: 9999
       SPRING_PROFILES_ACTIVE: native
-      SPRING_CLOUD_CONFIG_SERVER_NATIVE_SEARCH_LOCATIONS: file:///config
+      SPRING_CLOUD_CONFIG_SERVER_NATIVE_SEARCH_LOCATIONS: "file:/app/data,file:/app/data/labels,file:/app/data/ldap,file:/app/data/lookups,file:/app/data/rules"
+      ACTIVEMQ_URL: tcp://activemq:61616
+      ACM_ACTIVEMQ_BROKER_URL: tcp://activemq:61616
+      properties.folder.path: /app/data
+      acm.activemq.messageBufferWindow: 5000
+      acm.activemq.sendTime: 1000
+      JAVA_OPTS: "-Xmx512m -XX:+UseG1GC"
     volumes:
-      - ./arkcase-config:/config:ro
+      - ./arkcase-config:/app/data:ro
     networks:
       - arkcase-network
     healthcheck:
@@ -251,6 +224,7 @@ services:
       interval: 30s
       timeout: 10s
       retries: 5
+      start_period: 60s
     deploy:
       resources:
         limits:
@@ -260,44 +234,23 @@ services:
 
   # ArkCase Core Application
   arkcase-core:
-    image: public.ecr.aws/arkcase/core:latest
+    image: nrad8393/arkcase-core:production
     container_name: arkcase-core
     restart: unless-stopped
     depends_on:
       postgres:
-        condition: service_healthy
+        condition: service_started
       solr:
-        condition: service_healthy
+        condition: service_started
       activemq:
-        condition: service_healthy
+        condition: service_started
       alfresco:
-        condition: service_healthy
+        condition: service_started
       config-server:
-        condition: service_healthy
+        condition: service_started
     environment:
-      JAVA_OPTS: >
-        -Xms2g -Xmx4g
-        -Dspring.datasource.url=jdbc:postgresql://postgres:5432/arkcase
-        -Dspring.datasource.username=arkcase
-        -Dspring.datasource.password=${DB_PASSWORD:-changeme}
-        -Dspring.datasource.driver-class-name=org.postgresql.Driver
-        -Dsolr.host=solr
-        -Dsolr.port=8983
-        -Dactivemq.broker.url=tcp://activemq:61616
-        -Dalfresco.host=alfresco
-        -Dalfresco.port=8080
-        -Dpentaho.host=pentaho
-        -Dpentaho.port=8080
-        -Dconfig.server.url=http://config-server:9999
-        -Dacm.configurationserver.url=http://config-server:9999
-      CATALINA_OPTS: >
-        -Dserver.ssl.enabled=true
-        -Dserver.ssl.key-store=/opt/arkcase/certs/keystore.p12
-        -Dserver.ssl.key-store-password=${KEYSTORE_PASSWORD:-changeme}
-        -Dserver.ssl.keyStoreType=PKCS12
-    ports:
-      - "8843:8843"  # HTTPS
-      - "8080:8080"  # HTTP (redirect to HTTPS)
+      JDK_JAVA_OPTIONS: ""
+      CATALINA_OPTS: "-Xms2g -Xmx4g -Dspring.datasource.url=jdbc:postgresql://postgres:5432/arkcase -Dspring.datasource.username=arkcase -Dspring.datasource.password=${DB_PASSWORD:-changeme} -Dspring.datasource.driver-class-name=org.postgresql.Driver -Dsolr.host=solr -Dsolr.port=8983 -Dactivemq.broker.url=tcp://activemq:61616 -Dalfresco.host=alfresco -Dalfresco.port=8080 -Dconfig.server.url=http://config-server:9999 -Dacm.configurationserver.url=http://config-server:9999 -Dserver.ssl.enabled=true -Dserver.ssl.key-store=/opt/arkcase/certs/keystore.p12 -Dserver.ssl.key-store-password=${KEYSTORE_PASSWORD:-changeme} -Dserver.ssl.keyStoreType=PKCS12"
     volumes:
       - arkcase-data:/opt/arkcase/data
       - ./arkcase-config:/opt/arkcase/config:ro
@@ -306,7 +259,7 @@ services:
     networks:
       - arkcase-network
     healthcheck:
-      test: ["CMD-SHELL", "curl -k -f https://localhost:8843/arkcase/api/v1/plugin/admin/status || exit 1"]
+      test: ["CMD-SHELL", "wget --quiet --tries=1 --spider http://localhost:8080/arkcase || exit 1"]
       interval: 30s
       timeout: 10s
       retries: 5
@@ -325,10 +278,14 @@ services:
     restart: unless-stopped
     depends_on:
       arkcase-core:
-        condition: service_healthy
+        condition: service_started
+      alfresco:
+        condition: service_started
+      config-server:
+        condition: service_started
     ports:
-      - "80:80"
-      - "443:443"
+      - "8080:80"
+      - "8443:443"
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
       - ./nginx/conf.d:/etc/nginx/conf.d:ro
@@ -337,10 +294,11 @@ services:
     networks:
       - arkcase-network
     healthcheck:
-      test: ["CMD-SHELL", "curl -f http://localhost/health || exit 1"]
+      test: ["CMD-SHELL", "curl -f http://localhost:80/ || exit 1"]
       interval: 30s
       timeout: 10s
-      retries: 3
+      retries: 5
+      start_period: 30s
     deploy:
       resources:
         limits:
@@ -366,11 +324,7 @@ volumes:
     driver: local
   alfresco-data:
     driver: local
-  pentaho-data:
-    driver: local
   arkcase-data:
-    driver: local
-  arkcase-config:
     driver: local
   arkcase-logs:
     driver: local

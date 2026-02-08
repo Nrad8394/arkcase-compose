@@ -1,0 +1,28 @@
+FROM openjdk:11.0.16
+
+LABEL maintainer="ARKCase"
+LABEL description="ArkCase Configuration Server - Production Build"
+
+WORKDIR /app
+
+# Create arkcase user
+RUN useradd --create-home --user-group arkcase && \
+    mkdir -p /app/tmp && \
+    chown -R arkcase:arkcase /app
+
+# Copy pre-built JAR
+COPY config-server/target/config-server-*-SNAPSHOT.jar /app/config-server.jar
+COPY config-server/docker/run.sh /app/run.sh
+
+# Set permissions
+RUN chmod +x /app/run.sh && \
+    chown -R arkcase:arkcase /app
+
+USER arkcase
+
+EXPOSE 9999
+
+HEALTHCHECK --interval=30s --timeout=10s --retries=5 \
+    CMD curl -f http://localhost:9999/actuator/health || exit 1
+
+CMD ["/app/run.sh"]
