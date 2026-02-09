@@ -13,7 +13,7 @@ configuration:
   rules.path: "rules"
   spring.path: "spring"
  server:
-  url: http://localhost:9999
+  url: http://config-server:9999
   update.path: "/config/{applicationName}"
   remove.path: "/config/remove/{applicationName}"
   reset.path: "/reset"

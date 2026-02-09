@@ -1,21 +1,48 @@
 services:
-  # PostgreSQL Database (or you can use MySQL/MariaDB)
+  # PostgreSQL Database (for Alfresco)
   postgres:
     image: postgres:14-alpine
     container_name: arkcase-postgres
     restart: unless-stopped
     environment:
-      POSTGRES_DB: arkcase
-      POSTGRES_USER: arkcase
+      POSTGRES_DB: alfresco
+      POSTGRES_USER: alfresco
       POSTGRES_PASSWORD: ${DB_PASSWORD:-changeme}
-      POSTGRES_MULTIPLE_DATABASES: alfresco
     volumes:
       - postgres-data:/var/lib/postgresql/data
-      - ./init-scripts:/docker-entrypoint-initdb.d
     networks:
       - arkcase-network
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U arkcase"]
+      test: ["CMD-SHELL", "pg_isready -U alfresco"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    deploy:
+      resources:
+        limits:
+          memory: 2G
+        reservations:
+          memory: 1G
+
+  # MariaDB Database (for ArkCase)
+  mariadb:
+    image: mariadb:latest
+    container_name: arkcase-mariadb
+    restart: unless-stopped
+    command: mariadbd
+    environment:
+      MARIADB_ROOT_PASSWORD: ${DB_ROOT_PASSWORD:-rootpassword}
+      MARIADB_DATABASE: arkcase
+      MARIADB_USER: arkcase
+      MARIADB_PASSWORD: ${DB_PASSWORD:-@rM3d1A!}
+    volumes:
+      - ./mariadb.cnf:/etc/mysql/conf.d/custom.cnf:ro
+      - ./init-arkcase.sql:/docker-entrypoint-initdb.d/01-arkcase-init.sql:ro
+      - mariadb-data:/var/lib/mysql
+    networks:
+      - arkcase-network
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h localhost"]
       interval: 10s
       timeout: 5s
       retries: 5
@@ -204,19 +231,18 @@ services:
 
   # Spring Cloud Config Server
   config-server:
-    image: nrad8393/arkcase-config-server:production
+    image: arkcase/config-server:latest
     container_name: arkcase-config-server
     restart: unless-stopped
     environment:
       SERVER_PORT: 9999
       SPRING_PROFILES_ACTIVE: native
-      SPRING_CLOUD_CONFIG_SERVER_NATIVE_SEARCH_LOCATIONS: "file:/app/data,file:/app/data/labels,file:/app/data/ldap,file:/app/data/lookups,file:/app/data/rules"
+      SPRING_CLOUD_CONFIG_SERVER_NATIVE_SEARCH_LOCATIONS: "file:/app/data,file:/app/data/acm/acm-config-server-repo,file:/app/data/labels,file:/app/data/ldap,file:/app/data/lookups,file:/app/data/rules"
       ACTIVEMQ_URL: tcp://activemq:61616
       ACM_ACTIVEMQ_BROKER_URL: tcp://activemq:61616
-      properties.folder.path: /app/data
       acm.activemq.messageBufferWindow: 5000
       acm.activemq.sendTime: 1000
-      JAVA_OPTS: "-Xmx512m -XX:+UseG1GC"
+      JAVA_OPTS: "-Xmx512m -XX:+UseG1GC -Dproperties.folder.path=/app/data/acm/acm-config-server-repo"
     volumes:
       - ./arkcase-config:/app/data:ro
     networks:
@@ -240,7 +266,7 @@ services:
     container_name: arkcase-core
     restart: unless-stopped
     depends_on:
-      postgres:
+      mariadb:
         condition: service_started
       solr:
         condition: service_started
@@ -252,10 +278,13 @@ services:
         condition: service_started
     environment:
       JDK_JAVA_OPTIONS: ""
-      CATALINA_OPTS: "-Xms2g -Xmx4g -Dspring.datasource.url=jdbc:postgresql://postgres:5432/arkcase -Dspring.datasource.username=arkcase -Dspring.datasource.password=${DB_PASSWORD:-changeme} -Dspring.datasource.driver-class-name=org.postgresql.Driver -Dsolr.host=solr -Dsolr.port=8983 -Dactivemq.broker.url=tcp://activemq:61616 -Dalfresco.host=alfresco -Dalfresco.port=8080 -Dconfig.server.url=http://config-server:9999 -Dacm.configurationserver.url=http://config-server:9999 -Dserver.ssl.enabled=true -Dserver.ssl.key-store=/opt/arkcase/certs/keystore.p12 -Dserver.ssl.key-store-password=${KEYSTORE_PASSWORD:-changeme} -Dserver.ssl.keyStoreType=PKCS12"
+      CATALINA_OPTS: ""
+      DB_PASSWORD: ${DB_PASSWORD:-changeme}
+      KEYSTORE_PASSWORD: ${KEYSTORE_PASSWORD:-changeme}
     volumes:
       - arkcase-data:/opt/arkcase/data
       - ./arkcase-config:/home/arkcase/.arkcase:ro
+      - ./arkcase-config/setenv.sh:/usr/local/tomcat/bin/setenv.sh:ro
       - arkcase-logs:/opt/arkcase/logs
       - ./certs:/opt/arkcase/certs:ro
     networks:
@@ -317,6 +346,8 @@ networks:
 
 volumes:
   postgres-data:
+    driver: local
+  mariadb-data:
     driver: local
   solr-data:
     driver: local

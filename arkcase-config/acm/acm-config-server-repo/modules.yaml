@@ -1,0 +1,5 @@
+# ArkCase Modules Configuration
+modules:
+  list: "DASHBOARD,CASE,CONSULTATION,TIME,COST,TASK,COMPLAINT,DOC_REPO,PERSON,ORGANIZATION,MY_DOC_REPO"
+  dashboard:
+    widgets: "activeCaseFiles,casesByStatus,myCases,myComplaints,myTasks,newComplaints,teamWorkload,news,newCases,workflowReport,userWebsites,myConsultations"

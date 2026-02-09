@@ -1,39 +1,7 @@
 ################### LDAP authentication configuration ###################
-springConfigLdapProperties:
-  ldapDirectoryConfig:
-    arkcase:
-      base: dc=arkcase-ce
-      authUserDn: CN=Administrator,CN=Users,DC=arkcase-ce
-      authUserPassword: AcMd3v$
-      userSearchBase: OU=Users,OU=ArkCase
-      groupSearchBase: OU=Groups,OU=ArkCase
-      ldapUrl: ldaps://acm-arkcase:636
-      userAttributes: cn,userAccountControl,sn,givenName,dn,distinguishedname,memberOf,sAMAccountName,userPrincipalName,uid,uidNumber,c,co,company,department,title,shadowMax,shadowLastChange,msDS-UserPasswordExpiryTimeComputed,modifyTimestamp,description,member
-      userDomain: arkcase.org
-      syncPageSize: 500
-      enableEditingLdapUsers: true
-      directoryType: activedirectory
-      userSearchFilter: (&(objectClass=user)(sAMAccountName=%s))
-      allUsersFilter: (&(objectCategory=person)(objectClass=user)(!(userAccountControl:1.2.840.113556.1.4.803:=2)))
-      allChangedUsersFilter: (&(objectCategory=person)(objectClass=user)(!(userAccountControl:1.2.840.113556.1.4.803:=2))(modifyTimestamp>=%s))
-      allUsersPageFilter: (&(objectCategory=person)(objectClass=user)(!(userAccountControl:1.2.840.113556.1.4.803:=2))(sAMAccountName>=%s))
-      allChangedUsersPageFilter: (&(objectCategory=person)(objectClass=user)(!(userAccountControl:1.2.840.113556.1.4.803:=2))(sAMAccountName>=%s)(modifyTimestamp>=%s))
-      allUsersSortingAttribute: sAMAccountName
-      groupSearchFilterForUser: (&(objectClass=group)(member=%s))
-      userIdAttributeName: sAMAccountName
-      groupSearchFilter: (objectclass=group)
-      changedGroupSearchFilter: (&(objectclass=group)(modifyTimestamp>=%s))
-      groupSearchPageFilter: (&(objectclass=group)(cn>=%s))
-      changedGroupSearchPageFilter: (&(objectclass=group)(cn>=%s)(modifyTimestamp>=%s))
-      groupsSortingAttribute: cn
-      userPrefix: 
-      groupPrefix: 
-      userControlGroup: 
-      groupControlGroup: 
-      syncEnabled: true
-      autoGenerateUserId: false
-      partialSyncCron: 0 0/30 * 1/1 * ? *
-      fullSyncCron: 0 5 0 1/1 * ? *
+# LDAP configuration is disabled for this development environment
+# The LDAP server is not available, so we provide a minimal stub configuration
+springConfigLdapProperties: {}
       ldapAddUserConfig:
         homeDirectory: homeDirectory
         mail: mail

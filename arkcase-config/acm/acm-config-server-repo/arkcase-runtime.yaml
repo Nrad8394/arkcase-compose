@@ -1,0 +1,5 @@
+# ArkCase Runtime Configuration
+acm:
+  modules:
+    enabled: true
+    list: "DASHBOARD,CASE,CONSULTATION,TIME,COST,TASK,COMPLAINT,DOC_REPO,PERSON,ORGANIZATION,MY_DOC_REPO"

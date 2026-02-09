@@ -1,3 +1,18 @@
+# ArkCase Modules Configuration - MUST be defined at top level
+modules: "DASHBOARD,CASE,CONSULTATION,TIME,COST,TASK,COMPLAINT,DOC_REPO,PERSON,ORGANIZATION,MY_DOC_REPO"
+modulesList:
+  - DASHBOARD
+  - CASE
+  - CONSULTATION
+  - TIME
+  - COST
+  - TASK
+  - COMPLAINT
+  - DOC_REPO
+  - PERSON
+  - ORGANIZATION
+  - MY_DOC_REPO
+
 ################### Analytics Configuration (acm-analytics-config.properties) ####################
 # Demo server for testing purposes
 
@@ -2283,8 +2298,8 @@ schema.autoUpdate: true
 ## jpa configuration
 # database.platform must be an EclipseLink database platform.
 database:
-  platform: "org.eclipse.persistence.platform.database.MySQLPlatform"
   #platform: "org.eclipse.persistence.platform.database.PostgreSQLPlatform"
+  platform: "org.eclipse.persistence.platform.database.MySQLPlatform"
   platform.showSql: true
   ##properties for other databases to follow.
   encryption_properties: "compress-algo=1, cipher-algo=aes256"
@@ -2304,10 +2319,10 @@ eclipselink.logging:
 jpa.model.packages: "com.armedia.**"
 ##postgresql
 acm:
-  driverClassName: "org.mariadb.jdbc.Driver"
   #driverClassName: "org.postgresql.Driver"
-  url: "jdbc:mysql://acm-arkcase:3306/arkcase?autoReconnect=true&useUnicode=true&characterEncoding=UTF-8&useSsl=true&requireSsl=true&enabledSslProtocolSuites=TLSv1.2&trustCertificateKeyStoreUrl=file:${user.home}/.arkcase/acm/private/arkcase.ts&trustCertificateKeyStorePassword=password"
-  #url: "jdbc:postgresql://acm-postgres:5432/arkcase?ssl=true"
+  driverClassName: "org.mariadb.jdbc.Driver"
+  #url: "jdbc:postgresql://postgres:5432/arkcase?user=arkcase"
+  url: "jdbc:mysql://mariadb:3306/arkcase?autoReconnect=true&useUnicode=true&characterEncoding=utf8&serverCharset=utf8mb3"
   schema: "arkcase"
   username: "arkcase"
   password: "@rM3d1A!"

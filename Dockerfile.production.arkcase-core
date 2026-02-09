@@ -31,9 +31,15 @@ COPY --from=builder --chown=arkcase:arkcase /tmp/arkcase.war /usr/local/tomcat/w
 # Remove default ROOT application
 RUN rm -rf /usr/local/tomcat/webapps/ROOT /usr/local/tomcat/webapps/docs /usr/local/tomcat/webapps/examples /usr/local/tomcat/webapps/manager /usr/local/tomcat/webapps/host-manager
 
-# Set environment variables for Tomcat startup
+# Copy setenv.sh for proper CATALINA_OPTS initialization
+COPY arkcase-config/setenv.sh /usr/local/tomcat/bin/setenv.sh
+
+# Set environment variables for Tomcat startup (minimal - app config set via setenv.sh)
 ENV JDK_JAVA_OPTIONS="" \
-    CATALINA_OPTS="-XX:+UseG1GC -XX:MaxGCPauseMillis=200 -Dcom.sun.jndi.ldap.connect.pool=false"
+    CATALINA_OPTS=""
+
+# Ensure setenv.sh is executable
+RUN chmod +x /usr/local/tomcat/bin/setenv.sh
 
 # Set proper permissions
 RUN chown -R arkcase:arkcase /usr/local/tomcat
