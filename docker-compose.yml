@@ -231,7 +231,7 @@ services:
 
   # Spring Cloud Config Server
   config-server:
-    image: arkcase/config-server:latest
+    image: nrad8393/arkcase-config-server:production
     container_name: arkcase-config-server
     restart: unless-stopped
     environment:
@@ -290,7 +290,7 @@ services:
     networks:
       - arkcase-network
     healthcheck:
-      test: ["CMD-SHELL", "test -d /proc/1 || exit 1"]
+      test: ["CMD-SHELL", "timeout 5 bash -c '</dev/tcp/localhost/8080' >/dev/null 2>&1 || exit 1"]
       interval: 30s
       timeout: 10s
       retries: 5
